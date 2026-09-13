@@ -1,3 +1,9 @@
+This module contains all the content from the last version of Calamity Entropy (now Call of Void) before it was separate from Calamity
+
+Call of Void Mod is owned by JuJiao and Hocha113, and is independent from this version. This version is maintained by me, and no new content will be added in the future
+
+--------------------------------------
+
 [h1]This mod is an addon for CalamityMod[/h1]
 
 -Fully Multiplay Support-
@@ -28,12 +34,6 @@ Thanks to 鸡腿, Gel, OXYGEN, 黑森林大蛇, 小史龙, 迷途, OwenDraw, Fiv
 Thank you to all the donors for their support.
 Thanks to hocha113 for providing some code assistance.
 
-Bug Reports: https://github.com/WarmurCle/CalamityEntropyLegacy/issues
-
-Discord Server: https://discord.com/invite/Mnmzd34Fda
-
 ChineseWiki：https://calentropy.miraheze.org
 
 EnglishWiki：https://terrariamods.wiki.gg/wiki/Calamity_Entropy_Legacy
-
-Try [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3161388997] Calamity Overhaul Mod [/url] too,We will have some interesting crossover content in the future.
