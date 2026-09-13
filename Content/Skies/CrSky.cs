@@ -48,129 +48,132 @@ namespace CalamityEntropyLegacy.Content.Skies
         public Effect skyEffect = null; public Effect skyEffect2 = null;
         public override void Draw(SpriteBatch spriteBatch, float minDepth, float maxDepth)
         {
-            if (this.skyEffect == null)
+            if (minDepth < 0f && maxDepth >= 0f && maxDepth < float.MaxValue)
             {
-                this.skyEffect = ModContent.Request<Effect>("CalamityEntropyLegacy/Assets/Effects/AWSkyEffect", ReLogic.Content.AssetRequestMode.ImmediateLoad).Value;
-                this.skyEffect2 = ModContent.Request<Effect>("CalamityEntropyLegacy/Assets/Effects/awsky2", ReLogic.Content.AssetRequestMode.ImmediateLoad).Value;
-            }
-            counter++;
-            Texture2D txd = ModContent.Request<Texture2D>("CalamityEntropyLegacy/Assets/Extra/CrSky").Value;
-            float pc = 1f;
-            /*
-            if (SubworldSystem.IsActive<VOIDSubworld>())
-            {
-                pc *= 0.2f;
-            }*/
-            Color ocolor = new Color((int)(30 * pc), (int)(20 * pc), (int)(60 * pc));
-            /*if (NPC.AnyNPCs(ModContent.NPCType<AbyssalWraith>()))
-            {
-                awtime = 180;
-                ocolor = new Color((int)(190 * pc), (int)(55 * pc), (int)(205 * pc));
-                foreach (NPC n in Main.npc)
+                if (this.skyEffect == null)
                 {
-                    if (n.active && n.type == ModContent.NPCType<AbyssalWraith>())
+                    this.skyEffect = ModContent.Request<Effect>("CalamityEntropyLegacy/Assets/Effects/AWSkyEffect", ReLogic.Content.AssetRequestMode.ImmediateLoad).Value;
+                    this.skyEffect2 = ModContent.Request<Effect>("CalamityEntropyLegacy/Assets/Effects/awsky2", ReLogic.Content.AssetRequestMode.ImmediateLoad).Value;
+                }
+                counter++;
+                Texture2D txd = ModContent.Request<Texture2D>("CalamityEntropyLegacy/Assets/Extra/CrSky").Value;
+                float pc = 1f;
+                /*
+                if (SubworldSystem.IsActive<VOIDSubworld>())
+                {
+                    pc *= 0.2f;
+                }*/
+                Color ocolor = new Color((int)(30 * pc), (int)(20 * pc), (int)(60 * pc));
+                /*if (NPC.AnyNPCs(ModContent.NPCType<AbyssalWraith>()))
+                {
+                    awtime = 180;
+                    ocolor = new Color((int)(190 * pc), (int)(55 * pc), (int)(205 * pc));
+                    foreach (NPC n in Main.npc)
                     {
-                        drawAWMask = true;
-                        AWIndex = n.whoAmI;
-                        break;
+                        if (n.active && n.type == ModContent.NPCType<AbyssalWraith>())
+                        {
+                            drawAWMask = true;
+                            AWIndex = n.whoAmI;
+                            break;
 
+                        }
+                    }
+                }*/
+                if (awtime >= 0)
+                    awtime--;
+
+                Main.spriteBatch.End();
+                Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.AnisotropicWrap, DepthStencilState.None, RasterizerState.CullNone, null);
+                Vector2 dp = new Vector2((Main.screenPosition.X * -0.5f + counter * 0.3f) % txd.Width, (Main.screenPosition.Y * -0.5f * Main.LocalPlayer.gravDir + counter * -0.1f) % txd.Height);
+                spriteBatch.Draw(txd, Main.ScreenSize.ToVector2() * 0.5f, new Rectangle((int)-dp.X, (int)-dp.Y, (int)(Main.screenWidth * 2), (int)(Main.screenHeight * 2)), ocolor * opacity, 0, Main.ScreenSize.ToVector2(), 1, SpriteEffects.None, 0);
+
+                if (shader == null)
+                    shader = ModContent.Request<Effect>("CalamityEntropyLegacy/Assets/Effects/ColorLerp2", ReLogic.Content.AssetRequestMode.ImmediateLoad).Value;
+                if (awtime > 0)
+                {
+                    spriteBatch.End();
+                    spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive, SamplerState.LinearWrap, DepthStencilState.None, RasterizerState.CullNone, null, Main.GameViewMatrix.TransformationMatrix);
+                    ocolor = new Color((int)(36 * pc), (int)(36 * pc), (int)(36 * pc));
+                    if (Main.rand.NextBool(120))
+                    {
+                        if (Main.rand.NextBool(6))
+                        {
+                            SoundStyle s = SoundID.Thunder;
+                            s.Volume = Main.rand.NextFloat() * 0.4f;
+                            SoundEngine.PlaySound(s);
+                        }
+                        LightningParticle.lightningParticles.Add(new LightningParticle());
+                    }
+                    ocolor = new Color((int)(40 * pc), (int)(40 * pc), (int)(40 * pc));
+
+                    foreach (LightningParticle p in LightningParticle.lightningParticles)
+                    {
+                        p.draw(opacity);
+                    }
+                    for (int i = LightningParticle.lightningParticles.Count - 1; i >= 0; i--)
+                    {
+                        if (LightningParticle.lightningParticles[i].timeleft <= 0)
+                        {
+                            LightningParticle.lightningParticles.RemoveAt(i);
+                        }
                     }
                 }
-            }*/
-            if (awtime >= 0)
-                awtime--;
-
-            Main.spriteBatch.End();
-            Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.AnisotropicWrap, DepthStencilState.None, RasterizerState.CullNone, null);
-            Vector2 dp = new Vector2((Main.screenPosition.X * -0.5f + counter * 0.3f) % txd.Width, (Main.screenPosition.Y * -0.5f * Main.LocalPlayer.gravDir + counter * -0.1f) % txd.Height);
-            spriteBatch.Draw(txd, Main.ScreenSize.ToVector2() * 0.5f, new Rectangle((int)-dp.X, (int)-dp.Y, (int)(Main.screenWidth * 2), (int)(Main.screenHeight * 2)), ocolor * opacity, 0, Main.ScreenSize.ToVector2(), 1, SpriteEffects.None, 0);
-            
-            if(shader == null)
-                shader = ModContent.Request<Effect>("CalamityEntropyLegacy/Assets/Effects/ColorLerp2", ReLogic.Content.AssetRequestMode.ImmediateLoad).Value;
-            if (awtime > 0)
-            {
+                else
+                {
+                }
                 spriteBatch.End();
-                spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive, SamplerState.LinearWrap, DepthStencilState.None, RasterizerState.CullNone, null, Main.GameViewMatrix.TransformationMatrix);
-                ocolor = new Color((int)(36 * pc), (int)(36 * pc), (int)(36 * pc));
-                if (Main.rand.NextBool(120))
+                spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive, SamplerState.AnisotropicWrap, DepthStencilState.None, RasterizerState.CullNone, null);
+                ocolor = new Color((int)(66 * pc), (int)(60 * pc), (int)(94 * pc));
+                float c = 1f;
+                for (int i = 1; i <= 2; i++)
                 {
-                    if (Main.rand.NextBool(6))
-                    {
-                        SoundStyle s = SoundID.Thunder;
-                        s.Volume = Main.rand.NextFloat() * 0.4f;
-                        SoundEngine.PlaySound(s);
-                    }
-                    LightningParticle.lightningParticles.Add(new LightningParticle());
+                    float mc = i % 2 == 0 ? 1 : -1;
+                    Vector2 vc = (i * 2.9f + 0.8f).ToRotationVector2();
+                    dp = new Vector2((Main.screenPosition.X * -0.5f * c + counter * vc.X * mc * c) % txd.Width, (Main.screenPosition.Y * -0.5f * Main.LocalPlayer.gravDir * c + counter * vc.Y) % txd.Height);
+                    spriteBatch.Draw(txd, Main.ScreenSize.ToVector2() * 0.5f, new Rectangle((int)-dp.X, (int)-dp.Y, (int)(Main.screenWidth * 2), (int)(Main.screenHeight * 2)), ocolor * opacity, 0, Main.ScreenSize.ToVector2(), 1.2f, SpriteEffects.None, 0);
                 }
-                ocolor = new Color((int)(40 * pc), (int)(40 * pc), (int)(40 * pc));
+                Main.spriteBatch.ExitShaderRegion();
+                spriteBatch.End();
 
-                foreach (LightningParticle p in LightningParticle.lightningParticles)
+                if (true)//(ModContent.GetInstance<Config>().ScreenWarpEffects)
                 {
-                    p.draw(opacity);
+                    var graphicsDevice = Main.graphics.GraphicsDevice;
+                    graphicsDevice.SetRenderTarget(EffectLoader.Screen0);
+                    graphicsDevice.Clear(Color.Transparent);
+                    Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearWrap, DepthStencilState.None, RasterizerState.CullNone, null, Main.GameViewMatrix.TransformationMatrix);
+                    Main.spriteBatch.Draw(Main.screenTarget, Vector2.Zero, Color.White);
+                    Main.spriteBatch.End();
+
+                    graphicsDevice.SetRenderTarget(Main.screenTargetSwap);
+                    graphicsDevice.Clear(Color.Transparent);
+                    Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive, SamplerState.LinearWrap, DepthStencilState.None, RasterizerState.CullNone, null, Main.GameViewMatrix.TransformationMatrix);
+
+                    CEUtils.drawLine(new Vector2(-600, Main.screenHeight / 2 / 2), new Vector2(Main.ScreenSize.X + 1200, Main.screenHeight / 2), Color.White * 1f, 3000, 0, false);
+
+                    Main.spriteBatch.End();
+
+                    graphicsDevice.SetRenderTarget(Main.screenTarget);
+                    graphicsDevice.Clear(Color.Transparent);
+                    Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.None, RasterizerState.CullNone);
+                    var fscreen = EffectLoader.fscreenCr;
+                    fscreen.CurrentTechnique = fscreen.Techniques["Technique1"];
+                    fscreen.CurrentTechnique.Passes[0].Apply();
+                    fscreen.Parameters["strengthMult"].SetValue(0.28f * opacity + 0.0001f);
+                    fscreen.Parameters["screen"].SetValue(Main.screenPosition * 0.5f / Main.ScreenSize.ToVector2() * new Vector2(1, Main.LocalPlayer.gravDir));
+                    fscreen.Parameters["iTime"].SetValue(Main.GlobalTimeWrappedHourly * 0.03f);
+                    fscreen.Parameters["coordMult"].SetValue(new Vector2(1f, 1f) / Main.GameViewMatrix.Zoom);
+                    fscreen.Parameters["cStrength"].SetValue(3.2f);
+                    fscreen.Parameters["cNum"].SetValue(1.12f);
+                    graphicsDevice.Textures[0] = EffectLoader.Screen0;
+                    graphicsDevice.Textures[1] = Main.screenTargetSwap;
+                    graphicsDevice.Textures[2] = CEUtils.getExtraTex("VoidBack");
+                    Main.spriteBatch.Draw(EffectLoader.Screen0, Vector2.Zero, Color.White);
+                    Main.spriteBatch.End();
                 }
-                for (int i = LightningParticle.lightningParticles.Count - 1; i >= 0; i--)
-                {
-                    if (LightningParticle.lightningParticles[i].timeleft <= 0)
-                    {
-                        LightningParticle.lightningParticles.RemoveAt(i);
-                    }
-                }
+
+                Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.None, RasterizerState.CullNone, null, Main.GameViewMatrix.TransformationMatrix);
+
             }
-            else
-            {
-            }
-            spriteBatch.End();
-            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive, SamplerState.AnisotropicWrap, DepthStencilState.None, RasterizerState.CullNone, null);
-            ocolor = new Color((int)(66 * pc), (int)(60 * pc), (int)(94 * pc));
-            float c = 1f;
-            for (int i = 1; i <= 2; i++)
-            {
-                float mc = i % 2 == 0 ? 1 : -1;
-                Vector2 vc = (i * 2.9f + 0.8f).ToRotationVector2();
-                dp = new Vector2((Main.screenPosition.X * -0.5f * c + counter * vc.X * mc * c) % txd.Width, (Main.screenPosition.Y * -0.5f * Main.LocalPlayer.gravDir * c + counter * vc.Y) % txd.Height);
-                spriteBatch.Draw(txd, Main.ScreenSize.ToVector2() * 0.5f, new Rectangle((int)-dp.X, (int)-dp.Y, (int)(Main.screenWidth * 2), (int)(Main.screenHeight * 2)), ocolor * opacity, 0, Main.ScreenSize.ToVector2(), 1.2f, SpriteEffects.None, 0);
-            }
-            Main.spriteBatch.ExitShaderRegion();
-            spriteBatch.End();
-
-            if(true)//(ModContent.GetInstance<Config>().ScreenWarpEffects)
-            {
-                var graphicsDevice = Main.graphics.GraphicsDevice;
-                graphicsDevice.SetRenderTarget(EffectLoader.Screen0);
-                graphicsDevice.Clear(Color.Transparent);
-                Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearWrap, DepthStencilState.None, RasterizerState.CullNone, null, Main.GameViewMatrix.TransformationMatrix);
-                Main.spriteBatch.Draw(Main.screenTarget, Vector2.Zero, Color.White);
-                Main.spriteBatch.End();
-
-                graphicsDevice.SetRenderTarget(Main.screenTargetSwap);
-                graphicsDevice.Clear(Color.Transparent);
-                Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive, SamplerState.LinearWrap, DepthStencilState.None, RasterizerState.CullNone, null, Main.GameViewMatrix.TransformationMatrix);
-
-                CEUtils.drawLine(new Vector2(-600, Main.screenHeight / 2 / 2), new Vector2(Main.ScreenSize.X + 1200, Main.screenHeight / 2), Color.White * 1f, 3000, 0, false);
-
-                Main.spriteBatch.End();
-
-                graphicsDevice.SetRenderTarget(Main.screenTarget);
-                graphicsDevice.Clear(Color.Transparent);
-                Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.None, RasterizerState.CullNone);
-                var fscreen = EffectLoader.fscreenCr;
-                fscreen.CurrentTechnique = fscreen.Techniques["Technique1"];
-                fscreen.CurrentTechnique.Passes[0].Apply();
-                fscreen.Parameters["strengthMult"].SetValue(0.28f * opacity + 0.0001f);
-                fscreen.Parameters["screen"].SetValue(Main.screenPosition * 0.5f / Main.ScreenSize.ToVector2() * new Vector2(1, Main.LocalPlayer.gravDir));
-                fscreen.Parameters["iTime"].SetValue(Main.GlobalTimeWrappedHourly * 0.03f);
-                fscreen.Parameters["coordMult"].SetValue(new Vector2(1f, 1f) / Main.GameViewMatrix.Zoom);
-                fscreen.Parameters["cStrength"].SetValue(3.2f);
-                fscreen.Parameters["cNum"].SetValue(1.12f);
-                graphicsDevice.Textures[0] = EffectLoader.Screen0;
-                graphicsDevice.Textures[1] = Main.screenTargetSwap;
-                graphicsDevice.Textures[2] = CEUtils.getExtraTex("VoidBack");
-                Main.spriteBatch.Draw(EffectLoader.Screen0, Vector2.Zero, Color.White);
-                Main.spriteBatch.End();
-            }
-
-            Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.None, RasterizerState.CullNone, null, Main.GameViewMatrix.TransformationMatrix);
-
         }
         public class LightningParticle
         {
