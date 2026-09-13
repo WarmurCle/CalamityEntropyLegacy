@@ -1,0 +1,40 @@
+using CalamityEntropyLegacy.Content.Rarities;
+using CalamityMod.Items;
+using CalamityMod.Items.Placeables.Ores;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityEntropyLegacy.Content.Items.Armor.NihTwins
+{
+    [AutoloadEquip(EquipType.Body)]
+    public class ChaoticBodyArmor : ModItem
+    {
+
+        public override void SetDefaults()
+        {
+            Item.width = 48;
+            Item.height = 42;
+            Item.value = CalamityGlobalItem.RarityTurquoiseBuyPrice;
+            Item.defense = 40;
+            Item.rare = ModContent.RarityType<NihilityBlue>();
+        }
+
+        public override void UpdateEquip(Player player)
+        {
+            player.maxMinions += 1;
+            player.lifeRegen += 8;
+            player.endurance += 0.1f;
+        }
+
+        public override void AddRecipes()
+        {
+            CreateRecipe()
+                .AddIngredient<ChaoticPiece>(8)
+                .AddIngredient<ExodiumCluster>(12)
+                .AddIngredient(ItemID.LunarBar, 12)
+                .AddTile(TileID.LunarCraftingStation)
+                .Register();
+        }
+    }
+}

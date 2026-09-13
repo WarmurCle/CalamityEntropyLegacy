@@ -1,0 +1,284 @@
+//You can find all localization changes in zh-Hans in this file
+//This may assist you in creating localizations for other languages
+
+[3.17-Changes]
+[Mods.CalamityEntropy.YoungMasterDashCD] - added
+[Mods.CalamityEntropy.Projectiles.YoungMasterProj.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.TectinicShardAshesCore.DisplayName] - removed // This is a spelling mistake, remove this key
+[Mods.CalamityEntropy.Projectiles.TectinicShardHoming.DisplayName] - removed    // This is a spelling mistake, remove this key
+[Mods.CalamityEntropy.Projectiles.VoisenBullet.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.YMSlash.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.YoungMasterDash.DisplayName] - added
+[Mods.CalamityEntropy.AbyssalStorm] - added
+[Mods.CalamityEntropy.Items.YoungMaster.DisplayName] - added
+[Mods.CalamityEntropy.Items.YoungMaster.Tooltip] - added
+[Mods.CalamityEntropy.Items.VoidRelics.Tooltip] - changed
+[Mods.CalamityEntropy.Projectiles.YoungMasterMark.DisplayName] - added
+
+
+[3.18-Changes]
+[Mods.CalamityEntropy.AzafureEnhances.AzafureStandardShotgun] - added
+[Mods.CalamityEntropy.AzafureEnhances.AzafureImperialGuardMachineGun] - added
+[Mods.CalamityEntropy.AzafureEnhances.AzafureExhaustGasInjector] - added
+[Mods.CalamityEntropy.NoAmmo] - added
+[Mods.CalamityEntropy.Projectiles.RuneSongHeld.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.ExhaustGas.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.MewMewBombThrow.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.ImperialGuardShot.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.AzafureImperialGuardMachineGunHeld.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.RuneBolt.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.AzafureExhaustGasInjectorHeld.DisplayName] - added
+[Mods.CalamityEntropy.Items.AzafureImperialGuardMachineGun.DisplayName] - added
+[Mods.CalamityEntropy.Items.AzafureImperialGuardMachineGun.Tooltip] - added
+[Mods.CalamityEntropy.Items.RuneSong.Tooltip] - changed
+[Mods.CalamityEntropy.Items.AzafureStandardShotgun.DisplayName] - added
+[Mods.CalamityEntropy.Items.AzafureStandardShotgun.Tooltip] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.MewMewBomb.DisplayName] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.MewMewBomb.Tooltip] - added
+[Mods.CalamityEntropy.Items.AzafureExhaustGasInjector.DisplayName] - added
+[Mods.CalamityEntropy.Items.AzafureExhaustGasInjector.Tooltip] - added
+
+
+[3.19-Changes]
+[Mods.CalamityEntropy.Musics.Apsychos] - added
+[Mods.CalamityEntropy.Musics.Cruiser] - added
+[Mods.CalamityEntropy.Musics.Prophet1] - added
+[Mods.CalamityEntropy.Musics.Prophet2] - added
+[Mods.CalamityEntropy.Musics.VoidTwins] - added
+[Mods.CalamityEntropy.Musics.Luminaris] - added
+[Mods.CalamityEntropy.Musics.Acropolis] - added
+[Mods.CalamityEntropy.Musics.BadbfHX] - added
+[Mods.CalamityEntropy.Musics.Francium] - added
+[Mods.CalamityEntropy.Musics.SobaNoodles] - added
+[Mods.CalamityEntropy.Musics.ThemeOf] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.MewMewBomb.Tooltip] - changed
+[Mods.CalamityEntropy.Items.Kinanition.Tooltip] - changed
+[Mods.CalamityEntropy.Items.HolyMoonlight.Tooltip] - changed
+[Mods.CalamityEntropy.Items.PlagueInternalCombustionEngine.Tooltip] - changed
+
+
+[3.20-Changes]
+[Mods.CalamityEntropy.Items.Erebodrepanon] - added
+[Mods.CalamityEntropy.Items.ThalassianGleam] - added
+[Mods.CalamityEntropy.Items.GoldenFlowerInAJar] - added
+[Mods.CalamityEntropy.Projectiles.ThalassianWaterBolt] - added
+[Mods.CalamityEntropy.Projectiles.SilentpeakSword] - added
+[Mods.CalamityEntropy.Projectiles.ErebodrepanonMark] - added
+[Mods.CalamityEntropy.Projectiles.KinanitionSpawn] - added
+[Mods.CalamityEntropy.Projectiles.ErebodrepanonHeld] - added
+[Mods.CalamityEntropy.Projectiles.ThalassianGleamHeld] - added
+[Mods.CalamityEntropy.Buffs.SilentpeakBuff] - added
+[Mods.CalamityEntropy.Buffs.SilentpeakBuff] - added
+[Mods.CalamityEntropy.Items.FeatheredHeadpiece] - added
+[Mods.CalamityEntropy.Items.TsumugisHood] - added
+[Mods.CalamityEntropy.Items.FlowerHeadband] - added
+[Mods.CalamityEntropy.Items.Silentpeak] - added
+
+
+[3.23-Changes]
+[Mods.CalamityEntropy.Items.TsumugisHood] - changed
+[Mods.CalamityEntropy.Items.ReapersButterfly] - added
+[Mods.CalamityEntropy.Items.CrystalofHeart] - added
+[Mods.CalamityEntropy.Items.BookMarkNeutron] - removed
+[Mods.CalamityEntropy.Items.MikoMaeTengkan] - added
+[Mods.CalamityEntropy.Items.OathBanner] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.SawofMacrocosm] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.BrillianceSwirlblade] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.GlacierSwirlblade] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.FlamingSwirlblade] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.Revelation.Tooltip] - changed
+[Mods.CalamityEntropy.Items.Weapons.Rogue.AzafureSwirlblade] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.RunicSwirlblade] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.BlazingSwirlblade] - added
+[Mods.CalamityEntropy.Items.CantaloupeSmoothie] - added
+[Mods.CalamityEntropy.Items.TectonicChainBlade] - added
+[Mods.CalamityEntropy.Items.BlackSkirt] - added
+[Mods.CalamityEntropy.Items.BottleofCrystal] - added
+[Mods.CalamityEntropy.Items.Lore.LoreAcropolis] - added
+[Mods.CalamityEntropy.Items.Lore.LoreAcropolis.Lore] - added
+[Mods.CalamityEntropy.Items.FuchsiaRibbon] - added
+[Mods.CalamityEntropy.AzafureEnhances.AzafureSwirlblade] - added
+[Mods.CalamityEntropy.VoidDeath0] - added
+[Mods.CalamityEntropy.VoidDeath1] - added
+[Mods.CalamityEntropy.VoidDeath2] - added
+[Mods.CalamityEntropy.VoidDeath3] - added
+[Mods.CalamityEntropy.VoidDeath4] - added
+[Mods.CalamityEntropy.Projectiles.AzafureSwirlbladeMissile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.AzafureSwirlbladeProj.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.SawofMacrocosmProj.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.RevelationBolt.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.RevelationStealth.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.MacrocosmSawDash.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.AzafureSwirlbladeSaw.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.FlamingSwirlbladeProj.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.BrillianceSwirlbladeProj.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.TectonicChainBladeWhip.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.MacrocosmVoidBolt.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.BlazingSwirlbladeProj.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.RunicSwirlbladeProj.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.SawofMacrocosmSplit.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.RevelationThrown.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.RevelationExplode.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.GlacierSwirlbladeProj.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.FlamingSwirlbladeFlame.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.BlazingSwirlbladeFlame.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.RunicSwirlbladeBullet.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.GlacierSwirlbladeSaw.DisplayName] - added
+[Mods.CalamityEntropy.Buffs.TectonicChainBladeWhipDebuff.DisplayName] - added
+[Mods.CalamityEntropy.Buffs.TectonicChainBladeWhipDebuff.Description] - added
+[Mods.CalamityEntropy.Buffs.OathofCommand] - added
+
+
+[3.24-Changes]
+[Mods.CalamityEntropy.Projectiles.RevelationMelee.DisplayName] - removed
+[Mods.CalamityEntropy.Projectiles.ExergySwirlbladeProj.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.Flowery.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.AquaShardWaterBullet.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.Bellbeast.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.ApeirokyklosSpike.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.ApeirokyklosProj.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.RevelationThrow.DisplayName] - removed
+[Mods.CalamityEntropy.Projectiles.WaterBulletSpawner.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.ExergySwirlbladeSaw.DisplayName] - added
+[Mods.CalamityEntropy.WyrmChatCOHalibut2] - removed
+[Mods.CalamityEntropy.WyrmChatCOHalibut1] - removed
+[Mods.CalamityEntropy.BaitCommonTooltip1] - added
+[Mods.CalamityEntropy.DeltaruneCH5ShadowCrystal] - added
+[Mods.CalamityEntropy.WyrmChatCOHalibut3] - removed
+[Mods.CalamityEntropy.BaitCommonTooltip2] - added
+[Mods.CalamityEntropy.Buffs.Deceive.Description] - changed
+[Mods.CalamityEntropy.Buffs.Deceive.ItemTooltip] - added
+[Mods.CalamityEntropy.Buffs.FloweryBuff.DisplayName] - added
+[Mods.CalamityEntropy.Buffs.FloweryBuff.Description] - added
+[Mods.CalamityEntropy.Buffs.BellbeastBuff.DisplayName] - added
+[Mods.CalamityEntropy.Buffs.BellbeastBuff.Description] - added
+[Mods.CalamityEntropy.Items.BellwayBell.DisplayName] - added
+[Mods.CalamityEntropy.Items.BellwayBell.Tooltip] - added
+[Mods.CalamityEntropy.Items.FlowerWithFace.DisplayName] - added
+[Mods.CalamityEntropy.Items.FlowerWithFace.Tooltip] - added
+[Mods.CalamityEntropy.Items.AntlionShell.DisplayName] - added
+[Mods.CalamityEntropy.Items.AntlionShell.Tooltip] - added
+[Mods.CalamityEntropy.Items.Lore.LoreAcropolis.Tooltip] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.Apeirokyklos.DisplayName] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.Apeirokyklos.Tooltip] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.ExergySwirlblade.DisplayName] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.ExergySwirlblade.Tooltip] - added
+[Mods.CalamityEntropy.Items.Weapons.Rogue.Aquashard.Tooltip] - changed
+[Mods.CalamityEntropy.NPCs.PrimordialWyrmNPC.DisplayName] - changed
+[Mods.CalamityEntropy.NPCs.PrimordialWyrmNPC.Census.SpawnCondition] - changed
+[Mods.CalamityEntropy.NPCs.PrimordialWyrmNPC.TownNPCMood.DislikeCrowded] - changed
+[Mods.CalamityEntropy.NPCs.PrimordialWyrmNPC.TownNPCMood.FarFromHome] - changed
+[Mods.CalamityEntropy.NPCs.PrimordialWyrmNPC.TownNPCMood.HateCrowded] - changed
+[Mods.CalamityEntropy.NPCs.PrimordialWyrmNPC.TownNPCMood.MonumentNearby] - added
+
+
+[3.30-Changes]
+[Mods.CalamityEntropy.Items.VoidRelics.Tooltip] - changed
+[Mods.CalamityEntropy.Items.KamishiroKou.DisplayName] - added
+[Mods.CalamityEntropy.Items.KamishiroKou.Tooltip] - added
+[Mods.CalamityEntropy.Items.SacredStone.DisplayName] - added
+[Mods.CalamityEntropy.Items.SacredStone.Tooltip] - added
+[Mods.CalamityEntropy.Items.MoltenAnchor.DisplayName] - added
+[Mods.CalamityEntropy.Items.MoltenAnchor.Tooltip] - added
+[Mods.CalamityEntropy.Items.BottledFissure.DisplayName] - added
+[Mods.CalamityEntropy.Items.BottledFissure.Tooltip] - added
+[Mods.CalamityEntropy.Items.Fooveria.DisplayName] - added
+[Mods.CalamityEntropy.Items.Fooveria.Tooltip] - added
+[Mods.CalamityEntropy.Items.WingsOfHush.Tooltip] - changed
+[Mods.CalamityEntropy.Items.VoidAnnihilate.Tooltip] - changed
+[Mods.CalamityEntropy.Items.StarBreaker.Tooltip] - changed
+[Mods.CalamityEntropy.Items.Weapons.Rogue.Silence.Tooltip] - changed
+[Mods.CalamityEntropy.Items.Weapons.Rogue.SawofMacrocosm.Tooltip] - changed
+[Mods.CalamityEntropy.Items.BlueFlatTopMushroom.DisplayName] - added
+[Mods.CalamityEntropy.Items.BlueFlatTopMushroom.Tooltip] - added
+[Mods.CalamityEntropy.Items.FrostboundCage.DisplayName] - added
+[Mods.CalamityEntropy.Items.FrostboundCage.Tooltip] - added
+[Mods.CalamityEntropy.Items.MoonlightCore.DisplayName] - added
+[Mods.CalamityEntropy.Items.MoonlightCore.Tooltip] - added
+[Mods.CalamityEntropy.Items.AzafureWarSatelliteAuthorizationKey.DisplayName] - added
+[Mods.CalamityEntropy.Items.AzafureWarSatelliteAuthorizationKey.Tooltip] - added
+[Mods.CalamityEntropy.Items.AzafureTwinSaw.DisplayName] - added
+[Mods.CalamityEntropy.Items.AzafureTwinSaw.Tooltip] - added
+[Mods.CalamityEntropy.Items.DeliciousAcorn.DisplayName] - added
+[Mods.CalamityEntropy.Items.DeliciousAcorn.Tooltip] - added
+[Mods.CalamityEntropy.Items.MagicHat.DisplayName] - added
+[Mods.CalamityEntropy.Items.MagicHat.Tooltip] - added
+[Mods.CalamityEntropy.Items.MutantBulb.DisplayName] - added
+[Mods.CalamityEntropy.Items.MutantBulb.Tooltip] - added
+[Mods.CalamityEntropy.Items.VoidEcho.Tooltip] - changed
+[Mods.CalamityEntropy.Items.AzafureMicroBeacon.DisplayName] - added
+[Mods.CalamityEntropy.Items.AzafureMicroBeacon.Tooltip] - added
+[Mods.CalamityEntropy.Items.MechanicalTransmitter.DisplayName] - added
+[Mods.CalamityEntropy.Items.MechanicalTransmitter.Tooltip] - added
+[Mods.CalamityEntropy.Items.AzafurePowerSaw.Tooltip] - changed
+[Mods.CalamityEntropy.BaitCommonTooltip2] - changed
+[Mods.CalamityEntropy.BaitCommonTooltip1] - changed
+[Mods.CalamityEntropy.Configs.Config.CalamityTextEffectCompatibilityFix.Label] - added
+[Mods.CalamityEntropy.Configs.Config.CalamityTextEffectCompatibilityFix.Tooltip] - added
+[Mods.CalamityEntropy.Projectiles.FrostShoot.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.MechanicalTransmitterProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.AzafureWarSatelliteAuthorizationKeyProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.MutantBulbProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.BlueFlatTopMushroomProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.MoonlightLaser.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.VoidEater.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.BeaconDroneShoot.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.AzafureAssaultDrone.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.SquirrelStone.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.BlueSporeCloud.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.DeliciousAcornProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.MutantVine.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.SateliteLaser.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.TrueEye.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.AzafureMicroBeaconProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.DetectorMinionLaser.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.SacredStoneProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.FrostboundSpirit.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.WarSatellite.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.MoonlightBeam.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.BaitHeldEffect.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.BlueFox.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.SacredStoneSummon.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.DesertNuisanceFriendly.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.PigeonMinion.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.AntlionShellProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.BottledFissureProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.MoltenAnchorProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.MagicHatProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.SacredShoot.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.FrostboundCageProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.SquirrerMinion.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.MoonlightCoreProjectile.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.DetectorMinion.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.BoneSerpentFriendly.DisplayName] - added
+[Mods.CalamityEntropy.AzafureEnhances.AzafureMicroBeacon] - added
+[Mods.CalamityEntropy.AzafureEnhances.AzafurePowerSaw] - changed
+[Mods.CalamityEntropy.AzafureEnhances.AzafureWarSatelliteAuthorizationKey] - added
+[Mods.CalamityEntropy.AzafureEnhances.AzafureTwinSaw] - added
+
+
+[3.30-Changes]
+[Mods.CalamityEntropy.Projectiles.FooveriaIceShard.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.TheDeadCutSlash.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.AzafureSawSpark.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.ArbitratorStealthImpactSpawner.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.AzafureTwinSawHeld.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.ArbitratorStealthImpact.DisplayName] - added
+[Mods.CalamityEntropy.Projectiles.FooveriaHeld.DisplayName] - added
+[Mods.CalamityEntropy.Items.RedDragonHorn.Tooltip] - changed
+[Mods.CalamityEntropy.Items.ThreadOfFate.HoldShiftForDetails] - changed
+[Mods.CalamityEntropy.Items.ThreadOfFate.Tooltip] - changed
+[Mods.CalamityEntropy.Items.Antler.Tooltip] - changed
+[Mods.CalamityEntropy.Items.Weapons.Rogue.ArbitratorII.Tooltip] - changed
+[Mods.CalamityEntropy.Items.Weapons.Rogue.TheDeadCut.Tooltip] - changed
+[Mods.CalamityEntropy.Items.ThreadOfAbyss.HoldShiftForDetails] - changed
+[Mods.CalamityEntropy.Items.ThreadOfAbyss.Tooltip] - changed
+[Mods.CalamityEntropy.Items.LingsHairAccessory.Tooltip] - changed
+[Mods.CalamityEntropy.Items.AstralSample.DisplayName] - added
+[Mods.CalamityEntropy.Items.AstralSample.Tooltip] - added
+[Mods.CalamityEntropy.Items.ExquisiteHairband.Tooltip] - changed
+[Mods.CalamityEntropy.Items.DustyStar.Tooltip] - changed
+[Mods.CalamityEntropy.Items.BlackFlower.Tooltip] - changed
+[Mods.CalamityEntropy.Items.CursedThread.HoldShiftForDetails] - changed
+[Mods.CalamityEntropy.Items.CursedThread.Tooltip] - changed
+[Mods.CalamityEntropy.Items.DreamCatcher.Tooltip] - changed

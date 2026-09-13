@@ -1,0 +1,55 @@
+using CalamityEntropyLegacy.Content.Buffs;
+using CalamityEntropyLegacy.Content.Cooldowns;
+using CalamityEntropyLegacy.Content.Projectiles;
+using CalamityMod;
+using CalamityMod.Items;
+using Terraria;
+using Terraria.DataStructures;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityEntropyLegacy.Content.Items
+{
+    public class DivineIntervention : ModItem
+    {
+        public override void SetStaticDefaults()
+        {
+        }
+
+        public override void SetDefaults()
+        {
+            Item.width = 26;
+            Item.height = 26;
+            Item.useTime = 20;
+            Item.useAnimation = 20;
+            Item.useStyle = -1;
+            Item.noMelee = true;
+            Item.shoot = ModContent.ProjectileType<DivineShield>();
+            Item.value = CalamityGlobalItem.RarityLightRedBuyPrice;
+            Item.rare = ItemRarityID.LightRed;
+            Item.shootSpeed = 5;
+
+        }
+        public override bool CanUseItem(Player player)
+        {
+            return !player.HasBuff(ModContent.BuffType<DivineShieldCooldown>());
+        }
+        public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+        {
+            player.AddBuff(ModContent.BuffType<DivineShieldCooldown>(), 18000, true, false);
+            player.AddCooldown(DivineCd.ID, 18000);
+            return true;
+        }
+
+        public override void AddRecipes()
+        {
+            CreateRecipe().
+                AddIngredient(ItemID.HallowedBar, 40).
+                AddIngredient(ItemID.Ruby, 5).
+                AddIngredient(ItemID.HolyWater, 4).
+                AddTile(TileID.MythrilAnvil).
+                Register();
+        }
+
+    }
+}

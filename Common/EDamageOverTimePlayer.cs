@@ -1,0 +1,34 @@
+using CalamityEntropyLegacy.Content.Buffs;
+using Terraria;
+using Terraria.ModLoader;
+
+namespace CalamityEntropyLegacy.Common
+{
+    public class EDamageOverTimePlayer : ModPlayer
+    {
+        public override void UpdateBadLifeRegen()
+        {
+            int damageApply = 0;
+            if (Player.HasBuff<LifeOppress>())
+            {
+                damageApply += 60;
+            }
+            var dict = DotBuff.InstanceByType();
+            for (int i = 0; i < Player.buffType.Length; i++)
+            {
+                if (Player.buffTime[i] > 0)
+                {
+                    if (dict.TryGetValue(Player.buffType[i], out var res) && res is DotBuff)
+                    {
+                        damageApply += res.DamagePlayerPerSec * 2;
+                    }
+                }
+            }
+            if (damageApply > 0)
+            {
+                Player.lifeRegenTime = 0;
+                Player.lifeRegen -= damageApply;
+            }
+        }
+    }
+}

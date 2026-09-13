@@ -1,0 +1,45 @@
+using CalamityEntropyLegacy.Common;
+using CalamityEntropyLegacy.Content.Projectiles;
+using CalamityMod.Items;
+using Microsoft.Xna.Framework.Graphics;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityEntropyLegacy.Content.Items.Books.BookMarks
+{
+    public class BookMarkBlackKnife : BookMark, IGetFromStarterBag
+    {
+        public override void SetDefaults()
+        {
+            base.SetDefaults();
+            Item.rare = ItemRarityID.Pink;
+            Item.value = CalamityGlobalItem.RarityPinkBuyPrice;
+        }
+        public override Texture2D UITexture => BookMark.GetUITexture("blackknife");
+        public override void ModifyStat(EBookStatModifer modifer)
+        {
+            modifer.armorPenetration += 8;
+        }
+        public override Color tooltipColor => Color.Gray;
+        public override EBookProjectileEffect getEffect()
+        {
+            return new BlackKnifeBMEffect();
+        }
+        public bool OwnAble(Player player, ref int count)
+        {
+            if (player.Entropy().drCrystals == null) return false;
+            return player.Entropy().drCrystals[2];
+        }
+    }
+    public class BlackKnifeBMEffect : EBookProjectileEffect
+    {
+        public override void OnHitNPC(Projectile projectile, NPC target, int damageDone)
+        {
+            if (Main.rand.NextBool(projectile.HasEBookEffect<APlusBMEffect>() ? 5 : 7) && CECooldowns.CheckCD("BlackKnifeBMProj", 3))
+            {
+                Projectile.NewProjectile(projectile.GetSource_FromAI(), target.Center, Vector2.Zero, ModContent.ProjectileType<BlackKnife>(), ((int)(damageDone * 1.4f)).Softlimitation(400), projectile.knockBack, projectile.owner, target.whoAmI, CEUtils.randomRot());
+            }
+        }
+    }
+}

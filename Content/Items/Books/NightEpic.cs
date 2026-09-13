@@ -1,0 +1,62 @@
+using CalamityEntropyLegacy.Content.Projectiles;
+using CalamityMod.Items;
+using CalamityMod.Items.Materials;
+using Microsoft.Xna.Framework.Graphics;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityEntropyLegacy.Content.Items.Books
+{
+    public class NightEpic : EntropyBook
+    {
+        public override void SetDefaults()
+        {
+            base.SetDefaults();
+            Item.damage = 56;
+            Item.useAnimation = Item.useTime = 18;
+            Item.crit = 5;
+            Item.mana = 16;
+            Item.rare = Item.rare = ItemRarityID.Red;
+            Item.value = CalamityGlobalItem.RarityRedBuyPrice;
+        }
+        public override Texture2D BookMarkTexture => ModContent.Request<Texture2D>("CalamityEntropyLegacy/Content/UI/EntropyBookUI/BookMark4").Value;
+        public override int HeldProjectileType => ModContent.ProjectileType<NightEpicHeld>();
+        public override int SlotCount => 4;
+
+        public override void AddRecipes()
+        {
+            CreateRecipe().AddIngredient<RedemptionBible>()
+                .AddIngredient<AstralBar>(8)
+                .AddIngredient<StarblightSoot>(6)
+                .AddTile(TileID.LunarCraftingStation)
+                .Register();
+        }
+    }
+
+    public class NightEpicHeld : EntropyBookHeldProjectile
+    {
+        public override string OpenAnimationPath => "CalamityEntropyLegacy/Content/Items/Books/Textures/NightEpic/NightEpicOpen";
+        public override string PageAnimationPath => "CalamityEntropyLegacy/Content/Items/Books/Textures/NightEpic/NightEpicPage";
+        public override string UIOpenAnimationPath => "CalamityEntropyLegacy/Content/Items/Books/Textures/NightEpic/NightEpicUI";
+
+        public override bool Shoot()
+        {
+            base.Shoot();
+            return base.Shoot();
+        }
+
+        public override EBookStatModifer getBaseModifer()
+        {
+            var mdf = base.getBaseModifer();
+            mdf.Homing += 1f;
+            mdf.HomingRange += 0.8f;
+            return mdf;
+        }
+        public override float randomShootRotMax => 0.5f;
+        public override int baseProjectileType => ModContent.ProjectileType<NightStar>();
+
+        public override int frameChange => 3;
+
+    }
+}

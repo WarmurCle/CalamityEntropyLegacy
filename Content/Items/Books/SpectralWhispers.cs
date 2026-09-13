@@ -1,0 +1,232 @@
+using CalamityEntropyLegacy.Content.Particles;
+using CalamityMod;
+using CalamityMod.Items;
+using CalamityMod.Particles;
+using Microsoft.Xna.Framework.Graphics;
+using System;
+using System.IO;
+using Terraria;
+using Terraria.Audio;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityEntropyLegacy.Content.Items.Books
+{
+    public class SpectralWhispers : EntropyBook
+    {
+        public override void SetDefaults()
+        {
+            base.SetDefaults();
+            Item.damage = 7;
+            Item.useAnimation = Item.useTime = 38;
+            Item.crit = 4;
+            Item.mana = 12;
+            Item.rare = ItemRarityID.Blue;
+            Item.value = CalamityGlobalItem.RarityBlueBuyPrice;
+            Item.width = 40;
+            Item.height = 52;
+            Item.shootSpeed = 40;
+        }
+        public override Texture2D BookMarkTexture => ModContent.Request<Texture2D>("CalamityEntropyLegacy/Content/UI/EntropyBookUI/SW").Value;
+        public override int HeldProjectileType => ModContent.ProjectileType<SpectralWhispersHeld>();
+        public override int SlotCount => 1;
+
+        public override void AddRecipes()
+        {
+            CreateRecipe()
+                .AddIngredient(ItemID.DemoniteBar, 10)
+                .AddIngredient(ItemID.Silk, 8)
+                .AddTile(TileID.WorkBenches)
+                .Register();
+        }
+    }
+
+    public class SpectralWhispersHeld : EntropyBookDrawingAlt
+    {
+        public override int frameChange => 4;
+        public override string OpenAnimationPath => $"{EntropyBook.BaseFolder}/Textures/SpectralWhispers/Open";
+        public override string PageAnimationPath => $"{EntropyBook.BaseFolder}/Textures/SpectralWhispers/Page";
+        public override string UIOpenAnimationPath => $"{EntropyBook.BaseFolder}/Textures/SpectralWhispers/UI";
+
+        public override EBookStatModifer getBaseModifer()
+        {
+            var m = base.getBaseModifer();
+            m.armorPenetration += 40;
+            return m;
+        }
+        public override void AI()
+        {
+            base.AI();
+            Projectile.GetOwner().Calamity().mouseWorldListener = true;
+        }
+        public override bool Shoot()
+        {
+            base.Shoot();
+            base.Shoot();
+            base.Shoot();
+            return true;
+        }
+        public override float randomShootRotMax => 0;
+        public override int baseProjectileType => ModContent.ProjectileType<WhisperingSpike>();
+    }
+    public class WhisperingSpike : EBookBaseProjectile
+    {
+        public override void SetDefaults()
+        {
+            base.SetDefaults();
+            Projectile.width = 14;
+            Projectile.height = 14;
+            Projectile.MaxUpdates = 2;
+            Projectile.tileCollide = true;
+            Projectile.light = 0.35f;
+            Projectile.timeLeft = 800;
+            Projectile.penetrate = 1;
+        }
+        public override bool? Colliding(Rectangle projHitbox, Rectangle targetHitbox)
+        {
+            return CEUtils.LineThroughRect(Projectile.Center + Projectile.rotation.ToRotationVector2() * 14 * Projectile.scale, Projectile.Center - Projectile.rotation.ToRotationVector2() * 14 * Projectile.scale, targetHitbox, (int)(Projectile.scale * 16));
+        }
+        public int Penetrate = -1;
+        public override bool PreAI()
+        {
+            if (Projectile.localAI[0]++ == 1)
+            {
+                Penetrate = Projectile.penetrate;
+                Projectile.penetrate = -1;
+            }
+            return base.PreAI();
+        }
+        public override void ApplyHoming()
+        {
+            if (ShouldUpdatePosition())
+                base.ApplyHoming();
+        }
+        public override void AI()
+        {
+            base.AI();
+            HideTime--;
+
+            if (Projectile.localAI[0] == 1)
+            {
+                CEUtils.PlaySound("SoulSpawn" + Main.rand.Next(2).ToString(), Main.rand.NextFloat(0.8f, 1.2f), Projectile.Center);
+                Projectile.Center -= Projectile.velocity.normalize().RotatedByRandom(1.6f) * 120;
+            }
+            if (HideTime == 0)
+            {
+                for (int i = 0; i < 12; i++)
+                {
+                    GeneralParticleHandler.SpawnParticle(new CalamityMod.Particles.CritSpark(Projectile.Center, CEUtils.randomPointInCircle(9), color * 4, color, Main.rand.NextFloat(0.5f, 1.2f) * Projectile.scale, 18, 0.3f));
+                }
+            }
+            if (stick > 0)
+            {
+                NPC t = ((int)Projectile.ai[2]).ToNPC();
+                Projectile.tileCollide = false;
+                if (stick == 1)
+                    Projectile.Center = t.Center + stickOffset;
+                size += 0.0014f;
+                size = (float)Math.Pow(size, 1.08f);
+                if (size >= 2.6f)
+                    Projectile.Kill();
+                if (!t.active)
+                    stick = 2;
+            }
+            if (Projectile.localAI[0] < 24)
+            {
+                Projectile.position += Projectile.GetOwner().velocity / 2;
+                Projectile.velocity = (Projectile.GetOwner().Calamity().mouseWorld - Projectile.Center).normalize() * Projectile.velocity.Length();
+            }
+            if (Projectile.localAI[0] > 24 && stick == -1)
+            {
+                for (float i = 0; i < 1; i += 0.1f)
+                {
+                    EParticle.spawnNew(new GlowLightParticle() { lightColor = color * 0.1f, AlphaShrink = false }, Projectile.Center - Projectile.velocity * Main.rand.NextFloat(), Vector2.Zero, color * 3f, 0.9f, 1, true, BlendState.Additive, 0, 16);
+                }
+            }
+            Projectile.rotation = Projectile.velocity.ToRotation();
+        }
+        public int HideTime = Main.rand.Next(1, 16);
+        public override Color baseColor => new Color(42, 40, 82);
+        public float size = 1;
+        public override bool PreDraw(ref Color lightColor)
+        {
+            Vector2 offset = Vector2.Zero;
+            if (HideTime > 0)
+                return false;
+            Texture2D tex1 = Projectile.GetTexture();
+            Texture2D tex2 = this.getTextureAlt();
+            Texture2D tex3 = CEUtils.getExtraTex("Diamond");
+            float scale = size * Projectile.scale;
+            CEUtils.DrawGlow(Projectile.Center, color, scale * 1.4f);
+            Main.spriteBatch.UseBlendState(BlendState.Additive);
+            Main.spriteBatch.Draw(tex1, Projectile.Center + offset - Main.screenPosition, null, color * 4f, Projectile.rotation + MathHelper.PiOver2, tex1.Size() / 2, scale * 2f, SpriteEffects.None, 0);
+            Main.spriteBatch.Draw(tex1, Projectile.Center + offset - Main.screenPosition, null, Color.White, Projectile.rotation + MathHelper.PiOver2, tex1.Size() / 2, scale * 0.8f, SpriteEffects.None, 0);
+
+            Main.spriteBatch.Draw(tex3, Projectile.Center + offset - Main.screenPosition, null, color * 2f, Projectile.rotation, tex3.Size() / 2, new Vector2(6, 0.5f) * scale * 0.06f, SpriteEffects.None, 0);
+            Main.spriteBatch.Draw(tex3, Projectile.Center + offset - Main.screenPosition, null, Color.Lerp(color, Color.White, 0.6f), Projectile.rotation, tex3.Size() / 2, new Vector2(6, 0.5f) * scale * 0.04f, SpriteEffects.None, 0);
+
+            Main.spriteBatch.Draw(tex2, Projectile.Center + offset - Main.screenPosition, null, color, Projectile.rotation, tex2.Size() / 2, Projectile.scale * (size - 1) * 5f, SpriteEffects.None, 0);
+            Main.spriteBatch.ExitShaderRegion();
+            return false;
+        }
+        public override void OnKill(int timeLeft)
+        {
+            if (Main.myPlayer == Projectile.owner)
+                CEUtils.SpawnExplotionFriendly(Projectile.GetSource_FromAI(), Projectile.GetOwner(), Projectile.Center, Projectile.damage, 130 * Projectile.scale, Projectile.DamageType).ArmorPenetration = Projectile.ArmorPenetration + 10;
+            if (!Main.dedServ)
+            {
+                for (float i = 0; i <= 1; i += 0.05f)
+                {
+                    GeneralParticleHandler.SpawnParticle(new CustomPulse(Projectile.Center, Vector2.Zero, Color.Lerp(color * 4.5f, color, i) * 0.8f, "CalamityMod/Particles/FlameExplosion", Vector2.One, Main.rand.NextFloat(-10, 10), 0.005f, i * 0.165f * Projectile.scale, (int)((1.2f - i) * 20)));
+                }
+                SoundEngine.PlaySound(SoundID.Item122 with { PitchRange = (1.2f, 1.6f) }, Projectile.Center);
+            }
+        }
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+        {
+            base.OnHitNPC(target, hit, damageDone);
+            Penetrate--;
+            if (Penetrate == 0)
+            {
+                Projectile.ai[2] = target.whoAmI;
+                stick = 1;
+                stickOffset = Projectile.Center - target.Center;
+                CEUtils.SyncProj(Projectile.whoAmI);
+            }
+        }
+        public override void SendExtraAI(BinaryWriter writer)
+        {
+            writer.Write(stick);
+            writer.WriteVector2(stickOffset);
+        }
+        public override void ReceiveExtraAI(BinaryReader reader)
+        {
+            stick = reader.ReadInt32();
+            stickOffset = reader.ReadVector2();
+        }
+        public override bool? CanHitNPC(NPC target)
+        {
+            return ShouldUpdatePosition() ? null : false;
+        }
+        public override bool ShouldUpdatePosition()
+        {
+            if (stick > 0 || Projectile.localAI[0] < 24)
+                return false;
+            return true;
+        }
+        public override bool OnTileCollide(Vector2 oldVelocity)
+        {
+            Projectile.position += Projectile.rotation.ToRotationVector2() * 5;
+            Projectile.velocity = oldVelocity;
+            if (stick == -1)
+            {
+                stick = 2;
+            }
+            if (Main.myPlayer == Projectile.owner)
+                CEUtils.SyncProj(Projectile.whoAmI);
+            return false;
+        }
+        public Vector2 stickOffset = Vector2.Zero;
+        public int stick = -1;
+    }
+}

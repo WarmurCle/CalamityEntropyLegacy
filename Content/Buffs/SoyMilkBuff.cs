@@ -1,0 +1,28 @@
+using CalamityMod;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityEntropyLegacy.Content.Buffs
+{
+    public class SoyMilkBuff : ModBuff
+    {
+        public int counter;
+        public override void SetStaticDefaults()
+        {
+            Main.debuff[Type] = false;
+            Main.pvpBuff[Type] = true;
+            Main.buffNoSave[Type] = false;
+            BuffID.Sets.LongerExpertDebuff[Type] = false;
+
+        }
+
+        public override void Update(Player player, ref int buffIndex)
+        {
+            player.GetAttackSpeed(DamageClass.Generic) *= 3;
+            player.GetDamage(DamageClass.Generic) *= 0.30f;
+            player.Calamity().rogueStealth = 0;
+            player.pickSpeed -= 0.6f;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+using CalamityMod;
+using System.Collections.Generic;
+using System.Text;
+using Terraria;
+using Terraria.ModLoader;
+
+namespace CalamityEntropyLegacy.Content.Items.Donator
+{
+    public interface IDonatorItem
+    {
+        public string DonatorName { get; }
+    }
+    public class DonatorGItem : GlobalItem
+    {
+        public override void SetDefaults(Item entity)
+        {
+            if (entity.ModItem != null && entity.ModItem is IDonatorItem i)
+            {
+                entity.Calamity().donorItem = true;
+            }
+        }
+
+        public override void ModifyTooltips(Item entity, List<TooltipLine> tooltips)
+        {
+            if (entity.ModItem != null && entity.ModItem is IDonatorItem i)
+            {
+                TooltipLine tl = new TooltipLine(Mod, "EntropyDonorName", Mod.GetLocalization("Donor").Value + " " + Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(i.DonatorName)));
+                tl.OverrideColor = Color.Yellow;
+                tooltips.Add(tl);
+            }
+        }
+    }
+}

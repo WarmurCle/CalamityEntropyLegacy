@@ -1,0 +1,7065 @@
+ModNameOverride: 灾厄熵
+
+Items: {
+	VoidBlade: {
+		DisplayName: 虚空锋刃
+		Tooltip: 快速，连续的进行斩击
+	}
+
+	Weapons: {
+		Rogue: {
+			Revelation: {
+				DisplayName: 启示录
+				Tooltip:
+					'''
+					扔出一把旋转的镰刀，在空中会快速减速，随后爆炸并发射两发追踪的启示光束并返回玩家
+					返回时如果命中敌怪能再次造成一次伤害
+					潜伏攻击会扔出三把镰刀，并追踪向离你最近的敌怪，命中后会融合为一把巨大的镰刀，并多次砸向该敌怪
+					巨化的镰刀每次命中都会产生大范围的爆炸
+					'''
+			}
+
+			Silence: {
+				DisplayName: 沉默
+				Tooltip:
+					'''
+					丢出一个飞盘，击中敌人后一段时间会使用[ceeffect/cruiser:虚空锁链]将自身拉向该敌人，并在与其接触时爆炸
+					潜伏攻击会使飞盘被固定在击中的敌人身上并展开一个大范围漩涡，持续对范围内的目标造成伤害
+					'''
+			}
+
+			ShadewindLance: {
+				DisplayName: 苍穹坠影
+				Tooltip:
+					'''
+					扔出一把被虚空赋能的标枪
+					潜伏攻击会有更高的伤害和速度并能无限穿透
+					'''
+			}
+
+			Aquashard: {
+				DisplayName: 蓝晶破浪
+				Tooltip:
+					'''
+					丢出一把击中敌人会抛射水弹的标枪
+					潜伏攻击会获得穿透并且在标枪飞行时留下棱镜碎片，同时击中后持续以目标为中心生成追踪水弹
+					'''
+			}
+
+			SpearOfRadiance: {
+				DisplayName: 圣辉之枪
+				Tooltip:
+					'''
+					投出一把神圣标枪
+					潜伏攻击会获得更多穿透并且第一次击中会迸发出十字圣光
+					'''
+			}
+
+			AbyssalPiercer: {
+				DisplayName: 冥海穿刺
+				Tooltip:
+					'''
+					丢出一把击中后迸发出追踪水流的标枪
+					潜伏攻击会在第一次命中后产生一个深渊漩涡并伸出裂礁刺
+					'''
+			}
+
+			AzureOfFirmament: {
+				DisplayName: 天穹之澈
+				Tooltip:
+					'''
+					丢出一把苍穹标枪
+					潜伏攻击会同时散射出羽毛
+					标枪击中目标后羽毛会飞向目标
+					'''
+			}
+
+			ArbitratorII: {
+				DisplayName: 仲裁者II
+				Tooltip:
+					'''
+					丢出一把会爆炸的标枪
+					潜伏攻击会插在目标身上并产生电弧冲击
+					'''
+			}
+
+			Voidseeker: {
+				DisplayName: 苍茫长镰
+				Tooltip:
+					'''
+					从下往上挥砍的镰刀
+					潜伏攻击会传送到光标位置并从上往下进行一次更大的挥砍
+					传送后获得短暂无敌时间
+					'''
+			}
+
+			TheBeginingAndTheEnd: {
+				DisplayName: 始与末
+				Tooltip:
+					'''
+					使用左右键射出不同的飞刀
+					终会造成虚渊凝视减益
+					始会造成冥煌烙印减益
+					当另一种飞刀击中后清除该减益并根据减益的层数生成回音之魂或冥煌之魂
+					回音之魂会持续攻击敌怪，数秒后消失
+					冥煌之魂会飞向你并治疗你，同时暂时提升攻击速度、攻击伤害和暴击率
+					潜伏攻击同时丢出两把飞刀并追踪目标，击中后迸发出大量两种灵魂
+					'''
+			}
+
+			AmethystFrisbee: {
+				DisplayName: 紫晶飞盘
+				Tooltip:
+					'''
+					扔出一个击中会自动返回的飞盘
+					返回的瞬间再次投出无视重力并造成高频伤害
+					潜伏攻击会在命中敌人后产生冲击，对附近敌怪造成伤害
+					'''
+			}
+
+			ProphecyFlyingKnife: {
+				DisplayName: 预言飞刀
+				Tooltip:
+					'''
+					发射一些旋转的飞刀，在目标周围短暂停滞后高速飞向并穿刺目标
+					旋转时的飞刀不会造成伤害
+					潜伏攻击会发射一柄较大的飞刀，击中后召唤6个符文球攻击敌怪，同时发射两柄追踪的小型飞刀
+					'''
+			}
+
+			TheDeadCut: {
+				Tooltip:
+					'''
+					丢出一把飞镰，命中后生成虚妄斩切
+					潜伏攻击会使飞镰命中后进行多次斩切
+					'''
+				DisplayName: 虚妄切裂者
+			}
+
+			LunarPlank: {
+				DisplayName: 幻光石板
+				Tooltip:
+					'''
+					扔出并砸向你的敌人
+					潜伏攻击会造成范围伤害并释放几发追踪幻光矢
+					'''
+			}
+
+			AzafureSurgeRod: {
+				DisplayName: 阿萨福勒电涌钎
+				Tooltip:
+					'''
+					击中后插在目标上，一段时间后朝附近的其他目标迸发出闪电
+					潜伏攻击会丢出更多投掷物，悬停在空中并追踪附近目标
+					'''
+			}
+
+			TlipocasScythe: {
+				DisplayName: 特莉波卡的镰刀
+				Tooltip: ""
+			}
+
+			AzafureLightMachineGun: {
+				DisplayName: 阿萨福勒轻机枪
+				Tooltip:
+					'''
+					快速发射激光
+					激光命中后为你回复少量潜行值
+					潜伏攻击将发射一枚会爆炸的榴弹，造成范围伤害
+					'''
+			}
+
+			AzafureAirReaper: {
+				DisplayName: 阿萨福勒压力统镰
+				Tooltip:
+					'''
+					扔出一把镰刀，击中后黏附在目标上造成多次伤害
+					潜伏攻击扔出一把在击中后持续追逐目标并来回斩切的镰刀
+					'''
+			}
+
+			CrystalSpike: {
+				DisplayName: 魔晶刺
+				Tooltip:
+					'''
+					丢出并扎在目标身上，单个目标最多黏附[S]根
+					潜行攻击会召回所有黏附的魔晶刺并向光标位置释放水晶风暴
+					无视4点护甲
+					'''
+			}
+
+			ScorchingChakram: {
+				DisplayName: 焦灼旋刃
+				Tooltip:
+					'''
+					丢出一个焦灼旋刃，并在飞行一段时间后炸成追踪的板块碎片
+					潜行攻击会使旋刃在停止后发射一些火球，随后追逐最近的目标，并炸成更多的碎片
+					'''
+			}
+
+			EmberSpike: {
+				DisplayName: 余烬石锥
+				Tooltip:
+					'''
+					丢出会在物块上反弹最多2次的余烬石锥
+					命中敌怪后产生爆炸并扎在其身上，单个目标最多黏附[S]根
+					潜行攻击会召回所有黏附的余烬石锥并向光标位置释放余烬风暴，能够在物块上反弹最多5次
+					潜行命中会生成追踪的板块碎片
+					无视8点护甲
+					'''
+			}
+
+			MewMewBomb: {
+				DisplayName: 喵喵炸弹
+				Tooltip:
+					'''
+					[c/FF69B4:丢出一个会在物块上反弹的炸弹]
+					[c/FF69B4:击中目标后会弹到一个能尽可能命中最多目标的位置并爆炸成十字]
+					[c/FF69B4:潜伏攻击会使爆炸范围更大，并且爆炸可以命中玩家]
+					[c/FF69B4:爆炸将对你造成20点伤害并给与你2.5秒的无敌时间]
+					[c/FF69B4:"一个带有猫耳的雷管，不知为何它会发出猫叫"]
+					'''
+			}
+
+			BrillianceSwirlblade: {
+				DisplayName: 光耀轮刃
+				Tooltip:
+					'''
+					飞行一段时间或触碰到敌怪时展开锯片，造成多次伤害
+					潜伏攻击会使展开的范围更大并持续更长时间
+					'''
+			}
+
+			FlamingSwirlblade: {
+				DisplayName: 炙炎轮刃
+				Tooltip:
+					'''
+					飞行一段时间或触碰到敌怪时展开锯片，造成多次伤害
+					锯片展开时会释放一束追踪的火焰
+					潜伏攻击会使展开的范围更大并持续更长时间并释放8束火焰
+					'''
+			}
+
+			AzafureSwirlblade: {
+				DisplayName: 阿萨福勒轮刃
+				Tooltip:
+					'''
+					飞行一段时间或触碰到敌怪时展开锯片，造成多次伤害
+					锯片展开时会发射两枚追踪的导弹
+					潜伏攻击会在展开时发射8枚伤害较低的导弹并在收回时将锯片丢向最近的目标
+					'''
+			}
+
+			GlacierSwirlblade: {
+				DisplayName: 霜蓝轮刃
+				Tooltip:
+					'''
+					飞行一段时间或触碰到敌怪时展开锯片，造成多次伤害
+					随后释放一些追踪的小型锯片并返回
+					潜伏攻击会在展开时持续追逐最近的目标，并在返回前释放更多更大的锯片
+					所有攻击都能短暂使目标减速
+					'''
+			}
+
+			RunicSwirlblade: {
+				DisplayName: 符文轮刃
+				Tooltip:
+					'''
+					飞行一段时间或触碰到敌怪时展开锯片，造成多次伤害
+					展开时释放一些追逐的符文导弹
+					潜伏攻击会大幅增加锯片尺寸，并在返回前释放更强大的符文导弹
+					'''
+			}
+
+			BlazingSwirlblade: {
+				DisplayName: 耀目轮刃
+				Tooltip:
+					'''
+					飞行一段时间或触碰到敌怪时释放强大的火焰冲击并展开能造成多次伤害的锯片
+					命中时会产生大范围的爆炸
+					潜伏攻击会使展开的范围更大并持续更长时间
+					'''
+			}
+
+			SawofMacrocosm: {
+				DisplayName: 噬宙轮刃
+				Tooltip:
+					'''
+					飞行一段时间后弹出4个较小的轮刃并展开大范围锯片
+					小轮刃也会弹出锯片，并在收回时发射一道追踪的[ceffect/dog:虚空破裂束]
+					潜伏攻击会使小锯片被弹的更远，并吸收小锯片的[ceffect/dog:虚空破裂束]，随即冲向最近的目标
+					'''
+			}
+
+			ExergySwirlblade: {
+				DisplayName: 裂界轮刃
+				Tooltip:
+					'''
+					飞行一段时间或触碰到敌怪时展开能造成多次伤害的锯片，锯片会随时间缩小
+					如果是触碰敌怪触发的锯片，则轮刃会黏附在该敌怪身上
+					锯片缩小时会发射较小的追踪锯片，命中一次后停止追踪
+					潜伏攻击会使展开的范围更大并持续更长时间，同时在最后发射一个较大的，持续追逐目标的锯片
+					'''
+			}
+
+			Apeirokyklos: {
+				DisplayName: 永渊环葬
+				Tooltip:
+					'''
+					飞行一段时间或触碰到敌怪时展开能造成多次伤害的锯片
+					锯片每次命中都会从下方召唤一根深渊尖刺刺穿目标
+					潜伏攻击将会在命中后产生高伤害冲击并弹开，随后蓄力发射大量尖刺刺穿目标
+					如果潜伏攻击没有命中目标，也会在飞行一段时间后展开，此时的锯片会更大，并且造成更高的伤害
+					'''
+			}
+		}
+	}
+
+	PrisonOfPermafrost: {
+		DisplayName: 至臻极冰之樊寒神像
+		Tooltip:
+			'''
+			使用时会召唤一个魔法阵
+			持续发射冰刺和冰锥
+			[c/BEE2FF:"我超，冰！"]
+			'''
+	}
+
+	Kinanition: {
+		DisplayName: 孱弱血亲
+		Tooltip:
+			'''
+			[c/ce97fa:左键发射一连串的闪电箭，]
+			[c/ce97fa:闪电箭保留弹药原有效果，并在击中目标后生成追逐敌人的水流]
+			[c/0078b9:右键发射一发追踪的雷电之矛，]
+			[c/0078b9:击中目标后爆发出雷电]
+			'''
+	}
+
+	VoidRelics: {
+		DisplayName: 虚空圣契
+		Tooltip:
+			'''
+			召唤至多一个[ceeffect/cruiser:窥虚之眼]，同时创造围绕自身的[ceeffect/cruiser:虚诞符文阵]
+			符文会自动向附近的敌怪发射追踪的[ceefect/cruiser:窥虚冥弹]，同时伤害触碰的敌怪
+			长按使用武器会将符文聚集在面前，并向光标方向快速发射大量[ceeffect/cruiser:窥虚冥弹]
+			停止使用武器或持续使用超过6秒会还原符文并根据使用时间获得至多36秒的[ceeffect/cruiser:深渊狂舞]冷却，
+			在冷却期间符文的攻速增加15%
+			'''
+	}
+
+	AuricToilet: {
+		DisplayName: 圣金马桶
+		Tooltip:
+			'''
+			曾被寻神者使用过
+			现在你也可以坐了
+			“会唐走的”
+			'''
+	}
+
+	LotteryBox: {
+		DisplayName: 抽奖盒子
+		Tooltip:
+			'''
+			生成一个抽奖机
+			”脾气可能比较暴躁“
+			'''
+	}
+
+	ToyRock: {
+		DisplayName: 终末石玩具
+		Tooltip:
+			'''
+			召唤妖龙酱
+			“她还小呢”
+			'''
+	}
+
+	YharimsStimulants: {
+		DisplayName: 亚利姆牌兴奋剂
+		Tooltip: 给你全属性的提升
+	}
+
+	VoidBottle: {
+		DisplayName: 虚空瓶
+		Tooltip: 召唤巡游者
+	}
+
+	VoidMonument: {
+		DisplayName: 虚空符石
+		Tooltip: ""
+	}
+
+	Lore: {
+		CruiserLore: {
+			DisplayName: 巡游者
+			Tooltip: ""
+			Lore: "{$loreCruiser}"
+		}
+
+		NihilityTwinLore: {
+			DisplayName: 虚无双子
+			Tooltip: ""
+			Lore: "{$loreNihTwin}"
+		}
+
+		ProphetLore: {
+			DisplayName: 先知
+			Tooltip: ""
+			Lore: "{$loreProphet}"
+		}
+
+		LuminarisLore: {
+			DisplayName: 幻光星蛾
+			Tooltip: ""
+			Lore: "{$loreLuminaris}"
+		}
+
+		LoreApsychos: {
+			DisplayName: 烬甲秽魔
+			Tooltip: ""
+			Lore:
+				'''
+				曾有人尝试将已死神明的精元封印其中。
+				显然，他们失败了。
+				这引起了这个岩浆深处的巨大生物的躁动，它开始不受控的攻击所有看见的活物。
+				这简直是亵渎！多么无辜的生灵，被当作封印污秽的容器。
+				诅咒缠绕的它终于得到了解脱。
+				'''
+		}
+
+		LoreAcropolis: {
+			DisplayName: 阿萨福勒卫城机甲
+			Lore:
+				'''
+				这些机械本是阿萨福勒制作出来守卫城市的武装机器人，
+				特质的金属外壳使它们在那场战斗中幸免于难。
+				尽管已经过了许久，它们任然执行着自从被制造出来就设定好的程序，消灭一切未被允许的来访者。
+				时间的流逝让它们变得迟钝，但凭借着精密高超的技术，它们仍然能利用环境的热量重新启动。
+				'''
+			Tooltip: ""
+		}
+	}
+
+	BrokenChainsaw: {
+		DisplayName: 破损链锯
+		Tooltip: ""
+	}
+
+	MechanicalChainsaw: {
+		DisplayName: 机械链锯
+		Tooltip: ""
+	}
+
+	EnslavedStar: {
+		DisplayName: 奴役之星
+		Tooltip: ""
+	}
+
+	Euangelion: {
+		DisplayName: 福音
+		Tooltip: ""
+	}
+
+	Pioneer: {
+		DisplayName: 先驱者
+		Tooltip: ""
+	}
+
+	GodsSnack: {
+		DisplayName: 神明点心
+		Tooltip: 召唤神吞酱
+	}
+
+	CruiserBag: {
+		DisplayName: 宝藏袋（巡游者）
+		Tooltip: ""
+	}
+
+	CruiserRelic: {
+		DisplayName: 巡游者圣物
+		Tooltip: ""
+	}
+
+	DivineRemnants: {
+		DisplayName: 神瘟残枝
+		Tooltip: 召唤星神少女
+	}
+
+	BottleDarkMatter: {
+		DisplayName: 瓶装暗物质
+		Tooltip: 召唤无尽虚空（更可爱一点）
+	}
+
+	DivineIntervention: {
+		DisplayName: 神圣干预
+		Tooltip:
+			'''
+			发射一个神圣护盾
+			弹反接触到的弹幕
+			对击中的敌人造成伤害
+			3分钟冷却时间
+			'''
+	}
+
+	Godhead: {
+		DisplayName: 神性
+		Tooltip:
+			'''
+			你的射弹会带有一个光环，对光环内的敌人持续造成伤害
+			关闭饰品可见性时无法看见光环，但正常造成伤害
+			光环无视无敌帧
+			'''
+	}
+
+	VoidEcho: {
+		DisplayName: 神权象征
+		Tooltip:
+			'''
+			召唤一圈[ceeffect/cruiser:神权炮]
+			松开鼠标会同时发射[ceeffect/cruiser:虚空镭射]
+			“即便只是虚空的一部分，也拥有湮灭万物的力量”
+			'''
+	}
+
+	FriendBox: {
+		DisplayName: 朋友盒
+		Tooltip:
+			'''
+			召唤一对纠缠双子，复制你的弹幕
+			复制弹幕造成原武器100%的伤害
+			所有造成的伤害减少为原本的1/5
+			每对纠缠双子消耗4个召唤栏
+			'''
+	}
+
+	LightningPendant: {
+		DisplayName: 闪电挂件
+		Tooltip: 召唤一位小编织者
+	}
+
+	EvilFriend: {
+		DisplayName: 邪恶伙伴
+		Tooltip: 召唤一个硫磺火宝宝
+	}
+
+	TheocracyPearlToy: {
+		DisplayName: 神权珍珠
+		Tooltip: 召唤虚空武神阿比斯
+	}
+
+	CruiserTrophy: {
+		DisplayName: 巡游者纪念章
+		Tooltip: ""
+	}
+
+	VoidMonolith: {
+		DisplayName: 虚空石碑
+		Tooltip: ""
+	}
+
+	VoidToy: {
+		DisplayName: 虚空珍珠
+		Tooltip: 召唤虚空伙伴
+	}
+
+	WingsOfHush: {
+		DisplayName: 虚寂之翼
+		Tooltip: 射出强力的[ceeffect/cruiser:虚空镭射]和4发[ceeffect/cruiser:虚空矢]
+	}
+
+	SoyMilk: {
+		DisplayName: 豆奶
+		Tooltip: 大幅提升射速，同时让你造成的伤害×0.3
+	}
+
+	DarkArts: {
+		DisplayName: 暗仪刺刀
+		Tooltip:
+			'''
+			使用后进入潜行状态，此状态下不受到伤害，并标记碰到的敌人和射弹，
+			2秒后退出此状态，并对所有标记的敌怪造成伤害，并清除标记的射弹
+			'''
+	}
+
+	VenomPiece: {
+		DisplayName: 毒瓜瓣
+		Tooltip: 召唤一个瓜猫
+	}
+
+	WisdomCard: {
+		DisplayName: 神谕卡片『智慧』
+		Tooltip:
+			'''
+			-[COST]%魔力消耗
+			“理性思考，便可取胜”
+			'''
+	}
+
+	TemperanceCard: {
+		DisplayName: 神谕卡片『克己』
+		Tooltip:
+			'''
+			+[T] 召唤栏
+			“克制欲望，方得万众”
+			'''
+	}
+
+	RadianceCard: {
+		DisplayName: 神谕卡片『光芒』
+		Tooltip:
+			'''
+			+[LR]%生命恢复
+			“散发光芒，治愈灵魂”
+			'''
+	}
+
+	OracleDeck: {
+		DisplayName: 神谕卡组
+		Tooltip:
+			'''
+			+[CR]% 暴击率
+			+15% 移速
+			+[HP] 最大生命值
+			+[ST] 最大潜行值
+			-30% 魔力消耗
+			受到伤害降低5%
+			+[MN] 召唤栏
+			+[ATS]% 近战攻速
+			+100% 光照
+			装备后每隔五秒附近所有玩家受到20点治疗
+			你最多只会受到最大生命值一半的伤害
+			'''
+	}
+
+	MetropolisCard: {
+		DisplayName: 神谕卡片『都市』
+		Tooltip:
+			'''
+			+10 最大潜行值
+			“繁茂宫殿，窃藏于深”
+			'''
+	}
+
+	InspirationCard: {
+		DisplayName: 神谕卡片『启迪』
+		Tooltip:
+			'''
+			+20%移动速度
+			“灵光乍现，步履如风”
+			'''
+	}
+
+	EntityCard: {
+		DisplayName: 神谕卡片『实体』
+		Tooltip:
+			'''
+			+10% 近战攻击速度
+			“血肉为刃，疾如残影”
+			'''
+	}
+
+	EnduranceCard: {
+		DisplayName: 神谕卡片『坚忍』
+		Tooltip:
+			'''
+			-5%受到的伤害
+			“千锤百炼，不动如山”
+			'''
+	}
+
+	BrillianceCard: {
+		DisplayName: 神谕卡片『辉煌』
+		Tooltip:
+			'''
+			+50%光照
+			“光明永驻，黑暗退散”
+			'''
+	}
+
+	AuraCard: {
+		DisplayName: 神谕卡片『灵光』
+		Tooltip:
+			'''
+			+5%暴击率
+			“刹那顿悟，一击必杀”
+			'''
+	}
+
+	ThreadOfFate: {
+		DisplayName: 命运之绳
+		Tooltip:
+			'''
+			用于组合[i:CalamityEntropyLegacy/OracleDeck][c/87CEFA:神谕卡组]
+			[c/87CEFA:按住左Shift来查看卡组需求]
+			'''
+		HoldShiftForDetails:
+			'''
+			[i:CalamityEntropyLegacy/AuraCard][c/87CEFA:卡片 -『灵光』]
+			散落在隐蔽的小屋和淹没的板条箱中
+			[i:CalamityEntropyLegacy/BrillianceCard][c/87CEFA:卡片 -『辉煌』]
+			由一位古怪而神秘的商人出售
+			[i:CalamityEntropyLegacy/EntityCard][c/87CEFA:卡片 -『实体』]
+			曾被献给沉沦的昔日之海的巨大贝类
+			[i:CalamityEntropyLegacy/InspirationCard][c/87CEFA:卡片 -『启迪』]
+			被遗落在旱漠中腐烂
+			[i:CalamityEntropyLegacy/MetropolisCard][c/87CEFA:卡片 -『都市』]
+			使用骷髅骨灰和混乱之精华融合而成
+			[i:CalamityEntropyLegacy/WisdomCard][c/87CEFA:卡片 -『智慧』]
+			持有于地牢的看守者
+			[i:CalamityEntropyLegacy/RadianceCard][c/87CEFA:卡片 -『光芒』]
+			使用日光之精华，星芒之尘与光明之魂融合而成
+			[i:CalamityEntropyLegacy/TemperanceCard][c/87CEFA:卡片 -『克己』]
+			被装载入地牢看守者的机械仿造品中
+			[i:CalamityEntropyLegacy/EnduranceCard][c/87CEFA:卡片 -『坚忍』]
+			被藏匿于光明永远无法触及的海域中
+			'''
+	}
+
+	RuneSong: {
+		DisplayName: 符文之歌
+		Tooltip:
+			'''
+			经过短暂的充能随后进行一次大范围的挥舞
+			如果命中了敌人，剑身会弹开，随后进行一次更大范围的多段斩击
+			如果没有命中则剑会指向光标方向并发射一道符文脉冲束
+			所有攻击造成[cebuff:CalamityEntropyLegacy/SoulDisorder]
+			'''
+	}
+
+	GalaxyGrapeSoda: {
+		DisplayName: 银河葡萄汽水
+		Tooltip:
+			'''
+			“里面含有葡萄、神明的精华、还有黑檀圣卫和血化圣卫...?”
+			使你变成弑神者的样子
+			'''
+	}
+
+	VoidAnnihilate: {
+		DisplayName: 虚湮黯天
+		Tooltip:
+			'''
+			点击左键或按住右键丢出一些[ceeffect/cruiser:黯天飞刀]，击中后弹开并漂浮在周围
+			长按左键蓄力，完全蓄力时松开会丢出一把强化飞刀，造成3倍伤害
+			强化飞刀命中会爆炸，如果存在漂浮的飞刀会产生更大的爆炸并激活所有漂浮飞刀，使其砸向目标
+			同时最多存在15把漂浮飞刀
+			'''
+	}
+
+	AuricBoulder: {
+		DisplayName: 圣金源巨石
+		Tooltip: 哦不
+	}
+
+	DustyStar: {
+		DisplayName: 尘封之星
+		Tooltip: 让你变成主创的形象
+	}
+
+	SoulCandle: {
+		DisplayName: 灵魂火烛
+		Tooltip:
+			'''
+			召唤小小神之刺客
+			“虽然刀身很小，但足够锋利”
+			'''
+	}
+
+	KosRunePendant: {
+		DisplayName: 宇宙符文吊坠
+		Tooltip: 召唤噬神者和小小三使徒
+	}
+
+	OdinsRefuge: {
+		DisplayName: 上神之佑
+		Tooltip:
+			'''
+			获得被宇宙狱火加强的撞击冲刺能力
+			提供[i:CalamityMod/RampartofDeities]神之壁垒和[i:CalamityMod/AsgardianAegis]阿斯加德之庇护的效果
+			受到高于100点伤害的攻击时能格挡一次，该效果有150秒冷却时间
+			右键切换[i:PanicNecklace]恐慌项链是否生效
+			[TOGGLE]
+			'''
+		ToggleEffectOn: "[c/00ff00:已启用恐慌项链]"
+		ToggleEffectOff: "[c/808080:已禁用恐慌项链]"
+	}
+
+	VoidBar: {
+		DisplayName: 虚渺锭
+		Tooltip: 紧密的一团虚空
+	}
+
+	VoidOre: {
+		DisplayName: 虚渺矿
+		Tooltip: 虚空渗透而产生的不稳定物质
+	}
+
+	VoidScales: {
+		DisplayName: 虚渺鳞片
+		Tooltip: 由纯粹虚空构成的鳞片
+	}
+
+	HolyMoonlight: {
+		DisplayName: 圣洁月光
+		Tooltip:
+			'''
+			增加15%魔法伤害和50点最大魔力值
+			每三十秒获得一个魔力护盾，数值等同于魔力上限的25%，
+			魔力护盾存在期间增加10%移动速度并降低10%魔力消耗，
+			护盾会对触碰到的敌人造成伤害，
+			魔力护盾被击破时消除自身魔力病减益并回满魔力值，
+			没有护盾时魔法弹幕能够吸血，你的当前魔力值越高，你的吸血量便越高
+			当玩家携带血神圣杯时不会生成魔力护盾
+			'''
+	}
+
+	PhantomPlanetKillerEngine: {
+		DisplayName: 猎星引擎
+		Tooltip:
+			'''
+			召唤一艘猎星战舰射击你的敌人
+			战舰会使用你物品栏中的子弹但不会消耗
+			不会消耗弹药
+			每20次射击发射一道镭射
+			'''
+	}
+
+	PowerOfTyrant: {
+		DisplayName: 魔君之威
+		Tooltip: ""
+	}
+
+	VoidFaquirCuises: {
+		DisplayName: 虚空行者腿甲
+		Tooltip:
+			'''
+			+10%伤害
+			+10%暴击率
+			+20%移动速度
+			'''
+	}
+
+	VoidFaquirBodyArmor: {
+		DisplayName: 虚空行者胸甲
+		Tooltip:
+			'''
+			+10% 伤害
+			+5% 暴击率
+			+5 护甲穿透
+			'''
+	}
+
+	VoidFaquirDevourerHelm: {
+		DisplayName: 虚湮吞天盔
+		Tooltip:
+			'''
+			+20% 近战伤害
+			+15% 近战暴击率
+			'''
+	}
+
+	VoidFaquirCosmosHood: {
+		DisplayName: 虚灵宙法盔
+		Tooltip:
+			'''
+			+30% 魔法伤害
+			+25% 魔法暴击率
+			+150 最大魔力值
+			'''
+	}
+
+	VoidFaquirEvokerHelm: {
+		DisplayName: 虚空唤灵盔
+		Tooltip: +25% 召唤伤害
+	}
+
+	VoidFaquirLurkerMask: {
+		DisplayName: 虚影潜袭盔
+		Tooltip:
+			'''
+			+25% 盗贼伤害
+			+25% 盗贼暴击率
+			'''
+	}
+
+	VoidFaquirShadowHelm: {
+		DisplayName: 虚寂猎影盔
+		Tooltip:
+			'''
+			+32% 远程伤害
+			+30% 远程暴击率
+			'''
+	}
+
+	GhostdomWhisper: {
+		DisplayName: 冥星低语
+		Tooltip:
+			'''
+			可以蓄力射击
+			蓄力时在后方产生悬浮的箭矢
+			释放时所有悬浮箭会齐发
+			蓄满力射出一发被虚空强化的箭
+			"贯穿星辰"
+			'''
+	}
+
+	Interdimensionallens: {
+		DisplayName: 异次元透镜
+		Tooltip:
+			'''
+			将游戏背景换成你的壁纸
+			如果无法获取到你的壁纸将会是一片空白
+			“投射出世界背后的样子”
+			'''
+	}
+
+	PowerBank: {
+		DisplayName: 便携充能背包
+		Tooltip:
+			'''
+			放在物品栏时，自动为物品栏中所有可以充能的物品充能
+			“为什么我们不能把能源工厂，充能站和武器装在一起呢？”
+			'''
+	}
+
+	RustyGrenade: {
+		DisplayName: 锈蚀榴弹
+		Tooltip:
+			'''
+			视为火箭
+			“虽然很笨重，但似乎别无选择”
+			'''
+	}
+
+	RustExpeditioner: {
+		DisplayName: 锈蚀远征者
+		Tooltip:
+			'''
+			使用火箭类弹药
+			子弹会下坠
+			“不怎么安全”
+			'''
+	}
+
+	VoidDevastator: {
+		DisplayName: 虚泯湮灭者
+		Tooltip:
+			'''
+			使用火箭类弹药，不会对友方造成伤害
+			发射附带不同效果的火箭
+			"向虚空开炮！"
+			'''
+	}
+
+	GodSlayerRocket: {
+		DisplayName: 弑神者火箭
+		Tooltip:
+			'''
+			视为火箭，不会对友方造成伤害
+			命中时产生大爆炸并给予附近敌怪虚空之触减益
+			"将神明炸的四分五裂！"
+			'''
+	}
+
+	RailPulseBow: {
+		DisplayName: 磁轨脉冲弓
+		Tooltip:
+			'''
+			射出带有电流的箭
+			"呼~ 嗞！"
+			'''
+	}
+
+	JailerWhip: {
+		DisplayName: 冥界之刑
+		Tooltip:
+			'''
+			召唤物获得2%暴击率
+			{$CommonItemTooltip.SummonTagDamage}
+			{$CommonItemTooltip.Whips}
+			敌怪死亡后产生血爆
+			'''
+	}
+
+	SilvasCrown: {
+		DisplayName: 始源冠冕
+		Tooltip:
+			'''
+			+ 2/s 每秒生命再生
+			-50%的防御损伤
+			-死亡模式专属-
+			'''
+	}
+
+	AbyssalDragon: {
+		DisplayName: 幽渊魔龙杖
+		Tooltip:
+			'''
+			发射幽渊魔龙和深渊之星
+			“当你凝视深渊...”
+			'''
+	}
+
+	ArchmagesHandmirror: {
+		DisplayName: 大魔导师手镜
+		Tooltip:
+			'''
+			给予你25%的额外魔力
+			每1点额外魔力提供0.15%魔法伤害加成
+			'''
+	}
+
+	SlimeYoyo: {
+		DisplayName: 凝胶悠悠球
+		Tooltip:
+			'''
+			一只超级灵活，富有弹性的悠悠球
+			刚抛出时造成3倍伤害
+			"又粘又弹"
+			'''
+	}
+
+	CelestialRing: {
+		DisplayName: 天界指环
+		Tooltip:
+			'''
+			+15% 伤害
+			+2.5HP/s 生命再生
+			+2 召唤栏
+			极大幅度提升各项属性
+			'''
+	}
+
+	ArmorReforgStation: {
+		DisplayName: 盔甲锻造站
+		Tooltip:
+			'''
+			用于重铸盔甲
+			它已被废除，虽仍能使用，但无法在正常流程内获取，转而使用一系列的词条物品以为盔甲加上词条
+			'''
+	}
+
+	OverloadFurnace: {
+		DisplayName: 过载熔炉
+		Tooltip:
+			'''
+			蓄力射出闪电球，击中后迸发出闪电
+			"嗞！"
+			'''
+	}
+
+	RustyDetectionEquipment: {
+		DisplayName: 锈蚀侦查设备
+		Tooltip:
+			'''
+			提升你的跳跃速度
+			给予你略微的推进
+			增加部分移速
+			"虽然已经生锈，但还是能提供一些帮助"
+			'''
+	}
+
+	MagneticController: {
+		DisplayName: 磁机遥控器
+		Tooltip:
+			'''
+			召唤一个磁流灵为你战斗
+			“我们需要一个方铅手套”
+			'''
+	}
+
+	Mercy: {
+		DisplayName: 怜悯
+		Tooltip:
+			'''
+			使用虚空与黑魔法焚毁一切
+			"忏悔汝罪"
+			'''
+	}
+
+	CannedCarrion: {
+		DisplayName: 腐肉罐头
+		Tooltip: 召唤世吞酱
+	}
+
+	LostSoul: {
+		DisplayName: 迷失游魂
+		Tooltip:
+			'''
+			试着带着它通过一场boss战并保证它的安全
+			"保护他"
+			'''
+	}
+
+	ShadowOfVoid: {
+		DisplayName: 虚渺之像
+		Tooltip:
+			'''
+			召唤虚空中游荡的猎手追击敌人并持续发射虚空新星
+			“虚空的投影”
+			'''
+	}
+
+	HorizonssKey: {
+		DisplayName: 视界之键
+		Tooltip:
+			'''
+			左键打开剑匣，剑会自动攻击附近的敌人
+			右键敌怪以指定剑的攻击目标
+			[c/d9bd1b:剑的数量和这把武器的强度随着游戏进度而增加]
+			[c/d9bd1b:受所有加成影响]
+			'''
+	}
+
+	SacrificalMask: {
+		DisplayName: 献祭面具
+		Tooltip:
+			'''
+			召唤一圈献祭匕首围绕你
+			匕首会刺向附近的敌人并为你恢复生命值
+			'''
+	}
+
+	TargetingWand: {
+		DisplayName: 奴役权杖
+		Tooltip: ""
+	}
+
+	DimensionKey: {
+		DisplayName: 维度钥匙
+		Tooltip: "[c/ff0000:未完成]"
+	}
+
+	DreamCatcher: {
+		DisplayName: 捕梦网
+		Tooltip: 让你变成的梦龙
+	}
+
+	AquaticFlute: {
+		DisplayName: 渊海水笛
+		Tooltip: 召唤海灾酱
+	}
+
+	HolyMantle: {
+		DisplayName: 神圣屏障
+		Tooltip:
+			'''
+			给予抵挡一次伤害的圣盾
+			该效果只会在玩家受到超过100点伤害时生效
+			该效果有150秒冷却时间
+			由神圣之地小怪掉落
+			'''
+	}
+
+	ToyKnife: {
+		DisplayName: 玩具刀
+		Tooltip: “让你变成这个模组的主创之一”
+	}
+
+	DeusCore: {
+		DisplayName: 星神龙核
+		Tooltip:
+			'''
+			将受到的伤害转化为星辉侵蚀，在一段时间内减少对应生命值
+			攻击可将部分星辉侵蚀转移至目标，造成更高的伤害
+			生命再生减半
+			- 死亡模式专属 -
+			'''
+	}
+
+	CruiserPlush: {
+		DisplayName: 巡游者玩偶
+		Tooltip: ""
+	}
+
+	AbyssalWraithPlush: {
+		DisplayName: 幽邃魔灵玩偶
+		Tooltip: ""
+	}
+
+	Voidshade: {
+		DisplayName: 虚影薄锋
+		Tooltip:
+			'''
+			左键挥砍，释放能量波
+			右键突刺，释放虚光射线，
+			刺中目标短时间内给予一次挥砍强化
+			"切裂空间！"
+			'''
+	}
+
+	GreedCard: {
+		DisplayName: 幻影卡片『贪婪』
+		Tooltip:
+			'''
+			每有一个召唤栏，+2%伤害
+			“贪欲之渊”
+			'''
+	}
+
+	Barren: {
+		DisplayName: 幻影卡片『荒芜』
+		Tooltip:
+			'''
+			盗贼弹幕获得追踪能力
+			减少5%盗贼伤害和暴击率
+			“凋零之狩”
+			'''
+	}
+
+	Confuse: {
+		DisplayName: 幻影卡片『迷惑』
+		Tooltip:
+			'''
+			攻击使敌人中蒙蔽debuff，减少其移动速度
+			“吮脑之锢”
+			'''
+	}
+
+	Fool: {
+		DisplayName: 幻影卡片『愚者』
+		Tooltip:
+			'''
+			+20%魔力消耗
+			+20%魔法伤害
+			“狂智之焰”
+			'''
+	}
+
+	Frail: {
+		DisplayName: 幻影卡片『孱弱』
+		Tooltip:
+			'''
+			+15%伤害
+			受到的伤害增加10%
+			“脆刃之锋”
+			'''
+	}
+
+	Nothing: {
+		DisplayName: 幻影卡片『虚无』
+		Tooltip:
+			'''
+			攻击附带虚空之触减益
+			“湮灭触媒”
+			'''
+	}
+
+	Perplexed: {
+		DisplayName: 幻影卡片『迷茫』
+		Tooltip:
+			'''
+			-10% 暴击率
+			+20% 攻击速度
+			“乱心之速”
+			'''
+	}
+
+	Sacrifice: {
+		DisplayName: 幻影卡片『献祭』
+		Tooltip:
+			'''
+			-60%再生速度
+			+10%伤害
+			“血偿之力”
+			'''
+	}
+
+	Tarnish: {
+		DisplayName: 幻影卡片『晦暗』
+		Tooltip:
+			'''
+			攻击时发射暗隐火焰
+			“暗蚀之炎”
+			'''
+	}
+
+	TaintedDeck: {
+		DisplayName: 堕化卡组
+		Tooltip:
+			'''
+			盗贼弹幕获得追踪能力
+			攻击使敌人中蒙蔽debuff，减少其移动速度
+			攻击附带虚空之触减益
+			攻击时发射暗隐火焰
+			受到的伤害增加50% 
+			每有一个召唤栏，+3%伤害
+			+30% 伤害
+			+20% 攻击速度
+			+16% 魔力消耗
+			-70% 再生速度
+			附近所有玩家击中任何目标后能够窃取少量生命值
+			'''
+	}
+
+	ThreadOfAbyss: {
+		DisplayName: 深渊之绳
+		Tooltip:
+			'''
+			用于组合[i:CalamityEntropyLegacy/TaintedDeck][c/FF6347:堕化卡组]
+			[c/FF6347:按住左Shift以查看卡组需求]
+			'''
+		HoldShiftForDetails:
+			'''
+			[i:CalamityEntropyLegacy/Perplexed][c/FF6347: 卡片 -『迷茫』]
+			被塞入两台外貌相似且彼此相连的圣化机械中
+			[i:CalamityEntropyLegacy/Tarnish][c/FF6347: 卡片 -『晦暗』]
+			被哥布林拾走并用于施法
+			[i:CalamityEntropyLegacy/Confuse][c/FF6347: 卡片 -『迷惑』]
+			持有于最后的树妖
+			[i:CalamityEntropyLegacy/Barren][c/FF6347: 卡片 -『荒芜』]
+			被一个强盗夺走了
+			[i:CalamityEntropyLegacy/Fool][c/FF6347: 卡片 -『愚者』]
+			深渊中的奇怪法师有可能带着它
+			[i:CalamityEntropyLegacy/Sacrifice][c/FF6347: 卡片 -『献祭』]
+			由混乱之精华和永恒金属融合而成
+			[i:CalamityEntropyLegacy/GreedCard][c/FF6347: 卡片 -『贪婪』]
+			在天堂遗骸所创造的星芒散溢之地的渔获
+			[i:CalamityEntropyLegacy/Frail][c/FF6347: 卡片 -『孱弱』]
+			被贫弱的生物聚合而成的个体吸收
+			[i:CalamityEntropyLegacy/Nothing][c/FF6347: 卡片 -『虚无』]
+			深渊中的捕食者吞下了它
+			'''
+	}
+
+	VoidCandle: {
+		DisplayName: 虚空蜡烛
+		Tooltip:
+			'''
+			放置后右键使你的攻击附带虚空之触减益
+			"它的顶部跃动着虚无的火焰"
+			'''
+	}
+
+	Antler: {
+		DisplayName: 鹿角
+		Tooltip: 使你化身为焗焦
+	}
+
+	ReincarnationBadge: {
+		DisplayName: 轮回证章
+		Tooltip:
+			'''
+			按下[KEY]键启用协调状态
+			该状态下，你不受重力影响
+			并推开周围射弹
+			“回归的熵增”
+			'''
+	}
+
+	CrimsonNight: {
+		DisplayName: 绯夜
+		Tooltip: 让你变成Away
+	}
+
+	PoopPickup: {
+		DisplayName: 臭臭
+		Tooltip: ""
+	}
+
+	BrokenAnkh: {
+		DisplayName: 碎安卡十字
+		Tooltip:
+			'''
+			使你能存储一些大便
+			攻击有概率获得可投掷大便
+			按[KEY]投掷
+			“蓝门”
+			“撒批收收味”
+			'''
+	}
+
+	DustyWhistle: {
+		DisplayName: 尘沙口哨
+		Tooltip: 召唤荒灾酱
+	}
+
+	AquaticAmulet: {
+		DisplayName: 海洋护符
+		Tooltip:
+			'''
+			召唤两只灾虫酱
+			"重逢"
+			'''
+	}
+
+	NetherRift: {
+		DisplayName: 幽冥裂刃
+		Tooltip:
+			'''
+			高速旋转挥舞
+			松手后向鼠标方向飞去，击中目标后生成空间裂缝，造成范围伤害
+			丢出后再次按下鼠标左键会让裂刃以鼠标为中心旋转
+			'''
+	}
+
+	MawOfTheVoid: {
+		DisplayName: 虚空之喉
+		Tooltip:
+			'''
+			长按鼠标使用武器时蓄力，蓄力满时松开鼠标释放一个黑色激光圈，每3帧造成75点伤害
+			“吞噬汝敌！”
+			'''
+	}
+
+	MosHat: {
+		DisplayName: Mo的帽子
+		Tooltip: 让你变成一个白毛美少女
+	}
+
+	AnimaSola: {
+		DisplayName: 孤魂铁索
+		Tooltip:
+			'''
+			锁住最近的目标，持续3秒
+			冷却为25秒，当有boss存在时冷却为120秒
+			'''
+	}
+
+	LightWisper: {
+		DisplayName: 渺光
+		Tooltip:
+			'''
+			喷射出虚空火焰
+			不消耗弹药
+			"湮灭"
+			'''
+	}
+
+	Oblivion: {
+		DisplayName: 虚噬
+		Tooltip:
+			'''
+			射出追踪的噬虚矢
+			“虚无”
+			'''
+	}
+
+	EyeOfIlmeris: {
+		DisplayName: 伊尔梅里斯之眼
+		Tooltip: 快速并持续射出追踪水弹
+	}
+
+	GravityGaze: {
+		DisplayName: 重力凝视
+		Tooltip:
+			'''
+			发射天蓝射线
+			近距离造成1.5倍伤害
+			'''
+	}
+
+	DivineRadience: {
+		DisplayName: 圣辉灵珠
+		Tooltip: 发射追踪能量弹
+	}
+
+	NightProjection: {
+		DisplayName: 星光幻象
+		Tooltip: 射出会分裂追踪的幻星
+	}
+
+	OverloadLunar: {
+		DisplayName: 夜明星陨
+		Tooltip: 快速射出大量的夜明光球
+	}
+
+	EyeOfOtherside: {
+		DisplayName: 彼岸之眼
+		Tooltip: 射出追踪鬼火弹
+	}
+
+	EndlessAbyss: {
+		DisplayName: 无底深渊
+		Tooltip:
+			'''
+			发射深渊死光和虚空新星
+			"涌出深渊"
+			'''
+	}
+
+	NihilityHorn: {
+		DisplayName: 虚无号角
+		Tooltip:
+			'''
+			召唤虚无双子
+			"吹响它能打开通往虚空的通道"
+			'''
+	}
+
+	NihilityTwinBag: {
+		DisplayName: 宝藏袋 (虚无双子)
+		Tooltip: ""
+	}
+
+	NihilityTwinRelic: {
+		DisplayName: 虚无双子圣物
+		Tooltip: ""
+	}
+
+	NihilityTwinTrophy: {
+		DisplayName: 虚无双子纪念章
+		Tooltip: ""
+	}
+
+	NihilityShell: {
+		DisplayName: 噬虚魔壳
+		Tooltip:
+			'''
+			暴击伤害增加18%
+			暴击时概率获得一块能量甲壳
+			每块能量甲壳能抵挡你受到伤害的20%一次
+			最多同时拥有3块能量甲壳
+			“那虚空中不可名状的寄生生物身体的一部分”
+			'''
+	}
+
+	EventideSniper: {
+		DisplayName: 苍穹
+		Tooltip:
+			'''
+			持有时显示敌人中心位置
+			子弹打的越准，伤害越高，最多增加1倍
+			打的足够准必定暴击并造成虚空之触减益并治疗你
+			“青天亦为你颂歌”
+			'''
+	}
+
+	NihilityBacteriophageWand: {
+		DisplayName: 虚空噬菌体召唤杖
+		Tooltip:
+			'''
+			召唤一个小型虚空噬菌体为你而战
+			每个小型噬菌体消耗2栏位
+			必要时噬菌体会吸附在敌人身上为你回血
+			按下命令仆从键([KEY])以在任何时候让噬菌体进入吸附模式
+			“它们带来绝望”
+			'''
+	}
+
+	AntiVoid: {
+		DisplayName: 反虚之锋
+		Tooltip:
+			'''
+			释放大量的符文斩
+			右键向光标位置进行一次中距离的冲刺，在击中的第一个目标处生成一个虚空标记
+			标记会在短时间后落下并释放横向斩击
+			“切除现实”
+			'''
+	}
+
+	AbyssLantern: {
+		DisplayName: 深渊提灯
+		Tooltip: 使你变成妖龙酱
+	}
+
+	WispLantern: {
+		DisplayName: 冥灵灯笼
+		Tooltip:
+			'''
+			随机生效1至3个你背包中的饰品
+			“照亮你的前途”
+			'''
+	}
+
+	WyrmToothNecklace: {
+		DisplayName: 幻妖龙牙项链
+		Tooltip:
+			'''
+			+30% 伤害
+			+100 护甲穿透
+			'''
+	}
+
+	WyrmTooth: {
+		DisplayName: 幻妖龙牙
+		Tooltip: “光是看着就让人心惊胆战”
+	}
+
+	Vitalfeather: {
+		DisplayName: 沐生之羽
+		Tooltip:
+			'''
+			被抽中敌人3秒内被召唤物击中将迸发出追踪龙焰辅助攻击
+			召唤物集中击打命中的敌人
+			{$CommonItemTooltip.SummonTagDamage}
+			{$CommonItemTooltip.Whips}
+			“重生”
+			'''
+	}
+
+	WindOfUndertaker: {
+		DisplayName: 唤死之风
+		Tooltip:
+			'''
+			拍击时发射一圈虚空新星
+			{$CommonItemTooltip.SummonTagDamage}
+			{$CommonItemTooltip.Whips}
+			“死兆”
+			'''
+	}
+
+	HadopelagicEchoII: {
+		DisplayName: 冥渊回音II
+		Tooltip:
+			'''
+			发射冥渊镭射和幻渊回音
+			[c/c8cbff:“链接深渊深处”]
+			'''
+	}
+
+	StarlessNight: {
+		DisplayName: 无星之夜
+		Tooltip:
+			'''
+			击中后释放虚空新星
+			“砍碎太阳！”
+			'''
+	}
+
+	WhipOfService: {
+		DisplayName: 使役之鞭
+		Tooltip:
+			'''
+			攻击其他玩家以短暂提升其伤害、暴击率和挖掘速度
+			同时增加其少量怒气值
+			“让你的朋友变成召唤物！”
+			'''
+	}
+
+	Xytheron: {
+		DisplayName: 始源遗歌
+		Tooltip:
+			'''
+			命中目标积攒充能
+			右键突进，根据充能对沿途敌怪造成伤害并留下深渊撕裂
+			突进时无敌
+			[c/c8cbff:“渊之悲歌”]
+			'''
+	}
+
+	AbyssalAltar: {
+		DisplayName: 深渊祭坛
+		Tooltip: "[c/c8cbff:曾被用于唤醒深渊中的可怖巨兽]"
+	}
+
+	Ystralyn: {
+		DisplayName: 噬渊鞭挞
+		Tooltip:
+			'''
+			攻击时召唤幻海妖龙幻影攻击敌人
+			召唤物获得12%的暴击率
+			{$CommonItemTooltip.SummonTagDamage}
+			召唤攻击额外造成15%伤害
+			{$CommonItemTooltip.Whips}
+			[c/c8cbff:“沧茫幻象”]
+			'''
+	}
+
+	VoidPathology: {
+		DisplayName: 虚空病变
+		Tooltip:
+			'''
+			召唤一个可操控的，持续电击敌人的虚空病毒
+			最多同时电击8个敌人，电击的敌人越少，造成的伤害越高
+			'''
+	}
+
+	AnnihilateArrow: {
+		DisplayName: 虚湮箭
+		Tooltip: 靠近目标时重定向并分裂出虚湮裂片
+	}
+
+	NegentropyBullet: {
+		DisplayName: 逆熵弹
+		Tooltip: 击中后传送到目标周围并反复穿透目标
+	}
+
+	Zyphros: {
+		DisplayName: 逝怨晶辉
+		Tooltip:
+			'''
+			射出追踪的水晶箭
+			攻击时概率生成能够协同攻击的水晶
+			[c/c8cbff:“它曾被狂热信徒们称为‘渊光之弓’”]
+			'''
+	}
+
+	FriendFinder: {
+		DisplayName: 寻友护符
+		Tooltip:
+			'''
+			召唤一个友方小怪，需要消耗1召唤栏
+			召唤的小怪有自己的生命值
+			召唤有16秒冷却
+			右键使用以杀死所有召唤的小怪
+			'''
+	}
+
+	HeartOfStorm: {
+		DisplayName: 风暴之心
+		Tooltip:
+			'''
+			击中敌人迸发出可连锁的闪电，造成10%伤害
+			- 死亡模式专属 -
+			'''
+		CWRGanged: 灾厄大修联动效果:召唤风暴女神残魂配合你作战
+	}
+
+	Nyxolithraken: {
+		DisplayName: 沧溟龙契
+		Tooltip:
+			'''
+			召唤一条沧溟渊龙，冲撞敌人并撕裂空间
+			[c/c8cbff:“冥之猛兽”]
+			'''
+	}
+
+	MariviniumBodyArmor: {
+		DisplayName: 渊洋神迹胸甲
+		Tooltip:
+			'''
+			增加15%伤害和暴击率
+
+			使你能在深渊正常呼吸
+			'''
+	}
+
+	MariviniumHelmet: {
+		DisplayName: 渊洋神迹头盔
+		Tooltip:
+			'''
+			增加20%伤害和10%暴击率
+			增加20%近战攻速
+			增加200点最大生命值和最大魔力值
+			'''
+	}
+
+	MariviniumLeggings: {
+		DisplayName: 渊洋神迹护腿
+		Tooltip:
+			'''
+			大幅提升移动速度
+			减少20%魔力消耗
+			增加5%伤害和暴击率
+			'''
+	}
+
+	ToyGuitar: {
+		DisplayName: 玩具吉他
+		Tooltip: 召唤世花酱跟随你
+	}
+
+	AncientScriptures: {
+		DisplayName: 远古典籍
+		Tooltip:
+			'''
+			发射符文弹
+			“古老的法师们将法书上附上不同的魔法书签以方便的切换魔法”
+			'''
+	}
+
+	BookMarkBrimstone: {
+		DisplayName: 硫磺火书签
+		Tooltip:
+			'''
+			攻击时概率在附近召唤硫磺火漩涡，向鼠标位置发射鲜血激光柱
+			攻击造成硫磺火减益
+			'''
+	}
+
+	BookMarkAerialite: {
+		DisplayName: 天蓝书签
+		Tooltip:
+			'''
+			射弹击中敌人后从天上降下羽毛
+			+50% 弹速
+			'''
+	}
+
+	BookMarkFlesh: {
+		DisplayName: 血肉书签
+		Tooltip:
+			'''
+			射弹击中敌人后爆发出伤害性血液
+			+1 穿透
+			+0.25 吸血
+			'''
+	}
+
+	BookMarkIce: {
+		DisplayName: 凌冽书签
+		Tooltip: 攻击时同时从身后发射凌冽神剑
+	}
+
+	InfiniteBook: {
+		DisplayName: 无限之书
+		Tooltip: 测试物品
+	}
+
+	BookMarkOfLight: {
+		DisplayName: 光明书签
+		Tooltip:
+			'''
+			击中概率召唤光明之魂
+			光明之魂会撞向并摧毁敌方射弹并为你恢复血量
+			'''
+	}
+
+	BookMarkOfNight: {
+		DisplayName: 黑暗书签
+		Tooltip:
+			'''
+			击中敌人后概率召唤会追杀敌人并爆炸的黑暗之魂
+			+10% 伤害
+			'''
+	}
+
+	BookMarkMechanical: {
+		DisplayName: 机械书签
+		Tooltip:
+			'''
+			发射时概率召唤探测器攻击敌人
+			射弹可以追踪附近的敌人
+			使射弹带有微追踪
+			'''
+	}
+
+	BookMarkAstral: {
+		DisplayName: 星辉书签
+		Tooltip:
+			'''
+			发射会朝敌人发射射弹并爆炸的炫星
+			-66.6% 攻速
+			'''
+	}
+
+	BookMarkTerra: {
+		DisplayName: 泰拉书签
+		Tooltip:
+			'''
+			发射巨石
+			+20% 伤害
+			+1 穿透
+			'''
+	}
+
+	BookMarkLunar: {
+		DisplayName: 夜明书签
+		Tooltip: 靠近射弹的目标会逐渐变暗，到一定程度会受到一次额外攻击
+	}
+
+	BookMarkAbyss: {
+		DisplayName: 深渊书签
+		Tooltip: 击中时概率产生深渊撕裂
+	}
+
+	BookMarkProfaned: {
+		DisplayName: 亵渎书签
+		Tooltip: 射弹朝附近敌人发射亵渎火焰
+	}
+
+	BookMarkVoid: {
+		DisplayName: 虚渺书签
+		Tooltip: 击中敌人造成虚空之触效果并概率产生虚空爆炸
+	}
+
+	BookMarkAuric: {
+		DisplayName: 金源书签
+		Tooltip: 射弹击中目标后爆发出龙焰和火球
+	}
+
+	BookMarkSilva: {
+		DisplayName: 始源林海书签
+		Tooltip:
+			'''
+			射弹击中后概率产生始源之魂，
+			始源之魂会飞回你，为你回血并提供少量临时护甲
+			'''
+	}
+
+	BookMarkBee: {
+		DisplayName: 蜜蜂书签
+		Tooltip: 击中敌人后生成追踪蜜蜂
+	}
+
+	BookMarkSunkenSea: {
+		DisplayName: 沉沦海书签
+		Tooltip: 击中敌人后生成追踪棱晶碎片
+	}
+
+	BookMarkCorrupt: {
+		DisplayName: 腐化书签
+		Tooltip:
+			'''
+			击中敌人概率召唤暗影触手
+			+6 护甲穿透
+			'''
+	}
+
+	BookMarkCrimson: {
+		DisplayName: 猩红书签
+		Tooltip:
+			'''
+			击中敌人概率从下方召唤血之涌泉
+			+0.17 吸血
+			+4 暴击率
+			'''
+	}
+
+	BookMarkGoozma: {
+		DisplayName: 虹蚀书签
+		Tooltip: 快速发射炫彩之星
+	}
+
+	BookMarkIntergelactic: {
+		DisplayName: 异宇星凝书签
+		Tooltip: 持续生成新星史莱姆
+	}
+
+	BookMarkAquarius: {
+		DisplayName: 宝瓶座书签
+		Tooltip: 击中敌人散射水弹
+	}
+
+	BookMarkAries: {
+		DisplayName: 白羊座书签
+		Tooltip:
+			'''
+			攻击附带小范围爆炸
+			+6% 伤害
+			'''
+	}
+
+	BookMarkTaurus: {
+		DisplayName: 金牛座书签
+		Tooltip: 增加射弹尺寸，射弹击中后分裂成3个更小的射弹
+	}
+
+	BookMarkCancer: {
+		DisplayName: 巨蟹座书签
+		Tooltip:
+			'''
+			射弹会降低碰到的敌方射弹的速度和伤害
+			+50% 射弹尺寸
+			'''
+	}
+
+	BookMarkCapricorn: {
+		DisplayName: 摩羯座书签
+		Tooltip: 持续使用增加射速，最多+25%
+	}
+
+	BookMarkLeo: {
+		DisplayName: 狮子座书签
+		Tooltip:
+			'''
+			+12%伤害
+			+20% 射弹尺寸
+			'''
+	}
+
+	BookMarkSagittarius: {
+		DisplayName: 人马座书签
+		Tooltip:
+			'''
+			+6%伤害
+			+26% 弹速
+			'''
+	}
+
+	BookMarkPisces: {
+		DisplayName: 双鱼座书签
+		Tooltip:
+			'''
+			攻击时额外发射一个较小射弹
+			+6 护甲穿透
+			'''
+	}
+
+	BookMarkVirgo: {
+		DisplayName: 室女座书签
+		Tooltip:
+			'''
+			+8% 伤害
+			+1 穿透
+			'''
+	}
+
+	BookMarkLibra: {
+		DisplayName: 天秤座书签
+		Tooltip:
+			'''
+			+10% 伤害
+			+4% 射速
+			+10% 暴击率
+			+5% 弹速
+			+1 穿透
+			+4 护甲穿透
+			为伤害和射速的倍率最低的其一再增加4%
+			'''
+	}
+
+	BookMarkGemini: {
+		DisplayName: 双子座书签
+		Tooltip: 射弹强追踪并且获得10点护甲穿透
+	}
+
+	BookMarkScorpio: {
+		DisplayName: 天蝎座书签
+		Tooltip: 攻击附带可叠加的星蝎剧毒减益，造成持续伤害
+	}
+
+	BookmarkPactOfDecay: {
+		DisplayName: 堕落契约
+		Tooltip:
+			'''
+			释放一个持续的喑哑魔涡
+			攻击附带孱弱巫咒减益
+			'''
+	}
+
+	BookmarkPactOfWar: {
+		DisplayName: 战争契约
+		Tooltip:
+			'''
+			召唤迷你星流双子自动歼灭你的敌人
+			所有攻击造成超位崩解减益
+			'''
+	}
+
+	UpdraftTome: {
+		DisplayName: 升流古书
+		Tooltip: 发射强力击退的风弹
+	}
+
+	RedemptionBible: {
+		DisplayName: 救赎圣经
+		Tooltip:
+			'''
+			发射救赎之矛
+			召唤一把救赎之弓协同攻击
+			'''
+	}
+
+	Redemption: {
+		DisplayName: 救赎
+		Tooltip:
+			'''
+			{$MissileLauncherDescTooltip}
+			{$MissileLauncherMaxStickTooltip}
+			导弹可黏附在敌怪身上并造成一些减益
+			右键点击发射一发威力巨大的火箭
+			'''
+	}
+
+	NightEpic: {
+		DisplayName: 夜空史诗
+		Tooltip: 发射出两颗追踪陨星
+	}
+
+	AshTranscript: {
+		DisplayName: 灰烬笔录
+		Tooltip: 发射亵渎光束
+	}
+
+	VoidOde: {
+		DisplayName: 虚空颂章
+		Tooltip: 从下射出视域长枪
+	}
+
+	ControlTerminal: {
+		DisplayName: 控制终端
+		Tooltip: 发射星流旋刃
+	}
+
+	TabooVolume: {
+		DisplayName: 禁忌卷册
+		Tooltip:
+			'''
+			发射硫火飞弹
+			召唤三只至尊探魂眼协同攻击
+			'''
+	}
+
+	BookMarkRoyal: {
+		DisplayName: 皇家书签
+		Tooltip:
+			'''
+			生成3个王冠宝石
+			红宝石会朝敌人发射能量弹
+			绿宝石会撞向敌人
+			蓝宝石会给附近玩家增益，增加其生命恢复、伤害减免、伤害以及攻速
+			'''
+	}
+
+	EntropyModeToggle: {
+		DisplayName: 熵变之核
+		Tooltip:
+			'''
+			增加挑战性，更少的生命，伤害和生存能力。
+			Boss获得动态减伤和单次受伤最大伤害限制，百分比减少生命、护甲，暴击率最高只能达到50%，伤害增幅削减，降低部分机动
+			部分boss获得AI改动
+			传颂之物获得一个可开启的特殊加成
+			[c/ff0000:注：该模式不处于灾熵官方的推荐流程内，灾熵的流程和平衡性调整从来不考虑该模式]
+			[c/ff0000:如果你认为本模组破坏了原版灾厄流程优秀的平衡，那么开启这个模式或许能带来你所认为的平衡]
+			右键使用以只启用boss动态减伤功能
+			'''
+	}
+
+	BookMarkPerfection: {
+		DisplayName: 满分考卷
+		Tooltip:
+			'''
+			增加其他所有概率触发的书签的触发概率
+			+16%暴击，暴击加成会在受击后的十秒内失效
+			'''
+	}
+
+	Crystedge: {
+		DisplayName: 凝晶鞭刃
+		Tooltip:
+			'''
+			快速抽击并在最后猛击你的敌人
+			召唤物获得3%的暴击概率
+			暴击时生成会分裂的浮空滞留水晶
+			{$CommonItemTooltip.SummonTagDamage}
+			{$CommonItemTooltip.Whips}
+			'''
+	}
+
+	VoidToilet: {
+		DisplayName: 虚空马桶
+		Tooltip: “它并不安全”
+	}
+
+	Prominence: {
+		DisplayName: 日珥
+		Tooltip:
+			'''
+			发射出三发附加日耀的箭矢，并同时发射大量短距离散弹
+			击中敌人造成神圣之火减益
+			'''
+	}
+
+	SinewLash: {
+		DisplayName: 撕裂之腱
+		Tooltip:
+			'''
+			向前方抛出，然后收回，同时撕扯沿途的敌人
+			{$CommonItemTooltip.SummonTagDamage}
+			{$CommonItemTooltip.Whips}
+			仆从攻击会从敌人身上撕扯出肉块
+			'''
+	}
+
+	AzafureBatteringRam: {
+		DisplayName: 阿萨福勒破城矛
+		Tooltip:
+			'''
+			蓄力，然后朝前方突刺
+			刺中敌人并在敌人身体内发射威力巨大的霰弹，额外造成一次伤害，随后弹开
+			暴击时造成更多伤害
+			'''
+	}
+
+	MindCorruptor: {
+		DisplayName: 蚀心者
+		Tooltip:
+			'''
+			钩住敌人，然后狠狠的抽回来
+			被击中的敌人一段时间内被召唤物击中产生暗影斩切
+			{$CommonItemTooltip.SummonTagDamage}
+			{$CommonItemTooltip.Whips}
+			'''
+	}
+
+	AzafureChargeShield: {
+		DisplayName: 阿萨福勒充能盾
+		Tooltip:
+			'''
+			消耗自身充能冲刺并穿过敌怪
+			充能会缓慢恢复
+			'''
+	}
+
+	ProphecyToken: {
+		DisplayName: 预言信物
+		Tooltip:
+			'''
+			召唤先知，只能在地牢使用
+			位于地牢环境外狂暴
+			'''
+	}
+
+	ProphetBag: {
+		DisplayName: 宝藏袋（先知）
+		Tooltip: ""
+	}
+
+	ProphetTrophy: {
+		DisplayName: 先知纪念章
+		Tooltip: ""
+	}
+
+	ProphetRelic: {
+		DisplayName: 先知圣物
+		Tooltip: ""
+	}
+
+	UrnOfSouls: {
+		DisplayName: 灵魂之瓮
+		Tooltip:
+			'''
+			喷射灵魂火焰
+			击中敌人时摄取魔力值
+			'''
+	}
+
+	VetrasylsEye: {
+		Tooltip:
+			'''
+			按下[KEY]键可以使用能量护盾格挡敌怪和射弹，格挡成功会有短暂无敌时间
+			格挡范围有限（130度），使用时会朝鼠标方向格挡
+			'''
+		DisplayName: 维塔希尔之瞳
+	}
+
+	SpiritBanner: {
+		DisplayName: 招魂幡
+		Tooltip:
+			'''
+			召唤一张魂幡，持续产生追击敌人的灵魂
+			只能召唤一张
+			使用3召唤栏
+			“魂之挽歌”
+			'''
+	}
+
+	RuneMachineGun: {
+		DisplayName: 符文机枪
+		Tooltip:
+			'''
+			快速射出大量子弹和符文洪流
+			83%概率不消耗弹药
+			'''
+	}
+
+	ForeseeOrb: {
+		DisplayName: 预知宝珠
+		Tooltip:
+			'''
+			受伤时将伤害降低至100并破碎，30秒后复原
+			没有破碎时提供{DMG}%的伤害加成
+			[c/ff0000:破碎时取下将对你造成最大生命值的90%伤害]
+			"它吸取你的灵魂进行自我修复，若强行断开，你的灵魂会喷涌而出"
+			'''
+	}
+
+	BookMarkForesee: {
+		DisplayName: 预知书签
+		Tooltip: 击中敌人概率召唤一圈符文攻击敌人
+	}
+
+	RuneStoneShining: {
+		DisplayName: 符文石板 『|』
+		Tooltip: ""
+	}
+
+	PrefixClearKnife: {
+		DisplayName: 清刻之刃
+		Tooltip:
+			'''
+			用于清除护甲词条，会返还词条物品
+			在物品栏中右键盔甲物品
+			'''
+	}
+
+	RuneStoneSilence: {
+		DisplayName: 符文石板 『|』
+		Tooltip: ""
+	}
+
+	BlessingEnd: {
+		DisplayName: 赐福 『|』
+		Tooltip: ""
+	}
+
+	BlessingHeatDeath: {
+		DisplayName: 赐福 『热寂』
+		Tooltip:
+			'''
+			挖掘热寂石获取
+			“藏匿于世界之中，诞生自宇宙之源”
+			无法用清刻之刃取下
+			'''
+	}
+
+	BlessingLastStand: {
+		DisplayName: 赐福 『|』
+		Tooltip: ""
+	}
+
+	BlessingVoid: {
+		DisplayName: 赐福 『|』
+		Tooltip: ""
+	}
+
+	BlessingVoidTouched: {
+		DisplayName: 赐福 『|』
+		Tooltip: ""
+	}
+
+	EnchantedScrollEvoker: {
+		DisplayName: 附魔卷轴 『|』
+		Tooltip: ""
+	}
+
+	EnchantedScrollMagical: {
+		DisplayName: 附魔卷轴 『|』
+		Tooltip: ""
+	}
+
+	EnchantedScrollMassive: {
+		DisplayName: 附魔卷轴 『|』
+		Tooltip: ""
+	}
+
+	EnchantedScrollMiracle: {
+		DisplayName: 附魔卷轴 『|』
+		Tooltip: ""
+	}
+
+	EnchantedScrollReckless: {
+		DisplayName: 附魔卷轴 『|』
+		Tooltip: ""
+	}
+
+	OriginGemDestinedGreatness: {
+		DisplayName: 起源宝珠 『|』
+		Tooltip: ""
+	}
+
+	OriginGemGodForged: {
+		DisplayName: 起源宝珠 『|』
+		Tooltip: ""
+	}
+
+	OriginGemGreat: {
+		DisplayName: 起源宝珠 『|』
+		Tooltip: ""
+	}
+
+	OriginGemSacrifical: {
+		DisplayName: 起源宝珠 『|』
+		Tooltip: ""
+	}
+
+	OriginGemWizard: {
+		DisplayName: 起源宝珠 『|』
+		Tooltip: ""
+	}
+
+	RuneStoneBiochemistry: {
+		DisplayName: 符文石板 『|』
+		Tooltip: ""
+	}
+
+	RuneStoneGuarded: {
+		DisplayName: 符文石板 『|』
+		Tooltip: ""
+	}
+
+	RuneStoneHard: {
+		DisplayName: 符文石板 『|』
+		Tooltip: ""
+	}
+
+	RuneStoneLight: {
+		DisplayName: 符文石板 『|』
+		Tooltip: ""
+	}
+
+	RuneStoneRegen: {
+		DisplayName: 符文石板 『|』
+		Tooltip: ""
+	}
+
+	RuneStoneThorny: {
+		DisplayName: 符文石板 『|』
+		Tooltip: ""
+	}
+
+	HiveArrow: {
+		DisplayName: 蜂息箭
+		Tooltip:
+			'''
+			追踪的蜂蜡箭
+			击中后散射毒刺
+			'''
+	}
+
+	HiveBullet: {
+		DisplayName: 蜂巢弹
+		Tooltip:
+			'''
+			无视目标50%的护甲
+			击中后生成追踪蜜蜂
+			'''
+	}
+
+	SolarStorm: {
+		DisplayName: 太阳风暴
+		Tooltip: ""
+	}
+
+	CondensedBullet: {
+		DisplayName: 凝元弹
+		Tooltip: 射出凝元射线
+	}
+
+	ShatteredFractal: {
+		DisplayName: 破碎分形
+		Tooltip:
+			'''
+			上下挥舞，然后向前刺出
+			刺出同时发射威力随时间衰减的追踪分形弹
+			[c/ff5300:曾经的神剑，但如今已失去了它的潜能]
+			[c/ff5300:或许以后你可以让它重现光芒]
+			'''
+	}
+
+	ProphetMusicBox: {
+		DisplayName: 音乐盒(先知)
+		Tooltip: ""
+	}
+
+	CruiserMusicBox: {
+		DisplayName: 音乐盒(巡游者)
+		Tooltip: ""
+	}
+
+	NihilityTwinsMusicBox: {
+		DisplayName: 音乐盒(虚无双子)
+		Tooltip: ""
+	}
+
+	ApsychosMusicBox: {
+		DisplayName: 音乐盒(烬甲秽魔)
+		Tooltip: ""
+	}
+
+	WelkinFractal: {
+		DisplayName: 苍穹分形
+		Tooltip:
+			'''
+			从天上与地下召唤分形之羽
+			从剑尖刺出分形光束
+			[c/d4fff8:它被苍穹所赐福]
+			'''
+	}
+
+	BrilliantFractal: {
+		DisplayName: 光辉分形
+		Tooltip:
+			'''
+			挥舞时发射众多追踪的神圣之星并发射一发追踪剑影
+			[c/f2ffd4:吸纳了光辉能量]
+			'''
+	}
+
+	BrokenHilt: {
+		DisplayName: 破碎剑柄
+		Tooltip: "[c/c4ff3b:远古神剑的一部分]"
+	}
+
+	ElementalFractal: {
+		DisplayName: 元素分形
+		Tooltip:
+			'''
+			旋转挥舞并生成许多元素光星，随后发射一道强力的剑影
+			[c/ff00a6:剑上闪耀着元素之光]
+			'''
+	}
+
+	StarlitFractal: {
+		DisplayName: 星熠分形
+		Tooltip:
+			'''
+			发射追踪剑影与会分裂的星熠
+			剑影命中后从上方降下星星
+			真近战命中后降下更多星星
+			[c/dd00ff:剑身浮动着星光]
+			'''
+	}
+
+	AbyssFractal: {
+		DisplayName: 深渊分形
+		Tooltip:
+			'''
+			发射追踪渊蚀弹与能撕开空间的剑影
+			[c/7045ff:剑身仿佛深不见底的深渊]
+			'''
+	}
+
+	PlagueInternalCombustionEngine: {
+		DisplayName: 瘟疫内燃机
+		Tooltip:
+			'''
+			免疫击退
+			使用真近战武器命中敌人会为你回血并增加临时护甲
+			+{AttackSpeed}%近战攻速
+			'''
+	}
+
+	SpiritFractal: {
+		DisplayName: 聚魂分形
+		Tooltip:
+			'''
+			发射大量的聚魂剑影，并在每4此挥舞后投掷出武器本身，造成多次伤害并释放追踪灵魂
+			[c/dfe7cb:剑上聚集着众多亡魂]
+			'''
+	}
+
+	VoidFractal: {
+		DisplayName: 虚空分形
+		Tooltip:
+			'''
+			发射虚空波，并在每6此挥舞后投掷出武器本身，造成多次伤害并释放追踪虚空新星
+			回收后进行一次大斩击，在命中的目标处生成空间流
+			右键以发动虚空斩并突进一段距离
+			[c/ba3ade:剑上附着薄薄一层虚空]
+			'''
+	}
+
+	BurntLostClassics: {
+		DisplayName: 焦灼遗编
+		Tooltip: 散射硫火球
+	}
+
+	ProphecyMasterpiece: {
+		DisplayName: 预知巨著
+		Tooltip: 发射持续的激光
+	}
+
+	ForeseeWhip: {
+		DisplayName: 预言之鞭
+		Tooltip:
+			'''
+			{$CommonItemTooltip.SummonTagDamage}
+			{$CommonItemTooltip.Whips}
+			增加10%召唤物暴击率
+			被标记的敌人额外受到5%的伤害
+			召唤物暴击会将伤害传递给附近最多5个敌人
+			'''
+	}
+
+	Nemesis: {
+		DisplayName: 天罚
+		Tooltip:
+			'''
+			左键攻击在光标处召唤大量龙陨星
+			真近战会产生治疗球
+			每六次真近战召唤一次天罚
+			按住右键进行蓄力
+			蓄力满后旋转刀刃急速挥出大量斩击
+			'''
+	}
+
+	LashingBramblerod: {
+		DisplayName: 蔓生棘鞭
+		Tooltip:
+			'''
+			{$CommonItemTooltip.SummonTagDamage}
+			{$CommonItemTooltip.Whips}
+			增加召唤物[1]%的暴击率
+			召唤物暴击时产生荆棘环绕自身，获得一次性的[2]%伤害减免
+			若已有荆棘，则额外生长一朵花，每朵花提供[3]%伤害减免和[4]/s生命恢复，最多同时存在[5]朵花。
+			'''
+	}
+
+	FinalFractal: {
+		DisplayName: 幽邃分形
+		Tooltip:
+			'''
+			从屏幕外向光标处发射大量剑影
+			挥舞8次后用锁链链接并掷出，刺入目标体内造成持续伤害
+			右键进行幽冥斩，向前突进一段距离并在途中向两侧发射剑影
+			[c/fcc7ff:异界的神剑]
+			'''
+	}
+
+	AzafureMiner: {
+		DisplayName: 阿萨福勒数字型采矿机
+		Tooltip: ""
+	}
+
+	RequiemCard: {
+		DisplayName: 灵魂卡片『魂歌』
+		Tooltip:
+			'''
+			将大部分冷却减少[T]%
+			"亡者之歌，冷却成诗"
+			（冷却缩减如哀歌般流淌）
+			'''
+	}
+
+	GrudgeCard: {
+		DisplayName: 灵魂卡片『怨念』
+		Tooltip:
+			'''
+			击中敌人有时候会迸发出灵魂，灵魂会飞向你并为你回血并提供临时护甲
+			"恨意未消，噬血回魂"
+			（怨灵缠身，反哺生机）
+			'''
+	}
+
+	ObscureCard: {
+		DisplayName: 灵魂卡片『幽冥』
+		Tooltip:
+			'''
+			接触敌人碰撞箱时大幅增加生命再生，回复飞行时间并造成灵魂紊乱减益
+			"触之即愈，魂影蚀骨"
+			（近敌愈伤，幽冥蚀敌）
+			'''
+	}
+
+	PurificationCard: {
+		DisplayName: 灵魂卡片『净化』
+		Tooltip:
+			'''
+			将所有减益的时间减短[T]%
+			"涤罪之焰，焚秽存净"
+			（净化减益，焚尽污秽）
+			'''
+	}
+
+	WisperCard: {
+		DisplayName: 灵魂卡片『低语』
+		Tooltip:
+			'''
+			延长[T]%的无敌时间
+			"幽声呢喃，刹那虚化"
+			（耳畔低语,遁入永恒）
+			'''
+	}
+
+	MourningCard: {
+		DisplayName: 灵魂卡片『悲恸』
+		Tooltip:
+			'''
+			当护甲、伤害、暴击率、伤害减免、生命恢复属性下降时，减缓属性减少的速度
+			"哀伤永驻，衰败迟延"
+			（悲痛缠身，不再畏惧）
+			'''
+	}
+
+	IndigoCard: {
+		DisplayName: 灵魂卡片『靛蓝』
+		Tooltip:
+			'''
+			增加[T]%飞行速度和[T2]飞行时间
+			"蓝魂掠空，逝者如风"
+			（靛色魂影，加速翱翔）
+			'''
+	}
+
+	BitternessCard: {
+		DisplayName: 灵魂卡片『幽怨』
+		Tooltip:
+			'''
+			生命值越低，减伤越高，生命值越高，伤害越高
+			最多增加[1]%伤害和[2]%减伤
+			"愈伤愈怒，向死而生"
+			（血低则韧，血满则狂）
+			'''
+	}
+
+	DevouringCard: {
+		DisplayName: 灵魂卡片『噬魂』
+		Tooltip:
+			'''
+			攻击无视目标[1]%的护甲
+			"饥魂啃噬，破甲蚀防"
+			（恶灵啃食敌人护甲）
+			'''
+	}
+
+	CursedThread: {
+		DisplayName: 诅咒之绳
+		Tooltip:
+			'''
+			用于组合[i:CalamityEntropyLegacy/SoulDeck][c/ADFF2F:灵魂卡组]
+			[c/ADFF2F:按住左Shift以查看卡组需求]
+			'''
+		HoldShiftForDetails:
+			'''
+			[i:CalamityEntropyLegacy/RequiemCard][c/ADFF2F: 卡片 -『魂歌』]
+			地牢中的纯粹魂魄可能携带
+			[i:CalamityEntropyLegacy/WisperCard][c/ADFF2F: 卡片 -『低语』]
+			布满真菌的巨大尸傀可能携带
+			[i:CalamityEntropyLegacy/PurificationCard][c/ADFF2F: 卡片 -『净化』]
+			圣化的活宝箱可能装有
+			[i:CalamityEntropyLegacy/ObscureCard][c/ADFF2F: 卡片 -『幽冥』]
+			被旧神之血感染的生物可能携带
+			[i:CalamityEntropyLegacy/GrudgeCard][c/ADFF2F: 卡片 -『怨念』]
+			将一些灵气投入地下的闪光之湖...
+			[i:CalamityEntropyLegacy/IndigoCard][c/ADFF2F: 卡片 -『靛蓝』]
+			被藏入白云之上的神秘岛屿
+			[i:CalamityEntropyLegacy/MourningCard][c/ADFF2F: 卡片 -『悲恸』]
+			被蜥蜴文明用于驱动一座神像
+			[i:CalamityEntropyLegacy/BitternessCard][c/ADFF2F: 卡片 -『幽怨』]
+			被旧神之血感染的活宝箱可能装有
+			[i:CalamityEntropyLegacy/DevouringCard][c/ADFF2F: 卡片 -『噬魂』]
+			地牢中覆有重甲的亡魂可能携带
+			'''
+	}
+
+	SoulDeck: {
+		DisplayName: 灵魂卡组
+		Tooltip:
+			'''
+			将大部分冷却减少[CD]%
+			将所有debuff的时间减短[DB]%
+			接触敌人碰撞箱时大幅增加生命再生，回复飞行时间并造成灵魂紊乱debuff
+			击中敌人有时候会迸发出灵魂，灵魂会飞向你并为你回血，提供临时护甲并回复魔力
+			增加[FL]%飞行速度和[FT]%飞行时间
+			当护甲、伤害、暴击率、伤害减免、生命恢复属性下降时，减缓属性减少的速度
+			生命值越低，减伤越高，生命值越高，伤害越高（最多增加[BE]%减伤和[BD]%伤害）
+			无视敌怪[AP]%的护甲
+			延长你和附近玩家[IM]%的无敌时间
+			'''
+	}
+
+	LavaPancake: {
+		DisplayName: 熔岩煎饼
+		Tooltip: 召唤3位亵渎使徒
+	}
+
+	HellBohea: {
+		DisplayName: 地狱红茶
+		Tooltip: 召唤一位渴望焚尽一切的邪神?
+	}
+
+	SulfurMeltCake: {
+		DisplayName: 硫火融心糕
+		Tooltip: 召唤那位神明和她的追随者
+	}
+
+	IlmeranAsylum: {
+		DisplayName: 伊尔梅兰之佑
+		Tooltip:
+			'''
+			在你的周围生成3个漩涡
+			穿过漩涡的射弹会转向附近的目标并获得增强并为漩涡充能
+			漩涡充满能会追向附近敌怪并造成伤害
+			-死亡模式-
+			'''
+	}
+
+	ProphetMusicBox2: {
+		DisplayName: 音乐盒（先知二阶段）
+		Tooltip: ""
+	}
+
+	StarlitPiercer: {
+		DisplayName: 星熠穿刺者
+		Tooltip: 突刺时射出幻光弹
+	}
+
+	LuminarisMusicBox: {
+		DisplayName: 音乐盒（幻光星蛾）
+		Tooltip: ""
+	}
+
+	LuminarisRelic: {
+		DisplayName: 幻光星蛾圣物
+		Tooltip: ""
+	}
+
+	LuminarisBag: {
+		DisplayName: 宝藏袋（幻光星蛾）
+		Tooltip: ""
+	}
+
+	IllusionaryDew: {
+		DisplayName: 幻光星露
+		Tooltip: 在星辉地使用以召唤幻光星蛾
+	}
+
+	LuminarisTrophy: {
+		DisplayName: 幻光星蛾纪念章
+		Tooltip: ""
+	}
+
+	Luminar: {
+		DisplayName: 幻光弓
+		Tooltip: 射出追踪的幻光矢
+	}
+
+	StarSootInjector: {
+		DisplayName: 星光喷射器
+		Tooltip: 喷射出幻光蛾尘
+	}
+
+	AzafureAntiaircraftGun: {
+		DisplayName: 阿萨福勒防空炮
+		Tooltip: ""
+	}
+
+	RockBullet: {
+		DisplayName: 石头子弹
+		Tooltip: 射击时有概率卡壳
+	}
+
+	TatteredGun: {
+		DisplayName: 破烂机枪
+		Tooltip:
+			'''
+			射击时有概率卡壳
+			"它是一个奇迹"
+			'''
+	}
+
+	MoonlightSword: {
+		DisplayName: 月光大剑
+		Tooltip: ""
+	}
+
+	BookMarkBlackKnife: {
+		DisplayName: 黑刃书签
+		Tooltip:
+			'''
+			击中目标后概率生成一把延迟攻击的剑
+			"快去玩《三角符文》"
+			'''
+	}
+
+	AzafureTeslaGun: {
+		DisplayName: 阿萨福勒磁暴枪
+		Tooltip: 发射会电击附近敌怪的电磁球
+	}
+
+	AzafurePioneerCannon: {
+		DisplayName: 阿萨福勒先驱炮
+		Tooltip:
+			'''
+			长按鼠标左键蓄力装填弹药，最多装填5发
+			松手后连续发射出装填的弹药
+			'''
+	}
+
+	ShadoidPotion: {
+		DisplayName: “玲瓏小姐姐的关爱”
+		Tooltip:
+			'''
+			回复你的血量与飞行时间
+			回复的血量为最大生命值的1/3
+			不消耗
+			'''
+	}
+
+	ShadowMantle: {
+		DisplayName: 暗影斗篷
+		Tooltip:
+			'''
+			根据移动速度增加潜行值恢复速度
+			按下[K]([KEY])键消耗所有潜行值向光标位置冲刺一段距离并斩击碰到的敌人
+			伤害取决于消耗的潜行值
+			'''
+	}
+
+	MineBox: {
+		DisplayName: 诡雷匣
+		Tooltip:
+			'''
+			+[D]% 盗贼伤害
+			潜伏命中会产生一个延时爆炸的诡雷
+			'''
+	}
+
+	LurkersCharm: {
+		DisplayName: 幽影护符
+		Tooltip:
+			'''
+			+[A]%盗贼伤害
+			+[B]%移动速度
+			+[C]%潜行值回复速度
+			[c/dfe7cb:与灾厄的机制不同，该潜行值恢复加速不会降低盗贼伤害]
+			如果你的潜行值大于最大潜行值的80%，则+[D]%伤害减免 
+			'''
+	}
+
+	ThiefsPocketwatchOfEclipse: {
+		DisplayName: 蚀之窃贼怀表
+		Tooltip:
+			'''
+			+[A]%盗贼伤害
+			+[B]%移速
+			+[C]%潜伏值回复速度
+			[c/dfe7cb:与灾厄的机制不同，该潜行值恢复加速不会降低盗贼伤害]
+			潜伏值可以额外充能一次
+			'''
+	}
+
+	GaleWristblades: {
+		DisplayName: 疾风腕刺
+		Tooltip:
+			'''
+			盗贼武器每次命中使你获得一层风压增益，增加部分攻速和伤害
+			风压满5层时再次攻击会清除该增益并发射一道小型龙卷风
+			'''
+	}
+
+	WorshipRelic: {
+		DisplayName: 日祀圣物
+		Tooltip:
+			'''
+			潜行值不再自然增长
+			使用盗贼武器击中敌怪后回复部分潜行值
+			潜行值满时攻击会触发潜伏攻击并同时发射追踪耀阳矢
+			减半最大潜行值
+			你无法暴击
+			'''
+	}
+
+	ShadowPact: {
+		DisplayName: 暗影契约
+		Tooltip:
+			'''
+			+[A]%盗贼伤害
+			禁用潜行条，并改为暗影条
+			暗影条会以恒定速度增长，充满时攻击会清空暗影条并发射一团追踪暗影球
+			暗影球击中后会生成一些暗影飞刀
+			暗影条不会为你提供伤害加成，且不会在未满时被消耗
+			'''
+	}
+
+	YanyusHat: {
+		DisplayName: 烟玉的双角帽
+		Tooltip: ""
+	}
+
+	LuminarDress: {
+		DisplayName: 幻光星裙
+		Tooltip: ""
+	}
+
+	LuminarRing: {
+		DisplayName: 幻光星环
+		Tooltip: ""
+	}
+
+	LuminarTrousers: {
+		DisplayName: 幻光星裤
+		Tooltip: ""
+	}
+
+	LunarMulse: {
+		DisplayName: 月光蜜水
+		Tooltip: ""
+	}
+
+	CDRemove: {
+		DisplayName: 测试物品-移除所有冷却
+		Tooltip:
+			'''
+			左键移除所有冷却
+			在背包右键设置冷却倍率
+			当前：-[R]%冷却时间
+			'''
+	}
+
+	TheReplicaofThePen: {
+		DisplayName: 冲锋笔
+		Tooltip:
+			'''
+			骑乘时留下伤害性尾迹
+			不骑乘时自动攻击附近敌怪
+			造成虚空之触减益
+			'''
+	}
+
+	Typhoon: {
+		DisplayName: 飓风
+		Tooltip:
+			'''
+			右键在机枪和霰弹模式之间切换
+			机枪模式以快的难以想象的速度持续开火
+			霰弹模式射出大量分散的子弹
+			'''
+	}
+
+	ShadowRune: {
+		DisplayName: 暗影符文
+		Tooltip:
+			'''
+			将召唤伤害加成归零并按照[0]%:1的比例增加仆从上限
+			使其他职业的伤害大幅降低
+			增加鞭子[1]%的攻速，鞭子攻击距离翻倍
+			大量提高仆从攻击的护甲穿透
+			[c/ff9900:从孤身一人到统御千军]
+			'''
+	}
+
+	LostChubbyBird: {
+		DisplayName: 迷路的小胖鸟
+		Tooltip: ""
+	}
+
+	ConsecratedRune: {
+		DisplayName: 神圣符文
+		Tooltip: 召唤一位至高存在跟随你
+	}
+
+	MysteriousBook: {
+		DisplayName: 神秘的书
+		Tooltip: 使你变成一位神秘的少女
+	}
+
+	HellIndustrialComponents: {
+		DisplayName: 地狱工业构件
+		Tooltip:
+			'''
+			一种精密的元件，由未知金属构成
+			可用于提炼机
+			'''
+	}
+
+	DragEntity: {
+		DisplayName: 测试物品-拖拽实体
+		Tooltip: ""
+	}
+
+	OblivionThresher: {
+		DisplayName: 虚漩巡锯
+		Tooltip:
+			'''
+			按住鼠标左键蓄力在前方生成一个漩涡锯片
+			松开后将锯片发射出去
+			足够大的锯片会在飞行一段时间后根据击中敌人的数量生成追踪虚空新星并折返
+			右键向前方突进一小段距离
+			如果蓄满的锯片在此时被接住，可以进行一次强化并再次发射出去，持续发射追踪的虚空新星
+			最多只能同时存在4个普通锯片
+			'''
+	}
+
+	AcropolisRelic: {
+		DisplayName: 阿萨福勒卫城机甲圣物
+		Tooltip: ""
+	}
+
+	AcropolisTrophy: {
+		DisplayName: 阿萨福勒卫城机甲纪念章
+		Tooltip: ""
+	}
+
+	PineappleDog: {
+		DisplayName: 菠萝狗
+		Tooltip: ""
+	}
+
+	CelestialChronometer: {
+		DisplayName: 钦天司时
+		Tooltip:
+			'''
+			获得血神圣杯，阴阳吸星石和辐辉的效果
+			在脚下长出草药
+			站在草药上提升20%伤害减免
+			每秒直接回复4点生命值
+			$黍梦连稻浪，蒲酒话升平
+			'''
+	}
+
+	TerrorOfAbyss: {
+		DisplayName: 渊惧之镰
+		Tooltip: ""
+	}
+
+	ScorchingShoot: {
+		DisplayName: Cayde的复仇
+		Tooltip:
+			'''
+			每6发会发射一发高伤害烈日子弹，造成死亡标记减益
+			$解决一个需要被杀的人，方法实在太多
+			'''
+	}
+
+	TheFilthyContractWithMammon: {
+		DisplayName: 与玛门的污秽契约
+		Tooltip:
+			'''
+			收藏此物品以激活
+			激活时会受到20点伤害
+			激活时左键发射污秽射线，右键发射邪煞飞弹
+			使用其他物品会停止激活并根据使用时间对你造成6~666的伤害
+			$
+			*
+			*
+			*
+			'''
+	}
+
+	SmartArc: {
+		DisplayName: 智慧电弧
+		Tooltip: 散射棱晶弹
+	}
+
+	LostHeirloom: {
+		DisplayName: 曾经失去的东西
+		Tooltip: ""
+	}
+
+	Bramblecleave: {
+		DisplayName: 苍郁之锋
+		Tooltip:
+			'''
+			她的力量随着进度的提升而增加
+			被原初生命女神所赐福的剑
+			当前等级: [LV] / 15
+			左键攻击命中时积攒充能
+			当她的力量足够时，你可以使用以下技能：
+			@[C1][U1]
+			#[C2][U2]
+			$[C3][U3]
+			%[C4][U4]
+			'''
+	}
+
+	BLUE: {
+		DisplayName: 魔法海洋布丁
+		Tooltip: 真的能吃吗...
+	}
+
+	Vast: {
+		DisplayName: 无垠
+		TooltipBase:
+			'''
+			该饰品的强度和效果随进度增加
+			当前效果：
+			'''
+		Level0:
+			'''
+			-8%魔力消耗
+			必要时自动使用魔力药水
+			'''
+		Level1:
+			'''
+			魔力药水额外回复10%的魔力
+			拥有魔能增益时，增加4%魔法暴击率
+			'''
+		Level2:
+			'''
+			使用魔力药水后，其恢复量有75%比例立即生效，剩余25%在5秒内逐步恢复，
+			期间受到超过80点的伤害会使此恢复中断，使此次受击无敌帧延长并短暂加速回血
+			“潮水般的魔力在你的血液中脉动...”
+			'''
+		Level3:
+			'''
+			每消耗 150+基础魔力上限的20% 魔力后，获得一层魔流增益，每层增加4%强化魔力，最多可叠加5层
+			每1点强化魔力会为你提供0.03%的伤害减免
+			'''
+		Level4:
+			'''
+			魔力病与魔力烧蚀的影响减半
+			增加回复魔力时受击后的回血效果
+			'''
+		Level5: 暴击会对目标造成灵魂紊乱减益
+		Level6: 每层魔流额外提供1%魔法暴击率和3%魔法暴击伤害加成
+		Tooltip: ""
+	}
+
+	AzafureDetectionEquipment: {
+		DisplayName: 阿萨福勒推进器
+		Tooltip:
+			'''
+			获得轻微的推进
+			增加你的移动和跳跃速度
+			飞行时按住[UP]消耗飞行时间加速推进
+			'''
+	}
+
+	FadingRoseateReverie: {
+		DisplayName: 残绯幻梦
+		Tooltip: ^昨日的离别终成未来的重逢
+	}
+
+	BloodstainedShirt: {
+		DisplayName: 染血肌襦袢
+		Tooltip: ""
+	}
+
+	ScarletKilt: {
+		DisplayName: 赤绯袴
+		Tooltip: ""
+	}
+
+	KitsunesFan: {
+		DisplayName: 墨狐绯扇
+		Tooltip: ""
+	}
+
+	KitsunesMask: {
+		DisplayName: 墨狐之相
+		Tooltip: ""
+	}
+
+	TrueMoonlightSword: {
+		DisplayName: 真·月光大剑
+		Tooltip: ""
+	}
+
+	DarkBlade: {
+		DisplayName: 暗黑刀刃
+		Tooltip: ""
+	}
+
+	Fruitcake: {
+		DisplayName: 水果蛋糕
+		Tooltip:
+			'''
+			使用消耗弹药的武器时，随机选取同类型的弹药并保持原有伤害
+			命中时小概率造成短时间随机debuff
+			“彩虹效果，但闻起来像火药！”
+			'''
+	}
+
+	SmartScope: {
+		DisplayName: 智慧瞄准镜
+		Tooltip:
+			'''
+			对敌人按下鼠标中键锁定该敌人
+			使用枪械类武器时子弹必定命中
+			对衍生弹幕一样有效
+			每帧最多对一个弹幕生效
+			'''
+	}
+
+	ShadeCloak: {
+		DisplayName: 暗影披风
+		Tooltip:
+			'''
+			使你冲刺时不会受到敌人的接触或弹幕伤害并增加冲刺距离
+			这个效果需要3秒冷却
+			装备在时装栏时仅提供视觉效果
+			一件虚空缔造的斗篷，能让使用者暂时的浸润到虚空中并穿过一切
+			'''
+	}
+
+	LushGrassclassics: {
+		DisplayName: 繁茂芸编
+		Tooltip: 发射出能造成多次伤害的藤蔓
+	}
+
+	MiracleWreckage: {
+		DisplayName: 神迹残骸
+		Tooltip:
+			'''
+			左键丢出两把剑，剑会插在敌人身上并产生洪光爆破
+			如果敌人身上的剑大于 6 把，则会把多余的剑弹出，并刺向敌人
+			按下右键进入杀戮模式，并用奇迹之火延长剑刃
+			此时按下左键可以挥舞，将敌人身上插的剑刃弹出，并同时生成追踪的神迹涡流
+			再次按下右键收回
+			挥舞命中时，如果敌人身上插有剑刃，则暂时提升攻速
+			如果敌人身上有至少6把剑，那么挥砍命中会产生一个黑洞
+			'''
+	}
+
+	TheocracyMark: {
+		DisplayName: 神权印章
+		Tooltip: "[c/ff5432:感谢所有灾厄熵的开发者和支持者！]"
+	}
+
+	AzafureFurnace: {
+		DisplayName: 阿萨福勒电熔炉
+		Tooltip: 射出追踪的能量球，击中后炸开
+	}
+
+	AzafurePulseWand: {
+		DisplayName: 阿萨福勒脉冲杖
+		Tooltip:
+			'''
+			按住鼠标左键扫描周围的目标，最多标记6个目标
+			松开鼠标左键后电击所有标记的目标
+			'''
+	}
+
+	BookmarkSandstorm: {
+		DisplayName: 沙暴书签
+		Tooltip: 停止攻击后根据使用时间喷射沙弹
+	}
+
+	BottledStarlightCocoon: {
+		DisplayName: 瓶中星茧
+		Tooltip:
+			'''
+			召唤一只枯星蛾为你战斗
+			没有目标时它会围绕你并为你提供生命回复
+			按住命令仆从（[KEY]）键可以手动进入该模式
+			'''
+	}
+
+	AzafureRailgun: {
+		DisplayName: 阿萨福勒轨道炮
+		Tooltip:
+			'''
+			蓄力然后发射一发强力的电磁弹
+			蓄力过程中释放将根据蓄力程度发射一些较小的追踪子弹
+			'''
+	}
+
+	AzafureDroneRemote: {
+		DisplayName: 阿萨福勒无人机遥控器
+		Tooltip: 召唤一架会朝敌人发射导弹的无人机
+	}
+
+	AzafureHealingTowerRemote: {
+		DisplayName: 阿萨福勒治疗塔遥控
+		Tooltip:
+			'''
+			部署一台治疗塔，为附近的玩家回复生命值，并在空闲时使用激光攻击附近敌怪
+			哨兵
+			'''
+	}
+
+	Dyes: {
+		SpiritDye: {
+			DisplayName: 灵魂染料
+			Tooltip: ""
+		}
+
+		VoidCruiseDye: {
+			DisplayName: 神权染料
+			Tooltip: ""
+		}
+
+		RoaringDye: {
+			DisplayName: 呼啸染料
+			Tooltip: ""
+		}
+	}
+
+	ReallocateIndicatorData: {
+		DisplayName: ARID模块
+		Tooltip:
+			'''
+			根据手持物品随机对你的属性加成进行修改
+			它的全称是"阿萨福勒『指标再分配』模块"
+			'''
+	}
+
+	AzafureProtectiveCannon: {
+		DisplayName: 阿萨福勒城防炮发讯器
+		Tooltip:
+			'''
+			定点打击目标位置，造成范围伤害
+			20秒冷却
+			'''
+	}
+
+	AzafureTBMTerminal: {
+		DisplayName: 阿萨福勒盾构机终端
+		Tooltip:
+			'''
+			操控一架盾构机，距离玩家过远会变得难以控制
+			操控状态下使用移动键来控制移动，按住跳跃键来进行挖掘，按住Shift倒车
+			长按[ESC]键或再次使用此物品以停止操纵
+			镐力取决于你物品栏中镐力最高的镐子
+			会自动拾取附近物品进入你的物品栏
+			'''
+	}
+
+	HowlingCannon: {
+		DisplayName: 哀嚎重炮
+		Tooltip: 发射会爆炸的灵魂和无限穿透的激光
+	}
+
+	AncientFragmentsBody: {
+		DisplayName: 远古残片『|』
+		Tooltip: ""
+	}
+
+	AncientFragmentsEcho: {
+		DisplayName: 远古残片『|』
+		Tooltip: ""
+	}
+
+	AncientFragmentsMind: {
+		DisplayName: 远古残片『|』
+		Tooltip: ""
+	}
+
+	AncientFragmentsSoul: {
+		DisplayName: 远古残片『|』
+		Tooltip: ""
+	}
+
+	MomosLightPet: {
+		DisplayName: Momo的照明宠物
+		Tooltip: 它的主人至今没有给它取名
+	}
+
+	Malign: {
+		DisplayName: 魔灵
+		Tooltip: 快速发射会迸发出电弧和激光的子弹
+	}
+
+	AzafureDrill: {
+		DisplayName: 阿萨福勒手提钻
+		Tooltip: ""
+	}
+
+	AzafurePowerSaw: {
+		DisplayName: 阿萨福勒动力锯
+		Tooltip: 命中时持续切割目标
+	}
+
+	AzafureElectrocauteryWand: {
+		DisplayName: 阿萨福勒电灼杖
+		Tooltip:
+			'''
+			充能发射脉冲炸弹
+			脉冲炸弹会从周围目标上方引导雷电劈下
+			'''
+	}
+
+	BookmarkSnowgrave: {
+		DisplayName: 雪葬书签
+		Tooltip:
+			'''
+			你的射弹击中时积攒充能
+			充能为满时你的下一次攻击将会释放雪葬，造成持续的伤害并施加冰河时代减益
+			“[前进]”
+			'''
+	}
+
+	BookmarkSulphurous: {
+		DisplayName: 硫磺书签
+		Tooltip:
+			'''
+			创造一个保护你的泡泡
+			泡泡会在受击后破裂并对附近目标造成伤害
+			泡泡需要60秒恢复，在此期间你的攻击将造成辐射减益
+			'''
+	}
+
+	VoidWell: {
+		DisplayName: 虚空井
+		Tooltip: 以虚空为物品赋能，将其打造成新的存在
+	}
+
+	FadingRunestone: {
+		DisplayName: 消逝符石
+		Tooltip:
+			'''
+			浓缩着巨量未知能量的石板，质量出奇的大
+			“有那么一瞬间，你似乎感觉不到自己的存在了”
+			'''
+	}
+
+	DedicatedOracle: {
+		DisplayName: 赐死神旨
+		Tooltip:
+			'''
+			仅能进行潜伏攻击
+			冲向距离光标最近的目标并进行快速连续的斩击
+			使用后短时间内无法回复潜行值
+			'''
+	}
+
+	GlitteringBeak: {
+		DisplayName: 释缘之喙
+		Tooltip:
+			'''
+			吞噬掉光标所指的所有物块
+			右键以更大的范围挖掘
+			'''
+	}
+
+	GatheringSwarm: {
+		DisplayName: 蜂群集结
+		Tooltip:
+			'''
+			召唤蜂群，它们会为你拾取钱币和你收藏的物品
+			手持此物品时蜂群将会拾取所有的掉落物
+			装备在时装栏也能生效
+			'''
+	}
+
+	AzafureHeavyArmor: {
+		DisplayName: 阿萨福勒重型护甲
+		Tooltip: ""
+	}
+
+	AzafureHeavyHelmet: {
+		DisplayName: 阿萨福勒重型头盔
+		Tooltip: ""
+	}
+
+	AzafureHeavyLeggings: {
+		DisplayName: 阿萨福勒重型腿甲
+		Tooltip: ""
+	}
+
+	BookmarkHammer: {
+		DisplayName: 魔锤书签
+		Tooltip: 手持法书时召唤一把自动攻击的魔锤
+	}
+
+	CrossBorderPursuit: {
+		DisplayName: 祟界宣杀
+		Tooltip:
+			'''
+			仅能进行潜伏攻击
+			冲向距离光标最近的目标并进行快速连续的斩击
+			使用后短时间内无法回复潜行值
+			'''
+	}
+
+	BookmarkSword: {
+		DisplayName: 魔剑书签
+		Tooltip: 手持法书时召唤一把自动攻击的魔剑
+	}
+
+	AzafureEKatana: {
+		DisplayName: 阿萨福勒电太刀
+		Tooltip: '''"电光飞溅"'''
+	}
+
+	AzafureCogfly: {
+		DisplayName: 阿萨福勒齿轮蜂
+		Tooltip: 召唤一只自动攻击敌人的齿轮蜂
+	}
+
+	StarBreaker: {
+		DisplayName: 星启破军
+		Tooltip:
+			'''
+			左键快速突刺，每第四下突刺会变得更大且更强
+			右键上下挥舞，随后向前方冲刺，冲刺期间无敌
+			'''
+	}
+
+	Gungnir: {
+		DisplayName: 永恒神枪 冈格尼尔
+		Tooltip: 击中后降下闪电和陨星
+	}
+
+	ChaosCore: {
+		DisplayName: 混沌核心
+		Tooltip: '''"跟某个神灵的形象意外的相似"'''
+	}
+
+	ReindeerBell: {
+		DisplayName: 驯鹿铃铛
+		Tooltip:
+			'''
+			“
+			我要长出巨大的天使翅膀。
+			尽我所能地飞远，回望这一切...
+			天际线如节日的彩灯般闪闪发光...
+			”
+			'''
+	}
+
+	AzureRapier: {
+		DisplayName: 苍蓝刺剑
+		Tooltip:
+			'''
+			进行快速的戳刺攻击
+			右键进行格挡，成功格挡后会立刻进行反击
+			格挡有10秒冷却时间，在此期间你依然可以使用格挡但不能挡下全部伤害
+			命中时有概率造成各种减益
+			'''
+	}
+
+	FetalDream: {
+		DisplayName: 胎儿之梦
+		Tooltip:
+			'''
+			在不被注意的瞬间移动到目标背后，施加致命的斩击
+			额外造成目标最大生命值2.5%的伤害，此效果有较长冷却
+			[c/E13B3B:“曾被用来无意识杀人的小刀，似乎残留着少女的体温....”]
+			'''
+	}
+
+	DustCarver: {
+		DisplayName: 刻尘者
+		Tooltip:
+			'''
+			随着进度而变强
+			当前等级：[LV] / 16
+			$根据当前等级生成一些深渊之灵保护你
+			$右键改变其行为模式，按住Shift再点击右键只改变距离光标最近的魔灵行为模式:
+			$  穿刺状态能反复切割目标，射击状态下会朝目标发射追踪深渊束，
+			$^  防御状态会为你阻挡来袭的射弹并增加伤害减免
+			%从屏幕外发射猩红尖刺穿透目标
+			&射击时发射追踪深渊束
+			'''
+	}
+
+	BlackFlower: {
+		DisplayName: 黑色的花
+		Tooltip:
+			'''
+			“
+			悲伤，愤怒，憎恶与绝望化作汹涌杀意。
+			荒草疯狂生长，黑色的花朵在无穷无尽绽放。
+			千万死者的泣声一同鸣响。
+			”
+			使你化身为特莉波卡
+			'''
+	}
+
+	AzafureTacticalRadio: {
+		DisplayName: 阿萨福勒战术电台
+		Tooltip: 部署一台导弹发射井，锁定最近的目标并朝其发射导弹
+	}
+
+	SentryRemover: {
+		DisplayName: 哨兵拆除器
+		Tooltip: 拆除你部署的哨兵
+	}
+
+	BookmarkFairy: {
+		DisplayName: 仙灵书签
+		Tooltip: 召唤三只追逐敌人并攻击的仙灵
+	}
+
+	AzafureCylinder: {
+		DisplayName: 阿萨福勒音桶
+		Tooltip:
+			'''
+			发射出带电的金属球，靠近敌人炸开
+			“存储着带有魔法的旋律”
+			'''
+	}
+
+	BookmarkStinger: {
+		DisplayName: 毒刺书签
+		Tooltip: 自动向附近敌人发射毒刺并施加中毒减益
+	}
+
+	BookmarkSpore: {
+		DisplayName: 孢子书签
+		Tooltip:
+			'''
+			攻击时产生会追踪敌人并留下滞留孢子云的孢子
+			孢子云会对接触到的敌人持续造成伤害并减缓其速度
+			'''
+	}
+
+	DarkScripture: {
+		DisplayName: 黑暗秘典
+		Tooltip: 发射追踪的黑暗弹
+	}
+
+	SelenbiteVolume: {
+		DisplayName: 月蚀卷册
+		Tooltip: 释放滞留的星星，星星会追逐附近的目标并造成伤害
+	}
+
+	MagicBookmarkHolder: {
+		DisplayName: 魔法书签夹
+		Tooltip:
+			'''
+			+[D]% 魔法伤害
+			为所有熵语之书增加一个额外的书签栏位
+			"意外的是，使用这个夹子夹上的书签能完美的发挥效果"
+			'''
+	}
+
+	ExquisiteBookmarkHolder: {
+		DisplayName: 精致书签夹
+		Tooltip:
+			'''
+			+[S]% 魔法暴击率
+			为所有熵语之书增加一个额外的书签栏位
+			"上面有顶魔术礼帽的精致书签夹"
+			由旅商售卖
+			'''
+	}
+
+	HolyBookmarkHolder: {
+		DisplayName: 神圣书签夹
+		Tooltip:
+			'''
+			+[S]% 魔法暴击率
+			+[D]% 魔法伤害
+			为所有熵语之书增加2个额外的书签栏位
+			"带有神圣光辉的书签，可以轻而易举的将书签紧紧夹在书中"
+			'''
+	}
+
+	Knightmare: {
+		DisplayName: 梦幻崩影
+		Tooltip: 召唤一把能够干净利落的切碎任何敌人的梦魇神锋
+	}
+
+	BookmarkStarwreckage: {
+		DisplayName: 星骸书签
+		Tooltip: 抛射出无视无敌帧的金属块
+	}
+
+	BookmarkLacewings: {
+		DisplayName: 草蛉书签
+		Tooltip: 召唤3只七彩草蛉，朝附近目标发射七彩射线
+	}
+
+	BookmarkWulfrum: {
+		DisplayName: 钨钢书签
+		Tooltip:
+			'''
+			攻击时每隔一段时间召唤一架钨钢无人机
+			无人机会朝附近敌怪发射钨钢金属废料
+			无人机会在3秒后坠毁并爆炸
+			'''
+	}
+
+	BookmarkCosmic: {
+		DisplayName: 寰宇书签
+		Tooltip: 召唤弑神之蟒为你而战，造成弑神怒焰和死亡标记减益
+	}
+
+	AzafurePeaceKey: {
+		DisplayName: 阿萨福勒和平密钥
+		Tooltip:
+			'''
+			召唤一台核弹发射井，它会向附近目标发送“和平使者”
+			你最多只能部署一台发射井
+			'''
+	}
+
+	AzafureDriverCore: {
+		DisplayName: 阿萨福勒驱动核心
+		Tooltip:
+			'''
+			为你提供[S]点护盾
+			消耗充能进行冲刺，充能会缓慢恢复
+			'''
+	}
+
+	VoidEaterBodyArmor: {
+		DisplayName: 噬虚者护甲
+		Tooltip: 增加12%伤害
+	}
+
+	VoidEaterHelmet: {
+		DisplayName: 噬虚者头盔
+		Tooltip: 增加12%伤害和暴击率
+	}
+
+	VoidEaterLeggings: {
+		DisplayName: 噬虚者腿甲
+		Tooltip: 增加18%移动速度
+	}
+
+	RedDragonHorn: {
+		DisplayName: 红龙角
+		Tooltip: 使你化身为耶芙娜
+	}
+
+	ChaoticBodyArmor: {
+		DisplayName: 混沌护甲
+		Tooltip:
+			'''
+			增加4HP/s自然生命再生
+			增加10%伤害减免和1最大仆从栏位
+			'''
+	}
+
+	ChaoticHelmet: {
+		DisplayName: 混沌头盔
+		Tooltip: 增加8%伤害和1最大仆从栏位
+	}
+
+	ChaoticLeggings: {
+		DisplayName: 混沌腿甲
+		Tooltip: 增加8%移动速度和13%暴击率
+	}
+
+	ChaoticPiece: {
+		DisplayName: 混沌裂片
+		Tooltip: ""
+	}
+
+	NihilityFragments: {
+		DisplayName: 虚无残片
+		Tooltip: ""
+	}
+
+	CosmicBlessing: {
+		DisplayName: 星宙神赋
+		Tooltip: 从背后快速射出死亡激光，造成弑神怒焰减益
+	}
+
+	CharredMissile: {
+		DisplayName: 焦黑导弹
+		Tooltip: 每个黏附的射弹增加2%目标受到伤害
+	}
+
+	OsseousRemains: {
+		DisplayName: 遗骨
+		Tooltip: “有烧焦的味道”
+	}
+
+	FrailMissile: {
+		DisplayName: 孱弱
+		Tooltip:
+			'''
+			{$MissileLauncherDescTooltip}
+			{$MissileLauncherMaxStickTooltip}
+			'''
+	}
+
+	Hope: {
+		DisplayName: 霞光
+		Tooltip:
+			'''
+			{$MissileLauncherDescTooltip}
+			{$MissileLauncherMaxStickTooltip}
+			造成狱炎减益
+			'''
+	}
+
+	Crave: {
+		DisplayName: 渴求
+		Tooltip:
+			'''
+			{$MissileLauncherDescTooltip}
+			{$MissileLauncherMaxStickTooltip}
+			造成硫磺火减益
+			'''
+	}
+
+	Struggle: {
+		DisplayName: 挣脱
+		Tooltip:
+			'''
+			{$MissileLauncherDescTooltip}
+			{$MissileLauncherMaxStickTooltip}
+			造成硫磺火减益
+			爆炸时生成硫火飞弹
+			'''
+	}
+
+	Pardon: {
+		DisplayName: 赦免
+		Tooltip:
+			'''
+			{$MissileLauncherDescTooltip}
+			{$MissileLauncherMaxStickTooltip}
+			爆炸时生成瘟疫导弹
+			'''
+	}
+
+	PaleSpear: {
+		DisplayName: 苍白长枪
+		Tooltip: ""
+	}
+
+	AzafureSteamKnightArmor: {
+		DisplayName: 阿萨福勒蒸汽骑士护甲
+		Tooltip: ""
+	}
+
+	AzafureSteamKnightHelmet: {
+		DisplayName: 阿萨福勒蒸汽骑士头盔
+		Tooltip: ""
+	}
+
+	AzafureSteamKnightLeggings: {
+		DisplayName: 阿萨福勒蒸汽骑士护腿
+		Tooltip: ""
+	}
+
+	TrainingSword: {
+		DisplayName: 训练竹刀
+		Tooltip: ""
+	}
+
+	ExquisiteHairband: {
+		DisplayName: 精致发箍
+		Tooltip: 使你化身为小叶子
+	}
+
+	LingsHairAccessory: {
+		DisplayName: 零的发饰
+		Tooltip: 使你化身为霞露零
+	}
+
+	VoidCore: {
+		DisplayName: 虚空驱动核心
+		Tooltip:
+			'''
+			提供[S]点护盾，护盾会缓慢恢复
+			允许你冲刺穿过敌怪并对其施加虚空斩
+			增加[C]%暴击伤害
+			'''
+	}
+
+	Depletion: {
+		DisplayName: 灾灵
+		Tooltip: 快速发射会迸发出多束激光的子弹
+	}
+
+	Amnesty: {
+		DisplayName: 神灵
+		Tooltip: 快速发射会迸发出多束电弧和追踪射弹的子弹
+	}
+
+	SusiesBracelet: {
+		DisplayName: 苏西的腕带
+		Tooltip:
+			'''
+			随着游戏进度提供越来越多的属性加成
+			+[DEF] 防御
+			+[DMG]% 伤害
+			+[LIFE] 最大生命值
+			+[MANA] 最大魔力值
+			'''
+	}
+
+	AcropolisHeavyArmor: {
+		DisplayName: 阿萨福勒卫城重甲
+		Tooltip:
+			'''
+			+8% 暴击率
+			+1 召唤栏
+			'''
+	}
+
+	AcropolisHeavyHelmet: {
+		DisplayName: 阿萨福勒卫城重盔
+		Tooltip:
+			'''
+			+10% 伤害
+			+10% 暴击伤害
+			'''
+	}
+
+	AcropolisHeavyLegArmor: {
+		DisplayName: 阿萨福勒卫城腿甲
+		Tooltip:
+			'''
+			+15% 移速
+			+20%跳跃速度
+			'''
+	}
+
+	ExquisiteCrown: {
+		DisplayName: 精致皇冠
+		Tooltip: 召唤一顶向附近敌人发射射线的金冠
+	}
+
+	RottenFangs: {
+		DisplayName: 腐檀獠牙
+		Tooltip: 仆从会时不时向附近敌人发射一些血弹
+	}
+
+	CreeperWand: {
+		DisplayName: 飞眼法杖
+		Tooltip: 召唤轮流攻击的飞眼
+	}
+
+	CursedTorch: {
+		DisplayName: 诅咒火炬
+		Tooltip: 召唤诅咒火炬，向敌人喷射诅咒焰
+	}
+
+	PhantomBottle: {
+		DisplayName: 幻空瓶
+		Tooltip: 召唤虚空猎食者的投影
+	}
+
+	PureIceShard: {
+		DisplayName: 纯洁冰晶
+		Tooltip: ⑨
+	}
+
+	MottledSpear: {
+		DisplayName: 斑驳矛索
+		Tooltip:
+			'''
+			将你拉向物块
+			靠近时自动脱钩
+			长度: [1]格
+			发射速度: [2]
+			回收速度: [3]
+			牵引速度: [4]
+			'''
+	}
+
+	Daylight: {
+		DisplayName: 朝霞
+		Tooltip:
+			'''
+			{$CommonItemTooltip.SummonTagDamage}
+			{$CommonItemTooltip.Whips}
+			鞭击命中后在目标附近生成一个朝霞之阳
+			召唤物攻击会使朝霞之阳向目标发射日光射线
+			'''
+	}
+
+	AmuletOfHealing: {
+		DisplayName: 治愈护符
+		Tooltip:
+			'''
+			+8%召唤伤害
+			每有一个召唤栏位，增加0.5/s生命再生，最多增加3/s
+			'''
+	}
+
+	AmuletOfSanctuary: {
+		DisplayName: 庇护护符
+		Tooltip:
+			'''
+			+8%召唤伤害
+			每有一个召唤栏位，增加2点防御，最多增加12点
+			'''
+	}
+
+	BookmarkMarivium: {
+		DisplayName: 渊洋书签
+		Tooltip:
+			'''
+			召唤一条小型妖龙，为你阻挡弹幕
+			攻击将施加生命压制
+			'''
+	}
+
+	HungryLantern: {
+		DisplayName: 饿鬼提灯
+		Tooltip:
+			'''
+			增加1个召唤栏
+			召唤一只饿鬼，饿鬼会咬住敌人并持续造成伤害
+			同时，所有对这名敌人的伤害将乘算提升[A]%
+			'''
+	}
+
+	OuijaBoard: {
+		DisplayName: 通灵石板
+		Tooltip: 召唤灵魂攻击敌人
+	}
+
+	OblivionSkull: {
+		DisplayName: 冥骸头骨
+		Tooltip: 召唤一只诅咒头骨，向敌人发射骷髅头
+	}
+
+	BloodCodex: {
+		DisplayName: 血脉巨典
+		Tooltip:
+			'''
+			从翻开的书页中发射血液，命中时有概率为你回复生命值
+			敌怪死亡后产生血爆
+			'''
+	}
+
+	PressureEsoterica: {
+		DisplayName: 重压秘笈
+		Tooltip: 发射深渊束
+	}
+
+	SpectralWhispers: {
+		DisplayName: 魂语秘卷
+		Tooltip: 发射会黏附在敌人和物块上并爆炸的低语尖刺
+	}
+
+	BookmarkBloodthirsty: {
+		DisplayName: 嗜血书签
+		Tooltip:
+			'''
+			命中后积攒怒气值
+			受击后重置射击冷却并根据伤害暂时提升攻速
+			+0.1 生命汲取
+			'''
+	}
+
+	GoldenRock: {
+		DisplayName: 金岩石
+		Tooltip:
+			'''
+			击杀敌人会增加此物品的价值
+			根据当前的价值提供部分伤害加成
+			最高增加10%伤害
+			当前价值:[A]
+			伤害增幅:+[B]%
+			'''
+	}
+
+	WhipOfEvilKing: {
+		DisplayName: 邪恶国王之鞭
+		Tooltip:
+			'''
+			{$CommonItemTooltip.SummonTagDamage}
+			{$CommonItemTooltip.Whips}
+			同时召唤一个滞留的黑桃弹幕，对接触的敌人持续造成伤害
+			'''
+	}
+
+	ChargingYuzu: {
+		DisplayName: 充能柚子
+		Tooltip:
+			'''
+			每个正在运行的柚子社游戏提供以下增益:
+			+10% 伤害
+			+5% 伤害减免
+			当前: [A]个正在运行的游戏
+			'''
+	}
+
+	TalismanOfTheAzureAbyss: {
+		DisplayName: 苍溟护符
+		Tooltip:
+			'''
+			使你可以在深渊中呼吸，并免疫深渊水压和深渊重压减益
+			增加15%伤害和15%移动速度
+			增加2.5HP/s自然生命再生
+			受到大于最大生命值35%的伤害时生成环绕你的苍溟护盾，将所有伤害减少25%，持续8秒
+			同时召唤一些苍溟漩涡追击敌人，护盾存在时受击也会生成苍茫漩涡
+			在水中时能够恢复飞行时间
+			显著提升在水中的机动性和在深渊中的视野，护盾存在时此效果将增强
+			'''
+	}
+
+	TerraTiz: {
+		DisplayName: 提拉蒂斯
+		Tooltip:
+			'''
+			“一个栩栩如生的微缩星球拴在一个铁链上，或许这就是某一星球文明与宗主签订契约造成的后果吧.."
+			佩戴上以后可以变成粉毛恶魔
+			'''
+	}
+
+	SignalBlocker: {
+		DisplayName: 信号屏蔽器
+		Tooltip: 标记为收藏以阻止阿萨福勒卫城机甲自然生成
+	}
+
+	Filthless: {
+		DisplayName: 污袪
+		Tooltip:
+			'''
+			{$MissileLauncherDescTooltip}
+			{$MissileLauncherMaxStickTooltip}
+			最多黏附5发
+			右键点击发射一发威力巨大的火箭
+			'''
+	}
+
+	AzafureMissile: {
+		DisplayName: 阿萨福勒导弹
+		Tooltip:
+			'''
+			每个黏附的射弹增加2%目标受到伤害
+			造成更高的黏附伤害
+			-1黏附上限
+			'''
+	}
+
+	Neltharion: {
+		DisplayName: 奈萨里奥
+		Tooltip:
+			'''
+			启动完毕后，迅速发射子弹和虚空水晶
+			当你停止开火时会散射一些虚空水晶
+			虚空水晶会爆炸并造成范围伤害
+			子弹无视60点护甲
+			使用时不断消耗弹药
+			{$CommonItemTooltip.PercentChanceToSaveAmmo}
+			'''
+	}
+
+	WulfrumSniper: {
+		DisplayName: 钨钢狙击枪
+		Tooltip:
+			'''
+			以较慢速度发射子弹
+			发射5发后枪口会被融化的钨钢金属堵塞
+			此时点击鼠标左键使枪管炸开并散射出钨钢金属碎片
+			'''
+	}
+
+	Zeal: {
+		DisplayName: 热忱
+		Tooltip:
+			'''
+			{$MissileLauncherDescTooltip}
+			{$MissileLauncherMaxStickTooltip}
+			开火时附带2束追踪星云能量弹
+			'''
+	}
+
+	Zafkiel: {
+		DisplayName: 刻刻帝
+		Tooltip: ""
+	}
+
+	Sister: {
+		DisplayName: 修女
+		Tooltip: ""
+	}
+
+	ApsychosRelic: {
+		DisplayName: 烬甲秽魔圣物
+		Tooltip: ""
+	}
+
+	ApsychosTrophy: {
+		DisplayName: 烬甲秽魔纪念章
+		Tooltip: ""
+	}
+
+	ApsychosBag: {
+		DisplayName: 宝藏袋 (烬甲秽魔)
+		Tooltip: ""
+	}
+
+	TectonicShard: {
+		DisplayName: 板块碎片
+		Tooltip: “还残留着余温”
+	}
+
+	GreatSwordofEmbers: {
+		DisplayName: 灼烬巨剑
+		Tooltip: 第四次命中时碎裂成追踪板块碎片
+	}
+
+	AshesCore: {
+		DisplayName: 灰烬灵核
+		Tooltip:
+			'''
+			召唤一个灰烬之灵，朝敌人发射板块碎片
+			鞭击敌人会使灰烬之灵发射一枚火球
+			+1召唤栏
+			'''
+	}
+
+	Leyla: {
+		DisplayName: 莱拉
+		Tooltip:
+			'''
+			跟随游戏进度提供越来越强的增益：
+			+[1]防御
+			+[2]/s生命再生
+			+[3]%伤害减免
+			+[5]最大生命值
+			你造成的减益伤害增加[4]%
+			有概率造成一个根据时期增强的减益
+			等级 - [L]/[ML]
+			'''
+	}
+
+	HellstoneMissile: {
+		DisplayName: 狱炎导弹
+		Tooltip: 每个黏附的射弹增加2%目标受到伤害
+	}
+
+	WulfrumMissile: {
+		DisplayName: 钨钢导弹
+		Tooltip: 每个黏附的射弹增加1%目标受到伤害
+	}
+
+	CursedRunestone: {
+		DisplayName: 诅咒符石
+		Tooltip:
+			'''
+			在地狱使用以吸引那狂暴巨兽的注意
+			“为什么要这么做？”
+			'''
+	}
+
+	AshesBow: {
+		DisplayName: 灰烬短弓
+		Tooltip:
+			'''
+			射击同时进行充能，完全充能需要3秒
+			充能完毕时松开鼠标左键会释放一道威力巨大的火焰射线
+			'''
+	}
+
+	SmolderingBreastplate: {
+		DisplayName: 灼烬护甲
+		Tooltip:
+			'''
+			+2/s 生命再生
+			+8% 伤害减免
+			免疫岩浆和着火伤害
+			'''
+	}
+
+	SmolderingGreaves: {
+		DisplayName: 灼烬腿甲
+		Tooltip: 显著提升移动速度
+	}
+
+	SmolderingHelmet: {
+		DisplayName: 灼烬头盔
+		Tooltip:
+			'''
+			+8%伤害
+			+5%暴击率
+			'''
+	}
+
+	CinderConvergencer: {
+		DisplayName: 狱烬聚能枪
+		Tooltip:
+			'''
+			发射一些能量弹并充能
+			当充满能量时变为蓝色，并发射最多3发更为强大的爆炸弹
+			'''
+	}
+
+	AshesSword: {
+		DisplayName: 灰烬之刃
+		Tooltip: 抛射出会爆炸并发射火球的灼烬石块
+	}
+
+	EmberBolt: {
+		DisplayName: 灰烬矢
+		Tooltip: 发射爆炸火球，飞行一段距离或命中敌怪爆炸并产生追踪的板块碎片
+	}
+
+	RemnantsStaff: {
+		DisplayName: 遗殇法杖
+		Tooltip: 发射追踪的遗殇之星，命中后爆炸
+	}
+
+	CinderLantern: {
+		DisplayName: 狱烬灯笼
+		Tooltip: 召唤一个狱烬灵核，向附近敌人发射火球
+	}
+
+	Fuusen: {
+		DisplayName: 風船
+		Tooltip: ""
+	}
+
+	Ratziel: {
+		DisplayName: 嗫告篇帙
+		Tooltip:
+			'''
+			召唤一个哨兵，攻击范围内的敌人
+			为你投射出一个可抵挡伤害的护盾
+			随着时期增加伤害，攻击范围和护盾量
+			攻击必定暴击，但只有50%的暴击伤害
+			每拥有一个召唤栏，增加该哨兵5%暴击伤害，并为你提供1防御和0.4%伤害减免
+			当前等级: [LV] / [MAXLV]
+			'''
+	}
+
+	AzafureSupportRemote: {
+		DisplayName: 阿萨福勒支援遥控
+		Tooltip: 召唤一架阿萨福勒迷你战斗机，向敌人发射穿甲弹
+	}
+
+	AerialiteMissile: {
+		DisplayName: 天蓝导弹
+		Tooltip:
+			'''
+			爆炸时生成羽毛
+			每个黏附的射弹增加2%目标受到伤害
+			'''
+	}
+
+	ClusterMissile: {
+		DisplayName: 集束导弹
+		Tooltip:
+			'''
+			飞行一段时间或命中后爆炸
+			爆炸时分裂出5发追踪小型导弹
+			小型导弹可黏附在目标身上，并拥有两倍的黏附上限
+			每个黏附的小型导弹增加1%目标受到伤害
+			'''
+	}
+
+	GiantBoulder: {
+		DisplayName: 超大巨石
+		Tooltip: “残缺陷阱聚合而成的完美造物”
+	}
+
+	BeewaxWall: {
+		DisplayName: 蜂蜡墙
+		Tooltip: ""
+	}
+
+	HallowedMissile: {
+		DisplayName: 圣化导弹
+		Tooltip:
+			'''
+			具有更大的爆炸半径
+			每个黏附的射弹增加3%目标受到伤害
+			'''
+	}
+
+	AzafurePhonograph: {
+		DisplayName: 阿萨福勒留声机
+		Tooltip: 播放阿萨福勒卫城机甲的主题曲
+	}
+
+	BuriedSun: {
+		DisplayName: 埋葬之阳
+		Tooltip:
+			'''
+			连发[c/f0ffe6:日陨激光]，在消失时生成[c/f0ffe6:噬阳光点]
+			临近的3个光点会朝附近的目标发射[c/f0ffe6:葬日裂弹]并汇聚在一起并发射不穿透的[c/f0ffe6:日陨激光]
+			'''
+	}
+
+	BaXingChong: {
+		DisplayName: 八星铳
+		Tooltip:
+			'''
+			发射大量追踪的导弹
+			[c/ff7f50:“这把枪的前主人？你说那个全身凑不出二两肉的家伙？”]
+			'''
+	}
+
+	YoungMaster: {
+		DisplayName: 贵公子
+		Tooltip:
+			'''
+			丢出一个拼接而成的回旋镖
+			右键点击向前方冲刺，在此期间不会受到伤害
+			冲刺撞击到任何目标时会后空翻并在空中发射一个大范围的X形剑气，
+			剑气命中造成延迟爆炸同时为武器充能，强化接下来的10次普通攻击
+			'''
+	}
+
+	AzafureImperialGuardMachineGun: {
+		DisplayName: 阿萨福勒近卫机枪
+		Tooltip:
+			'''
+			使用[i:CalamityEntropyLegacy/HellIndustrialComponents]地狱工业构件为武器装载[AMMOMAX]发弹药
+			快速散射短程霰弹
+			'''
+	}
+
+	AzafureExhaustGasInjector: {
+		DisplayName: 阿萨福勒废气喷射器
+		Tooltip: 喷射腐蚀性废气
+	}
+
+	AzafureStandardShotgun: {
+		DisplayName: 阿萨福勒制式霰弹
+		Tooltip: 发射散射的霰弹
+	}
+
+	ThalassianGleam: {
+		DisplayName: 渊潇棱光之杖
+		Tooltip: ""
+	}
+
+	GoldenFlowerInAJar: {
+		DisplayName: 罐中金色花
+		Tooltip:
+			'''
+			将背景变为一片粉金的田野
+			$谢谢你见证我的梦
+			'''
+	}
+
+	Erebodrepanon: {
+		DisplayName: 泓渊亡铭
+		Tooltip: 挥舞一把巨镰，将你的敌人撕的粉碎
+	}
+
+	FlowerHeadband: {
+		DisplayName: 花朵发箍
+		Tooltip: 使你化身为四季夏目
+	}
+
+	Silentpeak: {
+		DisplayName: 静岳之剑
+		Tooltip: 召唤铁皇的意志护你左右
+	}
+
+	FeatheredHeadpiece: {
+		DisplayName: 羽翼头饰
+		Tooltip: 使你化身为白雪乃爱
+	}
+
+	TsumugisHood: {
+		DisplayName: 紬的兜帽
+		Tooltip:
+			'''
+			使你化身为椎叶紬
+			在物品栏中Shift+右键点击此物品切换兜帽是否显示
+			[c/e9afc0:当前: [D]]
+			'''
+		Show: 显示
+		Hide: 隐藏
+	}
+
+	CrystalofHeart: {
+		DisplayName: 心之水晶
+		Tooltip: 使你化身为因幡巡
+	}
+
+	FuchsiaRibbon: {
+		DisplayName: 品红缎带
+		Tooltip: 使你化身为丛雨
+	}
+
+	MikoMaeTengkan: {
+		DisplayName: 巫女头冠
+		Tooltip: 使你化身为朝武芳乃
+	}
+
+	TectonicChainBlade: {
+		DisplayName: 板块链刃
+		Tooltip:
+			'''
+			{$CommonItemTooltip.SummonTagDamage}
+			{$CommonItemTooltip.Whips}
+			仆从命中被标记的敌怪有概率产生追踪板块碎片
+			'''
+	}
+
+	OathBanner: {
+		DisplayName: 誓约战旗
+		Tooltip:
+			'''
+			减少[DR]%所受伤害
+			增加[REG]/s自然生命再生
+			减少[MSD]%移动速度
+			为周围625格内同一队伍的其他玩家提供以下增益：
+			增加[DMG]%伤害
+			增加[CRIT]%暴击率
+			增加[MSA]%移动速度
+			'''
+	}
+
+	ReapersButterfly: {
+		DisplayName: 死神之蝶
+		Tooltip: 使你化身为明月栞那
+	}
+
+	BottleofCrystal: {
+		DisplayName: 水晶之瓶
+		Tooltip: 使你化身为绫地宁宁
+	}
+
+	BlackSkirt: {
+		DisplayName: 黑色短裙
+		Tooltip: 使你化身为谷风天音
+	}
+
+	CantaloupeSmoothie: {
+		DisplayName: 哈密瓜冰沙
+		Tooltip: 使你化身为小云雀来海
+	}
+
+	BellwayBell: {
+		DisplayName: 钟道铃铛
+		Tooltip: 召唤钟道兽宝宝
+	}
+
+	FlowerWithFace: {
+		DisplayName: 长脸的花
+		Tooltip:
+			'''
+			召唤Flowery跟随你
+			Flowery会使用Jarona攻击附近的敌人
+			'''
+	}
+
+	AntlionShell: {
+		DisplayName: 干缩蚁狮
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			引导黄沙恶虫撕咬目标
+			'''
+	}
+
+	AzafureMicroBeacon: {
+		DisplayName: 阿萨福勒微型信标
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			呼叫突击无人机群扫射目标
+			'''
+	}
+
+	DeliciousAcorn: {
+		DisplayName: 美味橡果
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			召唤松鼠小队朝目标投掷石子
+			'''
+	}
+
+	MoltenAnchor: {
+		DisplayName: 熔融骨锚
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			召唤骨蟒，灼烧所有碰到的目标
+			'''
+	}
+
+	MoonlightCore: {
+		DisplayName: 月荧核
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			召唤幻影眼攻击目标
+			'''
+	}
+
+	MutantBulb: {
+		DisplayName: 变异球茎
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			召唤藤蔓刺穿目标
+			'''
+	}
+
+	MechanicalTransmitter: {
+		DisplayName: 机械发讯器
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			召唤一些探测器用激光攻击目标
+			'''
+	}
+
+	MagicHat: {
+		DisplayName: 魔术帽
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			召唤3只鸽子攻击目标
+			'''
+	}
+
+	KamishiroKou: {
+		DisplayName: 神代工的破损主人公护目镜
+		Tooltip:
+			'''
+			“如果被选召是一个彻头彻尾的谎言，为的只是把我们装进盒子里变为进化食粮……
+			捏着有着后门的神圣计划，在这数码缅北中，我们又该何去何从呢？”
+			'''
+	}
+
+	FrostboundCage: {
+		DisplayName: 寒霜锢笼
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			释放被囚禁的恶灵们，它们会使用追踪冰弹攻击目标
+			'''
+	}
+
+	BlueFlatTopMushroom: {
+		DisplayName: 蓝色平顶菇
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			召唤一只蓝狐
+			蓝狐会偷走蘑菇并释放一团孢子云
+			'''
+	}
+
+	SacredStone: {
+		DisplayName: 圣火流石
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			黏附后经过两秒的再次充能会从目标身上弹出，并释放圣火焚烧目标
+			'''
+	}
+
+	BottledFissure: {
+		DisplayName: 瓶装裂隙
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			黏附一段时间后炸开，释放[ceeffect/cruiser:噬虚弹]反复撕咬目标
+			'''
+	}
+
+	AzafureWarSatelliteAuthorizationKey: {
+		DisplayName: 阿萨福勒战争卫星密钥
+		Tooltip:
+			'''
+			{$BaitCommonTooltip1}
+			{$BaitCommonTooltip2}
+			召唤阿萨福勒战争卫星打击目标
+			'''
+	}
+
+	Fooveria: {
+		DisplayName: 霜痕
+		Tooltip:
+			'''
+			“杀戮与世界意志滋养的武器，前来助您净化这个世界。”
+			在击败克苏鲁之眼后，手持且未攻击时增加6点防御
+			随时期增强: [L] / 15
+			'''
+	}
+
+	AzafureTwinSaw: {
+		DisplayName: 阿萨福勒双锯
+		Tooltip: 上下挥舞，随后将两把锯子贴合并向前喷射火花
+	}
+
+	AstralSample: {
+		DisplayName: 星辉样本
+		Tooltip:
+			'''
+			使你化身为驾驶员降翎者
+			“
+			白金星舰在被改造为自动化机械前其实曾使用过生物的驾驶兼采样员
+			也许是因为首领们迫不及待地妄想掌控星辉病毒，
+			但是甚至可以侵蚀无机体的瘟疫又怎么会放过这些生灵。
+			”
+			'''
+	}
+}
+
+BaitCommonTooltip1: 手持时充能，只能在充能完成时丢出
+BaitCommonTooltip2: 命中敌人后会黏住，并使仆从对其增加{0}点标记伤害
+SmolderingSetBonus:
+	'''
+	召唤一条灼烬之尾
+	灼烬之尾会远程攻击附近的敌人，并受伤害加成最高的职业加成
+	仆从数量上限提高1
+	增加80点潜行值
+	'''
+ChaoticSetBonus:
+	'''
+	增加40点最大生命值，12%伤害和12%伤害减免
+	增加3最大仆从栏位并增加120点最大魔力值
+	玩家受伤时会释放小型混沌细胞
+	细胞会追逐并攻击敌人，并在一段时间后返回并被转化为生命值
+	按[[KEY]]([KN])手动消耗生命值召唤3只细胞
+	最多同时存在[LIMIT]个细胞
+	+120点最大潜行值
+	'''
+VoidEaterBonus:
+	'''
+	增加14%伤害和暴击率
+	增加2最大仆从栏位并增加100点最大魔力值 
+	攻击命中时向目标发射几道激光，有3秒冷却
+	投射出一片具有[SHIELD]点耐久的护盾
+	护盾破碎后需要10秒恢复，在此期间增加1/s生命再生
+	按下[[KEY]]([KN])以消耗生命值加速护盾恢复
+	+120点最大潜行值
+	'''
+VoidEaterSet: 噬虚者套装
+ChaoticSet: 混沌套装
+NihArmorConnet:
+	'''
+	对准另一名穿着[ANOTHERSET]的玩家按下[[CONNECT]]键以进行连接
+	连接时额外增加2/s生命再生，并将生命值较低的一方的生命值抽取为另一名玩家提供治疗
+	受到致命伤害时，如果对方可承受此伤害，将由对方承担，这个效果有12秒冷却时间
+	连接时，双方都会获得虚无护盾和混沌细胞的能力
+	'''
+LOCKED: ：[已锁定]
+BCU1: 需击败史莱姆王
+BCU2: 需击败血肉宿主或腐巢意志
+BCU3: 需击败血肉墙
+BCU4: 需击败世纪之花
+BCC1: 右键后经短暂前摇后伸出藤蔓刺出
+BCC2:
+	'''
+	* 持续按住右键刺中目标会将你拉过去并撞击目标，
+	  此技能消耗20%苍郁充能条，左键命中会增加少量充能。
+	'''
+BCC3:
+	'''
+	* 右键后快速按下左键将武器扔出，
+	  剑会附着在刺中的目标上，为你持续回复血量，飞行时间，缓慢增加充能，并提供部分护甲
+	'''
+BCC4:
+	'''
+	* 双击并按住右键将武器抛出，持续消耗充能，并让武器持续来回穿刺光标附近的敌怪，
+	  此时按住左键可以旋转刀刃，持续发射追踪弹幕。
+	'''
+PrefixitemDesc:
+	'''
+	用于给护甲添加词缀
+	在物品栏中右键护甲物品
+	'''
+MariviniumSet:
+	'''
+	提供大范围的照明，并使你能在深渊看清
+	在水中时，无视阻力并无限飞行，按住下以加速下落，同时按住跳跃和下可以悬停
+	降低20%接触伤害，大幅增加生命再生，并使玩家免疫绝大多数的减益
+	增加10个最大仆从栏位，75%召唤伤害和135点潜行值
+	使用真近战武器时增加10%伤害减免和15防御
+	盗贼潜伏攻击有几率产生高伤害的水爆炸
+	获得2层可以抵挡伤害的护盾，第一层护盾恢复需要36秒的时间，第二层需要18秒
+	护盾破损会让玩家回复100点生命值，同时获得10秒“深渊狂怒”增益，增加50%伤害
+	护盾不会抵御造成伤害低于5%最大生命值的攻击
+	'''
+DeathMode: 死亡模式
+CdMantle: 神圣屏障冷却
+MissileLauncherDescTooltip: 发射可黏附在敌怪身上的导弹
+MissileLauncherMaxStickTooltip: 每个敌怪最多黏附{0}个
+
+Projectiles: {
+	VoidBladeProj.DisplayName: 虚空锋刃
+	VoidBladeHit.DisplayName: 虚空缝隙
+	Rvshoot.DisplayName: 启示录
+	PrisonOfPermafrostCircle.DisplayName: 樊寒法阵
+	IceSpike.DisplayName: 冰刺
+	IceSpikeSmall.DisplayName: 小冰刺
+	Icicle.DisplayName: 冰锥
+	IceEdge.DisplayName: 凌冽神剑
+	LightningBolt.DisplayName: 闪电
+	LightningSpear.DisplayName: 雷电之矛
+	Lightning.DisplayName: 闪电
+	Impact.DisplayName: 冲击波
+	Lcircle.DisplayName: 闪电箭尾迹
+	VoidMark.DisplayName: 虚空标记
+	Slash.DisplayName: 斩击
+	Slash2.DisplayName: 大斩击
+	AtlasNuc.DisplayName: 核爆
+	AtlasItem.DisplayName: 奖品
+	LMSpawner.DisplayName: 抽奖机生成器
+	WyrmChan.DisplayName: 妖龙酱
+	VoidStar.DisplayName: 虚空新星
+	CruiserLaserMouth.DisplayName: 虚无激光
+	VoidExplode.DisplayName: 虚空爆炸
+	VoidMonumentProj.DisplayName: 虚空符石
+	Vmwave.DisplayName: 震荡波
+	MonumentGround.DisplayName: 虚空符石
+	VoidBottleThrow.DisplayName: 掷出的虚空瓶
+	BrokenChainsaw0.DisplayName: 破损链锯
+	MechanicalChainsaw0.DisplayName: 机械链锯
+	EnslavedStar0.DisplayName: 奴役之星
+	Euangelion0.DisplayName: 福音
+	Pioneer0.DisplayName: 先驱者
+	CruiserSlash.DisplayName: 巡游者撕裂
+	DoG.DisplayName: 狗狗
+	CruiserBlackhole.DisplayName: 巡游者黑洞
+	CruiserBlackholeBullet.DisplayName: 黑洞弹
+	VoidSpike.DisplayName: 虚空尖刺
+	BHExp.DisplayName: 黑洞爆炸
+	Rvshoot2.DisplayName: 启示录
+	CruiserLaser2.DisplayName: 巡游者激光
+	AstrumDeus.DisplayName: 星神酱
+	AstralShot.DisplayName: 星辉射线
+	DarkFissure.DisplayName: 黑暗裂隙
+	VoidEchoProj.DisplayName: 虚空回响
+	TwistedTwin.DisplayName: 纠缠双子
+	StormWeaverPet.DisplayName: 风编
+	VoidLaser.DisplayName: 虚空镭射
+	VoidBlaster.DisplayName: 虚空轰击炮
+	VBSpawner.DisplayName: 虚空回响
+	Brimstone.DisplayName: 鲜血激光柱
+	LilBrimstone.DisplayName: 硫磺火宝宝
+	SilenceHook.DisplayName: 沉默之钩
+	SilenceThrow.DisplayName: 沉默
+	AbyssPet.DisplayName: 阿比斯
+	VoidPalProj.DisplayName: 虚空伙伴
+	WohShot.DisplayName: 虚空矢
+	VoidStarF.DisplayName: 虚空新星
+	WohLaser.DisplayName: 虚寂射线
+	MelonCatProj.DisplayName: 瓜猫
+	RuneSong.DisplayName: 符文之歌
+	RuneSongProj.DisplayName: 符文之歌
+	RuneArrow.DisplayName: 符文之矢
+	Rune.DisplayName: 符文
+	VoidAnnihilateProj.DisplayName: 黯天飞刀
+	VaProj.DisplayName: 湮灭弹
+	AuricBoulderProj.DisplayName: 圣金源巨石
+	SigPetProj.DisplayName: 使徒
+	AuricBoulderProjFriendly.DisplayName: 圣金源巨石
+	MoonlightShieldBreak.DisplayName: 月光护盾破碎
+	PlanetKiller.DisplayName: 猎星战舰
+	PoTProj.DisplayName: 魔君之威
+	PoTPhantom.DisplayName: 幻影魔君
+	ShadewindLanceThrow.DisplayName: 苍穹坠影
+	VoidRExp.DisplayName: 虚空爆炸
+	GhostdomWhisperHoldout.DisplayName: 冥星低语
+	VoidWraith.DisplayName: 虚空之灵
+	VoidBullet.DisplayName: 虚空弹
+	VoidMonster.DisplayName: 虚空共生体
+	VoidMonsterShoot.DisplayName: 虚寂弹
+	RustyGrenadeProjectile.DisplayName: 锈蚀榴弹
+	GodSlayerRocket.DisplayName: 弑神者火箭
+	GodSlayerRocketProjectile.DisplayName: 弑神者火箭
+	GodSlayer.DisplayName: 弑神者
+	RailPulseBowProjectile.DisplayName: 磁轨脉冲弓
+	JailerWhipProjectile.DisplayName: 狱卒长鞭
+	VoidLightBall.DisplayName: 虚光射线
+	SpImpact.DisplayName: 冲击波
+	SighterPin.DisplayName: 视域之矛
+	VoidFeather.DisplayName: 虚空之羽
+	HugeLightBall.DisplayName: 虚空圣光
+	HomingLightBall.DisplayName: 虚空光球
+	AbyssalLaser.DisplayName: 深渊激光
+	TwistedTwinMinion.DisplayName: 纠缠双子
+	AbyssalDragonHoldout.DisplayName: 幽渊魔龙杖
+	AbyssDragonProj.DisplayName: 幽渊魔龙
+	AbyssalStar.DisplayName: 深渊星
+	SlimeYoyoProjectile.DisplayName: 史莱姆悠悠球
+	OverloadFurnaceHoldout.DisplayName: 过载熔炉
+	LightningBall.DisplayName: 闪电球
+	Teletor.DisplayName: 磁流灵
+	MercySpawner.DisplayName: 怜悯
+	HelhieimBlaster.DisplayName: 荷尔海姆炮
+	MercyShoot.DisplayName: 怜悯火焰
+	HB.DisplayName: 封魂大印
+	EaterProj.DisplayName: 吞噬者
+	LostSoulProj.DisplayName: 迷失游魂
+	MantleBreak.DisplayName: 斗篷破碎
+	CruiserShadow.DisplayName: 巡游者之影
+	SamsaraCasketProj.DisplayName: 轮回剑匣
+	Recovery.DisplayName: 复苏
+	Dirge.DisplayName: 夜歌
+	CyanSunshine.DisplayName: 青晖
+	Asleep.DisplayName: 沉眠
+	SacredJudge.DisplayName: 圣裁
+	SoulDissipate.DisplayName: 殁魂
+	ZeratosHeart.DisplayName: 龙心
+	e0.DisplayName: 闪烁
+	AsleepPhantom.DisplayName: 沉眠幻影
+	CyanFeather.DisplayName: 青晖
+	RecoveryVineTop.DisplayName: 复苏之藤
+	RecoveryVine.DisplayName: 复苏之藤
+	FlowerSkeleton0.DisplayName: 复苏毒云
+	LunarExplode0.DisplayName: 月之爆炎
+	FireDragonsRoar.DisplayName: 龙魂之矛
+	ZeratosBullet0.DisplayName: 龙魂火球
+	ZeratosFireball0.DisplayName: 龙魂爆炸
+	SacrificalDagger.DisplayName: 献祭匕首
+	TargetSetProj.DisplayName: 奴役
+	UhrwerkHammerCallout.DisplayName: Uhrwerk Hammer Callout
+	AquaticPet.DisplayName: 海灾酱
+	VoidRitualCircle.DisplayName: 虚空邪教徒召唤法阵
+	VPVoidLightBall.DisplayName: 虚光球
+	VPRot.DisplayName: 虚空教主
+	VoidshadeHeld.DisplayName: 虚影薄锋
+	VoidImpact.DisplayName: 虚影剑气
+	BlackFire.DisplayName: 暗影火焰
+	RbCircle.DisplayName: Rb Circle
+	AquashardThrow.DisplayName: 晶蓝破浪
+	RadianceSpearThrow.DisplayName: 圣辉之枪
+	HolyBeam.DisplayName: 圣光
+	AbyssalPiercerThrow.DisplayName: 冥海穿刺
+	AbyssalVortex.DisplayName: 深渊漩涡
+	AbyssTentacle.DisplayName: 裂礁刺
+	AzureOfFirmamentThrow.DisplayName: 天穹之澈
+	WelkinFeather.DisplayName: 苍穹之羽
+	ArbitratorIIThrow.DisplayName: 仲裁者II
+	PoopNormalProjectile.DisplayName: 大便
+	PoopBlackProjectile.DisplayName: 黑大便
+	BlueFlies.DisplayName: 蓝苍蝇
+	PoopCornProjectile.DisplayName: 玉米大便
+	PoopFlamingProjectile.DisplayName: 着火大便
+	Flame.DisplayName: 火焰
+	PoopBombProjectile.DisplayName: 便便炸弹
+	PoopGiantProjectile.DisplayName: 巨型大便
+	PoopStinkyProjectile.DisplayName: 恶臭大便
+	FartCloud.DisplayName: 毒云
+	PoopStoneProjectile.DisplayName: 石头大便
+	PoopWhiteProjectile.DisplayName: 神圣大便
+	PoopAuricProjectile.DisplayName: 金源大便
+	PoopRedProjectile.DisplayName: 红大便
+	PoopGoldenProjectile.DisplayName: 金大便
+	PoopRainbowProjectile.DisplayName: 彩虹大便
+	PoopWulfrumProjectile.DisplayName: 钨钢大便
+	PoopVoidProjectile.DisplayName: 虚渺大便
+	DSPet.DisplayName: 小荒灾
+	NetherRiftBlade.DisplayName: 虚空裂刃
+	BloodRing.DisplayName: 虚空黑圈
+	HolyBeamRevelation.DisplayName: 圣光
+	PsyFlyProj.DisplayName: 灵能苍蝇
+	AnimaChain.DisplayName: 孤魂铁索
+	LightWisperFlame.DisplayName: 虚渺焰
+	OblivionArrow.DisplayName: 噬虚矢
+	OblivionHoldout.DisplayName: 虚噬
+	EyeOfIlmerisHoldout.DisplayName: 伊尔梅里斯之眼
+	IlmerisWaterBullet.DisplayName: 水弹
+	GravityGazeBullet.DisplayName: 天蓝射线
+	GravityGazeHoldout.DisplayName: 重力凝视
+	DivineRadienceBullet.DisplayName: 圣辉光球
+	DivineRadienceHoldout.DisplayName: 圣辉灵珠
+	NightProjectionHoldout.DisplayName: 星光幻象
+	ProjectionStar.DisplayName: 幻象之星
+	ProjectionStarSplit.DisplayName: 幻象之星
+	ProjectionStarSplitAlt.DisplayName: 幻象之星
+	LunarLightball.DisplayName: 夜明光球
+	OverloadLunarHoldout.DisplayName: 夜明星陨
+	EyeOfOthersideHoldout.DisplayName: 彼岸之眼
+	EndlessAbyssHoldout.DisplayName: 无底深渊
+	EndlessAbyssLaser.DisplayName: 深渊死光
+	Tail.DisplayName: 尾巴
+	CellBullet.DisplayName: 虚空细胞
+	CellSpike.DisplayName: 虚无尖刺
+	VoidseekerProj.DisplayName: 苍茫长镰
+	NihilityFire.DisplayName: 虚无烈焰
+	NihilityMinion.DisplayName: 虚无噬菌体
+	NihilityEnergyBall.DisplayName: 虚无能量球
+	WispLanternProj.DisplayName: 冥灵灯笼
+	VitalfeatherProjectile.DisplayName: 沐生之羽
+	DragonGoldenFire.DisplayName: 金源龙焰
+	WindOfUndertakerProjectile.DisplayName: 唤死之风
+	HadopelagicEchoIIProj.DisplayName: 幻渊回音
+	HadopelagicLaser.DisplayName: 冥渊镭射
+	HadopelagicWail.DisplayName: 冥渊尖啸
+	StarlessNightProj.DisplayName: 无星之夜
+	WhipOfServiceProjectile.DisplayName: 使役之鞭
+	XytheronProj.DisplayName: 始源遗歌
+	WyrmDash.DisplayName: 幻妖突刺
+	AbyssalCrack.DisplayName: 深渊裂隙
+	TheEnd.DisplayName: 终
+	TheBeginning.DisplayName: 始
+	SoulOfEcho.DisplayName: 回音之魂
+	Echo.DisplayName: 回音
+	SoulOfEclipse.DisplayName: 冥煌之魂
+	YstralynProj.DisplayName: 噬渊鞭挞
+	PhantomWyrm.DisplayName: 妖龙幻影
+	NihilityVirus.DisplayName: 虚无病毒
+	AnnihilateArrowProjectile.DisplayName: 虚湮之矢
+	AnnihilateArrowSplit.DisplayName: 虚湮裂片
+	NegentropyBulletProjectile.DisplayName: 逆熵弹
+	ZyphrosCrystal.DisplayName: 逝怨水晶
+	ElectricLaser.DisplayName: 电弧
+	Pioneer1.DisplayName: 虚空撕裂
+	NyxolithrakenDragon.DisplayName: 沧溟渊龙
+	NxCrack.DisplayName: 深渊撕裂
+	WaterExplosion.DisplayName: 水爆炸
+	BrimstoneBarrageFriendly.DisplayName: 硫火飞弹
+	PlanteraChan.DisplayName: 世花酱
+	AmethystFrisbeeProjectile.DisplayName: 紫水晶飞盘
+	AmethystExplosion.DisplayName: 紫晶冲击
+	AncientScripturesHeld.DisplayName: 远古典籍
+	RuneBullet.DisplayName: 符文弹
+	WelkinFeather2.DisplayName: 天空之羽
+	IceEdge2.DisplayName: 凛冽神剑
+	BrimstoneVortex.DisplayName: 硫火漩涡
+	InfiniteBookHeld.DisplayName: 无限之书
+	DarkSoul.DisplayName: 黑暗之魂
+	LightSoul.DisplayName: 光明之魂
+	AstralBullet.DisplayName: 炫星弹
+	AstralExplosion.DisplayName: 炫星爆炸
+	Detector.DisplayName: 探测器
+	TerraBoulder.DisplayName: 泰拉巨石
+	AbyssBookmarkCrack.DisplayName: 渊深之撕裂
+	VoidBurst.DisplayName: 虚湮爆炸
+	SilvaSoul.DisplayName: 始源之魂
+	GoozmaStarShot.DisplayName: 虹蚀之星
+	NovaSlimerProj.DisplayName: 新星史莱姆
+	AriesExplosion.DisplayName: 白羊座爆炸
+	DecayPactMaelstrom.DisplayName: 喑哑魔涡
+	WarPactApollo.DisplayName: 迷你星流双子
+	WarPactArtemis.DisplayName: 迷你星流双子
+	ExoShot1.DisplayName: 星流射弹
+	ArMinionLaser.DisplayName: 星流激光
+	UpdraftBullet.DisplayName: 升流风弹
+	UpdraftTomeHeld.DisplayName: 升流古书
+	RedemptionSpear.DisplayName: 救赎之矛
+	RedemptionBibleHeld.DisplayName: 救赎圣经
+	RedemptionArrow.DisplayName: 救赎之矢
+	RedemptionBow.DisplayName: 救赎长弓
+	NightEpicHeld.DisplayName: 夜空史诗
+	NightStar.DisplayName: 史诗之星
+	AshTranscriptHeld.DisplayName: 灰烬笔录
+	ATLaser.DisplayName: 灰烬射线
+	VoidOdeHeld.DisplayName: 虚空颂章
+	SighterPinFriendly.DisplayName: 视域长枪
+	ControlTerminalHeld.DisplayName: 控制终端
+	ExoWhirl.DisplayName: 星流旋刃
+	WhirlExobeam.DisplayName: 星流旋刃射线
+	TabooVolumeHeld.DisplayName: 禁忌卷册
+	BrimstoneHellblastFriendly.DisplayName: 硫火飞弹
+	JewelRuby.DisplayName: 王冠红宝石
+	RubyProj.DisplayName: 红宝石射弹
+	JewelEmerald.DisplayName: 王冠绿宝石
+	JewelSapphire.DisplayName: 王冠蓝宝石
+	NetherRiftCrack.DisplayName: 幽冥裂缝
+	CrystedgeWhipSpawner.DisplayName: 凝晶鞭刃
+	CrystedgeProj.DisplayName: 凝晶鞭刃
+	CrystedgeCrystalSmall.DisplayName: 微型水晶碎片
+	CrystedgeCrystalMid.DisplayName: 中型水晶碎片
+	CrystedgeCrystalBig.DisplayName: 大型水晶碎片
+	ToiletLaser.DisplayName: 虚无激光
+	ToiletVoidPoop.DisplayName: 蚀虚神粪
+	SinewLashProj.DisplayName: 撕裂之腱
+	ProminenceSplitShot.DisplayName: 日珥霰弹
+	BatteringRamProj.DisplayName: 破城矛
+	BatteringRamShell.DisplayName: 弹壳
+	MindCorruptorProj.DisplayName: 蚀心者
+	CorruptStrike.DisplayName: 暗影斩切
+	RuneTorrent.DisplayName: 符文洪流
+	RuneBulletHostile.DisplayName: 符文弹
+	RuneCrystalTop.DisplayName: 符文晶簇
+	ProphetRune.DisplayName: 符文
+	ProphetLightning.DisplayName: 先知脉冲束
+	FableEye.DisplayName: 预言之眼激光
+	RuneSword.DisplayName: 符文飞剑
+	ProphetVoidSpike.DisplayName: 虚空触手
+	UrnOfSoulsHoldout.DisplayName: 灵魂之瓮
+	UrnSoulFire.DisplayName: 灵魂之火
+	WelkingShield.DisplayName: 苍穹之盾
+	SpiritBannerMinion.DisplayName: 招魂幡
+	SpiritLightSoul.DisplayName: 炼狱之魂
+	RuneTorrentRanger.DisplayName: 符文洪流
+	FutureKnife.DisplayName: 未来飞刀
+	ProphecyRune.DisplayName: 符文光球
+	ProphecyRuneBM.DisplayName: 符文光球
+	CruiserEnergyBall.DisplayName: 巡游者能量球
+	VoidResidue.DisplayName: 虚空废料
+	VoidBomb.DisplayName: 虚空炸弹
+	HiveArrowProjectile.DisplayName: 蜂息箭
+	BeeSpike.DisplayName: 毒刺
+	HiveBulletProjectile.DisplayName: 蜂巢弹
+	SmallBee.DisplayName: 蜜蜂
+	SolarStormHeld.DisplayName: 太阳风暴
+	SolarStormExplosionProj.DisplayName: 太阳风暴
+	TheDeadCutProjectile.DisplayName: 虚妄切裂者
+	CondensedBulletProjectile.DisplayName: 凝元射线
+	ProphetRuneAlt.DisplayName: 先知符文
+	ShatteredFractalHeld.DisplayName: 破碎分形
+	TopazJewelProjectile.DisplayName: 王冠黄宝石
+	FractalShoot.DisplayName: 分形弹
+	WelkinFractalHeld.DisplayName: 苍穹分形
+	FractalBeam.DisplayName: 分形射线
+	FractalFeather.DisplayName: 分形之羽
+	BrilliantFractalHeld.DisplayName: 光辉分形
+	FractalBlight.DisplayName: 分形光星
+	FractalShadow.DisplayName: 分形剑影
+	BrokenHiltHeld.DisplayName: 破碎剑柄
+	ElementalFractalHeld.DisplayName: 元素分形
+	ElementalFractalThrown.DisplayName: 元素分形
+	StarlitFractalHeld.DisplayName: 星熠分形
+	FractalStarBlade.DisplayName: 分形星影
+	FractalStar.DisplayName: 分形之星
+	AbyssFractalHeld.DisplayName: 深渊分形
+	AbyssalBlade.DisplayName: 深渊剑影
+	AbyssalBullet.DisplayName: 渊水弹
+	AstralStarMelee.DisplayName: 星熠星陨
+	FractalGhostBlade.DisplayName: 聚魂之影
+	SpiritFractalHeld.DisplayName: 聚魂分形
+	VoidFractalHeld.DisplayName: 虚空分形
+	FractalLaser.DisplayName: 分形激光
+	VoidSlash.DisplayName: 虚空斩
+	VoidWave.DisplayName: 虚空波
+	BurntBrimShot.DisplayName: 硫火弹
+	BurntLostClassicsHeld.DisplayName: 焦灼遗编
+	ForeseeEye.DisplayName: 预言之眼
+	ProphecyMasterpieceHeld.DisplayName: 预知巨著
+	ForeseeWhipProj.DisplayName: 预言之鞭
+	EndlessChopping.DisplayName: 天罚
+	EndSkillOrbOnSpan.DisplayName: 斩击
+	EXNemesisProj.DisplayName: 天罚
+	NemesisAlt.DisplayName: 天罚
+	NemesisHeld.DisplayName: 天罚
+	NemesisProj.DisplayName: 天罚
+	SpwanTextProj.DisplayName: 文字
+	BaseKnife.DisplayName: 挥舞基类
+	LashingBramblerodProjectile.DisplayName: 蔓生棘鞭
+	SilvaVine.DisplayName: 藤蔓护盾
+	FinalFractalHeld.DisplayName: 幽邃分形
+	FinalFractalBlade.DisplayName: 幽邃分形
+	FinalFracRightClick.DisplayName: 幽邃分形
+	HealingSpirit.DisplayName: 治疗魂魄
+	ProfPetG1.DisplayName: 亵渎守卫
+	ProfPetG2.DisplayName: 亵渎守卫
+	ProfPetG3.DisplayName: 亵渎守卫
+	ProfPet.DisplayName: 天神酱
+	LuminarisAstralShoot.DisplayName: 幻光弹
+	LuminarisVortex.DisplayName: 幻光漩涡
+	LuminarisSpikeBlue.DisplayName: 幻光晶刺
+	LuminarisSpikeRed.DisplayName: 幻光晶刺
+	LuminarisTriangleShootRed.DisplayName: 幻光晶簇
+	LuminarisTriangleShootBlue.DisplayName: 幻光晶簇
+	StarlitPiercerHeld.DisplayName: 星熠穿刺者
+	FriendlyAstralShoot.DisplayName: 幻光弹
+	IlmeranVortex.DisplayName: 伊尔梅兰漩涡
+	StarSootSmoke.DisplayName: 幻光蛾尘
+	Starblight.DisplayName: 幻星矢
+	AzAAGunHoldout.DisplayName: 阿萨福勒防空炮
+	AntiaircraftShell.DisplayName: 弹壳
+	AzAGShot.DisplayName: 防空炮子弹
+	RockBulletShot.DisplayName: 石头子弹
+	LunarPlankThrow.DisplayName: 幻光石板
+	CommonExplotion.DisplayName: 爆炸
+	CommonExplotionFriendly.DisplayName: 爆炸
+	StarblightRogue.DisplayName: 幻光矢
+	MoonlightSwordHeld.DisplayName: 皎月之刃
+	MoonlightShoot.DisplayName: 皎月之刃剑气
+	BlackKnife.DisplayName: 黑刃
+	TeslaBall.DisplayName: 磁暴能量球
+	TeslaLightning.DisplayName: 特斯拉球
+	ApcHoldout.DisplayName: 先驱炮
+	ShadowMantleSlash.DisplayName: 暗影斩击
+	BoobyMine.DisplayName: 诡雷
+	BrimstoneGigaBlastFriendly.DisplayName: 硫火爆炎
+	BrimstoneShootSmall.DisplayName: 硫火飞弹
+	WristTornado.DisplayName: 龙卷
+	SolarArrowSpawner.DisplayName: 耀阳矢
+	SolarArrow.DisplayName: 耀阳矢
+	ShadowKnife.DisplayName: 暗影飞刀
+	ShadowShoot.DisplayName: 暗影球
+	ShadowSpawner.DisplayName: 暗影飞刀
+	AntivoidSlash.DisplayName: 返虚之锋符文斩
+	AntivoidDash.DisplayName: 返虚冲刺
+	LuminarGrave.DisplayName: 幻光碑石
+	AntivoidMark.DisplayName: 返虚之印
+	InkTrail.DisplayName: 墨水尾迹
+	PenMinion.DisplayName: 冲锋笔
+	ShadowRuneVanity.DisplayName: 暗影符文
+	Pooney.DisplayName: 普尼
+	AcropolisTeslaBall.DisplayName: 特斯拉电球
+	OblivionThresherHoldout.DisplayName: 虚漩巡锯
+	OblivionThresherShoot.DisplayName: 虚漩巡锯锯片
+	OblivionCruiserDash.DisplayName: 虚漩巡锯突进
+	OblivionThresherShootAlt.DisplayName: 虚漩巡锯强化锯片
+	TerrorOfAbyssHeld.DisplayName: 渊惧之镰
+	ScorchingShell.DisplayName: 耀阳弹壳
+	PFKnifeHeld.DisplayName: 预言飞刀
+	FilthyCircle.DisplayName: 污秽法阵
+	FilthyProjectile.DisplayName: 污秽射线
+	FilthyShootAlt.DisplayName: 邪煞弹
+	BramblecleaveHeld.DisplayName: 苍郁之锋
+	BrambleVine.DisplayName: 苍郁藤蔓
+	VineHookHit.DisplayName: 藤蔓重击
+	BramblecleaveAlt.DisplayName: 苍郁之锋刀刃
+	BrambleShoot.DisplayName: 苍郁叶弹
+	SRDamageRect.DisplayName: 冥魂泉
+	SpiritBullet.DisplayName: 冥火弹
+	SpiritLaser.DisplayName: 空冥光束
+	TrueMoonlightShoot.DisplayName: 真皎月斩
+	TrueMoonlightSwordHeld.DisplayName: 真皎月刃
+	DarkBladeHeld.DisplayName: 黑暗刀刃
+	DarkBladeShoot.DisplayName: 黑刃
+	SpiritWave.DisplayName: 魂涌泉
+	LushGrassclassicsHeld.DisplayName: 繁茂芸编
+	LushVine.DisplayName: 荆棘
+	MiracleShoot.DisplayName: 神迹刃
+	MiracleWreckageHeld.DisplayName: 神迹残骸
+	Theostring.DisplayName: 神权飘带
+	AzafureFurnaceEnergyBall.DisplayName: 阿萨福勒能量球
+	AzafureFurnaceHoldout.DisplayName: 阿萨福勒电熔炉
+	FurnaceBlast.DisplayName: 熔炉脉冲
+	AzafurePulseWandHeld.DisplayName: 阿萨福勒脉冲杖
+	TeslaLightningRed.DisplayName: 闪电
+	SandBullet.DisplayName: 沙弹
+	AzafureSurgeRodHeldEffect.DisplayName: 阿萨福勒电涌钎
+	AzafureSurgeRodThrow.DisplayName: 阿萨福勒电涌钎
+	StarlightMothMinion.DisplayName: 枯星蛾
+	LuminarisMinionAstralShoot.DisplayName: 枯星弹
+	AzafureRailgunHeld.DisplayName: 阿萨福勒轨道炮
+	RailgunChargeShot.DisplayName: 轨道炮蓄力弹
+	RailgunSmallShot.DisplayName: 轨道炮分裂弹
+	AzafureDroneMinion.DisplayName: 阿萨福勒无人机
+	AzafureDroneBullet.DisplayName: 无人机导弹
+	AzafureHealingTowerSentry.DisplayName: 阿萨福勒治疗塔
+	AzafureProtectiveCannonShot.DisplayName: 阿萨福勒城防炮
+	ATBMProjectile.DisplayName: 阿萨福勒盾构机
+	TlipocasScytheHeld.DisplayName: 特莉波卡的镰刀
+	TSSlash.DisplayName: 斩击
+	TlipocasScytheThrow.DisplayName: 特莉波卡的镰刀
+	BloodCrack.DisplayName: 裂缝
+	HowlingCannonHeld.DisplayName: 哀嚎重炮
+	HowlingBullet.DisplayName: 哀嚎魂弹
+	HowlingLaser.DisplayName: 哀嚎死光
+	FractalStarblight.DisplayName: 分形星弹
+	Molightpet.DisplayName: Mo的照明宠物
+	MalignHeld.DisplayName: 魔灵
+	MalignBullet.DisplayName: 魔灵导弹
+	MalignLightning.DisplayName: 魔灵电弧
+	MalignLaser.DisplayName: 魔灵激光
+	AzafurePowerSawProj.DisplayName: 阿萨福勒动力锯
+	AzafureElectrocauteryWandHeld.DisplayName: 手持弹幕
+	AzafureElectrocauteryWandBomb.DisplayName: 电磁炸弹
+	Snowgrave.DisplayName: 雪葬
+	DedicatedOracleSlashProj.DisplayName: 监邢之眼
+	ALMGLaser.DisplayName: 阿萨福勒轻机枪子弹
+	AzafureLightMachineGunHeld.DisplayName: 阿萨福勒轻机枪
+	AzafureLightMachineGunStealth.DisplayName: 阿萨福勒轻机枪子弹榴弹
+	ALMGShell.DisplayName: 弹壳
+	PickingSwarm.DisplayName: 蜂群集结
+	BMHammerProjectile.DisplayName: 魔锤
+	CrossBorderPursuitProj.DisplayName: 祟灵之眼
+	CBPSmash.DisplayName: 裂缝
+	BMSwordProjectile.DisplayName: 魔剑
+	AzafureEKatanaSlash.DisplayName: 阿萨福勒电太刀
+	AzafureCogflyMinion.DisplayName: 阿萨福勒齿轮蜂
+	GungnirThrow.DisplayName: 冈格尼尔
+	Sorensen.DisplayName: 索伦森
+	FetalDreamSlash.DisplayName: 斩击
+	DustCarverHeld.DisplayName: 刻尘者
+	CarverSpike.DisplayName: 刻尘尖刺
+	CarverBolt.DisplayName: 刻尘深渊束
+	CarverSpirit.DisplayName: 刻尘魔灵
+	AzafureRadioMissile.DisplayName: 导弹
+	MissileSilo.DisplayName: 导弹井
+	SentryRemoverHeld.DisplayName: 哨兵拆除器
+	AzafureAirReaperThrow.DisplayName: 阿萨福勒压力统镰
+	FairyBMMinion.DisplayName: 仙灵
+	AzafureCylinderHeld.DisplayName: 阿萨福勒音桶
+	MetalBall.DisplayName: 金属球
+	AzafureMagicBlast.DisplayName: 金属球磁暴
+	Stinger.DisplayName: 毒刺
+	ExplosiveSpore.DisplayName: 爆炸孢子
+	SporeGas.DisplayName: 孢子云
+	AzureRapierHeld.DisplayName: 苍蓝刺剑
+	AzureRapierBlockSlash.DisplayName: 苍蓝刺剑防反
+	AzureRapierBlock.DisplayName: 苍蓝刺剑格挡
+	DarkScriptureHeld.DisplayName: 黑暗秘典
+	DarkBullet.DisplayName: 黑暗弹
+	SelenbiteStar.DisplayName: 月蚀星
+	SelenbiteVolumeHeld.DisplayName: 月蚀卷册
+	IllusoryBladeMinion.DisplayName: 梦魇神锋
+	MetallicChunkProj.DisplayName: 金属块
+	LacewingBMMinion.DisplayName: 七彩草蛉
+	WulfrumBMDrone.DisplayName: 钨钢无人机
+	WulfrumScrapProj.DisplayName: 钨钢废料
+	NucLauncher.DisplayName: 核弹发射井
+	PeaceJR.DisplayName: 和平使者
+	VENihilityLaser.DisplayName: 虚无激光
+	ChaoticCellMinion.DisplayName: 混沌仆从
+	CosmicBlessingHeld.DisplayName: 星宙神赋
+	CosmicDeathRay.DisplayName: 寰宇死光
+	CharredMissileProj.DisplayName: 焦黑导弹
+	BrimHomingBullet.DisplayName: 硫火飞弹
+	PlagueMissile.DisplayName: 瘟疫导弹
+	RedemptionShootAlt.DisplayName: 救赎导弹
+	BMDirtProj.DisplayName: 物块
+	TrainingSwordProj.DisplayName: 训练竹刀
+	WaterBolt.DisplayName: 水流
+	WOHHeld.DisplayName: 虚寂之翼
+	FractalAbyssalBlade.DisplayName: 分形深渊刃
+	DepletionBullet.DisplayName: 灾灵弹
+	DepletionHeld.DisplayName: 灾灵
+	DepletionLaser.DisplayName: 灾灵激光
+	AmnestyBullet.DisplayName: 神灵弹
+	AmnestyHeld.DisplayName: 神灵
+	AmnestyLaser.DisplayName: 神灵电弧
+	AmnestyMiniLaser.DisplayName: 神灵追踪弹
+	AcropolisBullet.DisplayName: 卫城炮弹
+	AcropolisSlash.DisplayName: 光刀
+	AcropolisHarpoon.DisplayName: 叉矛
+	CrownRubyProj.DisplayName: 红宝石射线
+	RubyCrown.DisplayName: 精致皇冠
+	RottenFangsBloodBullet.DisplayName: 血弹
+	CreeperMinion.DisplayName: 飞眼
+	CursedTorchMinion.DisplayName: 诅咒火炬
+	CursingFlame.DisplayName: 诅咒烈焰
+	CruiserPhantomPet.DisplayName: 巡游者
+	MottledSpearHook.DisplayName: 斑驳矛索
+	DaylightProjectile.DisplayName: 朝霞
+	DaylightLaser.DisplayName: 日光射线
+	DaylightSun.DisplayName: 朝霞之阳
+	FleshChunk.DisplayName: 血肉碎块
+	MiniWyrm.DisplayName: 小妖龙
+	TheHungry.DisplayName: 饿鬼
+	OuijaBoardHeld.DisplayName: 通灵板
+	OuijaSpirit.DisplayName: 灵魂
+	OblivionSkullMinion.DisplayName: 冥骸头骨
+	SkullProj.DisplayName: 头骨
+	BloodCodexHeld.DisplayName: 血脉巨典
+	BloodSpray.DisplayName: 血液
+	AbyssalRift.DisplayName: 深渊裂隙
+	PressureEsotericaHeld.DisplayName: 重压秘笈
+	SpectralWhispersHeld.DisplayName: 魂语秘卷
+	WhisperingSpike.DisplayName: 低语尖刺
+	EvilKingWhipProjectile.DisplayName: 邪恶国王之鞭
+	Spade.DisplayName: 黑桃
+	MiracleWreckageThrow.DisplayName: 神迹残骸
+	Blackhole.DisplayName: 黑洞
+	MiracleWreckageHeldAnm.DisplayName: 神迹残骸
+	MiracleExplosion.DisplayName: 洪光爆破
+	MiracleWreckagePopOut.DisplayName: 神迹残骸
+	MiracleVortex.DisplayName: 神迹涡流
+	AzureShield.DisplayName: 苍溟护盾
+	AzureVortex.DisplayName: 苍溟漩涡
+	FilthlessMissile.DisplayName: 污祛火箭
+	FilthlessShootAlt.DisplayName: 污祛导弹
+	AzafureMissileProj.DisplayName: 阿萨福勒导弹
+	DivineShield.DisplayName: 圣盾
+	CrystalSpikePop.DisplayName: 魔晶刺
+	CrystalSpikeThrow.DisplayName: 魔晶刺
+	CrystalSpikeReturning.DisplayName: 召回的魔晶刺
+	SwingSmear.DisplayName: 水晶旋风
+	NeltharionHoldout.DisplayName: 奈萨里奥
+	NeltharionCrystal.DisplayName: 爆炸虚空水晶
+	SniperWulfrumScrap.DisplayName: 钨钢碎片
+	WulfrumSniperSpecialAttack.DisplayName: 钨钢狙击枪
+	ZealShoot.DisplayName: 星璇追踪弹
+	ApsychosFireball.DisplayName: 烬甲秽魔火球
+	ApsychosFire.DisplayName: 火焰
+	ApsychosFireballBig.DisplayName: 巨型火球
+	ApsychosLaser.DisplayName: 焰烬激光
+	ZafkielProj.DisplayName: 刻刻帝
+	ApsychosTailShoot.DisplayName: 烬甲秽魔尾弹
+	EmberSwordHoldout.DisplayName: 灼烬巨剑
+	AshesSpirit.DisplayName: 灰烬之灵
+	AshesSpiritFireball.DisplayName: 灰烬火球
+	ScorchingChakramThrown.DisplayName: 焦灼旋刃
+	ScorchingFireball.DisplayName: 焦灼火球
+	HellstoneMissileProj.DisplayName: 狱炎导弹
+	WulfrumMissileProj.DisplayName: 钨钢导弹
+	AshesBowHoldout.DisplayName: 灰烬短弓
+	AshesFireBeam.DisplayName: 灰烬射线
+	SmolderingTail.DisplayName: 灼烬之尾
+	SmolderingTailShoot.DisplayName: 灼烬弹
+	EmberSpikePop.DisplayName: 余烬石锥
+	EmberSpikeReturning.DisplayName: 余烬石锥
+	EmberSpikeThrow.DisplayName: 余烬石锥
+	SwingSmearEmber.DisplayName: 余烬风暴
+	CinderConvergencerHoldout.DisplayName: 狱烬聚能枪
+	CinderFireball.DisplayName: 狱烬弹
+	CinderEnhancedShoot.DisplayName: 狱烬爆破弹
+	AshesFireballMelee.DisplayName: 灰烬火球
+	AshesSworldHoldout.DisplayName: 灰烬之刃
+	SmolderingRock.DisplayName: 灼烬石块
+	RemnantsLaser.DisplayName: 余烬激光
+	ScorchingFireballMagic.DisplayName: 余烬火球
+	CinderMinion.DisplayName: 狱烬灵核
+	MinionCinderFireball.DisplayName: 狱烬火球
+	GRainbowRocket.DisplayName: 虹彩弹
+	RatzielSentry.DisplayName: 嗫告篇帙
+	AzafureCombatDrone.DisplayName: 迷你战斗机
+	CombatDroneBullet.DisplayName: 无人机穿甲弹
+	EmberFireball.DisplayName: 余烬火球
+	GhostFireMagic.DisplayName: 鬼火
+	AerialiteMissileFeather.DisplayName: 天蓝羽毛
+	AerialiteMissileProj.DisplayName: 天蓝导弹
+	ClusterMissileProj.DisplayName: 集束导弹
+	ClusterMissileSmall.DisplayName: 小型导弹
+	GiantBoulderProj.DisplayName: 超大巨石
+	HallowedMissileProj.DisplayName: 圣化导弹
+	StarBreakerHeld.DisplayName: 星启破军
+	BuriedDot.DisplayName: 噬阳光点
+	BuriedShoot.DisplayName: 日陨激光
+	BuriedShoot2.DisplayName: 日陨激光
+	TectonicShardAshesCore.DisplayName: 板块碎片
+	TectonicShardHoming.DisplayName: 板块碎片
+	AcropolisTeslaBallWarn.DisplayName: 卫城机甲预警
+	VoidAnnihilateSpawner.DisplayName: 黯天飞刀
+	VoidAnnihilateCharge.DisplayName: 黯天飞刀蓄能
+	SilenceProj.DisplayName: 沉默
+	SilenceStealth.DisplayName: 赋能沉默
+	BuriedSunHoldout.DisplayName: 埋葬之阳
+	VoisenBullet.DisplayName: 窥虚冥弹
+	YoungMasterProj.DisplayName: 贵公子
+	YMSlash.DisplayName: 贵公子斩击
+	YoungMasterDash.DisplayName: 贵公子冲刺
+	YoungMasterMark.DisplayName: 爆炸标记
+	FutureKnifeSpin.DisplayName: 预言飞刀
+	RuneSongHeld.DisplayName: 符文之歌
+	RuneBolt.DisplayName: 符文脉冲束
+	AzafureImperialGuardMachineGunHeld.DisplayName: 阿萨福勒近卫机枪
+	ImperialGuardShot.DisplayName: 近卫机枪弹
+	AzafureExhaustGasInjectorHeld.DisplayName: 阿萨福勒废气喷射器
+	ExhaustGas.DisplayName: 废气
+	MewMewBombThrow.DisplayName: 喵喵炸弹
+	KinanitionSpawn.DisplayName: 孱弱血亲水弹
+	ThalassianGleamHeld.DisplayName: 渊潇棱光之杖
+	ThalassianWaterBolt.DisplayName: 渊潇棱光水束
+	ErebodrepanonHeld.DisplayName: 泓渊亡铭
+	ErebodrepanonMark.DisplayName: 泓渊亡铭标记
+	SilentpeakSword.DisplayName: 静岳之剑
+	TectonicChainBladeWhip.DisplayName: 板块碎片
+	BrillianceSwirlbladeProj.DisplayName: 光耀轮刃
+	FlamingSwirlbladeFlame.DisplayName: 炙炎之火
+	FlamingSwirlbladeProj.DisplayName: 炙炎轮刃
+	AzafureSwirlbladeProj.DisplayName: 阿萨福勒轮刃
+	AzafureSwirlbladeSaw.DisplayName: 锯片
+	AzafureSwirlbladeMissile.DisplayName: 阿萨福勒导弹
+	GlacierSwirlbladeProj.DisplayName: 霜蓝轮刃
+	GlacierSwirlbladeSaw.DisplayName: 霜蓝锯片
+	RunicSwirlbladeBullet.DisplayName: 符文导弹
+	RunicSwirlbladeProj.DisplayName: 符文轮刃
+	BlazingSwirlbladeFlame.DisplayName: 浊火冲击
+	BlazingSwirlbladeProj.DisplayName: 耀目轮刃
+	SawofMacrocosmProj.DisplayName: 噬宙轮刃
+	MacrocosmSawDash.DisplayName: 噬宙之颚
+	MacrocosmVoidBolt.DisplayName: 虚空破裂束
+	SawofMacrocosmSplit.DisplayName: 小型噬宙轮刃
+	RevelationExplode.DisplayName: 启示录爆炸
+	RevelationThrown.DisplayName: 启示录
+	RevelationBolt.DisplayName: 启示射线
+	RevelationStealth.DisplayName: 巨化启示录
+	ExergySwirlbladeProj.DisplayName: 裂界轮刃
+	ExergySwirlbladeSaw.DisplayName: 裂界轮刃锯片
+	ApeirokyklosProj.DisplayName: 永渊环葬
+	ApeirokyklosSpike.DisplayName: 深渊尖刺
+	Bellbeast.DisplayName: 钟道兽
+	Flowery.DisplayName: Flowery
+	AquaShardWaterBullet.DisplayName: 水弹
+	WaterBulletSpawner.DisplayName: 水弹标记
+	AntlionShellProjectile.DisplayName: 干缩蚁狮
+	DesertNuisanceFriendly.DisplayName: 黄沙恶虫
+	AzafureAssaultDrone.DisplayName: 阿萨福勒突击无人机
+	AzafureMicroBeaconProjectile.DisplayName: 阿萨福勒微型信标
+	BeaconDroneShoot.DisplayName: 突击无人机子弹
+	DeliciousAcornProjectile.DisplayName: 美味橡果
+	SquirrerMinion.DisplayName: 松鼠
+	SquirrelStone.DisplayName: 石子
+	BoneSerpentFriendly.DisplayName: 骨蟒
+	MoltenAnchorProjectile.DisplayName: 熔融骨锚
+	MoonlightBeam.DisplayName: 月荧光束
+	MoonlightCoreProjectile.DisplayName: 月荧核
+	MoonlightLaser.DisplayName: 月荧死光
+	TrueEye.DisplayName: 幻影眼
+	MutantBulbProjectile.DisplayName: 变异球茎
+	MutantVine.DisplayName: 变异藤蔓
+	DetectorMinion.DisplayName: 探测器
+	DetectorMinionLaser.DisplayName: 探测器激光
+	MechanicalTransmitterProjectile.DisplayName: 机械发讯器
+	BaitHeldEffect.DisplayName: 手持诱饵
+	MagicHatProjectile.DisplayName: 魔术帽
+	PigeonMinion.DisplayName: 鸽子
+	FrostboundCageProjectile.DisplayName: 寒霜锢笼
+	FrostboundSpirit.DisplayName: 寒霜恶灵
+	FrostShoot.DisplayName: 寒霜弹
+	BlueFlatTopMushroomProjectile.DisplayName: 蓝平顶菇
+	BlueFox.DisplayName: 蓝狐
+	BlueSporeCloud.DisplayName: 孢子云
+	SacredShoot.DisplayName: 圣火
+	SacredStoneProjectile.DisplayName: 圣火流石
+	SacredStoneSummon.DisplayName: 圣火灵
+	BottledFissureProjectile.DisplayName: 瓶装裂隙
+	VoidEater.DisplayName: 噬虚弹
+	AzafureWarSatelliteAuthorizationKeyProjectile.DisplayName: 阿萨福勒战争卫星密钥
+	SateliteLaser.DisplayName: 卫星激光
+	WarSatellite.DisplayName: 阿萨福勒战争卫星
+	ArbitratorStealthImpact.DisplayName: 仲裁者电弧
+	ArbitratorStealthImpactSpawner.DisplayName: 仲裁者电弧生成器
+	TheDeadCutSlash.DisplayName: 虚妄斩切
+	FooveriaHeld.DisplayName: 霜痕
+	FooveriaIceShard.DisplayName: 霜痕冰片
+	AzafureTwinSawHeld.DisplayName: 阿萨福勒双锯
+	AzafureSawSpark.DisplayName: 锯片火花
+	// VFChargeFXProj.DisplayName: V F Charge F X Proj
+	// VoidFaquirEnergyBallMelee.DisplayName: Void Faquir Energy Ball Melee
+}
+
+LegendTooltip: - 传奇物品 -
+KilledByVoidTouch: "{0}消散在了时间与空间的各处"
+
+Buffs: {
+	VoidStorm: {
+		DisplayName: 虚空强袭
+		Description: 来自虚空最深处的凝视
+	}
+
+	VoidTouch: {
+		DisplayName: 虚空之触
+		Description: 你正在被虚空残蚀
+		ItemTooltip:
+			'''
+			每秒造成???点伤害
+			层数越高，伤害和减速效果越高
+			'''
+	}
+
+	WyrmChanBuff: {
+		DisplayName: 妖龙酱
+		Description: 喵呜~
+	}
+
+	YharimPower: {
+		DisplayName: 亚利姆之力
+		Description: 你感觉你能徒手将嘉登掰成两半！
+	}
+
+	DoGBuff: {
+		DisplayName: 狗
+		Description: 狗
+	}
+
+	AstrumDeusBuff: {
+		DisplayName: 神瘟残枝
+		Description: 召唤一位星神跟随你
+	}
+
+	WeakGravity: {
+		DisplayName: 微弱引力
+		Description: ""
+	}
+
+	TwistedTwinBuff: {
+		DisplayName: 纠缠双子
+		Description: ""
+		ItemTooltip: 20% 伤害
+	}
+
+	Rainstorm: {
+		DisplayName: 突降暴雨
+		Description: ""
+	}
+
+	LilBrimstoneBuff: {
+		DisplayName: 硫磺火宝宝
+		Description: 硫磺火宝宝将为你而战
+	}
+
+	AbyssBuff: {
+		DisplayName: 阿比斯
+		Description: ""
+	}
+
+	VoidPal: {
+		DisplayName: 虚空伙伴
+		Description: ""
+	}
+
+	SoyMilkBuff: {
+		DisplayName: 豆奶
+		Description: 大幅增加攻速，伤害减少70%
+	}
+
+	StealthState: {
+		DisplayName: 潜伏状态
+		Description: 你可以不受到伤害并穿过敌人
+	}
+
+	MelonCatBuff: {
+		DisplayName: 瓜猫
+		Description: 喵~
+	}
+
+	DevourersAssassin: {
+		DisplayName: 吞噬者之刺客
+		Description: “三个小使徒中的其中一位”
+	}
+
+	DevourerAndTheApostles: {
+		DisplayName: “我们四合一！”
+		Description: 噬神者与小小使徒团
+	}
+
+	PlanetDestroyer: {
+		DisplayName: 幻影猎星者
+		Description: 猎星战舰将为你战斗
+	}
+
+	JailerWhipDebuff: {
+		DisplayName: 狱卒鞭标记
+		Description: ""
+	}
+
+	TeletorBuff: {
+		DisplayName: 磁流灵
+		Description: ""
+	}
+
+	EaterBuff: {
+		DisplayName: 吞噬者
+		Description: ""
+	}
+
+	LostSoulBuff: {
+		DisplayName: 迷失游魂
+		Description: ""
+	}
+
+	AquaticChan: {
+		DisplayName: 海灾酱
+		Description: 小海灾会跟着你
+	}
+
+	Deceive: {
+		DisplayName: 蒙蔽
+		Description: 减少移动速度
+		ItemTooltip: 减速敌人
+	}
+
+	VoidCandleBuff: {
+		DisplayName: 虚无化身
+		Description: 攻击附带虚空之触
+	}
+
+	DustyWhistleBuff: {
+		DisplayName: 尘沙口哨
+		Description: ""
+	}
+
+	AquaticAmuletBuff: {
+		DisplayName: 海洋护符
+		Description: ""
+	}
+
+	NihilityBacteriophageBuff: {
+		DisplayName: 虚无噬菌体
+		Description: 小型虚无噬菌体将为你战斗
+	}
+
+	DragonWhipDebuff: {
+		DisplayName: 沐生标记
+		Description: ""
+	}
+
+	CruiserWhipDebuff: {
+		DisplayName: 唤死标记
+		Description: ""
+	}
+
+	ServiceBuff: {
+		DisplayName: 使役
+		Description: 提升伤害、攻速和暴击
+		ItemTooltip: 根据剩余时间的长短为你提供伤害，暴击，挖掘速度的增幅
+	}
+
+	EclipsedImprint: {
+		DisplayName: 冥煌烙印
+		Description: ""
+	}
+
+	StareOfTheAbyss: {
+		DisplayName: 虚渊凝视
+		Description: ""
+	}
+
+	WyrmWhipDebuff: {
+		DisplayName: 噬渊标记
+		Description: ""
+	}
+
+	WyrmPhantom: {
+		DisplayName: 虚无幻象
+		Description: 妖龙幻影将为你而战
+	}
+
+	VoidVirus: {
+		DisplayName: 虚空病毒
+		Description: 你感染了虚空病毒
+		ItemTooltip: 每秒造成240点伤害
+	}
+
+	NyxolithrakenBuff: {
+		DisplayName: 沧溟渊龙
+		Description:
+			'''
+			沧溟渊龙将为你战斗
+			“来自深渊”
+			'''
+	}
+
+	AbyssalWrath: {
+		DisplayName: 深渊狂怒
+		Description: 伤害提升
+	}
+
+	PlanteraChanBuff: {
+		DisplayName: 世花酱
+		Description: ~
+	}
+
+	NoHeal: {
+		DisplayName: 治疗失效
+		Description: 短时间不能以任何方式回血，无法使用回血物品
+	}
+
+	MaliciousCode: {
+		DisplayName: 恶意代码
+		Description: 它很恶意
+		ItemTooltip:
+			'''
+			减少25点护甲
+			减少敌怪的接触伤害
+			'''
+	}
+
+	SpiritGathering: {
+		DisplayName: 灵魂聚焦
+		Description: “它们渴望肉体”
+	}
+
+	SoulDisorder: {
+		DisplayName: 灵魂紊乱
+		Description: 灵魂的动荡使你更加脆弱
+		ItemTooltip:
+			'''
+			敌怪所受伤害增加 5%
+			减少15点护甲
+			减少15%伤害减免（如果有）
+			'''
+	}
+
+	ShatteredOrb: {
+		DisplayName: 破碎宝珠
+		Description: 预知宝珠破碎了，若在其恢复之前将其取下将对你的灵魂造成大量的伤害
+	}
+
+	HeatDeath: {
+		DisplayName: 热寂
+		Description: ？？？
+		ItemTooltip:
+			'''
+			每秒造成等同于拥有减益的敌怪0.06%最大生命值的伤害
+			减缓其移速
+			'''
+	}
+
+	GuardiansBuff: {
+		DisplayName: 神圣守卫
+		Description: “她们不是土豆”
+	}
+
+	ProfBuff: {
+		DisplayName: 普罗维登斯
+		Description: “燃尽一切”
+	}
+
+	ProfNGuardBuff: {
+		DisplayName: 天神与她的使徒们
+		Description: ""
+	}
+
+	WindPressure: {
+		DisplayName: 风压
+		Description: 你的武器上缠绕着旋风
+		ItemTooltip: 每层增加3%盗贼伤害与攻速
+	}
+
+	PenMountBuff: {
+		DisplayName: 冲锋笔
+		Description: 我为你感到骄傲
+	}
+
+	ConsecratedRefuge: {
+		DisplayName: 圣灵庇护
+		Description: 至高存在将会跟随你
+	}
+
+	ManaAwaken: {
+		DisplayName: 魔醒梦
+		Description: 你体内的魔能正在苏醒
+	}
+
+	ManaCaress: {
+		DisplayName: 魔爱抚
+		Description: 加速生命恢复
+	}
+
+	ManaPray: {
+		DisplayName: 魔祝祷
+		Description: 稍微加速生命恢复
+	}
+
+	ManaVein: {
+		DisplayName: 魔纹
+		Description: 增加魔法暴击和暴击伤害
+	}
+
+	StarlightMoth: {
+		DisplayName: 枯星蛾
+		Description: 枯星蛾将保护你
+	}
+
+	AzafureDrone: {
+		DisplayName: 地狱工业无人机
+		Description: 阿萨福勒轰炸无人机会为你战斗
+	}
+
+	VoidEmpowerment: {
+		DisplayName: 虚空赋能
+		Description: 武器强化
+	}
+
+	MomosLightPetBuff: {
+		DisplayName: 没名字的照明宠物
+		Description: ""
+	}
+
+	PickingSwarmBuff: {
+		DisplayName: 蜂群集结
+		Description: 嗡嗡
+	}
+
+	CogflyBuff: {
+		DisplayName: 齿轮蜂
+		Description: 阿萨福勒齿轮蜂将为你战斗
+	}
+
+	ChaosTyrant: {
+		DisplayName: 混沌暴君
+		Description: ""
+	}
+
+	Koishi: {
+		DisplayName: 本我的解放
+		Description: ""
+		ItemTooltip:
+			'''
+			增加玩家5%伤害
+			对敌怪则减缓其移速
+			'''
+	}
+
+	LifeOppress: {
+		DisplayName: 生命压制
+		Description: 你看见了你的死亡
+		ItemTooltip: 每秒造成4500点伤害
+	}
+
+	MechanicalTrauma: {
+		DisplayName: 机械性创伤
+		Description: 你浑身疼痛不堪
+		ItemTooltip: 每秒造成20点伤害
+	}
+
+	IllusoryBlade: {
+		DisplayName: 虚幻神锋
+		Description: 虚幻神锋将为你而战
+	}
+
+	CreeperBuff: {
+		DisplayName: 飞眼
+		Description: 飞眼将为你战斗
+	}
+
+	CursingFire: {
+		DisplayName: 诅咒烈焰
+		Description: 永恒之火燃烧着...
+	}
+
+	PhantomOfCruiser: {
+		DisplayName: 巡游者幻影
+		Description: ""
+	}
+
+	BonePiercingToxin: {
+		DisplayName: 穿骨毒素
+		Description: 你感到钻心的疼痛
+		ItemTooltip: 每秒造成24点伤害
+	}
+
+	FlamingBlood: {
+		DisplayName: 燃烧之血
+		Description: 易燃易爆
+	}
+
+	OblivionSkullBuff: {
+		DisplayName: 诅咒头骨
+		Description: “它憎恶生者”
+	}
+
+	DivineShieldCooldown: {
+		DisplayName: 神圣干预冷却
+		Description: ""
+	}
+
+	ZafkielBuff: {
+		DisplayName: 刻刻帝
+		Description: ""
+	}
+
+	CinderCore: {
+		DisplayName: 狱烬灵核
+		Description: 狱烬灵核将为你而战
+	}
+
+	CombatDrone: {
+		DisplayName: 迷你战斗机
+		Description: “曾被量产用于大规模战争”
+	}
+
+	CrystedgeWhipDebuff: {
+		DisplayName: 标记
+		Description: ""
+	}
+
+	DaylightWhipDebuff: {
+		DisplayName: 标记
+		Description: ""
+	}
+
+	ForeseeWhipDebuff: {
+		DisplayName: 标记
+		Description: ""
+	}
+
+	LashingBramblerodWhipDebuff: {
+		DisplayName: 标记
+		Description: ""
+	}
+
+	MindCorruptorWhipDebuff: {
+		DisplayName: 标记
+		Description: ""
+	}
+
+	SinewLashWhipDebuff: {
+		DisplayName: 标记
+		Description: ""
+	}
+
+	WhipOfEvilKingWhipDebuff: {
+		DisplayName: 标记
+		Description: ""
+	}
+
+	SilentpeakBuff: {
+		DisplayName: 静岳之剑
+		Description: ""
+	}
+
+	TectonicChainBladeWhipDebuff: {
+		DisplayName: 标记
+		Description: ""
+	}
+
+	OathofCommand: {
+		DisplayName: 誓令
+		Description: 你感觉士气高涨
+	}
+
+	BellbeastBuff: {
+		DisplayName: 钟道兽宝宝
+		Description: 咣当
+	}
+
+	FloweryBuff: {
+		DisplayName: Flowery
+		Description: Glue!
+	}
+}
+
+Uh: 呃啊~
+
+NPCs: {
+	LotteryMachine.DisplayName: 抽奖机
+	CruiserTail.DisplayName: 巡游者
+
+	CruiserHead: {
+		DisplayName: 巡游者
+
+		BossChecklistIntegration: {
+			EntryName: 巡游者
+			SpawnInfo: 使用[i:CalamityEntropyLegacy/VoidBottle]召唤
+			DespawnMessage: ""
+		}
+	}
+
+	CruiserBody.DisplayName: 巡游者
+	AbyssalWraith.DisplayName: 幽邃魔灵
+	VoidCultistAssassin.DisplayName: 虚空邪教徒
+	VoidPope.DisplayName: 虚空教主
+	VoidPopeHand.DisplayName: 虚空教主
+
+	PrimordialWyrmNPC: {
+		TownNPCMood: {
+			NoHome: 战斗愉快，你赢了。现在请给我个住所吧。
+			Content: 谢谢你，在这里我很愉快。
+			FarFromHome: 这里太偏远了...
+			LoveSpace: 这里很宽广，我很喜欢。
+			DislikeCrowded: 这里太拥挤了...
+			HateCrowded: 这里太拥挤了，我讨厌这样...
+			LikeNPC_Princess: 我喜欢 {NPCName}，他人很好。
+			Princess_LovesNPC: 我喜欢 {NPCName}。
+			MonumentNearby: 那座难看的石碑是从哪来来的，我不想看见它。
+		}
+
+		DisplayName: 妖龙酱
+		Census.SpawnCondition: 击败始源妖龙后入住
+	}
+
+	NihilityActeriophage: {
+		DisplayName: 虚无噬菌体
+
+		BossChecklistIntegration: {
+			EntryName: 虚无双子
+			SpawnInfo: 使用[i:CalamityEntropyLegacy/NihilityHorn]召唤
+			DespawnMessage: ""
+		}
+	}
+
+	ChaoticCell.DisplayName: 混沌细胞
+	ChaoticCellSmall.DisplayName: 混沌细胞分裂体
+	DespairStoneFriendly.DisplayName: 友好的绝望之石
+	ScryllarFriendly.DisplayName: 友好的殒命妖灵
+	AeroSlimeFriendly.DisplayName: 友好的天蓝史莱姆
+	SoulSlurperFriendly.DisplayName: 友好的灵魂饮食者
+	SkyfinFriendly.DisplayName: 友好的天鳍鱼
+	IceClasperFriendly.DisplayName: 友好的食魂冰虫
+
+	TheProphet: {
+		DisplayName: 先知
+
+		BossChecklistIntegration: {
+			EntryName: 先知
+			SpawnInfo: 在地牢使用[i:CalamityEntropyLegacy/ProphecyToken]召唤
+			DespawnMessage: ""
+		}
+	}
+
+	TopazJewel.DisplayName: 王冠黄宝石
+
+	Luminaris: {
+		DisplayName: 幻光星蛾
+
+		BossChecklistIntegration: {
+			EntryName: 幻光星蛾
+			SpawnInfo: 在星辉地使用[i:CalamityEntropyLegacy/IllusionaryDew]召唤
+			DespawnMessage: ""
+		}
+	}
+
+	AcropolisMachine: {
+		DisplayName: 阿萨福勒卫城机甲
+
+		BossChecklistIntegration: {
+			EntryName: 阿萨福勒卫城机甲
+			SpawnInfo: 在硫火之崖小概率生成
+			DespawnMessage: ""
+		}
+	}
+
+	Harpoon.DisplayName: 叉矛
+	SpiritFountain.DisplayName: 冥魂泉
+	SpiritRing.DisplayName: 冥魂泉
+
+	Apsychos: {
+		DisplayName: 烬甲秽魔
+
+		BossChecklistIntegration: {
+			EntryName: 烬甲秽魔
+			SpawnInfo: 在地狱使用[i:CalamityEntropyLegacy/CursedRunestone]召唤
+			DespawnMessage: ""
+		}
+	}
+
+	ApsychosTail.DisplayName: 烬甲秽魔之尾
+}
+
+WyrmChatNoHome: 我们现在要去哪？
+WyrmChat1: 有时候我进门时会卡住，然后我就把门框撞烂了！
+WyrmChat2: 我睡觉从来没有侧躺过...
+WyrmChat3: 你很强大，我会跟随你。
+WyrmChat4: 终末石？我从来不知道那玩意有什么用，但是请保管好它。
+WyrmChat5: 你说有一群我的信徒？听起来挺有趣。
+WyrmChat6: 深渊实在是太压抑了，有时候出来透透气也挺好。
+WyrmChat7: 为什么我要跟着你......为了不让那个篡夺了光明的小偷得逞。
+WyrmChat8: 在深渊的生活实在是太无聊了...
+WyrmChat9: 你说我和那位硫火女巫谁更强大
+WyrmChat10: 你问我当时为什么要袭击你...我的使命是保护那件圣物。
+WyrmChat11: 混沌能量总是让我感到不适。
+WyrmChatDonors: 感谢[0]的支持，感谢你们！
+WyrmChatEclipse1: 这些玩意是从哪冒出来的？算了，我还有别的事情。
+WyrmChatEclipse2: 我相信这些怪物不会对你造成什么影响，但请别让它们打扰我。
+WyrmChatBloodMoon1: 月亮在流血...这让我有点压抑，我都想回深渊了。
+WyrmChatBloodMoon2: 也许你应该睡一觉。
+WyrmChatRain1: 下雨了，真清爽。我以前从没感受过。
+WyrmChatRain2: 雨水落在身上挺舒服。这可比不上深渊水压的万分之一。
+WyrmChatRain3: 很清爽，不是吗？
+loreCruiser:
+	'''
+	生命摄取能量以进行熵减。
+	而虚空生物的狩猎，则是吞噬秩序，而后传播与汲取熵本身。
+	这究竟是一种生存本能，还是出自于更加崇高的目的？
+	若是放任其行动，也许终有一日，这个世界会归于永恒的寂静。
+	'''
+loreLuminaris:
+	'''
+	它并非天生的掠食者，而是星辉能量的化身。
+	它的翅膀由破碎的星辰碎片编织而成，洒落的鳞粉能让周围的植物短暂地发出幽蓝色的微光。
+	传说它曾是星辉之地的守护者，但在某次异常的能量爆发后，它的意识与星辉能量融合，变得躁动不安。
+	如今，它会攻击任何闯入它领地的人，试图用星辉的光芒"净化"他们。
+	'''
+UseToggle: 使用以开启或关闭特殊效果:
+loreCruiserEffect: 增加20生命上限和50魔力上限
+loreNihTwin:
+	'''
+	想象一下，一个秩序的存在基础与目的不是熵减而是熵增的世界。
+	那是独立于此世之外的虚无之界，空旷，寂静，但却生存着以一种形式存在的生命的世界。
+	在你击杀封印光暗之魂的血肉之墙的一刻，溢散的能量让现实的缺口再度被撕裂。
+	而被你所击杀的这只诡异的生物，只是虚空本身那无尽的混乱之海中溢散的水滴。
+	命运的齿轮，也许于此刻开始缓慢转动。
+	'''
+NihTwinLoreEffect:
+	'''
+	增加{1}%对虚空侵蚀的抗性
+	增加{2}/s 每秒生命再生
+	增加{3}%飞行时间
+	'''
+loreProphet:
+	'''
+	任何一支军队，任何一个王国，任何一位君王都不能缺少一位修习预言魔法的法师，
+	他们能从细微的迹象中捕捉到未来的碎片，以此刻来推演过去和明日。
+	不过，向着凡人本不应窥探之物投去目光者，亦有一日会遭到命运的报应。
+	这也是为什么他们常常短命横死。
+
+	当然，不可窥探之物也许不止是命运，也包括......虚空。
+	那是我与嘉登发现虚空本身的存在后不久，我们之间产生了分歧。
+	他主张探索那个世界，利用那里的力量，即使不可避免地会带来危险。
+	而我则是将那里的一切视为大敌，毕竟它们的侵染从不只限于物质。
+
+	当然，这并不代表我不会去了解我的敌人......
+	于是我找寻到了王国中一位苍老的先知，在经过了一番友善的商讨之后，我令他向着虚空投去一瞥。
+	......至于结果，只能说十分的可怖。
+	在那扭曲的形体被一剑斩裂之前，他口中错乱无序的低语让周围的一切都开始被推向疯狂与混乱......
+	植物开始绞杀彼此，仆从开始拔剑相向。
+	借助着魔法，他的灵魂被拘禁于一本古籍中，由我亲自向他拷问他所看到的事物。
+	直到我确信我已经接近了那条不可逾矩的认知之界限，才将他那被侵染的精魄彻底封印。
+	即便那卷册上灵魂的本质已经几乎被全部磨灭，被封印于地牢的它依然会吸引溢散的魂灵，重组为躯体。
+
+	然后，再一次开始颂念，那永不停歇湮灭之预言。
+	'''
+
+Keybinds: {
+	ThrowPoop.DisplayName: 丢出大便
+	KeepPoop.DisplayName: 保留大便
+	VetrasylsEyeBlock.DisplayName: 维塔希尔之瞳格挡
+	RuneDash.DisplayName: 符文之翼冲刺
+	CommandMinions.DisplayName: 命令仆从
+	NihilityAndChaoticArmorConnectKey.DisplayName: 噬虚者&混沌套装连接
+	AcropolisMechTransformation.DisplayName: 激活阿萨福勒卫城重甲机甲模式
+}
+
+ProphetLoreEffect:
+	'''
+	增加受伤后的无敌帧时间
+	+{2}自然生命再生
+	'''
+Enabled: 已启用
+Disabled: 已禁用
+CdMoonlight: 月光护盾
+CdDS: 神圣干预冷却
+CdAntivoid: 返虚冲刺冷却
+AbyssalStorm: 深渊狂舞冷却
+YoungMasterDashCD: 冲刺攻击冷却
+CruiserBestiary:
+	'''
+	来源于虚空的顶级猎杀者，与你所遭遇过的那位神明吞噬者有着相似的姿态。
+	他捕食秩序，传播混沌，将现世撕碎为他的猎场...而你也绝不是任它吞噬的猎物。
+	'''
+AbyssalWraithBestiary: 虚空之中存在的不可描述之神，窥探祂的真身是不可能的，因为即便你看到了祂，你的视线也只会被虚无吞没
+NihilityTwinBestiary:
+	'''
+	虚空中的底层生物，自裂隙而来，因无意识的熵增行为而成为了秩序之敌。
+	那片地域遵循着与现实截然相反的生存规则——这也是为何现实与虚空之间的纠葛是一场你死我活的生存之争。
+	'''
+CCellSmallBestiary: 混沌细胞分裂出的小型个体，它们听从母体的指挥。
+ProphetBestiary:
+	'''
+	一个可悲的破碎灵魂，因潜藏于虚空入侵的表象背后，更为恐怖的真相而疯狂。
+	被束缚于典籍的它一遍遍重复着无意义的嘶吼与低语，绝望且徒劳的向它人传达着它所见之物。
+	'''
+LuminarisBestiary: 被星辉所感染的一只巨蛾，它存在的目的即是散播星辉瘟疫
+ApsychosBestiary:
+	'''
+	在岩浆深处游荡的生物，身上的甲壳由地壳岩石构成。
+	它或许曾被当作血肉之墙的替代品，但显然失败了。
+	'''
+WorldGen.VoidOreSpawn: 天空中散发出虚空能量
+
+Tiles: {
+	AuricBoulder.MapEntry: 圣金源巨石
+	AuricBoulderTile.MapEntry: 圣金源巨石
+	VoidOre.MapEntry: Void Ore
+	VoidOreTile.MapEntry: 虚渺矿
+	VoidBarTile.MapEntry: 虚渺锭
+	GiantBoulderTile.MapEntry: 超大巨石
+}
+
+VoidChargeBar: 虚空充能条
+
+Configs: {
+	Config: {
+		VoidChargeBarX: {
+			Label: 虚空充能条位置X
+			Tooltip: ""
+		}
+
+		Headers: {
+			Misc: 杂项
+			Other: 其他
+			Compatibility: 兼容性
+		}
+
+		DisplayName: 个人配置
+
+		VoidChargeBarY: {
+			Label: 虚空充能条位置Y
+			Tooltip: ""
+		}
+
+		ChainsawShakeScreen: {
+			Label: 电锯震动效果
+			Tooltip: ""
+		}
+
+		ItemAdditionalInfo: {
+			Label: 物品额外信息
+			Tooltip: " 展示某些物品额外的信息，如护甲穿透、弹药类型等"
+		}
+
+		MariviumArmorSetOnlyProvideStealthBarWhenHoldingRogueWeapons: {
+			Tooltip: 如果你游玩非盗贼职业觉得潜行条烦人可以打开此选项
+			Label: 灾熵全职业套装奖励只在手持盗贼武器时提供潜行条
+		}
+
+		EntropyMeleeWeaponSoundVolume: {
+			Label: 灾熵近战武器音效大小
+			Tooltip: ""
+		}
+
+		TileEffect: {
+			Label: 物块特效
+			Tooltip: ""
+		}
+
+		ScreenWarpEffects: {
+			Label: 屏幕特效
+			Tooltip: 是否绘制扭曲切屏等特效
+		}
+
+		EnablePixelEffect: {
+			Label: 启用绚丽特效
+			Tooltip: 是否绘制某些像素化的/Metaball特效，关闭此选项将会使部分灾熵模组的Boss/射弹隐藏，不推荐关闭
+		}
+
+		EnableLoopingSound: {
+			Label: 启用持续性的音效
+			Tooltip: 是否播放某些持续音效，仅推荐在某些武器（过载熔炉等）导致闪退时关闭（这可能是由于无法检测到扬声器导致的）
+		}
+
+		EnableRetroLighting: {
+			Label: 允许复古照明模式和关闭水波
+			Tooltip:
+				'''
+				如果你仍然想使用复古照明或者关闭水波质量模式，开启此选项。
+				关闭此选项将会关闭[启用绚丽特效]选项，由于Bug，在这些模式下UI不会正常显示
+				[c/FF0000:警告：开启复古照明模式或关闭水波会导致某些特效、射弹或NPC无法正常绘制进而影响游戏体验]
+				'''
+		}
+
+		CalamityTextEffectCompatibilityFix: {
+			Label: 灾厄文字特效兼容性修复
+			Tooltip: 更改部分可能导致兼容性问题的灾厄特殊稀有度文字特效的绘制逻辑（如鼠标悬停在物品上导致黑屏），视效完全相同但是兼容性更好
+		}
+	}
+
+	ServerConfig: {
+		DisplayName: 模组配置
+		Headers.Misc: 杂项
+
+		LoreSpecialEffect: {
+			Label: 传颂之物特殊效果
+			Tooltip: 在未开启熵变难度的时候允许使用传颂之物的加成
+		}
+
+		BramblecleaveAlwaysUnlockAllSkill: {
+			Label: 禁用苍郁之锋技能锁定
+			Tooltip: 启用后，苍郁之锋所有技能能在游戏初期使用，伤害取决于武器的面板伤害，适合给那些想在游戏初期就体验这些技能的玩家
+		}
+
+		LeastDamageSufferedBasedOnMaxHealth: {
+			Label: 至少受到的伤害
+			Tooltip: 基于你的最大生命值，每次受击至少会扣除一定的生命值，默认为0，即不生效
+		}
+
+		ClearStealthWhenChangeEquipSet: {
+			Label: 切换装备时清空潜行条
+			Tooltip: ""
+		}
+
+		ExtraItemsInStarterBag: {
+			Label: 新手礼包额外物品
+			Tooltip: 新手礼包将提供一些额外的有用物品（如魔法存储，更好的体验魔杖等）
+		}
+
+		RogueAccessoriesProvide40Stealth: {
+			Label: 盗贼配饰提供最少40点潜行值
+			Tooltip: 如果你穿戴了任何盗贼饰品，则会至少拥有20点潜行值
+		}
+
+		EnableArmorPrefix: {
+			Label: 启用护甲词条
+			Tooltip: 关闭此项将禁用所有词条物品的合成配方和自然世界生成
+		}
+	}
+}
+
+vfb:
+	'''
+	套装奖励:
+	+20 护甲穿透
+	攻击命中目标会积攒虚空能量，
+	根据虚空能量数量提供部分移速和飞行速度加成
+	按下 套装奖励 键激发虚空能量
+	召唤一个虚空的幻影协助战斗并无限飞行，持续10秒
+	幻影的伤害类型取决于手中武器
+	'''
+helmvfc:
+	'''
+	-25% 魔力消耗
+	魔法弹幕击中敌人减少自身魔力病减益0.5s
+	'''
+helmvfd:
+	'''
+	+24% 攻击速度
+	+10% 伤害减免
+	击中敌人获取更多的虚空能量
+	'''
+helmvfs:
+	'''
+	远程射弹伤害随时间增加
+	增加远程弹幕弹速
+	'''
+helmvfl:
+	'''
+	+15% 移动速度
+	+135 最大潜行值
+	潜伏攻击获得更多虚空能量
+	'''
+helmvfe:
+	'''
+	+7 召唤栏
+	+80% 召唤伤害
+	召唤一只虚空共生体协助战斗
+	'''
+Reforge: 重铸
+ArmorPrefixHardName: 坚硬
+ArmorPrefixHardDescription: +10% 防御
+ArmorPrefixLightName: 轻便
+ArmorPrefixLightDescription:
+	'''
+	+3% 移动速度
+	+5% 飞行速度
+	'''
+ArmorPrefixBrokenName: 破损
+ArmorPrefixBrokenDescription: -20% 防御
+ArmorPrefixGodForgedName: 神铸
+ArmorPrefixGodForgedDescription:
+	'''
+	+8% 防御
+	+1% 伤害减免
+	+3% 伤害
+	'''
+ArmorPrefixGuardedName: 守护
+ArmorPrefixGuardedDescription: +15% 防御
+ArmorPrefixHeavyName: 沉重
+ArmorPrefixHeavyDescription: -10% 移动速度
+ArmorPrefixResilientName: 弹力
+ArmorPrefixResilientDescription: 增加跳跃高度
+ArmorPrefixRustName: 锈蚀
+ArmorPrefixRustDescription: -10% 防御
+ArmorPrefixShiningName: 发光
+ArmorPrefixShiningDescription: 让你发光
+ArmorPrefixThornyName: 荆棘
+ArmorPrefixThornyDescription: +100% 接触伤害反伤
+ArmorPrefixWaterWalkerName: 水上行者
+ArmorPrefixWaterWalkerDescription: 使你能够在水面上行走
+ArmorPrefixMiracleName: 奇迹
+ArmorPrefixMiracleDescription:
+	'''
+	+5% 防御
+	+20% 盔甲光照
+	+2% 伤害
+	'''
+ArmorPrefixGreatName: 杰出
+ArmorPrefixGreatDescription:
+	'''
+	+8% 防御
+	+2% 伤害
+	'''
+ArmorPrefixMassiveName: 厚重
+ArmorPrefixMassiveDescription:
+	'''
+	+25% 防御
+	-30% 移动速度
+	'''
+ArmorPrefixDestinedGreatnessName: 注定伟大
+ArmorPrefixDestinedGreatnessDescription:
+	'''
+	+2% 暴击率
+	+5% 防御
+	+1 幸运
+	'''
+ArmorPrefixRegenName: 再生
+ArmorPrefixRegenDescription: +1/s 每秒生命再生
+ArmorPrefixVoidTouchedName: 虚空之触
+ArmorPrefixVoidTouchedDescription: +0.2 虚空之触
+ArmorPrefixBiochemistryName: 生化
+ArmorPrefixBiochemistryDescription: +15% 减益免疫概率
+ArmorPrefixVoidName: 虚空
+ArmorPrefixVoidDescription:
+	'''
+	+0.1 虚空之触
+	+20% 接触伤害反伤
+	+50% 弹速
+	'''
+ArmorPrefixRecklessName: 鲁莽
+ArmorPrefixRecklessDescription:
+	'''
+	+5% 伤害
+	-50% 防御
+	'''
+ArmorPrefixSacrificalName: 牺牲
+ArmorPrefixSacrificalDescription:
+	'''
+	+10% 伤害
+	-99% 防御
+	'''
+ArmorPrefixSilenceName: 寂静
+ArmorPrefixSilenceDescription: +2 最大潜行值
+ArmorPrefixMagicalName: 注魔
+ArmorPrefixMagicalDescription:
+	'''
+	+10 最大魔力值
+	-5% 魔力消耗
+	+6% 强化魔力
+	'''
+ArmorPrefixEvokerName: 唤灵
+ArmorPrefixEvokerDescription:
+	'''
+	+1 召唤栏
+	-15% 伤害
+	'''
+ArmorPrefixEndName: 末日
+ArmorPrefixEndDescription:
+	'''
+	+12% 防御
+	+5% 伤害
+	+20% 击退
+	+4% 暴击
+	+100% 接触伤害反伤
+	+0.1 虚空之触
+	'''
+ArmorPrefixWizardName: 巫祝
+ArmorPrefixWizardDescription:
+	'''
+	+1 召唤栏
+	-10% 伤害
+	'''
+ArmorPrefixLastStandName: 屹立不倒
+ArmorPrefixLastStandDescription:
+	'''
+	+15% 防御
+	+2% 伤害减免
+	增加一次复活机会
+	该复活不可叠加
+	'''
+ArmorPrefixHeatDeathName: 热寂
+ArmorPrefixHeatDeathDescription:
+	'''
+	+15% 防御
+	你将造成1.15倍的伤害
+	[c/ff0000:攻击附带热寂，持续造成百分比伤害，但你的血量会持续流失]
+	'''
+ArmorPrefixArmorPrefixEchoName: 回响
+ArmorPrefixArmorPrefixEchoDescription: +4% 潜行值回复速度
+ArmorPrefixTheBodyName: 肉体
+ArmorPrefixTheBodyDescription: +10% 最大生命值
+ArmorPrefixTheMindName: 思想
+ArmorPrefixTheMindDescription: +20% 最大魔力
+ArmorPrefixTheSoulName: 灵魂
+ArmorPrefixTheSoulDescription: +0.2% 生命汲取
+PrefixEnchanted: 注魔
+AncientPrefixDesc:
+	'''
+	远古物品
+	无法被清刻之刃取下
+	'''
+
+Prefixes: {
+	Enchanted.DisplayName: 注魔
+
+	Weapon: {
+		Echo.DisplayName: 回响
+		Vigorous.DisplayName: 活跃
+	}
+
+	Heavy.DisplayName: 沉重
+}
+
+DamageClasses: {
+	NoneTypeDamageClass.DisplayName: 伤害
+	NoDRMelee.DisplayName: No D R Melee
+	KoishiDamageClass.DisplayName: "[c/ABCDBB:无意识伤害]"
+}
+
+hkLevel: 当前解锁进度
+ZoneGraveyard: 当在墓地环境时
+DownedBoss2: 击败 克苏鲁之脑 / 世界吞噬怪 后
+HaveOracleDeck: 持有神谕卡组时
+HaveTaintedDeck: 持有堕化卡组时
+HaveSoulDeck: 持有灵魂卡组时
+DownloadBOI: 玩过《以撒的结合：忏悔》
+IsaacLock: 你不能在没有玩过《以撒的结合：忏悔》的情况下佩戴该饰品
+PWSpawnInfo: 带有混沌减益时进入深渊
+CdAS: 孤魂铁索冷却
+XythCharge: 始源遗歌充能
+KilledByVoidVirus: "{0}的血液里只剩下虚无。"
+KilledByAstral0: "{0}化作一颗明星。"
+KilledByAstral1: "{0}仰望满天繁星，眼神逐渐迷离。"
+KilledByAstral2: "{0}向天空祈祷，血肉逐渐化为虚无。"
+KilledByAstral3: "{0}回过神来，自己已身处星空。"
+KilledByAstral4: "{0}祈求宽恕，却动弹不得。"
+KilledByAstral5: "{0}终有一死。"
+KilledByAstral6: "{0}成为了继承者。"
+KilledByAstral7: "{0}是什么时候成为自己的？"
+KilledByAstral8: "{0}的残骸向上飘去，迎来了终结"
+KilledByAstral9: "{0}化作缕缕星光"
+Death: "{0}死掉了"
+CdFF: 寻友护符冷却
+TooltipBookMark: 需放入熵语之书系列武器以生效
+TooltipBookMark2: 按下右键可放入/取出
+SlotInfo: 放入书签
+EBookTooltip:
+	'''
+	手持右键打开书签UI
+	放入书签以对其进行强化
+	- 熵语之书 -
+	'''
+SetHomeCommandError: 错误: 无效参数
+HomeCommandError: 未找到
+EntropyModeName: 熵变
+EntropyModeDescShort:
+	'''
+	[c/aa12e1:比死亡模式更具有挑战性, 受击后一段时间不能回血，降低你的属性]
+	[c/ff0000:声明：此模式难度较难，如果你能轻松通关死亡模式那么可以尝试此难度]
+	'''
+EntropyModeDesc:
+	'''
+	[c/aa12e1:更加难的模式，更少的生命，伤害和生存能力。Boss获得动态减伤和单次受伤最大伤害限制，百分比减少生命、护甲，暴击率最高只能达到50%，伤害增幅削减，降低部分机动]
+	[c/aa12e1:准备好被遗忘吧!]
+	'''
+EntropyModeActive: 熵变模式已开启！你将被遗忘......
+EntropyModeDeactive: 熵变模式已关闭，为何不渴望遗弃?
+MissedInVoid: 被遗忘了
+BatteringRamZenithText: “它包含了恶意代码”
+AmmoSolution: 环境溶液
+AmmoArrow: 箭矢
+AmmoBullet: 子弹
+AmmoCandyCorn: 玉米糖
+AmmoCoin: 钱币
+AmmoDart: 飞镖
+AmmoFallenStar: 坠落之星
+AmmoFlare: 照明弹
+AmmoGel: 凝胶
+AmmoJackOLantern: 南瓜灯
+AmmoNail: 钉子
+AmmoRocket: 火箭
+AmmoSand: 沙块
+AmmoSnowball: 雪球
+AmmoStake: 桩
+AmmoStyngerBolt: 毒刺
+AmmoBoulders: 巨石
+AmmoAle: 麦芽酒
+AmmoBloodrune: 血之符文
+AmmoStarblightSoot: 凋星微尘
+AmmoType: 弹药类型
+AmmoMissile: 导弹
+AmmoSouls: 魂
+UseAmmo: 使用弹药
+OrbPunishDeath0: "{0}的灵魂破碎了"
+OrbPunishDeath1: "{0}试图取下裂开的预知宝珠"
+RuneDashCD: 符文突进冷却
+ArmorPenetrationItemTooltip: "{0}点护甲穿透"
+AmmoLifeTime: 射弹最大存在时间
+AmmoShootSpeed: 射弹速度
+AmmoPenetrate: 穿透次数
+AmmoPenetrateInfinite: 无限
+PrefixEchoDescr: +12 最大潜行值
+PrefixVigorousDescr: +15% 潜行值回复速度
+WikiURL: ""
+GameTips.VoidOreTip: 虚渺矿会在击败巡游者后在太空生成
+LoreAwakeningDesc: 小幅增加移动速度和跳跃高度
+LoreKingSlimeDesc: 提升跳跃高度
+LoreDesertScourgeDesc: 增加憋气时间
+LoreCrimsonDesc: +{1}最大生命值
+LoreCrabulonDesc: 受伤后获得{1}秒的与菇共生增益
+LoreEyeofCthulhuDesc: 减少{1}%冲刺间隔
+LoreCorruptionDesc: 所受伤害减少{1}%
+LoreBrainofCthulhuDesc: 使你免疫流血减益
+LoreQueenBeeDesc: +{1}%伤害, 但是-{2}%暴击率
+LuminarisLoreDesc: +{1}%最大飞行时间
+LoreHiveMindDesc: 在受伤后的{1}秒内，增加{2}%伤害
+LorePerforatorsDesc: 受伤后有{1}%的概率回复{2}点血量
+LoreEaterofWorldsDesc: 使你免疫诅咒烈焰减益
+LoreSkeletronDesc: 堆叠数量大于等于{1}的弹药有{2}%的概率不被消耗
+LoreSlimeGodDesc: 增加些许跳跃高度
+LoreUnderworldDesc: 进入岩浆的前{1}秒不会受到伤害
+LoreWallofFleshDesc: 将受到的伤害减伤{1}%，冷却时间{2}秒
+LoreBloodMoonDesc: 提升夜视能力
+LoreQueenSlimeDesc: +{1}%下落速度
+LoreArchmageDesc: 增加冷系减益流逝速度
+LoreMechsDesc: +{1}防御
+LoreTwinsDesc: +{1}防御
+LoreDestroyerDesc: +{1}防御
+LoreSkeletronPrimeDesc: +{1}% 伤害减免
+LoreSulphurSeaDesc: 对酸性毒液免疫
+LoreAzafureDesc: +{1}% 暴击率
+LoreCalamitasCloneDesc: +{1}% 近战攻速
+LorePlanteraDesc: +0.5/s 生命再生
+LoreAquaticScourgeDesc: 增加憋气时间
+LoreAbyssDesc: 增加在深渊中的可见性
+LoreLeviathanAnahitaDesc: 在水中增加1/s生命再生
+LoreAstrumAureusDesc: 增加幻星感染减益的流逝速度
+LoreBrimstoneElementalDesc: +1% 伤害减免
+LoreGolemDesc: +{1}% 伤害减免
+LorePlaguebringerGoliathDesc: 瘟疫减益流逝速度更快
+LoreEmpressofLightDesc: 在白天增加{1}点防御
+LoreDukeFishronDesc: 移动无视水阻力
+LoreRavagerDesc: 增加2%移动速度
+LorePreludeDesc: +5%光照
+LoreAstralInfectionDesc: +{1}% 飞行时间
+LoreAstrumDeusDesc: +{1}% 飞行速度
+LoreApsychosDesc: 使你免疫着火了和狱火减益
+
+DraedonDialogs: {
+	Void: {
+		Inquiry: 虚空
+		Response:
+			'''
+			是的,你我都见识到了,在这世界的表面之下,还有着一片未知而又广阔的空间,我称之为“虚空”。
+
+			我一直有对虚空进行研究,早在我遇见亚利姆之前。
+
+			在与亚利姆合作期间,我曾提出对虚空进行更深入的研究,于是亚利姆便找到了一位先知,请他对虚空投去一瞥。
+
+			尽管后来他的下场不怎么好,但这也没阻止我对虚空的进一步研究。
+
+			亚利姆得知此事后表达出强烈的反对,但我仍然向打开了通往虚空的裂隙并投放了一架侦测无人机。进入虚空后不久遍无法接受到传回来的录像,只能听见嘈杂的噪声,以及空灵的低语。
+			'''
+	}
+}
+
+SlotInfo2: 存放原矿
+LightModeTip: 警告：颜色以外的照明模式会导致灾熵的部分射弹和敌怪不显示，最好使用颜色照明
+KilledByBloodBoiling: "{0}的血液沸腾了"
+BloodBoiling: 血沸
+BloodBoilingDescr: 持续使用物品时增加攻速，但会对自身产生持续的伤害，该效果会随着使用时间增加
+PrefixHeavyDesc: +10% 下落速度
+DamageReduceCD: 减伤冷却
+DeltaruneCH5ShadowCrystal: 获取Deltarune第五章的暗影水晶
+
+InfernumIntros: {
+	NihilityTwin:
+		'''
+		噬虚者
+		虚无双子
+		'''
+	Cruiser:
+		'''
+		虚空骇蟒
+		巡游者
+		'''
+	Prophet:
+		'''
+		破碎灵魂
+		先知
+		'''
+	Luminaris:
+		'''
+		天界飞翼
+		幻光星蛾
+		'''
+	Apsychos:
+		'''
+		恶魔之尾
+		烬甲秽魔
+		'''
+}
+
+Donor: 捐赠者：
+Owner: 所有者：
+ShadowDashCD: 暗影突进冷却
+ShiftMoreInfo: 按住“左Shift”查看关于此特殊充能条的更多信息
+ShadowBar: 暗影值
+SolarBar: 耀阳值
+ShadowBarInfo:
+	'''
+	以恒定速度增长
+	充满时攻击会释放一团暗影球，击中后会召唤许多暗影匕首贯穿目标
+	'''
+SolarBarInfo:
+	'''
+	使用盗贼武器击中目标后增长
+	充满时攻击会触发潜伏攻击并额外发射一些追踪的耀阳矢
+	'''
+RPDonorName: 冷级
+Acropolis: 阿萨福勒量产的攻击型机甲，曾被用于大规模战争
+OblivionThretherCooldown: 虚漩巡锯突进冷却
+LilyDeath0: "{0}被污秽所吞噬"
+LilyDeath1: "{0}的守护宝具破碎了"
+TheVoid: 虚空
+
+Biomes: {
+	VoidDummyBoime: {
+		DisplayName: 虚空
+		TownNPCDialogueName: Void
+	}
+}
+
+NearShimmer: 靠近微光湖
+AzMinerOreWarning: 只有矿石能被放入！
+RIDModifies:
+	'''
+	基于[[ITEMNAME]]:
+	[1]%伤害
+	[2]%攻速
+	[9]%暴击率
+	[3]%防御
+	[4]%伤害减免
+	[5]%最大生命
+	[6]%最大魔力
+	[7]%移动与飞行速度
+	[8]%飞行时间
+	'''
+ProtectiveCannonCooldown: 城防炮冷却
+TlipocasScytheSlashCooldown: 冲刺冷却
+TeleportSlashCooldown: 强化斩击冷却
+ScytheReviveCooldown: 复活冷却
+TScytheZenithName: 夜之主的镰刀
+TScytheSpecialName: 小红
+TScytheSpecialName2: 栞那的镰刀
+TScytheZenithDesc: “为我加冕，我的王，世界将迎来终夜。”
+TScytheDesc: “猩红的镰刀，小死神的灵魂附着其上”
+TSL1: 邪恶的大眼珠子似乎对猊下不怀好意...我们去干掉他吧!
+TSL2: 脑子和虫子状的奇怪恶魂？我可以带回家做成标本吗..？
+TSL3: 史莱姆的神吗，看起来粘粘的脏脏的还冒着泡...来给他洗个澡嘛？
+TSL4: 封印着神明精魄的血肉造物吗，看起来干完这单可以搞到很多灵魂诶...
+TSL5:
+	'''
+	硫火崖里漂浮着许多灵魂在哀嚎...不停说着百年前的一场灾难...
+	我们来结束他们的痛苦吧！
+	'''
+TSL6:
+	'''
+	夜空中徘徊着一个可怖的红色怪物，
+	我只能从他的灵魂中感受到疯狂，或者..那真的是灵魂吗？
+	'''
+TSL7:
+	'''
+	地牢里的灵魂浓度好高...
+	诶，有一个被封印的，气息有些奇怪的灵体，忍不住想和他交流一下！
+	'''
+TSL8: 附着于扭曲血肉的几丝灵魂？有些...令人作呕，把他们赶回梦境吧！
+TSL9:
+	'''
+	这些疯狂的邪教徒身上散发着和先知一样的气息...
+	他们在祭拜什么？感觉送他们去祭拜死神是个不错的主意。
+	'''
+TSL10: 一只巨大的，多眼的章鱼？这是从梦境中出来的怪物吗？
+TSL11:
+	'''
+	那个披着紫色斗篷的无面人提着的灯笼有和先知一样的气息...
+	有点好奇，想把灯笼抢过来!
+	'''
+TSL12:
+	'''
+	在被施加魔法的地牢里，这些灵魂永远都不能安息，
+	太可怜了...让我们把它带走吧
+	'''
+TSL13: 有只紫色的巨蟒...想要吞噬猊下的灵魂！休想伤害猊下！
+TSL14: 奇怪的灯笼指向了这团空间裂隙...它会带来什么？
+TSL15:
+	'''
+	有个可爱的女孩子和奇怪的机器人找上门了，
+	把他们身上的灵魂也抢走，工作量应该就快达标了吧！
+	'''
+TSL16:
+	'''
+	拷打了一下邪教徒，他说...只要在深渊用一下混沌杖，
+	就会出现一辈子都用不完的灵魂。让我试试看...？
+	'''
+TSLEnd: 终于还清灵魂债务咯，任务完美完成～
+TSA1: 按住[上]发动攻击时会向鼠标方向突进一段距离
+TSA1B: 击败史莱姆之神后可以获得无敌时间并对接触到的目标造成伤害
+TSU1: 需击败克苏鲁之眼
+TSA2: 右键将镰刀丢出，造成多次伤害
+TSA2B: 击败硫磺火元素后，在丢出时按下左键将传送到鼠标处并发动一次较大的斩击，该技能有30秒冷却时间，在击败巡游者后将降为20秒
+TSU2: 需击败任意邪恶Boss
+TSA3:
+	'''
+	丢出时按下鼠标右键可以让镰刀跟随鼠标一段时间
+	潜伏攻击命中将为你回复7点生命值
+	'''
+TSU3: 需击败先知
+TSA4: 传送斩击命中将使武器被虚空赋能，持续8秒，在击败巡游者后将提升至15秒，此时，造成的伤害将增加20%
+TSU4: 需击败虚无双子
+TSA5:
+	'''
+	传送斩击会在原地也留下一个影子，影子也会进行一次大范围的劈砍，并且冲刺会额外产生一条垂直于原冲刺的斩击
+	潜伏攻击命中的治疗量增加至10
+	'''
+TSU5: 需击败噬魂幽花
+TSA6: 冲刺时留下裂缝，持续对接触到的目标造成伤害
+TSU6: 需击败神明吞噬者
+TSA7: 抵挡一次致命伤害并将你的生命值回复至最大生命值的一半，此效果有5分钟的冷却
+TSU7: 需击败犽狨
+TSA8: 攻击造成虚空之触
+TSU8: 需击败巡游者
+TSA9: 与目标之间的距离越近，造成的伤害越高，最高额外造成25%伤害
+PressShiftForMoreInfo: 按住Shift查看详细信息...
+TSU9: 需击败至尊灾厄
+AchievementBookmarkInsertName: 良好的阅读习惯
+AchievementBookmarkInsertDesc: 将任意书签放入一本熵语之书
+LMDialog1: 你好，如你所见，我是一台抽奖机
+LMDialog2: 嘿，伙计，你的钱呢
+LMDialog3: 额，我是说，要钱才能启动
+LMDialog4: 你个白痴！
+LMDialog5: 你在耍我吗？
+LMDialog6: 我知道了，你就是想看我笑话
+LMDialog7: 你还有一次机会！
+LMDialog8: 你完了！
+LMDialog9: 把他拿走，会唐！
+LMDialog10: 嘿，为什么不早点拿出来......你在逗我吗？
+LMDialog11: 给，这是你的奖励;)
+LMDialog12: 嘿，为什么不早点拿出来......
+LMDialog13: 嘿，为什么不早点拿出来.....你可真是富有
+LMDialog14: 你知道这是什么的
+LMDialog15: 这个物品的设计是失败的...你不应该使用它
+LMDialog16: 你难道没看到那个[NAME]吗？可真是不知死活
+LMDialog17: 我不收垃圾，谢谢
+LMDialog18: 你塞的是什么东西？
+NowLV: 当前等级
+AnyOrichalcumBar: 秘银锭或山铜锭
+AnyEvilBar: 猩红锭或魔矿锭
+IronBar: 铁定或铅锭
+AnyFairy: 任意仙灵
+Gems: 任意宝石
+Butterflies: 任意蝴蝶
+BCBarInfo: 苍郁充能
+HallowedEnemiesDrop: 掉落自神圣之地地下敌怪
+EvilEnemiesDrop: 掉落自邪恶地形地下敌怪
+DungeonEnemiesDrop: 掉落自地牢敌怪
+VoidOreMine: 击败巡游者后在太空层挖取
+AbyssalPiercerObt: 击败渊海灾虫后掉落自巨大乌贼
+AstralFishing: 星辉地钓鱼获取
+AzafureSet:
+	'''
+	穿着此盔甲时所有阿萨福勒装备将获得部分强化
+	将肾上腺素替换为耐力条
+	耐力条会为你提供至多12点护甲与16%伤害减免，同时减慢你的移动速度
+	在受到伤害时会根据伤害值扣除耐力，耐力减少同时会使你的防御和减伤暂时降低
+	耐力会在受击5秒后缓慢回复
+	当耐力清空时会失效，并需要一段时间重新启用
+	死亡后产生威力巨大的爆炸
+	'''
+AzafureSet2:
+	'''
+	穿着此盔甲时所有阿萨福勒装备将获得部分强化
+	将肾上腺素替换为耐力条
+	耐力条会为你提供至多24点护甲与20%伤害减免
+	在受到伤害时会根据伤害值扣除耐力，耐力减少同时会使你的防御和减伤暂时降低
+	耐力会在受击5秒后缓慢回复
+	当耐力清空时会失效，并需要一段时间重新启用
+	死亡后产生威力巨大的爆炸
+	提供80点潜行值
+	增加10%移动速度和1最大仆从栏位
+	'''
+AzafureSet3:
+	'''
+	免疫摔落伤害
+	穿着此盔甲时所有阿萨福勒装备将获得部分强化
+	将肾上腺素替换为耐力条
+	耐力条会为你提供至多36点护甲与24%伤害减免
+	在受到伤害时会根据伤害值扣除耐力，耐力减少同时会使你的防御和减伤暂时降低
+	耐力会在受击5秒后缓慢回复
+	当耐力清空时会失效，并需要一段时间重新启用
+	死亡后产生威力巨大的爆炸
+	提供120点潜行值
+	按下[[KEY]]变形为一架卫城机甲，再次按下取消变身
+	当机甲激活时，大幅增加防御与伤害减免，且你只能使用其提供的武器
+	左键攻击，右键以切换武器形态
+	钩爪将会被叉矛取代，按下钩爪键将发射叉矛，将你拉向钩住的物块
+	叉矛会抓住较弱的敌怪，如果钩住Boss时将会把你拉过去
+	'''
+DuraBar: 耐力条
+AzafureEnhance: 能力强化
+
+AzafureEnhances: {
+	AzafureChargeShield: 冲刺所需的充能减少
+	AzafureDetectionEquipment: 增加跳跃高度
+	AzafureTBMTerminal: 增加挖掘时的移动速度
+	ReallocateIndicatorData: 增加平均属性加成
+	AzafureAntiaircraftGun: +30%攻击速度
+	AzafureBatteringRam: 加快充能速度
+	AzafureDroneRemote: 增加仆从攻击频率
+	AzafureFurnace: 根据耐久条加速充能
+	AzafureHealingTowerRemote: 增加治疗与攻击频率
+	AzafurePioneerCannon: 增加装弹上限
+	AzafureProtectiveCannon: 减少冷却时间
+	AzafurePulseWand: 增加标记上限与搜索范围
+	AzafureRailgun: 根据耐力值增加小型追踪弹的数量
+	AzafureSurgeRod: 射弹可额外电击一个目标
+	AzafureTeslaGun: 增加电弧伤害
+	AzafureElectrocauteryWand: 增加充能速度
+	AzafureLightMachineGun: 增加普通攻击命中后回复的潜行值
+	AzafurePowerSaw: 增加链锯伤害和持续时间
+	AzafureDrill: 增加镐力和挖掘范围
+	AzafureEKatana: 增加攻击距离
+	AzafureCogfly: 增加攻击频率
+	AzafureTacticalRadio: 增加发射的导弹数量
+	AzafureAirReaper: 增加镰刀追逐目标的时间
+	AzafureCylinder: 增加金属球的数量上限和存在时间
+	AzafurePeaceKey: 每次发射两发核弹
+	AzafureDriverCore:
+		'''
+		降低充能消耗
+		-20% 护盾承受的伤害
+		增加护盾恢复速度
+		'''
+	AzafureSupportRemote: 增加攻击速度
+	MottledSpear: 提升钩爪性能
+	AzafureImperialGuardMachineGun: 提升子弹射程和精准度
+	AzafureExhaustGasInjector: 增加伤害频率
+	AzafureStandardShotgun: 增加霰弹数量
+	AzafureSwirlblade:
+		'''
+		增加锯片的尺寸和持续时间
+		增加导弹的数量
+		'''
+	AzafureMicroBeacon: 增加无人机的数量
+	AzafureWarSatelliteAuthorizationKey: 增加激光持续时间
+	AzafureTwinSaw: 增加火花射程
+}
+
+Menu: {
+	Vortex: 虚空漩涡
+	Church: 空冥教堂
+}
+
+DeathExplode: "{0}爆炸了"
+BlockingCooldown: 招架冷却
+FetalDreamCooldown: 胎儿之梦冷却
+DriverCoreCooldown: 驱动核心护盾
+FetalDreamDamage: 无意识伤害
+NihilityShield: 噬菌体护盾
+CardsDesc: 与它相似的卡片应该还有一整套
+VoidCoreShield: 虚空核心护盾
+CrossModSupportFish: 联动内容:比目鱼炮技能鱼也能被放入任意熵语之书当作书签使用
+CdAcr: 卫城机甲冷却
+SpecialThanks: 特别鸣谢
+PassedBossRush: 通过Boss Rush
+BloodthirstyRequirement: 你至少需要200点生命值才能制作此物品
+BloodthirstyKilled: "{0}放干了血"
+Luminariswarm: 幻光蛾群
+MinionAccDescCrownFangs: 当同时佩戴[ITEM]时，获得+1召唤栏
+NonZenithWorld: 不在天顶世界
+ZenithWorld: 在天顶世界时
+RatizelShield: 嗫告篇帙护盾
+PrefixEnchantedDesc: +4% 强化魔力
+NoAmmo: 无弹药！
+VoidDeath0: "{0}消散在了薄薄的空间中"
+VoidDeath1: "{0}被打散成了原子"
+VoidDeath2: "{0}化为了纯粹的能量"
+VoidDeath3: "{0}无法回归物质循环"
+VoidDeath4: "{0}回归了虚无"
+VoidDeath5: "{0}的载体被抹除了"

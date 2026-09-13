@@ -1,0 +1,19 @@
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityEntropyLegacy.Content.Buffs.Wyrm
+{
+    public class EclipsedImprint : ModBuff
+    {
+        public override void SetStaticDefaults()
+        {
+            Main.buffNoSave[Type] = true;
+            BuffID.Sets.NurseCannotRemoveDebuff[Type] = true;
+            BuffID.Sets.LongerExpertDebuff[Type] = true;
+            Main.debuff[Type] = true;
+            Main.pvpBuff[Type] = true;
+
+        }
+    }
+}

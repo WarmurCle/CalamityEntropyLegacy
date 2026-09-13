@@ -1,0 +1,37 @@
+using System.ComponentModel;
+using Terraria.ModLoader;
+using Terraria.ModLoader.Config;
+
+namespace CalamityEntropyLegacy.Common
+{
+    public class ServerConfig : ModConfig
+    {
+        public static ServerConfig Instance => ModContent.GetInstance<ServerConfig>();
+        public override ConfigScope Mode => ConfigScope.ServerSide;
+        [Header("Misc")]
+
+        [DefaultValue(true)]
+        public bool ClearStealthWhenChangeEquipSet { get; set; }
+
+        [DefaultValue(false)]
+        public bool BramblecleaveAlwaysUnlockAllSkill { get; set; }
+
+        [DefaultValue(true)]
+        public bool ExtraItemsInStarterBag { get; set; }
+
+        [DefaultValue(false)]
+        public bool LoreSpecialEffect { get; set; }
+
+        [Range(0f, 100f)]
+        [DefaultValue(0f)]
+        [Increment(0.5f)]
+        public float LeastDamageSufferedBasedOnMaxHealth { get; set; }
+
+        [DefaultValue(true)]
+        public bool RogueAccessoriesProvide40Stealth { get; set; }
+
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool EnableArmorPrefix { get; set; }
+    }
+}

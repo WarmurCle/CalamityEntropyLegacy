@@ -1,0 +1,19 @@
+using CalamityMod.Rarities;
+using Terraria.ModLoader;
+
+namespace CalamityEntropyLegacy.Content.Rarities
+{
+    public class VoidPurple : ModRarity
+    {
+        public override Color RarityColor => new Color(106, 40, 190);
+
+        public override int GetPrefixedRarity(int offset, float valueMult) => offset switch
+        {
+            -2 => ModContent.RarityType<CosmicPurple>(),
+            -1 => ModContent.RarityType<BurnishedAuric>(),
+            1 => ModContent.RarityType<VoidPurple>(),
+            2 => ModContent.RarityType<VoidPurple>(),
+            _ => Type,
+        };
+    }
+}

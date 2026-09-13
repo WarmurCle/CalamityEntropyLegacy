@@ -1,0 +1,26 @@
+using CalamityEntropyLegacy.Content.Projectiles;
+using CalamityMod.Items;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityEntropyLegacy.Content.Items.Weapons.Whips
+{
+    public class MindCorruptor : BaseWhipItem
+    {
+        public override int TagDamage => 3;
+        public override void SetDefaults()
+        {
+            Item.DefaultToWhip(ModContent.ProjectileType<MindCorruptorProj>(), 32, 3, 4, 42);
+            Item.rare = ItemRarityID.Blue;
+            Item.value = CalamityGlobalItem.RarityBlueBuyPrice;
+            Item.autoReuse = true;
+            Item.UseSound = CEUtils.GetSound("corruptwhip_swing");
+        }
+        public override bool CanUseItem(Player player)
+        {
+            Item.UseSound = CEUtils.GetSound("corruptwhip_swing", Main.rand.NextFloat(0.6f, 1.4f));
+            return true;
+        }
+    }
+}

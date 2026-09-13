@@ -1,0 +1,19 @@
+using CalamityMod.Cooldowns;
+using Terraria.Audio;
+using Terraria.Localization;
+
+namespace CalamityEntropyLegacy.Content.Cooldowns
+{
+    public class AntivoidDashCooldown : CooldownHandler
+    {
+        public static new string ID => "AntivoidDash";
+        public override bool ShouldDisplay => true;
+        public override LocalizedText DisplayName => Language.GetOrRegister("Mods.CalamityEntropyLegacy.CdAntivoid");
+        public override string Texture => "CalamityEntropyLegacy/Content/Cooldowns/AntivoidDashCooldown";
+        public override Color OutlineColor => new Color(197, 165, 108);
+        public override Color CooldownStartColor => Color.Pink;
+        public override Color CooldownEndColor => Color.LightBlue;
+
+        public override SoundStyle? EndSound => new("CalamityEntropyLegacy/Assets/Sounds/DeadSunShot");
+    }
+}
