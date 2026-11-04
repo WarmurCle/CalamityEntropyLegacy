@@ -14,19 +14,19 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Reference Include="AlchemistNPCLite">
-	    <HintPath>..\ModAssemblies\AlchemistNPCLite.dll</HintPath>
+	    <HintPath>..\ModAssemblies\AlchemistNPCLite_v1.9.9.dll</HintPath>
 	  </Reference>
 	  <Reference Include="CalamityMod">
-	    <HintPath>..\ModAssemblies\CalamityMod.dll</HintPath>
+	    <HintPath>..\ModAssemblies\CalamityMod_v2.2.4.dll</HintPath>
 	  </Reference>
 	  <Reference Include="CalamityOverhaul">
-	    <HintPath>..\ModAssemblies\CalamityOverhaul.dll</HintPath>
+	    <HintPath>..\ModAssemblies\CalamityOverhaul_v0.9209.dll</HintPath>
 	  </Reference>
 	  <Reference Include="InfernumMode">
-	    <HintPath>..\ModAssemblies\InfernumMode.dll</HintPath>
+	    <HintPath>..\ModAssemblies\InfernumMode_v2.0.1.35.dll</HintPath>
 	  </Reference>
 	  <Reference Include="InnoVault">
-	    <HintPath>..\ModAssemblies\InnoVault.dll</HintPath>
+	    <HintPath>..\ModAssemblies\InnoVault_v1.9.102.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
 

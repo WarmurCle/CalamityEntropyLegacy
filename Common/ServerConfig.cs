@@ -11,6 +11,9 @@ namespace CalamityEntropyLegacy.Common
         [Header("Misc")]
 
         [DefaultValue(true)]
+        public bool IEoRBalancing { get; set; }
+
+        [DefaultValue(true)]
         public bool ClearStealthWhenChangeEquipSet { get; set; }
 
         [DefaultValue(false)]

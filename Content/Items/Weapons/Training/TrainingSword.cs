@@ -1,4 +1,5 @@
 
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Particles;
@@ -27,7 +28,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Training
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 6;
             Item.value = CalamityGlobalItem.RarityGreenBuyPrice;
-            Item.rare = ItemRarityID.Orange;
+            Item.rare = CrossModSystem.IEoRBalancing ? ItemRarityID.Blue : ItemRarityID.Orange;
             Item.UseSound = null;
             Item.noMelee = true;
             Item.noUseGraphic = true;
@@ -262,9 +263,17 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Training
                 }
             }
         }
+
         public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
         {
             modifiers.SourceDamage *= DamageMult();
+
+            if (target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeHead>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeBody>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeTail>() && CrossModSystem.IEoRBalancing)
+            {
+                modifiers.SourceDamage *= 0.5f;
+            }
         }
 
         public override bool PreDraw(ref Color lightColor)

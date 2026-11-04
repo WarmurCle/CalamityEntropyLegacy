@@ -1,3 +1,4 @@
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Items;
 using Microsoft.Xna.Framework.Graphics;
@@ -14,7 +15,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Fractal
     {
         public override void SetDefaults()
         {
-            Item.damage = 18;
+            Item.damage = CrossModSystem.IEoRBalancing ? 12 : 18;
             Item.DamageType = ModContent.GetInstance<TrueMeleeDamageClass>();
             Item.width = 48;
             Item.height = 60;
@@ -23,7 +24,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Fractal
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 4.6f;
             Item.value = CalamityGlobalItem.RarityGreenBuyPrice;
-            Item.rare = ItemRarityID.Green;
+            Item.rare = CrossModSystem.IEoRBalancing ? ItemRarityID.Blue : ItemRarityID.Green;
             Item.UseSound = null;
             Item.noMelee = true;
             Item.noUseGraphic = true;
@@ -150,6 +151,16 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Fractal
         public override bool ShouldUpdatePosition()
         {
             return false;
+        }
+
+        public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
+        {
+            if (target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeHead>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeBody>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeTail>() && CrossModSystem.IEoRBalancing)
+            {
+                modifiers.SourceDamage *= 0.5f;
+            }
         }
 
         public override bool PreDraw(ref Color lightColor)

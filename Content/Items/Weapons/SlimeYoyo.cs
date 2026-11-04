@@ -1,4 +1,5 @@
 using CalamityEntropyLegacy.Content.Projectiles;
+using CalamityEntropyLegacy.Core;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -20,7 +21,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
             Item.noMelee = true;
             Item.noUseGraphic = true;
             Item.UseSound = SoundID.Item1;
-            Item.damage = 10;
+            Item.damage = CrossModSystem.IEoRBalancing ? 25 : 10;
             Item.DamageType = DamageClass.MeleeNoSpeed;
             Item.knockBack = 3f;
             Item.crit = 8;

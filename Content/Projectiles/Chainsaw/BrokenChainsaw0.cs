@@ -1,5 +1,6 @@
 using CalamityEntropyLegacy.Common;
 using CalamityEntropyLegacy.Content.Buffs;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework.Graphics;
@@ -148,7 +149,10 @@ namespace CalamityEntropyLegacy.Content.Projectiles.Chainsaw
             }
             CalamityEntropyLegacy.Instance.screenShakeAmp = 1.2f;
             Hitted = true;
-            target.AddBuff<MechanicalTrauma>(160);
+            if (!CrossModSystem.IEoRBalancing)
+            {
+                target.AddBuff<MechanicalTrauma>(160);
+            }
             CEUtils.PlaySound("slice", Main.rand.NextFloat(1.2f, 1.6f), target.Center, 4, CEUtils.WeapSound * 0.8f);
             for (int i = 0; i < 9; i++)
             {

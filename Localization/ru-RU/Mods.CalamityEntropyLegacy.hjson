@@ -6084,6 +6084,11 @@ Configs: {
 			// Label: Enable Armor Prefix
 			// Tooltip: Close this will disable all prefix items' recipes and generation in world
 		}
+
+		IEoRBalancing: {
+			// Label: Modern Balancing
+			// Tooltip: The enabling of modern balance changes to Entropy items. (Having the Infernal Eclipse of Ragnarok API enabled will force this on)
+		}
 	}
 }
 
@@ -6714,6 +6719,11 @@ AzafureEnhances: {
 Menu: {
 	Vortex: Пустой водоворот
 	Church: Космическая церковь
+}
+
+Tooltips: {
+	// TerrorOfAbyss: Swings a blade of abyssal teeth that inflicts [cbuff:CalamityMod/CrushDepth] and [cbuff:CalamityMod/HeavyBleeding]
+	// TerrorOfAbyssBalanced: Swings a blade of abyssal teeth that inflicts [cbuff:CalamityMod/RiptideDebuff] and [cbuff:CalamityMod/HeavyBleeding]
 }
 
 DeathExplode: "{0} Взрыв."

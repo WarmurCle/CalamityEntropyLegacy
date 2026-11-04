@@ -1022,7 +1022,7 @@ Items: {
 
 	SlimeYoyo: {
 		DisplayName: Slime Yoyo
-		Tooltip: ""
+		Tooltip: Deals increased damage while being sent out on first hit
 	}
 
 	CelestialRing: {
@@ -2983,8 +2983,8 @@ Items: {
 	}
 
 	TerrorOfAbyss: {
-		DisplayName: Abyssal Tearer
-		Tooltip: Swings a blade of abyssal teeth that inflicts [cbuff:CalamityMod/CrushDepth] and [cbuff:CalamityMod/HeavyBleeding]
+		DisplayName: Abyssal Terror
+		Tooltip: ""
 	}
 
 	ScorchingShoot: {
@@ -6307,7 +6307,7 @@ Configs: {
 
 		ExtraItemsInStarterBag: {
 			Label: Extra Items In Starter Bag
-			Tooltip: Starter bag provide additional useful items
+			Tooltip: Starter bag provides additional useful items
 		}
 
 		RogueAccessoriesProvide40Stealth: {
@@ -6318,6 +6318,11 @@ Configs: {
 		EnableArmorPrefix: {
 			Label: Enable Armor Prefix
 			Tooltip: Close this will disable all prefix items' recipes and generation in world
+		}
+
+		IEoRBalancing: {
+			Label: Modern Balancing
+			Tooltip: The enabling of modern balance changes to Entropy items. (Having the Infernal Eclipse of Ragnarok API enabled will force this on)
 		}
 	}
 }
@@ -6991,6 +6996,11 @@ AzafureEnhances: {
 Menu: {
 	Vortex: Vortex
 	Church: Church
+}
+
+Tooltips: {
+	TerrorOfAbyss: Swings a blade of abyssal teeth that inflicts [cbuff:CalamityMod/CrushDepth] and [cbuff:CalamityMod/HeavyBleeding]
+	TerrorOfAbyssBalanced: Swings a blade of abyssal teeth that inflicts [cbuff:CalamityMod/RiptideDebuff] and [cbuff:CalamityMod/HeavyBleeding]
 }
 
 DeathExplode: "{0} exploded"

@@ -6390,6 +6390,11 @@ Configs: {
 			Label: 启用护甲词条
 			Tooltip: 关闭此项将禁用所有词条物品的合成配方和自然世界生成
 		}
+
+		IEoRBalancing: {
+			// Label: Modern Balancing
+			// Tooltip: The enabling of modern balance changes to Entropy items. (Having the Infernal Eclipse of Ragnarok API enabled will force this on)
+		}
 	}
 }
 
@@ -7034,6 +7039,11 @@ AzafureEnhances: {
 Menu: {
 	Vortex: 虚空漩涡
 	Church: 空冥教堂
+}
+
+Tooltips: {
+	// TerrorOfAbyss: Swings a blade of abyssal teeth that inflicts [cbuff:CalamityMod/CrushDepth] and [cbuff:CalamityMod/HeavyBleeding]
+	// TerrorOfAbyssBalanced: Swings a blade of abyssal teeth that inflicts [cbuff:CalamityMod/RiptideDebuff] and [cbuff:CalamityMod/HeavyBleeding]
 }
 
 DeathExplode: "{0}爆炸了"

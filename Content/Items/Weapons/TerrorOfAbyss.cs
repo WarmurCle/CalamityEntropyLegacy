@@ -1,14 +1,17 @@
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Items;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 using ReLogic.Content;
 using System;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace CalamityEntropyLegacy.Content.Items.Weapons
@@ -17,7 +20,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
     {
         public override void SetDefaults()
         {
-            Item.damage = 24;
+            Item.damage = CrossModSystem.IEoRBalancing ? 16 : 24;
             Item.DamageType = ModContent.GetInstance<TrueMeleeDamageClass>();
             Item.width = 48;
             Item.height = 48;
@@ -44,6 +47,23 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
         public override bool MeleePrefix()
         {
             return true;
+        }
+
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            TooltipLine line = null;
+
+            if (CrossModSystem.IEoRBalancing)
+            {
+                line = new(Mod, "Tooltip", Language.GetTextValue("Mods.CalamityEntropyLegacy.Tooltips.TerrorOfAbyssBalanced"));
+            }
+            else
+            {
+                line = new(Mod, "Tooltip", Language.GetTextValue("Mods.CalamityEntropyLegacy.Tooltips.TerrorOfAbyss"));
+            }
+
+            line.OverrideColor = Color.White;
+            tooltips.Add(line);
         }
     }
     public class TerrorOfAbyssHeld : ModProjectile
@@ -78,8 +98,17 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             CEUtils.PlaySound("antivoidhit", 1, target.Center);
-            target.AddBuff(ModContent.BuffType<HeavyBleeding>(), 520);
-            target.AddBuff(ModContent.BuffType<CrushDepth>(), 520);
+            if (CrossModSystem.IEoRBalancing)
+            {
+                target.AddBuff(ModContent.BuffType<HeavyBleeding>(), 180);
+                target.AddBuff(ModContent.BuffType<RiptideDebuff>(), 180);
+            }
+            else
+            {
+                target.AddBuff(ModContent.BuffType<HeavyBleeding>(), 520);
+                target.AddBuff(ModContent.BuffType<CrushDepth>(), 520);
+            }
+            
             float sparkCount = 42;
             for (int i = 0; i < sparkCount; i++)
             {
@@ -168,6 +197,16 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
         public override bool ShouldUpdatePosition()
         {
             return false;
+        }
+
+        public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
+        {
+            if (target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeHead>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeBody>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeTail>() && CrossModSystem.IEoRBalancing)
+            {
+                modifiers.SourceDamage *= 0.5f;
+            }
         }
 
         public override bool PreDraw(ref Color lightColor)
