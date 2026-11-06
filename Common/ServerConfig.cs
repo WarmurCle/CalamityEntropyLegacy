@@ -11,6 +11,7 @@ namespace CalamityEntropyLegacy.Common
         [Header("Misc")]
 
         [DefaultValue(true)]
+        [ReloadRequired]
         public bool IEoRBalancing { get; set; }
 
         [DefaultValue(true)]

@@ -3495,12 +3495,7 @@ Items: {
 
 	AzureRapier: {
 		DisplayName: Azure Rapier
-		Tooltip:
-			'''
-			Left Click to unleash rapid stabbing attacks that inflict [cbuff:CalamityMod/Eutrophication], [cbuff:CalamityMod/Crumbling], [cbuff:CalamityMod/ArmorCrunch], and [cbuff:CalamityMod/RiptideDebuff]
-			Right Click to block an attacks damage entirely on a 10 second cooldown and counter with a flurry of slashes with full invincibility
-			Blocking an attack while off cooldown will just allow for the flurry of slashes, while still taking full damage
-			'''
+		Tooltip: ""
 	}
 
 	FetalDream: {
@@ -7001,6 +6996,18 @@ Menu: {
 Tooltips: {
 	TerrorOfAbyss: Swings a blade of abyssal teeth that inflicts [cbuff:CalamityMod/CrushDepth] and [cbuff:CalamityMod/HeavyBleeding]
 	TerrorOfAbyssBalanced: Swings a blade of abyssal teeth that inflicts [cbuff:CalamityMod/RiptideDebuff] and [cbuff:CalamityMod/HeavyBleeding]
+	AzureRapier:
+		'''
+		Left Click to unleash rapid stabbing attacks that inflict [cbuff:CalamityMod/Eutrophication], [cbuff:CalamityMod/Crumbling], [cbuff:CalamityMod/ArmorCrunch], and [cbuff:CalamityMod/RiptideDebuff]
+		Right Click to block an attacks damage entirely on a 10 second cooldown and counter with a flurry of slashes with full invincibility
+		Blocking an attack while off cooldown will just allow for the flurry of slashes, while still taking full damage
+		'''
+	AzureRapierBalanced:
+		'''
+		Left Click to unleash rapid stabbing attacks that inflict [cbuff:CalamityMod/Eutrophication], [cbuff:CalamityMod/Crumbling], and [cbuff:CalamityMod/RiptideDebuff]
+		Right Click to block an attacks damage entirely on a 10 second cooldown and counter with a flurry of slashes with full invincibility
+		Blocking an attack while off cooldown will just allow for the flurry of slashes, while still taking full damage
+		'''
 }
 
 DeathExplode: "{0} exploded"

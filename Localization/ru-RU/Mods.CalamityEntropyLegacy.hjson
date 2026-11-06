@@ -6724,6 +6724,20 @@ Menu: {
 Tooltips: {
 	// TerrorOfAbyss: Swings a blade of abyssal teeth that inflicts [cbuff:CalamityMod/CrushDepth] and [cbuff:CalamityMod/HeavyBleeding]
 	// TerrorOfAbyssBalanced: Swings a blade of abyssal teeth that inflicts [cbuff:CalamityMod/RiptideDebuff] and [cbuff:CalamityMod/HeavyBleeding]
+	AzureRapier:
+		'''
+		Быстрая атака.
+		Правая кнопка на решетке, и сразу же после того, как решетка сработает, мы нанесем ответный удар.
+		У решетки есть 10 секунд охлаждения, в течение которых вы все еще можете использовать решетку, но не можете остановить все повреждения
+		Вероятность попадания приводит к различным выгодам.
+		'''
+	AzureRapierBalanced:
+		'''
+		Быстрая атака.
+		Правая кнопка на решетке, и сразу же после того, как решетка сработает, мы нанесем ответный удар.
+		У решетки есть 10 секунд охлаждения, в течение которых вы все еще можете использовать решетку, но не можете остановить все повреждения
+		Вероятность попадания приводит к различным выгодам.
+		'''
 }
 
 DeathExplode: "{0} Взрыв."

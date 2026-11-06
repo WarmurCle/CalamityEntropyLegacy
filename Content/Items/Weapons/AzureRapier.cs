@@ -3,6 +3,7 @@ using CalamityEntropyLegacy.Content.Cooldowns;
 using CalamityEntropyLegacy.Content.Items.Donator;
 using CalamityEntropyLegacy.Content.Particles;
 using CalamityEntropyLegacy.Content.Rarities;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Buffs.StatDebuffs;
@@ -16,6 +17,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace CalamityEntropyLegacy.Content.Items.Weapons
@@ -35,7 +37,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
             Item.autoReuse = true;
             Item.scale = 1f;
             Item.DamageType = ModContent.GetInstance<TrueMeleeDamageClass>();
-            Item.damage = 10;
+            Item.damage = CrossModSystem.IEoRBalancing ? 8 : 10;
             Item.knockBack = 5;
             Item.crit = 6;
             Item.shoot = ModContent.ProjectileType<AzureRapierHeld>();
@@ -80,6 +82,23 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
                 .AddTile(TileID.Anvils)
                 .Register();
         }
+
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            TooltipLine line = null;
+
+            if (CrossModSystem.IEoRBalancing)
+            {
+                line = new(Mod, "Tooltip", Language.GetTextValue("Mods.CalamityEntropyLegacy.Tooltips.AzureRapierBalanced"));
+            }
+            else
+            {
+                line = new(Mod, "Tooltip", Language.GetTextValue("Mods.CalamityEntropyLegacy.Tooltips.AzureRapier"));
+            }
+
+            line.OverrideColor = Color.White;
+            tooltips.Add(line);
+        }
     }
     public class AzureRapierHeld : ModProjectile
     {
@@ -98,13 +117,13 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
             if (Main.rand.NextBool(6))
                 target.AddBuff<Eutrophication>(12 * 60);
 
-            if (Main.rand.NextBool(6))
+            if (Main.rand.NextBool(6) && !CrossModSystem.IEoRBalancing)
                 target.AddBuff<ArmorCrunch>(12 * 60);
 
             if (Main.rand.NextBool(6))
                 target.AddBuff<Crumbling>(10 * 60);
 
-            if (Main.rand.NextBool(6))
+            if (Main.rand.NextBool(6) && CrossModSystem.IEoRBalancing)
                 target.AddBuff(BuffID.Bleeding, 16 * 60);
 
 
