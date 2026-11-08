@@ -9,6 +9,7 @@ namespace CalamityEntropyLegacy.Common
         public override void UpdateLifeRegen(NPC npc, ref int damage)
         {
             int damageApply = 0;
+            /*
             if (npc.HasBuff<LifeOppress>())
                 if (npc.lifeRegen > 0)
                     npc.lifeRegen = 0;
@@ -16,6 +17,7 @@ namespace CalamityEntropyLegacy.Common
             {
                 damageApply += 4501;
             }
+            */
             var dict = DotBuff.InstanceByType();
             for (int i = 0; i < npc.buffType.Length; i++)
             {
