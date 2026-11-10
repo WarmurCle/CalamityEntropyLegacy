@@ -3,6 +3,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using CalamityMod.NPCs;
 
 namespace CalamityEntropyLegacy.Content.Buffs
 {
@@ -22,7 +23,10 @@ namespace CalamityEntropyLegacy.Content.Buffs
         {
             if (Main.GameUpdateCount % 20 == 0)
             {
-                int dot = (int)(80 * npc.Entropy().DebuffDamageMult());
+                float multiplier = npc.GetGlobalNPC<CalamityGlobalNPC>().TypelessDebuffMultiplier.ApplyTo(1f);
+
+                int dot = (int)(80 * npc.Entropy().DebuffDamageMult() * multiplier);
+
                 if (npc.life > dot)
                 {
                     npc.life -= dot;

@@ -1,3 +1,4 @@
+using CalamityMod.NPCs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -22,10 +23,12 @@ namespace CalamityEntropyLegacy.Content.Buffs
 
         public override void Update(NPC npc, ref int buffIndex)
         {
+            float multiplier = npc.GetGlobalNPC<CalamityGlobalNPC>().TypelessDebuffMultiplier.ApplyTo(1f);
+
             npc.velocity *= npc.boss ? 0.99f : 0.986f;
             if (!npc.dontTakeDamage)
             {
-                int del = ((int)(npc.lifeMax / (6f * 60 * 60) + 1));
+                int del = ((int)((npc.lifeMax / (6f * 60 * 60) + 1) * multiplier));
                 if (npc.life > del)
                 {
                     if (Main.GameUpdateCount % 5 == 0)

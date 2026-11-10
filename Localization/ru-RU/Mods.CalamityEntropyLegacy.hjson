@@ -5498,7 +5498,7 @@ Buffs: {
 		Description: ???
 		/* ItemTooltip:
 			'''
-			~0.06% max life DPS - Typeless
+			Typeless - ~0.06% max life DPS
 			Slows enemies
 			''' */
 	}
@@ -5602,13 +5602,13 @@ Buffs: {
 	LifeOppress: {
 		DisplayName: Подавление жизни
 		Description: Ты видел свою смерть.
-		// ItemTooltip: Typeless - 4500 DPS
+		// ItemTooltip: Typeless - 2500 DPS
 	}
 
 	MechanicalTrauma: {
 		DisplayName: Механические травмы
 		Description: Ты весь в боли.
-		// ItemTooltip: Typeless - 20 DPS
+		// ItemTooltip: Typeless - 10 DPS
 	}
 
 	IllusoryBlade: {
@@ -5634,7 +5634,7 @@ Buffs: {
 	BonePiercingToxin: {
 		DisplayName: Остеотоксины
 		Description: Вы чувствуете боль в сердце.
-		// ItemTooltip: Typeless - 24 DPS
+		// ItemTooltip: Sickness - 24 DPS
 	}
 
 	FlamingBlood: {

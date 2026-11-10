@@ -5713,7 +5713,11 @@ Buffs: {
 	VoidVirus: {
 		DisplayName: Void Virus
 		Description: ""
-		ItemTooltip: Typeless - 240 DPS
+		ItemTooltip:
+			'''
+			Typeless - 180 DPS
+			Attacks against the target pierce 10 more defense
+			'''
 	}
 
 	NyxolithrakenBuff: {
@@ -5745,7 +5749,7 @@ Buffs: {
 		Description: Their very selves seem to turn against them...
 		ItemTooltip:
 			'''
-			Attacks against the target pierce 25 more defence
+			Attacks against the target pierce 25 more defense
 			Contact damage reduced
 			Projectiles fired will be slower
 			Projectiles deal reduced damage
@@ -5777,7 +5781,7 @@ Buffs: {
 		Description: ???
 		ItemTooltip:
 			'''
-			Typeless - ~0.06% max life DPS
+			Typeless - ~0.278% max life DPS
 			Slows enemies
 			'''
 	}
@@ -6480,8 +6484,8 @@ ArmorPrefixHeatDeathDescription:
 	'''
 	15% increased defense
 	15% increased damage
-	[c/ff0000:Attacks now inflict][cebuff:CalamityEntropyLegacy/HeatDeath][c/ff0000:, which slows and deals damage based on the enemies' max health]
-	[c/ff0000:You health begins to leak over time...]
+	[c/ff0000:Attacks now inflict] [cebuff:CalamityEntropyLegacy/HeatDeath][c/ff0000:, which slows and deals damage based on the enemies' max health]
+	[c/ff0000:Your health begins to leak over time...]
 	'''
 ArmorPrefixArmorPrefixEchoName: Echoing
 ArmorPrefixArmorPrefixEchoDescription: +4% increased stealth generation
