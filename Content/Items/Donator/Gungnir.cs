@@ -4,6 +4,7 @@ using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Items.Materials;
 using CalamityMod.Projectiles.Rogue;
+using CalamityMod.Rarities;
 using CalamityMod.Tiles.Furniture.CraftingStations;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
@@ -61,7 +62,7 @@ namespace CalamityEntropyLegacy.Content.Items.Donator
             Item.autoReuse = true;
             Item.maxStack = 1;
             Item.value = CalamityGlobalItem.RarityCalamityRedBuyPrice;
-            Item.rare = ItemRarityID.Blue;
+            Item.rare = ModContent.RarityType<CosmicPurple>();
             Item.shoot = ModContent.ProjectileType<GungnirThrow>();
             Item.shootSpeed = 28;
             Item.DamageType = DamageClass.Melee;

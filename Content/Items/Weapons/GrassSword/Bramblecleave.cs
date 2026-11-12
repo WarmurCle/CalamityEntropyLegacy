@@ -1,5 +1,6 @@
 using CalamityEntropyLegacy.Common;
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Items.LoreItems;
@@ -166,7 +167,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.GrassSword
                 switch (level)
                 {
                     case 0: dmg = 12; break;
-                    case 1: dmg = 18; break;
+                    case 1: dmg = CrossModSystem.IEoRBalancing ? 20 : 18; break;
                     case 2: dmg = 24; break;
                     case 3: dmg = 28; break;
                     case 4: dmg = 36; break;
@@ -542,6 +543,17 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.GrassSword
             }
 
         }
+
+        public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
+        {
+            if (target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeHead>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeBody>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeTail>() && CrossModSystem.IEoRBalancing)
+            {
+                modifiers.SourceDamage *= 0.5f;
+            }
+        }
+
         public override bool ShouldUpdatePosition()
         {
             return false;

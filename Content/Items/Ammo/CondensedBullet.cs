@@ -23,7 +23,7 @@ namespace CalamityEntropyLegacy.Content.Items.Ammo
             Item.maxStack = Item.CommonMaxStack;
             Item.consumable = true; Item.knockBack = 1f;
             Item.value = CalamityGlobalItem.RarityOrangeBuyPrice;
-            Item.rare = ItemRarityID.Orange;
+            Item.rare = ItemRarityID.LightRed;
             Item.shoot = ModContent.ProjectileType<CondensedBulletProjectile>();
             Item.shootSpeed = 1f;
             Item.ammo = AmmoID.Bullet;

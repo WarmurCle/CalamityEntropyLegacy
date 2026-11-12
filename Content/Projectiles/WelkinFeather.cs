@@ -1,3 +1,5 @@
+using CalamityEntropyLegacy.Core;
+using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;

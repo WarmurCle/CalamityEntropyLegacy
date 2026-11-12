@@ -5434,7 +5434,11 @@ Buffs: {
 	VoidVirus: {
 		DisplayName: Вирус пустоты
 		Description: Mods.CalamityEntropyLegacy.Buffs.VoidVirus.Description
-		// ItemTooltip: Typeless - 240 DPS
+		/* ItemTooltip:
+			'''
+			Typeless - 180 DPS
+			Attacks against the target pierce 10 more defense
+			''' */
 	}
 
 	NyxolithrakenBuff: {
@@ -5466,7 +5470,7 @@ Buffs: {
 		Description: Это специально
 		/* ItemTooltip:
 			'''
-			Attacks against the target pierce 25 more defence
+			Attacks against the target pierce 25 more defense
 			Contact damage reduced
 			Projectiles fired will be slower
 			Projectiles deal reduced damage
@@ -5498,7 +5502,7 @@ Buffs: {
 		Description: ???
 		/* ItemTooltip:
 			'''
-			Typeless - ~0.06% max life DPS
+			Typeless - ~0.278% max life DPS
 			Slows enemies
 			''' */
 	}
@@ -5602,13 +5606,17 @@ Buffs: {
 	LifeOppress: {
 		DisplayName: Подавление жизни
 		Description: Ты видел свою смерть.
-		// ItemTooltip: Typeless - 2500 DPS
+		/* ItemTooltip:
+			'''
+			Typeless - 2500 DPS
+			(Classic) Typeless - 4500 DPS
+			''' */
 	}
 
 	MechanicalTrauma: {
 		DisplayName: Механические травмы
 		Description: Ты весь в боли.
-		// ItemTooltip: Typeless - 10 DPS
+		// ItemTooltip: Typeless - 20 DPS
 	}
 
 	IllusoryBlade: {

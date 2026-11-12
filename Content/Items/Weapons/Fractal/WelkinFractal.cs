@@ -11,6 +11,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent.Drawing;
 using Terraria.ID;
 using Terraria.ModLoader;
+using CalamityEntropyLegacy.Core;
 
 namespace CalamityEntropyLegacy.Content.Items.Weapons.Fractal
 {
@@ -18,7 +19,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Fractal
     {
         public override void SetDefaults()
         {
-            Item.damage = 36;
+            Item.damage = CrossModSystem.IEoRBalancing ? 32 : 36;
             Item.crit = 4;
             Item.DamageType = DamageClass.Melee;
             Item.width = 48;

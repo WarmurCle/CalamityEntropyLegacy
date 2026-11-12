@@ -1,3 +1,4 @@
+using CalamityEntropyLegacy.Core;
 using CalamityMod.Items.Materials;
 using Terraria;
 using Terraria.DataStructures;
@@ -16,7 +17,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
 
         public override void SetDefaults()
         {
-            Item.DefaultToRangedWeapon(ProjectileID.RocketI, AmmoID.Rocket, singleShotTime: 50, shotVelocity: 20f, hasAutoReuse: true);
+            Item.DefaultToRangedWeapon(ProjectileID.RocketI, AmmoID.Rocket, singleShotTime: CrossModSystem.IEoRBalancing ? 60 : 50, shotVelocity: 20f, hasAutoReuse: true);
             Item.width = 50;
             Item.height = 20;
             Item.damage = 18;

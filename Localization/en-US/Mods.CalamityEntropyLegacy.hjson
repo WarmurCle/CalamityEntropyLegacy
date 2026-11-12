@@ -3,7 +3,7 @@ ModNameOverride: Calamity Entropy Legacy
 Items: {
 	VoidBlade: {
 		DisplayName: Void Blade
-		Tooltip: Perform broad, fast slashes in quick succession that inflicts [cebuff:CalamityEntropyLegacy/VoidTouch]
+		Tooltip: Performs broad, fast slashes in quick succession
 	}
 
 	Weapons: {
@@ -958,7 +958,7 @@ Items: {
 
 	RustyGrenade: {
 		DisplayName: Rusty Rocket
-		Tooltip: ""
+		Tooltip: Small blast radius. Will not destroy tiles
 	}
 
 	RustExpeditioner: {
@@ -973,7 +973,11 @@ Items: {
 
 	GodSlayerRocket: {
 		DisplayName: God Slayer Charge
-		Tooltip: ""
+		Tooltip:
+			'''
+			Gigantic blast radius. Will not destroy tiles
+			Rapidly homes onto the nearest enemy
+			'''
 	}
 
 	RailPulseBow: {
@@ -3026,7 +3030,6 @@ Items: {
 		Tooltip:
 			'''
 			Every 5 swings the sword lets out an extra powerful slash
-			Right Click to
 			This sword's power grows with progression
 			Current Level: [LV] / 15
 			When her power is sufficient, you can use the following skills:  
@@ -4403,7 +4406,7 @@ Items: {
 
 	AzafureExhaustGasInjector: {
 		DisplayName: Azafure Exhaust Gas Injector
-		Tooltip: Fires a constrant stream of corrosive exhaust gas
+		Tooltip: Fires a constrant stream of corrosive exhaust gas that ignores all defense
 	}
 
 	AzafureStandardShotgun: {
@@ -5885,13 +5888,17 @@ Buffs: {
 	LifeOppress: {
 		DisplayName: Life Oppression
 		Description: Your life seems to unravel
-		ItemTooltip: Typeless - 2500 DPS
+		ItemTooltip:
+			'''
+			Typeless - 2500 DPS
+			(Classic) Typeless - 4500 DPS
+			'''
 	}
 
 	MechanicalTrauma: {
 		DisplayName: Mechanical Trauma
 		Description: Grinding pain overtakes you
-		ItemTooltip: Typeless - 10 DPS
+		ItemTooltip: Typeless - 20 DPS
 	}
 
 	IllusoryBlade: {

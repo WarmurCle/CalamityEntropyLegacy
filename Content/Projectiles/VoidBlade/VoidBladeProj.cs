@@ -1,5 +1,6 @@
 using CalamityEntropyLegacy.Common;
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Particles;
@@ -30,7 +31,7 @@ namespace CalamityEntropyLegacy.Content.Projectiles.VoidBlade
             Projectile.penetrate = -1;
             Projectile.tileCollide = false;
             Projectile.light = 0f;
-            Projectile.scale = 1.2f;
+            Projectile.scale = CrossModSystem.IEoRBalancing ? 0.8f : 1.2f;
             Projectile.usesLocalNPCImmunity = true;
             Projectile.localNPCHitCooldown = 0;
         }

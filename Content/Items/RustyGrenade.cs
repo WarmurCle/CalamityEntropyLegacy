@@ -1,4 +1,5 @@
 using CalamityEntropyLegacy.Content.Projectiles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod.Items.Materials;
 using Terraria;
 using Terraria.ID;
@@ -24,9 +25,10 @@ namespace CalamityEntropyLegacy.Content.Items
             Item.height = 24;
             Item.maxStack = 9999;
             Item.value = Item.sellPrice(silver: 1);
-            Item.rare = ItemRarityID.Orange;
+            Item.rare = ItemRarityID.White;
             Item.ammo = AmmoID.Rocket;
-            Item.damage = 20;
+            Item.DamageType = DamageClass.Ranged;
+            Item.damage = CrossModSystem.IEoRBalancing ? 10 : 20;
         }
 
         public override void AddRecipes()

@@ -17,7 +17,7 @@ namespace CalamityEntropyLegacy.Content.Items.Donator.RocketLauncher.Ammo
             Item.height = 24;
             Item.maxStack = 9999;
             Item.value = Item.sellPrice(copper: 12);
-            Item.rare = ItemRarityID.Orange;
+            Item.rare = ItemRarityID.LightRed;
             Item.ammo = BaseMissileProj.AmmoType;
             Item.damage = 11;
             Item.shoot = ModContent.ProjectileType<ClusterMissileProj>();

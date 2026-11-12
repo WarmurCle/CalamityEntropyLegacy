@@ -1,3 +1,4 @@
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Items;
 using System;
@@ -22,8 +23,8 @@ namespace CalamityEntropyLegacy.Content.Items.Donator
             Item.height = 28;
             Item.damage = 2;
             Item.DamageType = DamageClass.Ranged;
-            Item.useTime = 40;
-            Item.useAnimation = 40;
+            Item.useTime = CrossModSystem.IEoRBalancing ? 50 : 40;
+            Item.useAnimation = CrossModSystem.IEoRBalancing ? 50 : 40;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.noMelee = true;
             Item.knockBack = 4f;

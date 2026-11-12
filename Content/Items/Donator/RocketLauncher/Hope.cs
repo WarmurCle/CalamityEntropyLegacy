@@ -1,5 +1,6 @@
 using CalamityEntropyLegacy.Content.Items.Donator.RocketLauncher.Ammo;
 using CalamityEntropyLegacy.Content.Items.Weapons;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Items.Materials;
 using System;
@@ -22,7 +23,7 @@ namespace CalamityEntropyLegacy.Content.Items.Donator.RocketLauncher
             Item.width = 90;
             Item.height = 42;
             Item.DamageType = DamageClass.Ranged;
-            Item.damage = 28;
+            Item.damage = CrossModSystem.IEoRBalancing ? 34 : 28;
             Item.knockBack = 4f;
             Item.UseSound = SoundID.Item61;
             Item.value = Item.buyPrice(gold: 1);

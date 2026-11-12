@@ -1,4 +1,6 @@
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
+using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Graphics.Primitives;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -47,6 +49,11 @@ namespace CalamityEntropyLegacy.Content.Projectiles
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             Projectile.damage = (int)(Projectile.damage * 0.8f);
+
+            if (CrossModSystem.IEoRBalancing)
+            {
+                target.AddBuff(ModContent.BuffType<WindChilled>(), 300);
+            }
         }
         public override bool PreDraw(ref Color lightColor)
         {

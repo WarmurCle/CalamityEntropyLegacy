@@ -1,6 +1,7 @@
 using CalamityEntropyLegacy.Common;
 using CalamityEntropyLegacy.Content.Items.Weapons;
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Items;
@@ -70,12 +71,27 @@ namespace CalamityEntropyLegacy.Content.Items.Donator
         }
         public override void AddRecipes()
         {
-            CreateRecipe()
+            if (CrossModSystem.IEoRBalancing)
+            {
+                CreateRecipe()
+
+                .AddIngredient<LoreAwakening>()
                 .AddIngredient(ItemID.Shiverthorn, 3)
                 .AddIngredient(ItemID.IceBlock, 20)
                 .AddRecipeGroup(RecipeGroupID.Fruit)
                 .AddTile(TileID.Anvils)
                 .Register();
+            }
+            else
+            {
+                CreateRecipe()
+
+                .AddIngredient(ItemID.Shiverthorn, 3)
+                .AddIngredient(ItemID.IceBlock, 20)
+                .AddRecipeGroup(RecipeGroupID.Fruit)
+                .AddTile(TileID.Anvils)
+                .Register();
+            }
         }
         public static int GetLevel()
         {
@@ -124,11 +140,11 @@ namespace CalamityEntropyLegacy.Content.Items.Donator
                 int dmg = Item.damage;
                 switch (level)
                 {
-                    case 0: dmg = 5; break;
+                    case 0: dmg = CrossModSystem.IEoRBalancing ? 7 : 5; break;
                     case 1: dmg = 10; break;
-                    case 2: dmg = 13; break;
+                    case 2: dmg = CrossModSystem.IEoRBalancing ? 14 : 13; break;
                     case 3: dmg = 18; break;
-                    case 4: dmg = 25; break;
+                    case 4: dmg = CrossModSystem.IEoRBalancing ? 22 : 25; break;
                     case 5: dmg = 42; break;
                     case 6: dmg = 56; break;
                     case 7: dmg = 75; break;
@@ -250,6 +266,16 @@ namespace CalamityEntropyLegacy.Content.Items.Donator
                     Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center + Projectile.rotation.ToRotationVector2() * Main.rand.NextFloat(0, 100) * Projectile.scale, Projectile.rotation.ToRotationVector2() * Main.rand.NextFloat(16, 26) + CEUtils.randomPointInCircle(4), pt, Projectile.damage / 2, 4, Projectile.owner);
                 }
                 Projectile.Kill();
+            }
+
+            if (CrossModSystem.IEoRBalancing)
+            {
+                int level = Fooveria.GetLevel();
+
+                if (level > 0)
+                {
+                    target.AddBuff(BuffID.Frostburn, 120);
+                }
             }
         }
         public float rScale = 1;

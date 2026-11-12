@@ -1,6 +1,8 @@
 using CalamityEntropyLegacy.Content.Particles;
 using CalamityEntropyLegacy.Content.Rarities;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
+using CalamityMod.Items.LoreItems;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
@@ -109,13 +111,26 @@ namespace CalamityEntropyLegacy.Content.Items.Donator.Ratziel
         }
         public override void AddRecipes()
         {
-            CreateRecipe()
+            if (CrossModSystem.IEoRBalancing)
+            {
+                CreateRecipe()
+                 
+                .AddIngredient<LoreAwakening>()
                 .AddIngredient(ItemID.Book)
                 .AddIngredient(ItemID.ManaCrystal)
                 .AddIngredient(ItemID.Sapphire, 5)
                 .AddCondition(Mod.GetLocalization("NearShimmer", () => "Near shimmer"), () => (Main.LocalPlayer.ZoneShimmer))
                 .Register();
-
+            }
+            else
+            {
+                CreateRecipe()
+                .AddIngredient(ItemID.Book)
+                .AddIngredient(ItemID.ManaCrystal)
+                .AddIngredient(ItemID.Sapphire, 5)
+                .AddCondition(Mod.GetLocalization("NearShimmer", () => "Near shimmer"), () => (Main.LocalPlayer.ZoneShimmer))
+                .Register();
+            }
         }
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {

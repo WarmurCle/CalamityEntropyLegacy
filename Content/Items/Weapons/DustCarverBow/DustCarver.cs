@@ -1,7 +1,9 @@
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Items;
+using CalamityMod.Items.LoreItems;
 using CalamityMod.Items.Materials;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework.Graphics;
@@ -158,13 +160,27 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.DustCarverBow
         }
         public override void AddRecipes()
         {
-            CreateRecipe()
+            if (CrossModSystem.IEoRBalancing)
+            {
+                CreateRecipe()
+                .AddIngredient<LoreAwakening>()
                 .AddIngredient<BloodOrb>(5)
                 .AddRecipeGroup(CERecipeGroups.evilBar, 4)
                 .AddIngredient(ItemID.Silk, 4)
                 .AddIngredient(ItemID.RichMahogany, 12)
                 .AddTile(TileID.WorkBenches)
                 .Register();
+            }
+            else
+            {
+                CreateRecipe()
+                .AddIngredient<BloodOrb>(5)
+                .AddRecipeGroup(CERecipeGroups.evilBar, 4)
+                .AddIngredient(ItemID.Silk, 4)
+                .AddIngredient(ItemID.RichMahogany, 12)
+                .AddTile(TileID.WorkBenches)
+                .Register();
+            }
         }
         public void CheckLevel(int lv)
         {

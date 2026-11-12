@@ -1,6 +1,8 @@
 using CalamityEntropyLegacy.Common;
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
+using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -77,7 +79,15 @@ namespace CalamityEntropyLegacy.Content.Projectiles
 
         public override void OnHitNPC(NPC t, NPC.HitInfo hit, int damageDone)
         {
-            EGlobalNPC.AddVoidTouch(t, 60, 4.5f, 800, 24);
+            if (CrossModSystem.IEoRBalancing)
+            {
+                t.AddBuff(ModContent.BuffType<GodSlayerInferno>(), 320);
+            }
+            else
+            {
+                EGlobalNPC.AddVoidTouch(t, 60, 4.5f, 800, 24);
+            }
+            
             PrepareBombToBlow();
             Projectile.timeLeft = 3;
         }

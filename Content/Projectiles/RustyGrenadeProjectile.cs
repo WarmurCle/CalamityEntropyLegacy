@@ -1,4 +1,5 @@
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod.Buffs.StatDebuffs;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -76,7 +77,10 @@ namespace CalamityEntropyLegacy.Content.Projectiles
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
-            target.AddBuff(ModContent.BuffType<ArmorCrunch>(), 300);
+            if (!CrossModSystem.IEoRBalancing)
+            {
+                target.AddBuff(ModContent.BuffType<ArmorCrunch>(), 300);
+            }
         }
         public override void PrepareBombToBlow()
         {

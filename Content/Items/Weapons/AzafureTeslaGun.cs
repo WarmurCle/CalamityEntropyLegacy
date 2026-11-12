@@ -1,6 +1,7 @@
 using CalamityEntropyLegacy.Content.Items.Armor.Azafure;
 using CalamityEntropyLegacy.Content.Projectiles;
 using CalamityEntropyLegacy.Content.Rarities;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Items.Materials;
@@ -16,7 +17,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
     {
         public override void SetDefaults()
         {
-            Item.damage = 25;
+            Item.damage = CrossModSystem.IEoRBalancing ? 35 : 25;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 194;
             Item.height = 42;
