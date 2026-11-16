@@ -2,6 +2,7 @@ using CalamityEntropyLegacy.Common;
 using CalamityEntropyLegacy.Content.Buffs.Pets;
 using CalamityEntropyLegacy.Content.Items.Donator;
 using CalamityEntropyLegacy.Content.Projectiles.Pets.Desert;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework.Graphics;
@@ -247,7 +248,11 @@ namespace CalamityEntropyLegacy.Content.Items.Pets.Glue
                                 dmg = 729;
                             if (DownedBossSystem.downedCalamitas || DownedBossSystem.downedExoMechs)
                                 dmg = 999;
-                            CEUtils.SpawnExplotionFriendly(Projectile.GetSource_FromThis(), player, JaronaTarget.ToNPC().Center, dmg, 160, DamageClass.Generic).ArmorPenetration = dmg;
+
+                            if (!CrossModSystem.IEoRBalancing)
+                            {
+                                CEUtils.SpawnExplotionFriendly(Projectile.GetSource_FromThis(), player, JaronaTarget.ToNPC().Center, dmg, 160, DamageClass.Generic).ArmorPenetration = dmg;
+                            }
                         }
                         for (int i = 0; i < 9; i++)
                             CombatText.NewText(JaronaTarget.ToNPC().getRect(), Color.Gold, 999, true);

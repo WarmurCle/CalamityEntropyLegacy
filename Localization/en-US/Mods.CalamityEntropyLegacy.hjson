@@ -6145,18 +6145,55 @@ WyrmChatBloodMoon2: Maybe you should go bed.
 WyrmChatRain1: It's raining, it's really refreshing. I have never felt it before.
 WyrmChatRain2: Rainwater falling on the body feels quite comfortable. This is not comparable to the water pressure in the abyss.
 WyrmChatRain3: The air is very fresh, isn't it?
-loreCruiser: Entropy, in definition, is the concept of everything eventually returning to nothing. To hunt one down who has embraced this concept, you must prove you believe it too. Shattering that bottle must have been enough to attract its attention. Is only hunting down those with similar energies a survival instinct? Or is it something selfish, more like a goal or sport to it? Regardless, entities like these are best left alone from my experience. If you lost, the world may have returned to the eternal silence from whence it came.
-loreLuminaris: An expected development, the only organism that evolved alongside the astral infection. Many have been blighted by it, but with fast generational cycles comes evolution. Nowadays, it is viewed as an embodiment of beauty, its lithe form dancing along constellations. New legends have been born off the glittering wings of the starborn moth. However, various offerings have rendered it unpredictable to those who bring offerings, and is known to attack those that bring what it considers "offensive." Did power get to its head? Or did it just get used to what was handed to it? Whether natural or intentional, we shall never know now, just be aware of exactly where you let your power strike, for the innocent take no part in our pursuit.
+loreCruiser:
+	'''
+	Entropy, in definition, is the concept of everything eventually returning to nothing. 
+	To hunt one down who has embraced this concept, you must prove you believe it too. 
+	Shattering that bottle must have been enough to attract its attention.
+	Is only hunting down those with similar energies a survival instinct? Or is it something selfish, more like a goal or sport to it? 
+	Regardless, entities like these are best left alone from my experience. 
+	If you lost, the world may have returned to the eternal silence from whence it came.
+	'''
+loreLuminaris:
+	'''
+	An expected development, the only organism that evolved alongside the astral infection. 
+	Many have been blighted by it, but with fast generational cycles comes evolution. 
+	Nowadays, it is viewed as an embodiment of beauty, its lithe form dancing along constellations. 
+	New legends have been born off the glittering wings of the starborn moth. 
+	However, various offerings have rendered it unpredictable to those who bring offerings, and is known to attack those that bring what it considers "offensive." 
+	Did power get to its head? Or did it just get used to what was handed to it? 
+	Whether natural or intentional, we shall never know now, just be aware of exactly where you let your power strike, for the innocent take no part in our pursuit.
+	'''
 UseToggle: Use this item to turn on or off special effects:
 loreCruiserEffect: Increase the max life by 20 and increase the max mana by 50
-loreNihTwin: Imagine a world where the foundation of order lies not in resisting the dissolution of things, but the amplification of such processes. A realm of simultaneously nothing and everything, matter and energy lying in states of neverending change, things both within and far from the bounds of mortal comprehension. When you ended the Wall of Flesh that imprisoned the essences of light and dark, those contained energies tore the rift between our reality and theirs wider still. The abhorrent creature you have slain is but a droplet from the river between these worlds. What happens from here is neither my business to know nor my responsibility, that lies on you. The gears of fate continue their slow, inexorable turn regardless.
+loreNihTwin:
+	'''
+	Imagine a world where the foundation of order lies not in resisting the dissolution of things, but the amplification of such processes. 
+	A realm of simultaneously nothing and everything, matter and energy lying in states of neverending change, things both within and far from the bounds of mortal comprehension. 
+	When you ended the Wall of Flesh that imprisoned the essences of light and dark, those contained energies tore the rift between our reality and theirs wider still. 
+	The abhorrent creature you have slain is but a droplet from the river between these worlds. 
+	What happens from here is neither my business to know nor my responsibility, that lies on you. 
+	The gears of fate continue their slow, inexorable turn regardless.
+	''' 
 NihTwinLoreEffect:
 	'''
 	Increase resistance to [cebuff:CalamityEntropyLegacy/VoidTouch] by {1}%
 	Grants {2}HP/s life regeneration
 	{3}% increased maximum flight time
 	'''
-loreProphet: No army, kingdom, or soverign can endure for long without practitioners of temporal magicks-- those who pluck the feathers of tomorrow from the golden goose of prediction, weaving the future via present calculus. These powers can be practiced carefully and prove invaluable... or be pushed beyond the limits set by those before us. Those who gaze into realms we were never meant to comprehend, looking not just through time, but through space. We found one willing locked in the Dungeon. It took some convincing, but eventually Draedon and I gave him the last push to truly see past our tiny land. What can be described then was something willing to repel even my curiosity. The man warped, changed, took on the spiritual energy around it, the runes in every forbidden book in the Dungeon. It bled all the same, its spirit sealing itself in a tome, almost aware of what it had become. I am surprised to see you decided to call it forth again, however I believe leaving the void's fate in your hands was the right decision. Thank you, for letting him finally rest.
+loreProphet:
+	'''
+	No army, kingdom, or soverign can endure for long without practitioners of temporal magicks-- 
+	those who pluck the feathers of tomorrow from the golden goose of prediction, weaving the future via present calculus. 
+	These powers can be practiced carefully and prove invaluable... or be pushed beyond the limits set by those before us. 
+	Those who gaze into realms we were never meant to comprehend, looking not just through time, but through space. 
+	We found one willing locked in the Dungeon. It took some convincing, but eventually Draedon and I gave him the last push to truly see past our tiny land. 
+	What can be described then was something willing to repel even my curiosity. 
+	The man warped, changed, took on the spiritual energy around it, the runes in every forbidden book in the Dungeon. 
+	It bled all the same, its spirit sealing itself in a tome, almost aware of what it had become. 
+	I am surprised to see you decided to call it forth again, however I believe leaving the void's fate in your hands was the right decision. 
+	Thank you, for letting him finally rest.
+	'''
 
 Keybinds: {
 	ThrowPoop.DisplayName: Throw Poop

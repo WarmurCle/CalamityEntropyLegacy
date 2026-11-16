@@ -4119,7 +4119,7 @@ Items: {
 
 	AzafureExhaustGasInjector: {
 		// DisplayName: Azafure Exhaust Gas Injector
-		// Tooltip: Fires a constrant stream of corrosive exhaust gas
+		// Tooltip: Fires a constrant stream of corrosive exhaust gas that ignores all defense
 	}
 
 	AzafureStandardShotgun: {
