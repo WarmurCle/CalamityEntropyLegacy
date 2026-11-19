@@ -1,3 +1,4 @@
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Buffs.StatDebuffs;
 using CalamityMod.Graphics.Primitives;
@@ -133,6 +134,17 @@ namespace CalamityEntropyLegacy.Content.Projectiles
                 target.AddBuff(ModContent.BuffType<GalvanicCorrosion>(), 240);
             }
         }
+
+        public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
+        {
+            if (target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeHead>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeBody>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeTail>() && CrossModSystem.IEoRBalancing)
+            {
+                modifiers.SourceDamage *= 0.5f;
+            }
+        }
+
         public float PrimitiveWidthFunction(float completionRatio, Vector2 vertex) => (1 - completionRatio) * Projectile.scale * 12 * ((36f - Projectile.ai[0]) / 36f);
 
         public Color PrimitiveColorFunction(float completionRatio, Vector2 vertex)

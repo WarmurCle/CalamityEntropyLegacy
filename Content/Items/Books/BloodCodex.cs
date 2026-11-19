@@ -1,5 +1,6 @@
 using CalamityEntropyLegacy.Content.Buffs;
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod.Items;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework.Graphics;
@@ -47,10 +48,15 @@ namespace CalamityEntropyLegacy.Content.Items.Books
         public override EBookStatModifer getBaseModifer()
         {
             var m = base.getBaseModifer();
-            if (Main.rand.NextBool(6))
-                m.lifeSteal++;
-            else
-                m.lifeSteal += 0.1f;
+
+            if (!CrossModSystem.IEoRBalancing)
+            {
+                if (Main.rand.NextBool(6))
+                    m.lifeSteal++;
+                else
+                    m.lifeSteal += 0.1f;
+            }
+
             m.armorPenetration += 32;
             return m;
         }
@@ -104,6 +110,32 @@ namespace CalamityEntropyLegacy.Content.Items.Books
         {
             base.OnHitNPC(target, hit, damageDone);
             target.AddBuff<FlamingBlood>(10 * 60);
+
+            var plr = Projectile.GetOwner();
+
+            if (CrossModSystem.IEoRBalancing && plr.statLife < plr.statLifeMax2 && Main.rand.NextBool(10))
+            {
+                if (Main.myPlayer != Projectile.owner)
+                    return;
+
+                if (!target.CanBeChasedBy(Projectile))
+                    return;
+
+                Projectile.NewProjectile(
+                    Projectile.GetSource_FromThis(),
+                    Projectile.Center,
+                    Microsoft.Xna.Framework.Vector2.Zero,
+                    305,
+                    0,
+                    0f,
+                    Projectile.owner,
+                    plr.whoAmI,
+                    1,
+                    0f
+                );
+
+                plr.lifeSteal -= 2;
+            }
         }
     }
 }

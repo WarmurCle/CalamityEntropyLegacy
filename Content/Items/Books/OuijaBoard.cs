@@ -1,4 +1,5 @@
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,7 +14,7 @@ namespace CalamityEntropyLegacy.Content.Items.Books
         public override void SetDefaults()
         {
             base.SetDefaults();
-            Item.damage = 14;
+            Item.damage = CrossModSystem.IEoRBalancing ? 18 : 14;
             Item.useTime = Item.useAnimation = 25;
             Item.shootSpeed = 22;
             Item.mana = 5;

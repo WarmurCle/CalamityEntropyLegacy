@@ -1,4 +1,5 @@
 using CalamityEntropyLegacy.Content.Buffs;
+using CalamityEntropyLegacy.Core;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.Audio;
@@ -33,7 +34,10 @@ namespace CalamityEntropyLegacy.Content.Items.Books.BookMarks
     {
         public override void OnHitNPC(Projectile projectile, NPC target, int damageDone)
         {
-            target.AddBuff(ModContent.BuffType<BonePiercingToxin>(), 200);
+            if (!CrossModSystem.IEoRBalancing)
+            {
+                target.AddBuff(ModContent.BuffType<BonePiercingToxin>(), 200);
+            }
         }
         public static int type = -1;
         public override void BookUpdate(Projectile projectile, bool ownerClient)
@@ -65,6 +69,8 @@ namespace CalamityEntropyLegacy.Content.Items.Books.BookMarks
             Projectile.width = Projectile.height = 22;
             Projectile.tileCollide = true;
             Projectile.timeLeft = 160;
+            Projectile.usesLocalNPCImmunity = true;
+            Projectile.localNPCHitCooldown = 10;
         }
         public override void OnKill(int timeLeft)
         {
@@ -88,6 +94,11 @@ namespace CalamityEntropyLegacy.Content.Items.Books.BookMarks
         {
             Main.EntitySpriteDraw(Projectile.getDrawData(lightColor));
             return false;
+        }
+
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+        {
+            target.AddBuff(ModContent.BuffType<BonePiercingToxin>(), 200);
         }
     }
 }

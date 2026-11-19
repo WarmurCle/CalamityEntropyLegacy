@@ -1,3 +1,4 @@
+using CalamityEntropyLegacy.Core;
 using CalamityMod.Items.LoreItems;
 using Terraria;
 using Terraria.ID;
@@ -19,11 +20,22 @@ namespace CalamityEntropyLegacy.Content.Items.Books
 
         public override void AddRecipes()
         {
-            CreateRecipe().AddIngredient(ModContent.ItemType<LoreAwakening>())
+            if (CrossModSystem.IEoRBalancing)
+            {
+                CreateRecipe().AddIngredient(ItemID.Leather, 6)
+                .AddIngredient(ItemID.BlackInk, 1)
+                .AddIngredient(ItemID.ManaCrystal, 1)
+                .AddTile(TileID.WorkBenches)
+                .Register();
+            }
+            else
+            {
+                CreateRecipe().AddIngredient(ModContent.ItemType<LoreAwakening>())
                 .AddIngredient(ItemID.Leather, 6)
                 .AddIngredient(ItemID.ManaCrystal, 1)
                 .AddTile(TileID.WorkBenches)
                 .Register();
+            }
         }
     }
 

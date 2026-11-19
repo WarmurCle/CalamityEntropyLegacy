@@ -300,7 +300,7 @@ namespace CalamityEntropyLegacy.Content.Items.Books
         /// </summary>
         public int CauculateProjectileDamage(EBookStatModifer modifer, float mult = 1)
         {
-            return (int)(Projectile.GetOwner().GetTotalDamage(Projectile.DamageType).ApplyTo(bookItem.damage * modifer.Damage * mult * (Projectile.Entropy().IndexOfTwistedTwinShootedThisProj < 0 ? 1 : TwistedTwinMinion.damageMul)));
+            return Math.Max(1, (int)(Projectile.GetOwner().GetTotalDamage(Projectile.DamageType).ApplyTo(bookItem.damage * modifer.Damage * mult *(Projectile.Entropy().IndexOfTwistedTwinShootedThisProj < 0 ? 1 : TwistedTwinMinion.damageMul))));
         }
         /// <summary>
         /// 根据武器面板，玩家属性，装备书签计算最后的射弹伤害

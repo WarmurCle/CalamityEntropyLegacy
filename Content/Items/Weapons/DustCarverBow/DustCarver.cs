@@ -164,7 +164,6 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.DustCarverBow
             {
                 CreateRecipe()
                 .AddIngredient<LoreAwakening>()
-                .AddIngredient<BloodOrb>(5)
                 .AddRecipeGroup(CERecipeGroups.evilBar, 4)
                 .AddIngredient(ItemID.Silk, 4)
                 .AddIngredient(ItemID.RichMahogany, 12)
@@ -191,8 +190,8 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.DustCarverBow
                 int dmg = 25;
                 switch (lv)
                 {
-                    case 0: dmg = 25; break;
-                    case 1: dmg = 32; break;
+                    case 0: dmg = CrossModSystem.IEoRBalancing ? 20 : 25; break;
+                    case 1: dmg = CrossModSystem.IEoRBalancing ? 30 : 32; break;
                     case 2: dmg = 42; break;
                     case 3: dmg = 52; break;
                     case 4: dmg = 70; break;

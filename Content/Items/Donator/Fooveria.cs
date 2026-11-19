@@ -1,12 +1,15 @@
 using CalamityEntropyLegacy.Common;
+using CalamityEntropyLegacy.Content.Items.Vanity;
 using CalamityEntropyLegacy.Content.Items.Weapons;
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Content.Rarities;
 using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Items;
 using CalamityMod.Items.LoreItems;
 using CalamityMod.Particles;
+using CalamityMod.Rarities;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
 using System;
@@ -37,7 +40,7 @@ namespace CalamityEntropyLegacy.Content.Items.Donator
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2;
             Item.value = CalamityGlobalItem.RarityGreenBuyPrice;
-            Item.rare = ItemRarityID.Green;
+            Item.rare = ModLoader.TryGetMod("Clamity", out Mod clamity) ? clamity.Find<ModRarity>("EvercoldCyan").Type : ModContent.RarityType<Turquoise>();
             Item.UseSound = null;
             Item.noMelee = true;
             Item.noUseGraphic = true;

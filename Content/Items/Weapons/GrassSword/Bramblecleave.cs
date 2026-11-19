@@ -5,6 +5,7 @@ using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Items.LoreItems;
 using CalamityMod.Particles;
+using CalamityMod.Rarities;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
 using System;
@@ -34,7 +35,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.GrassSword
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2;
             Item.value = CalamityGlobalItem.RarityGreenBuyPrice;
-            Item.rare = ItemRarityID.Green;
+            Item.rare = ModContent.RarityType<PureGreen>();
             Item.UseSound = null;
             Item.noMelee = true;
             Item.noUseGraphic = true;

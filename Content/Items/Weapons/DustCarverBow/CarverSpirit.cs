@@ -1,5 +1,7 @@
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
+using CalamityMod.CalPlayer;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -44,10 +46,39 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.DustCarverBow
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
+            Player player = Main.player[Projectile.owner];
+
             if (HealingCooldown <= 0)
             {
-                HealingCooldown = 30.ApplyCdDec(Projectile.GetOwner());
-                Projectile.GetOwner().Heal(1);
+                if (CrossModSystem.IEoRBalancing && player.statLife < player.statLifeMax2)
+                {
+                    if (Main.myPlayer != Projectile.owner)
+                        return;
+
+                    if (!target.CanBeChasedBy(Projectile))
+                        return;
+
+                    Projectile.NewProjectile(
+                        Projectile.GetSource_FromThis(),
+                        Projectile.Center,
+                        Microsoft.Xna.Framework.Vector2.Zero,
+                        305,
+                        0,
+                        0f,
+                        Projectile.owner,
+                        player.whoAmI,
+                        1,
+                        0f
+                    );
+
+                    HealingCooldown = 30.ApplyCdDec(Projectile.GetOwner());
+                    player.lifeSteal -= 1;
+                }
+                else if (!CrossModSystem.IEoRBalancing)
+                {
+                    HealingCooldown = 30.ApplyCdDec(Projectile.GetOwner());
+                    Projectile.GetOwner().Heal(1);
+                }
             }
         }
         public int HealingCooldown = 0;

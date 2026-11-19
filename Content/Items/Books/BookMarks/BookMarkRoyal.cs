@@ -59,6 +59,8 @@ namespace CalamityEntropyLegacy.Content.Items.Books.BookMarks
         public override void SetDefaults()
         {
             base.SetDefaults();
+            Projectile.usesLocalNPCImmunity = true;
+            Projectile.localNPCHitCooldown = 40;
             Projectile.width = Projectile.height = 28;
         }
 

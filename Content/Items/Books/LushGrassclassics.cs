@@ -1,10 +1,12 @@
 using CalamityEntropyLegacy.Content.Buffs;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace CalamityEntropyLegacy.Content.Items.Books
@@ -32,6 +34,23 @@ namespace CalamityEntropyLegacy.Content.Items.Books
                 .Register();
         }
         public override Texture2D BookMarkTexture => ModContent.Request<Texture2D>("CalamityEntropyLegacy/Content/UI/EntropyBookUI/LG").Value;
+
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            TooltipLine line = null;
+
+            if (CrossModSystem.IEoRBalancing)
+            {
+                line = new(Mod, "Tooltip", Language.GetTextValue("Mods.CalamityEntropyLegacy.Tooltips.LushGrassBalanced"));
+            }
+            else
+            {
+                line = new(Mod, "Tooltip", Language.GetTextValue("Mods.CalamityEntropyLegacy.Tooltips.LushGrass"));
+            }
+
+            line.OverrideColor = Color.White;
+            tooltips.Add(line);
+        }
     }
 
     public class LushGrassclassicsHeld : EntropyBookHeldProjectile
@@ -49,7 +68,14 @@ namespace CalamityEntropyLegacy.Content.Items.Books
     {
         public override void OnHitNPC(Projectile projectile, NPC target, int damageDone)
         {
-            target.AddBuff(ModContent.BuffType<BonePiercingToxin>(), 360);
+            if (CrossModSystem.IEoRBalancing)
+            {
+                target.AddBuff(BuffID.Poisoned, 360);
+            }
+            else
+            {
+                target.AddBuff(ModContent.BuffType<BonePiercingToxin>(), 360);
+            }
         }
     }
     public class LushVine : EBookBaseProjectile

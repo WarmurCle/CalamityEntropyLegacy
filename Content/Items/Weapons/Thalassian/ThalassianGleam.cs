@@ -5,11 +5,15 @@ using CalamityEntropyLegacy.Content.Projectiles;
 using CalamityEntropyLegacy.Content.Rarities;
 using CalamityEntropyLegacy.Content.Tiles;
 using CalamityEntropyLegacy.Content.UI.EntropyBookUI;
+using CalamityEntropyLegacy.Core;
 using CalamityEntropyLegacy.Utilities;
 using CalamityMod;
+using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Items;
+using CalamityMod.Items.LoreItems;
+using CalamityMod.Items.Placeables.FurnitureDriftwood;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -17,6 +21,7 @@ using System.Collections.Generic;
 using System.Runtime.Intrinsics.Arm;
 using Terraria;
 using Terraria.GameContent;
+using Terraria.GameContent.UI;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -35,11 +40,17 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
             Item.mana = 5;
             Item.shootSpeed = 15;
             Item.value = CalamityGlobalItem.RarityOrangeBuyPrice;
+            Item.rare = ItemRarityID.Cyan;
+
+            Item.Entropy().Legend = true;
+            Item.Calamity().CannotBeEnchanted = true;
+            LastLevel = -1;
+            UpdateInventory(Main.LocalPlayer);
         }
         public override Texture2D BookMarkTexture => CEUtils.pixelTex;
         public override int HeldProjectileType => ModContent.ProjectileType<ThalassianGleamHeld>();
         public override int SlotCount => GetSlotCount();
-        public static int GetSlotCount() => Level() switch
+        public static int GetSlotCount() => GetLevel() switch
         {
             0 => 1,
             1 => 1,
@@ -59,7 +70,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
             15 => 6,
             _ => 6
         };
-        public static int ShootCount() => Level() switch
+        public static int ShootCount() => GetLevel() switch
         {
             0 => 2,
             1 => 2,
@@ -79,9 +90,55 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
             15 => 6,
             _ => 6
         };
+        public override void UpdateInventory(Player player)
+        {
+            int level = GetLevel();
+            if (LastLevel != level)
+            {
+                int dmg = Item.damage;
+                switch (level)
+                {
+                    case 0: dmg = 16; break;
+                    case 1: dmg = 16; break;
+                    case 2: dmg = 16; break;
+                    case 3: dmg = 16; break;
+                    case 4: dmg = 16; break;
+                    case 5: dmg = 16; break;
+                    case 6: dmg = 16; break;
+                    case 7: dmg = 16; break;
+                    case 8: dmg = 16; break;
+                    case 9: dmg = 16; break;
+                    case 10: dmg = 16; break;
+                    case 11: dmg = 16; break;
+                    case 12: dmg = 16; break;
+                    case 13: dmg = 16; break;
+                    case 14: dmg = 16; break;
+                    case 15: dmg = 16; break;
+                }
+                Item.damage = dmg;
+                Item.useTime = Item.useAnimation = int.Max(10, 16 - GetLevel() / 4);
+                LastLevel = level;
+                Item.crit = level * 1;
+                Item.knockBack = level / 3;
+                Item.scale = 1;
+                Item.Prefix(Item.prefix);
+            }
+        }
+        public int LastLevel = -1;
         public override void AddRecipes()
         {
+            if (CrossModSystem.IEoRBalancing)
+            {
+                CreateRecipe()
 
+                .AddIngredient<LoreAwakening>()
+                .AddIngredient<SeaPrism>(10)
+                .AddIngredient<Driftwood>(15)
+                .AddIngredient<Navystone>(5)
+                .AddIngredient(ItemID.Silk, 3)
+                .AddTile(TileID.Anvils)
+                .Register();
+            }
         }
         #region SlotStaffs
         public override bool PreDrawBookmarkSlot(Item bookmark, Vector2 pos, float alpha, float scale, float outlineAlpha)
@@ -217,7 +274,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
             return false;
         }
         #endregion
-        public static int Level()
+        public static int GetLevel()
         {
             if (DownedBossSystem.downedExoMechs && DownedBossSystem.downedCalamitas)
                 return 15;
@@ -255,6 +312,11 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
         {
             CEUtils.PlaySound("gem/gemInsert" + Main.rand.Next(5), Main.rand.NextFloat(0.9f, 1.1f));
         }
+
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            tooltips.Replace("[L]", GetLevel());
+        }
     }
     public interface ThalassianLegendGem
     { }
@@ -271,8 +333,8 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
         public override EBookStatModifer getBaseModifer()
         {
             var m = base.getBaseModifer();
-            m.Size += ThalassianGleam.Level() / 15f;
-            m.shotSpeed += ThalassianGleam.Level() / 12f;
+            m.Size += ThalassianGleam.GetLevel() / 15f;
+            m.shotSpeed += ThalassianGleam.GetLevel() / 12f;
             return m;
         }
         public override float randomShootRotMax => 0.05f;
@@ -288,7 +350,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
             {
                 float scale = getBaseModifer().Size;
                 CEUtils.PlaySound("ThalassianShoot", Main.rand.NextFloat(0.6f, 1.1f), Projectile.Center, volume: 0.32f);
-                for (int i = 0; i < 10 + ThalassianGleam.Level() / 3; i++)
+                for (int i = 0; i < 10 + ThalassianGleam.GetLevel() / 3; i++)
                 {
                     Dust dust = Dust.NewDustPerfect(Projectile.Center, ModContent.DustType<SquashDust>(), Vector2.Zero);
                     dust.scale = Main.rand.NextFloat(0.4f, 1f) * scale * 1.4f;
@@ -471,7 +533,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
             base.SetDefaults();
             Projectile.width = 24;
             Projectile.height = 24;
-            Projectile.tileCollide = ThalassianGleam.Level() < 8;
+            Projectile.tileCollide = ThalassianGleam.GetLevel() < 8;
             Projectile.timeLeft = 360;
             Projectile.MaxUpdates = 3;
         }
@@ -491,6 +553,21 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
+            int level = ThalassianGleam.GetLevel();
+
+            if (level >= 11)
+            {
+                target.AddBuff<HadopelagicPressure>(3 * 60);
+            }
+            else if (level >= 7)
+            {
+                target.AddBuff<CrushDepth>(3 * 60);
+            }
+            else if (level >= 1)
+            {
+                target.AddBuff<RiptideDebuff>(3 * 60);
+            }
+
             base.OnHitNPC(target, hit, damageDone);
             OnKill(Projectile.timeLeft);
         }
@@ -501,7 +578,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
             {
                 float scale = Projectile.scale;
                 CEUtils.PlaySound("ThalassianHit", Main.rand.NextFloat(0.8f, 1.2f), Projectile.Center);
-                for (int i = 0; i < 10 + ThalassianGleam.Level(); i++)
+                for (int i = 0; i < 10 + ThalassianGleam.GetLevel(); i++)
                 {
                     Dust dust = Dust.NewDustPerfect(Projectile.Center, ModContent.DustType<SquashDust>(), Vector2.Zero);
                     dust.scale = Main.rand.NextFloat(0.4f, 1f) * scale * 1.6f;

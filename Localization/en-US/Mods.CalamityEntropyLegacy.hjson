@@ -1098,7 +1098,7 @@ Items: {
 		DisplayName: Horizons' Key
 		Tooltip:
 			'''
-			Sends an array of swords to attack nearby enemies and inflict [cbuff:CalamityMod/Nightwither]
+			Sends an array of swords to attack nearby enemies
 			[c/d9bd1b:The strength of this weapon increases as the game progresses]
 			[c/d9bd1b:Affected by all classes' damage bonuses]
 			'''
@@ -2018,7 +2018,7 @@ Items: {
 			Summon 3 royal jewels to aid in combat
 			The ruby jewel fires bolts of energy at nearby enemies
 			The emerald jewel dashes at enemies, dealing damage on contact
-			The sapphire jewel creates a ring that grants players within it 15% increased damage and 5% damage resistance
+			The sapphire jewel creates a ring that grants players within it 8% increased damage, 4% damage resistance and +2HP/s life regeneration
 			'''
 	}
 
@@ -3164,7 +3164,7 @@ Items: {
 
 	LushGrassclassics: {
 		DisplayName: Lush Grassclassics
-		Tooltip: Unleashes piercing vines at enemies that inflict [cebuff:CalamityEntropyLegacy/BonePiercingToxin]
+		Tooltip: ""
 	}
 
 	MiracleWreckage: {
@@ -4006,7 +4006,7 @@ Items: {
 		DisplayName: Bloodstained Codex
 		Tooltip:
 			'''
-			Attacks shoot clots of blood that inflict [cbuff:CalamityEntropyLegacy/FlamingBlood] and have a 10% chance to heal 1 life on hit
+			Attacks shoot clots of blood that inflict [cbuff:CalamityEntropyLegacy/FlamingBlood] and have a 10% chance to steal 1 life on hit
 			Enemies with the [cbuff:CalamityEntropyLegacy/FlamingBlood] debuff explode on death
 			'''
 	}
@@ -4028,7 +4028,7 @@ Items: {
 			Gain 1 rage on enemy hit
 			Resets attack cooldowns and gain temporary attack speed on taking damage
 			Attack speed gained is based on the amount of damage you take
-			Attacks have a 10% chance to restore 1 life on hit
+			Attacks have a 10% chance to steal 1 life on hit
 			'''
 	}
 
@@ -4416,7 +4416,11 @@ Items: {
 
 	ThalassianGleam: {
 		DisplayName: Thalassian Gleam
-		Tooltip: ""
+		Tooltip:
+			'''
+			"Wash away this era with seafoam to the primordial sea whence it came."
+			Increase power with progress: [L] / 15
+			'''
 	}
 
 	GoldenFlowerInAJar: {
@@ -4701,8 +4705,8 @@ Items: {
 BaitCommonTooltip1: Charge when held. Usable when fully charged
 BaitCommonTooltip2:
 	'''
-	Throw a bait that will stick to the enemy after hitting it,
-	and cause minion deal {0} more damage to it
+	Throw a bait that will stick to the enemy on hit
+	Stuck bait causes minions to deal an additional {0} damage to the target
 	'''
 SmolderingSetBonus:
 	'''
@@ -6008,12 +6012,12 @@ Buffs: {
 	}
 
 	BellbeastBuff: {
-		DisplayName: Bellbeast Buff
+		DisplayName: Bellbeast
 		Description: ""
 	}
 
 	FloweryBuff: {
-		DisplayName: Flowery Buff
+		DisplayName: Flowery
 		Description: Glue!
 	}
 }
@@ -6174,7 +6178,7 @@ loreNihTwin:
 	The abhorrent creature you have slain is but a droplet from the river between these worlds. 
 	What happens from here is neither my business to know nor my responsibility, that lies on you. 
 	The gears of fate continue their slow, inexorable turn regardless.
-	''' 
+	'''
 NihTwinLoreEffect:
 	'''
 	Increase resistance to [cebuff:CalamityEntropyLegacy/VoidTouch] by {1}%
@@ -6940,8 +6944,8 @@ Gems: Gems
 Butterflies: Butterflies
 BCBarInfo: Bramble Bar (Hold [mouse middle] to drag)
 HallowedEnemiesDrop: Drops from underground hallowed enemies
-EvilEnemiesDrop: Drops from undergronud evil biomes' enemies
-DungeonEnemiesDrop: Drops from undergronud dungeon's enemies
+EvilEnemiesDrop: Drops from underground evil biomes' enemies
+DungeonEnemiesDrop: Drops from underground dungeon enemies
 VoidOreMine: Generates in space layer after defeating Cruiser boss
 AbyssalPiercerObt: Drops from giant squid after defeating aquatic scourge
 AstralFishing: Fishing from astral infection
@@ -7056,6 +7060,8 @@ Tooltips: {
 		Right Click to block an attacks damage entirely on a 10 second cooldown and counter with a flurry of slashes with full invincibility
 		Blocking an attack while off cooldown will just allow for the flurry of slashes, while still taking full damage
 		'''
+	LushGrass: Unleashes piercing vines at enemies that inflict [cebuff:CalamityEntropyLegacy/BonePiercingToxin]
+	LushGrassBalanced: Unleashes piercing vines at enemies that inflict [cbuff:Poisoned]
 }
 
 DeathExplode: "{0} exploded"

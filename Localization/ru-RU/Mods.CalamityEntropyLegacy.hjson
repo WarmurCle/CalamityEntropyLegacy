@@ -4129,7 +4129,11 @@ Items: {
 
 	ThalassianGleam: {
 		// DisplayName: Thalassian Gleam
-		// Tooltip: ""
+		/* Tooltip:
+			'''
+			"Wash away this era with seafoam to the primordial sea whence it came."
+			Increase power with progress: [L] / 15
+			''' */
 	}
 
 	GoldenFlowerInAJar: {
@@ -5726,12 +5730,12 @@ Buffs: {
 	}
 
 	BellbeastBuff: {
-		// DisplayName: Bellbeast Buff
+		// DisplayName: Bellbeast
 		// Description: ""
 	}
 
 	FloweryBuff: {
-		// DisplayName: Flowery Buff
+		// DisplayName: Flowery
 		// Description: Glue!
 	}
 }
@@ -6746,6 +6750,8 @@ Tooltips: {
 		У решетки есть 10 секунд охлаждения, в течение которых вы все еще можете использовать решетку, но не можете остановить все повреждения
 		Вероятность попадания приводит к различным выгодам.
 		'''
+	// LushGrass: Unleashes piercing vines at enemies that inflict [cebuff:CalamityEntropyLegacy/BonePiercingToxin]
+	// LushGrassBalanced: Unleashes piercing vines at enemies that inflict [cbuff:Poisoned]
 }
 
 DeathExplode: "{0} Взрыв."

@@ -1,4 +1,5 @@
 using CalamityEntropyLegacy.Common;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Buffs.StatBuffs;
 using CalamityMod.Items;
@@ -24,7 +25,10 @@ namespace CalamityEntropyLegacy.Content.Items.Books.BookMarks
         public override void ModifyStat(EBookStatModifer modifer)
         {
             modifer.attackSpeed += Main.LocalPlayer.Entropy().BloodthirstyEffect * 0.3f;
-            modifer.lifeSteal += 0.1f;
+            if (!CrossModSystem.IEoRBalancing)
+            {
+                modifer.lifeSteal += 0.1f;
+            }
         }
         public override EBookProjectileEffect getEffect()
         {
@@ -58,9 +62,36 @@ namespace CalamityEntropyLegacy.Content.Items.Books.BookMarks
         public override void OnHitNPC(Projectile projectile, NPC target, int damageDone)
         {
             var plr = projectile.GetOwner();
-            if (plr.Calamity().RageEnabled && CECooldowns.CheckCD("BloodthirstyRage", 30) && !plr.HasBuff<RageMode>())
+
+            if (plr.Calamity().RageEnabled &&
+                CECooldowns.CheckCD("BloodthirstyRage", 30) &&
+                !plr.HasBuff<RageMode>())
             {
-                plr.Calamity().rage += projectile.GetOwner().Calamity().rageMax / 100;
+                plr.Calamity().rage += plr.Calamity().rageMax / 100;
+            }
+
+            if (CrossModSystem.IEoRBalancing && plr.statLife < plr.statLifeMax2 && Main.rand.NextBool(10))
+            {
+                if (Main.myPlayer != projectile.owner)
+                    return;
+
+                if (!target.CanBeChasedBy(projectile))
+                    return;
+
+                Projectile.NewProjectile(
+                    projectile.GetSource_FromThis(),
+                    projectile.Center,
+                    Microsoft.Xna.Framework.Vector2.Zero,
+                    305,
+                    0,
+                    0f,
+                    projectile.owner,
+                    plr.whoAmI,
+                    1,
+                    0f
+                );
+
+                plr.lifeSteal -= 2;
             }
         }
     }
