@@ -26,7 +26,7 @@ namespace CalamityEntropyLegacy.Content.Items.Books
         }
         public override Texture2D BookMarkTexture => ModContent.Request<Texture2D>("CalamityEntropyLegacy/Content/UI/EntropyBookUI/BCdx").Value;
         public override int HeldProjectileType => ModContent.ProjectileType<BloodCodexHeld>();
-        public override int SlotCount => 1;
+        public override int SlotCount => CrossModSystem.IEoRBalancing ? 2 : 1;
 
         public override void AddRecipes()
         {

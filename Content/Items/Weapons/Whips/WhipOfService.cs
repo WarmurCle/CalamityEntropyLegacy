@@ -1,4 +1,5 @@
 using CalamityEntropyLegacy.Content.Projectiles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod.Items;
 using CalamityMod.Items.Materials;
 using Terraria;
@@ -16,7 +17,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Whips
             Item.DefaultToWhip(ModContent.ProjectileType<WhipOfServiceProjectile>(), 24, 2, 4, 36);
             Item.rare = ItemRarityID.Blue;
             Item.value = CalamityGlobalItem.RarityVioletBuyPrice;
-
+            Item.damage = CrossModSystem.IEoRBalancing ? 18 : 24;
         }
 
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)

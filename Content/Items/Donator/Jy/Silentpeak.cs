@@ -3,6 +3,7 @@ using CalamityEntropyLegacy.Content.Buffs;
 using CalamityEntropyLegacy.Content.Particles;
 using CalamityEntropyLegacy.Content.Projectiles.LuminarisShoots;
 using CalamityEntropyLegacy.Content.Rarities;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Particles;
@@ -352,6 +353,13 @@ namespace CalamityEntropyLegacy.Content.Items.Donator.Jy
         {
             if (aiStyle == AIStyle.Spin)
                 modifiers.SourceDamage *= 0.2f;
+
+            if (target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeHead>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeBody>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeTail>() && CrossModSystem.IEoRBalancing)
+            {
+                modifiers.SourceDamage *= 0.25f;
+            }
         }
         public Vector2 vec1 = Vector2.Zero;
         public override void SendExtraAI(BinaryWriter writer)

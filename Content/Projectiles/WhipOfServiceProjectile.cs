@@ -22,6 +22,12 @@ namespace CalamityEntropyLegacy.Content.Projectiles
             Projectile.WhipSettings.RangeMultiplier = 2.2f;
         }
 
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+        {
+            Projectile.damage = (int)(Projectile.damage * 0.7f);
+            base.OnHitNPC(target, hit, damageDone);
+        }
+
         public override void OnHitPlayer(Player target, Player.HurtInfo info)
         {
             target.Entropy().serviceWhipDamageBonus += 0.07f;

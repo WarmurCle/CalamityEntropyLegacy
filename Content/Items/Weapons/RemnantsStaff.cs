@@ -1,4 +1,5 @@
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Items;
@@ -51,7 +52,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
         #endregion
         public override void SetDefaults()
         {
-            Item.damage = 12;
+            Item.damage = CrossModSystem.IEoRBalancing ? 15 : 12;
             Item.DamageType = DamageClass.Magic;
             Item.width = 60;
             Item.height = 78;

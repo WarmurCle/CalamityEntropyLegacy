@@ -1,4 +1,5 @@
 using CalamityEntropyLegacy.Content.Projectiles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod.Items.Materials;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -19,7 +20,7 @@ namespace CalamityEntropyLegacy.Content.Items.Books
         }
         public override Texture2D BookMarkTexture => ModContent.Request<Texture2D>("CalamityEntropyLegacy/Content/UI/EntropyBookUI/BookMark2").Value;
         public override int HeldProjectileType => ModContent.ProjectileType<UpdraftTomeHeld>();
-        public override int SlotCount => 2;
+        public override int SlotCount => CrossModSystem.IEoRBalancing ? 3 : 2;
 
         public override void AddRecipes()
         {

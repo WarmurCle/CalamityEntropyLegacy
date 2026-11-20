@@ -1,5 +1,7 @@
 using CalamityEntropyLegacy.Common;
+using CalamityEntropyLegacy.Content.Buffs;
 using CalamityEntropyLegacy.Content.Items.Books;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Particles;
@@ -119,6 +121,14 @@ namespace CalamityEntropyLegacy.Content.Projectiles.Cruiser
                 GeneralParticleHandler.SpawnParticle(new CustomPulse(Projectile.Center, Vector2.Zero, Color.OrangeRed, "CalamityMod/Particles/ShineExplosion2", Vector2.One, CEUtils.randomRot(), 0.02f, 0.16f, 16));
                 GeneralParticleHandler.SpawnParticle(new CustomPulse(Projectile.Center, Vector2.Zero, Color.OrangeRed, "CalamityMod/Particles/FlameExplosion", Vector2.One, CEUtils.randomRot(), 0.02f, 0.14f, 16));
 
+            }
+        }
+
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+        {
+            if (CrossModSystem.IEoRBalancing)
+            {
+                target.AddBuff<MechanicalTrauma>(60 * 3);
             }
         }
 

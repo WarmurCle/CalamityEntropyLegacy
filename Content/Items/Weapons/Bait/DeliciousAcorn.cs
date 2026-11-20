@@ -1,4 +1,5 @@
 using CalamityEntropyLegacy.Content.Buffs;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Items;
@@ -24,7 +25,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Bait
 
         public override void SetDefaults()
         {
-            Item.damage = 6;
+            Item.damage = CrossModSystem.IEoRBalancing ? 4 : 6;
             Item.knockBack = 0;
             Item.shootSpeed = 25;
             Item.useAnimation = Item.useTime = 18;

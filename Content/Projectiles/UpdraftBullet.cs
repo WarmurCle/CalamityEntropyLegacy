@@ -1,5 +1,7 @@
 using CalamityEntropyLegacy.Content.Items.Books;
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
+using CalamityMod.Buffs.DamageOverTime;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
@@ -55,6 +57,12 @@ namespace CalamityEntropyLegacy.Content.Projectiles
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             base.OnHitNPC(target, hit, damageDone);
+
+            if (CrossModSystem.IEoRBalancing)
+            {
+                target.AddBuff(ModContent.BuffType<WindChilled>(), 60 * 3);
+            }
+
             for (int i = 0; i < 10; i++)
             {
                 EParticle.NewParticle(new ULineParticle(4, 0.8f, 0.85f, 0.032f), target.Center + new Vector2(Main.rand.NextFloat(0, target.width) - (target.width / 2f), Main.rand.NextFloat(0, target.height) - (target.height / 2f)), new Vector2(0, -34), Color.Lerp(this.color, Color.LightBlue, 0.5f), 1, 1, true, BlendState.AlphaBlend, 0);

@@ -54,7 +54,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
         {
             0 => 1,
             1 => 1,
-            2 => 2,
+            2 => CrossModSystem.IEoRBalancing ? 1 : 2,
             3 => 2,
             4 => 3,
             5 => 3,
@@ -98,7 +98,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
                 int dmg = Item.damage;
                 switch (level)
                 {
-                    case 0: dmg = 16; break;
+                    case 0: dmg = CrossModSystem.IEoRBalancing ? 12 : 16; break;
                     case 1: dmg = 16; break;
                     case 2: dmg = 16; break;
                     case 3: dmg = 16; break;
@@ -132,9 +132,8 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
                 CreateRecipe()
 
                 .AddIngredient<LoreAwakening>()
-                .AddIngredient<SeaPrism>(10)
-                .AddIngredient<Driftwood>(15)
-                .AddIngredient<Navystone>(5)
+                .AddIngredient<SeaPrism>(15)
+                .AddIngredient<Driftwood>(10)
                 .AddIngredient(ItemID.Silk, 3)
                 .AddTile(TileID.Anvils)
                 .Register();
@@ -563,7 +562,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Thalassian
             {
                 target.AddBuff<CrushDepth>(3 * 60);
             }
-            else if (level >= 1)
+            else if (level >= 2)
             {
                 target.AddBuff<RiptideDebuff>(3 * 60);
             }

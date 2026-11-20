@@ -1,4 +1,6 @@
 using CalamityEntropyLegacy.Content.Items.Books;
+using CalamityEntropyLegacy.Core;
+using CalamityMod.Buffs.DamageOverTime;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.GameContent;
@@ -33,6 +35,15 @@ namespace CalamityEntropyLegacy.Content.Projectiles
             Main.spriteBatch.Draw(t, Projectile.Center - Main.screenPosition, null, Color.White, Projectile.rotation, t.Size() / 2, Projectile.scale, SpriteEffects.None, 0);
 
             return false;
+        }
+
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+        {
+            if (CrossModSystem.IEoRBalancing)
+            {
+                target.AddBuff(ModContent.BuffType<WindChilled>(), 60 * 1);
+            }
+            base.OnHitNPC(target, hit, damageDone);
         }
     }
 

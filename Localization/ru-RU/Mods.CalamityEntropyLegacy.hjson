@@ -4261,7 +4261,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Guide the Desert Nuisance to bite the target
+			A Desert Nuisance will bite at the enemy after some time
 			''' */
 	}
 
@@ -4419,8 +4419,8 @@ Items: {
 // BaitCommonTooltip1: Charge when held. Usable when fully charged
 /* BaitCommonTooltip2:
 	'''
-	Throw a bait that will stick to the enemy after hitting it,
-	and cause minion deal {0} more damage to it
+	Throw a bait that will stick to the enemy on hit
+	Stuck bait causes minions to deal an additional {0} damage to the target
 	''' */
 SmolderingSetBonus:
 	'''

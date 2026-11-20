@@ -1,5 +1,6 @@
 using CalamityEntropyLegacy.Content.Buffs;
 using CalamityEntropyLegacy.Content.Projectiles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Particles;
@@ -17,16 +18,16 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Bait
 {
     public class AntlionShell : ModItem, IBaitItem
     {
-        public static int TagDamage = 2;
+        public static int TagDamage = CrossModSystem.IEoRBalancing ? 3 : 2;
         public static float DamageMult = 2;
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(TagDamage);
 
         public override void SetDefaults()
         {
-            Item.damage = 20;
+            Item.damage = CrossModSystem.IEoRBalancing ? 30 : 20;
             Item.knockBack = 0;
             Item.shootSpeed = 26;
-            Item.useAnimation = Item.useTime = 20;
+            Item.useAnimation = Item.useTime = CrossModSystem.IEoRBalancing ? 14 : 20;
             Item.value = CalamityGlobalItem.RarityGreenBuyPrice;
             Item.rare = ItemRarityID.Green;
             Item.width = 38;
