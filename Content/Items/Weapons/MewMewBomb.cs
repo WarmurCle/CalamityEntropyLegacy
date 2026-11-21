@@ -1,6 +1,7 @@
 using CalamityEntropyLegacy.Content.Particles;
 using CalamityEntropyLegacy.Content.Projectiles;
 using CalamityEntropyLegacy.Content.Rarities;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Items.Weapons.Rogue;
@@ -26,7 +27,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
         {
             Item.width = 40;
             Item.height = 40;
-            Item.damage = 18;
+            Item.damage = CrossModSystem.IEoRBalancing ? 15 : 18;
             Item.noMelee = true;
             Item.noUseGraphic = true;
             Item.useAnimation = Item.useTime = 30;
@@ -50,7 +51,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
                 .AddTile(TileID.Anvils)
                 .Register();
         }
-        public override float StealthDamageMultiplier => 2.5f;
+        public override float StealthDamageMultiplier => CrossModSystem.IEoRBalancing ? 1.5f : 2.5f;
         public override float StealthVelocityMultiplier => 1f;
 
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)

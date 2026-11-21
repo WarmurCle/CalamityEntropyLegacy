@@ -4,6 +4,7 @@ using CalamityEntropyLegacy.Content.Items.Weapons.Thalassian;
 using CalamityEntropyLegacy.Content.Particles;
 using CalamityEntropyLegacy.Content.Projectiles;
 using CalamityEntropyLegacy.Content.Rarities;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Items;
@@ -30,7 +31,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Swirlblades
             Item.height = 52;
             Item.damage = 8;
             Item.crit = 2;
-            Item.ArmorPenetration = 8;
+            Item.ArmorPenetration = CrossModSystem.IEoRBalancing ? 13 : 8;
             Item.UseSound = SoundID.Item1 with { Volume = 1.2f };
             Item.value = CalamityGlobalItem.RarityLightRedBuyPrice;
             Item.rare = ItemRarityID.LightRed;

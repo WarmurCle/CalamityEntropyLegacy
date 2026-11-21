@@ -2,6 +2,7 @@ using CalamityEntropyLegacy.Content.Buffs;
 using CalamityEntropyLegacy.Content.Items.Books;
 using CalamityEntropyLegacy.Content.Items.Weapons.Thalassian;
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Items;
@@ -31,7 +32,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Bait
             Item.damage = 22;
             Item.knockBack = 0;
             Item.shootSpeed = 32;
-            Item.useAnimation = Item.useTime = 27;
+            Item.useAnimation = Item.useTime = CrossModSystem.IEoRBalancing ? 25 : 27;
             Item.value = CalamityGlobalItem.RarityYellowBuyPrice;
             Item.rare = ItemRarityID.Yellow;
             Item.width = 42;

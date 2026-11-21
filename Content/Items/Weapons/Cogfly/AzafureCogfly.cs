@@ -1,6 +1,7 @@
 using CalamityEntropyLegacy.Content.Buffs;
 using CalamityEntropyLegacy.Content.Items.Armor.Azafure;
 using CalamityEntropyLegacy.Content.Rarities;
+using CalamityEntropyLegacy.Core;
 using CalamityMod.Items;
 using CalamityMod.Items.Materials;
 using CalamityMod.Particles;
@@ -25,7 +26,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Cogfly
         }
         public override void SetDefaults()
         {
-            Item.damage = 28;
+            Item.damage = CrossModSystem.IEoRBalancing ? 34 : 28;
             Item.DamageType = DamageClass.Summon;
             Item.width = 42;
             Item.height = 42;

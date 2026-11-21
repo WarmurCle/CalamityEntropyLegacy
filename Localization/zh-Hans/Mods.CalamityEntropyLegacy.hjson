@@ -3250,7 +3250,7 @@ Items: {
 
 	LushGrassclassics: {
 		DisplayName: 繁茂芸编
-		Tooltip: 发射出能造成多次伤害的藤蔓
+		Tooltip: ""
 	}
 
 	MiracleWreckage: {
@@ -3966,7 +3966,7 @@ Items: {
 
 	CursedTorch: {
 		DisplayName: 诅咒火炬
-		Tooltip: 召唤诅咒火炬，向敌人喷射诅咒焰
+		Tooltip: ""
 	}
 
 	PhantomBottle: {
@@ -4047,7 +4047,7 @@ Items: {
 
 	OblivionSkull: {
 		DisplayName: 冥骸头骨
-		Tooltip: 召唤一只诅咒头骨，向敌人发射骷髅头
+		Tooltip: ""
 	}
 
 	BloodCodex: {
@@ -7058,8 +7058,12 @@ Tooltips: {
 		格挡有10秒冷却时间，在此期间你依然可以使用格挡但不能挡下全部伤害
 		命中时有概率造成各种减益
 		'''
-	// LushGrass: Unleashes piercing vines at enemies that inflict [cebuff:CalamityEntropyLegacy/BonePiercingToxin]
-	// LushGrassBalanced: Unleashes piercing vines at enemies that inflict [cbuff:Poisoned]
+	LushGrass: 发射出能造成多次伤害的藤蔓
+	LushGrassBalanced: 发射出能造成多次伤害的藤蔓
+	CursedTorch: 召唤诅咒火炬，向敌人喷射诅咒焰
+	CursedTorchBalanced: 召唤诅咒火炬，向敌人喷射诅咒焰
+	DecrepitSkull: 召唤一只诅咒头骨，向敌人发射骷髅头
+	DecrepitSkullBalanced: 召唤一只诅咒头骨，向敌人发射骷髅头
 }
 
 DeathExplode: "{0}爆炸了"

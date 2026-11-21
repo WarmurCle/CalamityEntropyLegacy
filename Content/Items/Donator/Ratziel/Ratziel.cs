@@ -74,10 +74,10 @@ namespace CalamityEntropyLegacy.Content.Items.Donator.Ratziel
         }
         public static int GetDamage(int level) => level switch
         {
-            0 => 5,
-            1 => 7,
-            2 => 9,
-            3 => 12,
+            0 => CrossModSystem.IEoRBalancing ? 4 : 5,
+            1 => CrossModSystem.IEoRBalancing ? 5 : 7,
+            2 => CrossModSystem.IEoRBalancing ? 8 : 9,
+            3 => CrossModSystem.IEoRBalancing ? 10 : 12,
             4 => 24,
             5 => 30,
             6 => 45,

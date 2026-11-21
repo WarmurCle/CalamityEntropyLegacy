@@ -1,3 +1,4 @@
+using CalamityEntropyLegacy.Core;
 using CalamityMod.Particles;
 using Terraria;
 using Terraria.ID;
@@ -34,14 +35,24 @@ namespace CalamityEntropyLegacy.Content.Projectiles
         {
             if (Projectile.ai[0] == 0)
             {
-                CalamityMod.Particles.Particle explosion2 = new DetailedExplosion(Projectile.Center, Vector2.Zero, new Color(220, 196, 255), Vector2.One, Main.rand.NextFloat(-5, 5), 0f, 2.2f * 0.65f, 30);
+                CalamityMod.Particles.Particle explosion2 = new DetailedExplosion(Projectile.Center, Vector2.Zero, new Color(220, 196, 255), Vector2.One, Main.rand.NextFloat(-5, 5), 0f, CrossModSystem.IEoRBalancing ? 1f : 1.43f, 30);
                 GeneralParticleHandler.SpawnParticle(explosion2);
-                float scale = 7f;
+                float scale = CrossModSystem.IEoRBalancing ? 5 : 7;
                 GeneralParticleHandler.SpawnParticle(new CustomPulse(Projectile.Center, Vector2.Zero, Color.MediumPurple * 1.6f, "CalamityMod/Particles/ShatteredExplosion", Vector2.One, CEUtils.randomRot(), 0.005f, scale * 0.05f, 30));
                 GeneralParticleHandler.SpawnParticle(new CustomPulse(Projectile.Center, Vector2.Zero, Color.MediumPurple * 1.4f, "CalamityMod/Particles/ShatteredExplosion", Vector2.One, CEUtils.randomRot(), 0.005f, scale * 0.035f, 26));
                 GeneralParticleHandler.SpawnParticle(new CustomPulse(Projectile.Center, Vector2.Zero, Color.MediumPurple * 1.2f, "CalamityMod/Particles/ShatteredExplosion", Vector2.One, CEUtils.randomRot(), 0.005f, scale * 0.02f, 22));
             }
             Projectile.ai[0]++;
+        }
+
+        public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
+        {
+            if (target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeHead>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeBody>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeTail>() && CrossModSystem.IEoRBalancing)
+            {
+                modifiers.SourceDamage *= 0.4f;
+            }
         }
         public override bool PreDraw(ref Color lightColor)
         {

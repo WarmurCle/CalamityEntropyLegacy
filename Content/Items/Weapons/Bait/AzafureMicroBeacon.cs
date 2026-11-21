@@ -2,6 +2,7 @@ using CalamityEntropyLegacy.Content.Buffs;
 using CalamityEntropyLegacy.Content.Items.Armor.Azafure;
 using CalamityEntropyLegacy.Content.Projectiles;
 using CalamityEntropyLegacy.Content.Rarities;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Items;
@@ -32,7 +33,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Bait
             Item.damage = 25;
             Item.knockBack = 0;
             Item.shootSpeed = 33;
-            Item.useAnimation = Item.useTime = 24;
+            Item.useAnimation = Item.useTime = CrossModSystem.IEoRBalancing ? 26 : 24;
             Item.value = CalamityGlobalItem.RarityOrangeBuyPrice;
             Item.rare = ModContent.RarityType<AzafureOrange>();
             Item.width = 42;

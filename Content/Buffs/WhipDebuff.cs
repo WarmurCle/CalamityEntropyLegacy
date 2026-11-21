@@ -2,6 +2,7 @@ using CalamityEntropyLegacy.Common;
 using CalamityEntropyLegacy.Content.Items.Weapons.Whips;
 using CalamityEntropyLegacy.Content.Particles;
 using CalamityEntropyLegacy.Content.Projectiles;
+using CalamityEntropyLegacy.Core;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using Terraria;
@@ -323,7 +324,7 @@ namespace CalamityEntropyLegacy.Content.Buffs
                     if (t.EffectName == "MindCorruptor")
                     {
                         float rot = CEUtils.randomRot();
-                        Projectile.NewProjectile(projectile.GetSource_FromAI(), npc.Center - rot.ToRotationVector2() * 128, rot.ToRotationVector2() * 256 / 10f, ModContent.ProjectileType<CorruptStrike>(), projectile.damage / 12 + 1, 2, projectile.owner);
+                        Projectile.NewProjectile(projectile.GetSource_FromAI(), npc.Center - rot.ToRotationVector2() * 128, rot.ToRotationVector2() * 256 / 10f, ModContent.ProjectileType<CorruptStrike>(), CrossModSystem.IEoRBalancing ? projectile.damage / 6 + 1 : projectile.damage / 12 + 1, 2, projectile.owner);
                     }
                     if (t.EffectName == "DaylightProjectile")
                     {

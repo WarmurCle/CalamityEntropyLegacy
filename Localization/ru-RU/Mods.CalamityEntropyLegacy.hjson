@@ -2916,7 +2916,7 @@ Items: {
 
 	LushGrassclassics: {
 		DisplayName: Юнь
-		Tooltip: Стреляйте из лозы, которая может причинить много вреда.
+		Tooltip: ""
 	}
 
 	MiracleWreckage: {
@@ -3632,11 +3632,7 @@ Items: {
 
 	CursedTorch: {
 		DisplayName: Проклятие факела
-		Tooltip:
-			'''
-			Вызовите проклятый факел и распылите проклятое пламя на врага
-			Загрузить строку вызова 2
-			'''
+		Tooltip: ""
 	}
 
 	PhantomBottle: {
@@ -3717,11 +3713,7 @@ Items: {
 
 	OblivionSkull: {
 		DisplayName: Череп мёртвых останков
-		Tooltip:
-			'''
-			Вызовите проклятый череп и запустите его в врага.
-			Загрузить строку вызова 2
-			'''
+		Tooltip: ""
 	}
 
 	BloodCodex: {
@@ -4261,6 +4253,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
+			{$CommonItemTooltip.Whips}
 			A Desert Nuisance will bite at the enemy after some time
 			''' */
 	}
@@ -4271,6 +4264,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
+			{$CommonItemTooltip.Whips}
 			Call in a strike drone swarm to strafe the target
 			''' */
 	}
@@ -4281,6 +4275,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
+			{$CommonItemTooltip.Whips}
 			Summon the Squirrel Squad to throw stones at the target
 			''' */
 	}
@@ -4291,6 +4286,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
+			{$CommonItemTooltip.Whips}
 			Summon a bone serpant to burn all encountered targets
 			''' */
 	}
@@ -4301,6 +4297,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
+			{$CommonItemTooltip.Whips}
 			Summon phantom eyes to attack target
 			''' */
 	}
@@ -4311,6 +4308,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
+			{$CommonItemTooltip.Whips}
 			Summon vines to tear target apart
 			''' */
 	}
@@ -4321,6 +4319,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
+			{$CommonItemTooltip.Whips}
 			Summon some detector that fire lasers to the target
 			''' */
 	}
@@ -4331,6 +4330,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
+			{$CommonItemTooltip.Whips}
 			Summon three pigeons to attack the target
 			''' */
 	}
@@ -4350,6 +4350,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
+			{$CommonItemTooltip.Whips}
 			Release the imprisoned spirits, and they will attack their targets using tracking ice bullets
 			''' */
 	}
@@ -4360,6 +4361,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
+			{$CommonItemTooltip.Whips}
 			Summon a blue fox
 			The fox will steal the mushroom and release a spore cloud
 			''' */
@@ -4371,6 +4373,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
+			{$CommonItemTooltip.Whips}
 			After sticking, it will recharge for two seconds and then bounce off the target,
 			then releasing holy flames to burn the target
 			''' */
@@ -4382,6 +4385,7 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
+			{$CommonItemTooltip.Whips}
 			Summon [ceeffect/cruiser:Void-devour bullet] chasing the target
 			''' */
 	}
@@ -4392,7 +4396,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Call Azafure War satellite to strike target
+			{$CommonItemTooltip.Whips}
+			Call an Azafure War satellite to strike target
 			''' */
 	}
 
@@ -6750,8 +6755,28 @@ Tooltips: {
 		У решетки есть 10 секунд охлаждения, в течение которых вы все еще можете использовать решетку, но не можете остановить все повреждения
 		Вероятность попадания приводит к различным выгодам.
 		'''
-	// LushGrass: Unleashes piercing vines at enemies that inflict [cebuff:CalamityEntropyLegacy/BonePiercingToxin]
-	// LushGrassBalanced: Unleashes piercing vines at enemies that inflict [cbuff:Poisoned]
+	LushGrass: Стреляйте из лозы, которая может причинить много вреда.
+	LushGrassBalanced: Стреляйте из лозы, которая может причинить много вреда.
+	CursedTorch:
+		'''
+		Вызовите проклятый факел и распылите проклятое пламя на врага
+		Загрузить строку вызова 2
+		'''
+	CursedTorchBalanced:
+		'''
+		Вызовите проклятый факел и распылите проклятое пламя на врага
+		Загрузить строку вызова 2
+		'''
+	DecrepitSkull:
+		'''
+		Вызовите проклятый череп и запустите его в врага.
+		Загрузить строку вызова 2
+		'''
+	DecrepitSkullBalanced:
+		'''
+		Вызовите проклятый череп и запустите его в врага.
+		Загрузить строку вызова 2
+		'''
 }
 
 DeathExplode: "{0} Взрыв."

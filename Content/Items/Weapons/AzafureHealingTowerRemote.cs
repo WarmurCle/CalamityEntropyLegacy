@@ -1,6 +1,7 @@
 using CalamityEntropyLegacy.Content.Items.Armor.Azafure;
 using CalamityEntropyLegacy.Content.Particles;
 using CalamityEntropyLegacy.Content.Rarities;
+using CalamityEntropyLegacy.Core;
 using CalamityMod.Items;
 using CalamityMod.Items.Materials;
 using Microsoft.Xna.Framework.Graphics;
@@ -19,7 +20,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
         {
             Item.width = 26;
             Item.height = 56;
-            Item.damage = 7;
+            Item.damage = CrossModSystem.IEoRBalancing ? 5 : 7;
             Item.mana = 10;
             Item.useTime = Item.useAnimation = 25;
             Item.useStyle = ItemUseStyleID.RaiseLamp;

@@ -44,8 +44,8 @@ Items: {
 				DisplayName: Aquashard
 				Tooltip:
 					'''
-					Throws a javelin that spawns water bullets when hit
-					Stealth strikes pierce, shed homing crystals as they fly, and spawn more homing water bullets when hit
+					Throws a javelin that spawns water bullets on hit
+					Stealth strikes pierce, shed homing crystals as they fly, and spawn more homing water bullets on hit
 					'''
 			}
 
@@ -156,7 +156,7 @@ Items: {
 
 			TlipocasScythe: {
 				DisplayName: Tlipoca's Scythe
-				Tooltip: NOT IMPLEMENTED AT THIS STAGE
+				Tooltip: ""
 			}
 
 			AzafureLightMachineGun: {
@@ -3910,11 +3910,7 @@ Items: {
 
 	CursedTorch: {
 		DisplayName: Cursed Torch
-		Tooltip:
-			'''
-			Summons a haunted torch to throw cursed fire at enemies
-			Uses 2 minion slots
-			'''
+		Tooltip: ""
 	}
 
 	PhantomBottle: {
@@ -3995,11 +3991,7 @@ Items: {
 
 	OblivionSkull: {
 		DisplayName: Decrepit Skull
-		Tooltip:
-			'''
-			Summons a horrid skull that summons six smaller skulls before releasing them at enemies
-			Uses 2 minion slots
-			'''
+		Tooltip: ""
 	}
 
 	BloodCodex: {
@@ -7075,6 +7067,28 @@ Tooltips: {
 		'''
 	LushGrass: Unleashes piercing vines at enemies that inflict [cebuff:CalamityEntropyLegacy/BonePiercingToxin]
 	LushGrassBalanced: Unleashes piercing vines at enemies that inflict [cbuff:Poisoned]
+	CursedTorch:
+		'''
+		Summons a haunted torch to throw cursed fire at enemies
+		Uses 2 minion slots
+		'''
+	CursedTorchBalanced:
+		'''
+		Summons a haunted torch to throw cursed fire at enemies
+		Uses 2 minion slots
+		There can only be one torch at a time
+		'''
+	DecrepitSkull:
+		'''
+		Summons a horrid skull that summons six smaller skulls before releasing them at enemies
+		Uses 2 minion slots
+		'''
+	DecrepitSkullBalanced:
+		'''
+		Summons a horrid skull that summons six smaller skulls before releasing them at enemies
+		Uses 2 minion slots
+		There can only be one horrid skull at a time
+		'''
 }
 
 DeathExplode: "{0} exploded"

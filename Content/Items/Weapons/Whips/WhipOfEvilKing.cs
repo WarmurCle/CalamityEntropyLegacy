@@ -1,6 +1,7 @@
 using CalamityEntropyLegacy.Content.Buffs;
 using CalamityEntropyLegacy.Content.Particles;
 using CalamityEntropyLegacy.Content.Projectiles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod.Items.Materials;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
@@ -60,7 +61,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Whips
             base.SetDefaults();
             Projectile.MaxUpdates = 4;
             segments = 32;
-            rangeMult = 1;
+            rangeMult = CrossModSystem.IEoRBalancing ? 0.5f : 1;
         }
         public override string getTagEffectName => "EvilKingWhip";
         public override Color StringColor => new Color(24, 24, 24);

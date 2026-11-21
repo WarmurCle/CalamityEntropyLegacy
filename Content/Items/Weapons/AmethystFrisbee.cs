@@ -1,4 +1,5 @@
 using CalamityEntropyLegacy.Content.Projectiles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Items.Weapons.Rogue;
@@ -34,7 +35,7 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
         public int altShotCount = 0;
 
 
-        public override float StealthDamageMultiplier => 1.6f;
+        public override float StealthDamageMultiplier => CrossModSystem.IEoRBalancing ? 1.3f : 1.6f;
         public override float StealthVelocityMultiplier => 1.2f;
         public override float StealthKnockbackMultiplier => 3f;
         public override void UpdateInventory(Player player)
@@ -74,10 +75,20 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
 
         public override void AddRecipes()
         {
-            CreateRecipe().AddIngredient(ItemID.Amethyst, 8)
+            if (CrossModSystem.IEoRBalancing)
+            {
+                CreateRecipe().AddIngredient(ItemID.Amethyst, 8)
+                .AddIngredient(ItemID.Amber, 4)
+                .AddTile(TileID.Anvils)
+                .Register();
+            }
+            else
+            {
+                CreateRecipe().AddIngredient(ItemID.Amethyst, 8)
                 .AddIngredient(ItemID.Diamond, 4)
                 .AddTile(TileID.Anvils)
                 .Register();
+            }
         }
     }
 }

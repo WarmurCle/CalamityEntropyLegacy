@@ -1,12 +1,15 @@
 using CalamityEntropyLegacy.Content.Buffs;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework.Graphics;
 using System;
+using System.Collections.Generic;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace CalamityEntropyLegacy.Content.Items.Weapons.Torch
@@ -45,6 +48,35 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons.Torch
             int projectile = Projectile.NewProjectile(source, Main.MouseWorld, velocity, type, Item.damage, knockback, player.whoAmI, 0, 1, 0);
             Main.projectile[projectile].originalDamage = Item.damage;
             return false;
+        }
+
+        public override bool CanShoot(Player player)
+        {
+            if (CrossModSystem.IEoRBalancing)
+            {
+                return player.ownedProjectileCounts[Item.shoot] == 0 && player.maxMinions - player.slotsMinions >= 2;
+            }
+            else
+            {
+                return base.CanShoot(player);
+            }
+        }
+
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            TooltipLine line = null;
+
+            if (CrossModSystem.IEoRBalancing)
+            {
+                line = new(Mod, "Tooltip", Language.GetTextValue("Mods.CalamityEntropyLegacy.Tooltips.CursedTorchBalanced"));
+            }
+            else
+            {
+                line = new(Mod, "Tooltip", Language.GetTextValue("Mods.CalamityEntropyLegacy.Tooltips.CursedTorch"));
+            }
+
+            line.OverrideColor = Color.White;
+            tooltips.Add(line);
         }
     }
     public class CursingFire : BaseMinionBuff
