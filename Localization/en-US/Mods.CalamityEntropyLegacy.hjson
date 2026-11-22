@@ -6799,7 +6799,7 @@ TScytheZenithName: Night Master's Scythe
 TScytheSpecialName: Scarlet
 TScytheSpecialName2: Kanna's Scythe
 TScytheZenithDesc: "'Crown me, my king, and the world will welcome the end of the night'"
-TScytheDesc: "'A scarlet scythe with tlipoca's soul adhering'"
+TScytheDesc: "'A scarlet scythe with Tlipoca's soul adhering'"
 TSL1:
 	'''
 	The big evil eye seems to have ill intentions towards me...
@@ -6881,20 +6881,20 @@ TSL16:
 	What will happen?
 	'''
 TSLEnd: Finally paid off the debt, the task was perfectly completed!
-TSA1: Hold Up and attack will push a certain distance towards the mouse direction
-TSA1B: After killing slime god, Gain invincible time and deal damage to the targets you come into contact with
+TSA1: Holding Up and Left Click will dash towards the cursor with temporary invincibility and a large slash. This skill has a 15 second cooldown
+TSA1B: After killing Slime God, Gain invincibility time and deal additional damage to enemies in the path of your slash dash
 TSU1: Need to kill the Eye of Cthulhu
-TSA2: Press Left Click to throw the scythe and causing multiple injuries
+TSA2: Press Right Click to throw the scythe, causing multiple injuries before returning
 TSA2B:
 	'''
-	After killing Brimstone Elemental, Press Left Click when throwing to teleport to the cursor and launch a larger slash
-	This skill has a 30 second cooldown. The cooldown time will shrink to 20 after killing Cruiser
+	After killing Brimstone Elemental, Press Left Click when throwing to teleport to the scythe and launch a larger slash
+	This skill has a 30 second cooldown. The cooldown time will shrink to 20 after the defeat of Cruiser
 	'''
 TSU2: Need to kill any evil boss
 TSA3:
 	'''
-	When thrown out, press Right Click to let the scythe follow your curser
-	Stealth strikes will heal you for 7 life
+	When thrown, press Right Click a second time to make the scythe follow your cursor
+	Stealth strikes will heal you for 7 life on first hit. 10 after the defeat of Polterghast
 	'''
 TSU3: Need to kill Prophet
 TSA4:
@@ -6908,10 +6908,9 @@ TSA5:
 	'''
 	Leave a shadow when performing a teleport strike, the shadow will attack alongside you
 	Slash dash will generate an additional slash perpendicular to the original
-	Increased the healing value of steal strikes
 	'''
 TSU5: Need to kill Polterghast
-TSA6: Leave behind a rift when dashing. The rift will continuously damaie enemies in radius
+TSA6: Leave behind a rift when dashing. The rift will continuously damage enemies in radius
 TSU6: Need to kill the Devourer of Gods
 TSA7: Survive a fatal injury and restore your health to half of your maximum health on a 5 minute cooldown
 TSU7: Need to kill Yharon

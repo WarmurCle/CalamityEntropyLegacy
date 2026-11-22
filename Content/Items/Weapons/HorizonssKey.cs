@@ -1,7 +1,9 @@
 using CalamityEntropyLegacy.Common;
 using CalamityEntropyLegacy.Content.Projectiles.SamsaraCasket;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Buffs.StatDebuffs;
+using CalamityMod.Items.Accessories;
 using CalamityMod.Items.LoreItems;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
@@ -29,15 +31,26 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
 
         public override StatInheritanceData GetModifierInheritance(DamageClass damageClass)
         {
-            if (damageClass == CEUtils.RogueDC)
+            if (CrossModSystem.IEoRBalancing)
             {
-                return new StatInheritanceData(0.2f, 0.2f, 0.2f, 0.2f, 0.2f);
+                if (damageClass == Summon)
+                {
+                    return new StatInheritanceData(0.334f, 0.334f, 0.334f, 0.334f, 0.334f);
+                }
+                return StatInheritanceData.Full;
             }
-	    if (damageClass == Summon)
+            else
             {
-                return new StatInheritanceData(0.3f, 0.3f, 0.3f, 0.3f, 0.3f);
+                if (damageClass == CEUtils.RogueDC)
+                {
+                    return new StatInheritanceData(0.2f, 0.2f, 0.2f, 0.2f, 0.2f);
+                }
+                if (damageClass == Summon)
+                {
+                    return new StatInheritanceData(0.3f, 0.3f, 0.3f, 0.3f, 0.3f);
+                }
+                return StatInheritanceData.Full;
             }
-            return StatInheritanceData.Full;
         }
     }
     public class HorizonssKey : ModItem
@@ -94,6 +107,24 @@ namespace CalamityEntropyLegacy.Content.Items.Weapons
             }
             else
             {
+                if (CrossModSystem.IEoRBalancing && !player.Entropy().samsaraCasketOpened)
+                {
+                    int storedStealthDamage = player.GetWeaponDamage(Item);
+
+                    ModLoader.GetMod("CalamityMod").Call("ConsumeStealth", player, 0.2f);
+
+                    foreach (Projectile proj in Main.projectile)
+                    {
+                        if (proj.active &&
+                            proj.owner == player.whoAmI &&
+                            proj.type == ModContent.ProjectileType<SamsaraCasketProj>())
+                        {
+                            proj.originalDamage = storedStealthDamage;
+                            break;
+                        }
+                    }
+                }
+
                 player.Entropy().samsaraCasketOpened = !player.Entropy().samsaraCasketOpened;
                 if (Main.myPlayer == player.whoAmI && player.Entropy().samsaraCasketOpened)
                 {

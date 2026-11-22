@@ -1,6 +1,8 @@
 using CalamityEntropyLegacy.Common;
 using CalamityEntropyLegacy.Content.Items.Weapons;
 using CalamityEntropyLegacy.Content.Projectiles.TwistedTwin;
+using CalamityEntropyLegacy.Core;
+using CalamityMod;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -23,6 +25,7 @@ namespace CalamityEntropyLegacy.Content.Projectiles.SamsaraCasket
         public int casket = 0;
         public int hideTime = 0;
         public float alpha = 1;
+        public bool hasHit = false;
         public static int getRange(Player player)
         {
             int range = 1000;
@@ -191,6 +194,12 @@ namespace CalamityEntropyLegacy.Content.Projectiles.SamsaraCasket
 
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
+            if (CrossModSystem.IEoRBalancing && !hasHit)
+            {
+                hasHit = true;
+                Projectile.netUpdate = true;
+            }
+
             if (HorizonssKey.getVoidTouchLevel() > 0)
             {
                 EGlobalNPC.AddVoidTouch(target, 80, HorizonssKey.getVoidTouchLevel(), 800, 16);
@@ -212,17 +221,49 @@ namespace CalamityEntropyLegacy.Content.Projectiles.SamsaraCasket
         public virtual void setDamage(float damageMul)
         {
             Projectile.damage = 0;
-            if (Projectile.owner.ToPlayer().HeldItem.ModItem is HorizonssKey hk)
-            {
-                Projectile.damage = (int)(damageMul * Projectile.owner.ToPlayer().GetWeaponDamage(Projectile.owner.ToPlayer().HeldItem));
-                if (casket.ToProj().Entropy().IndexOfTwistedTwinShootedThisProj != -1)
-                {
-                    Projectile.damage = (int)((float)Projectile.damage * TwistedTwinMinion.damageMul);
-                }
-                Projectile.CritChance = (int)(Projectile.owner.ToPlayer().GetWeaponCrit(Projectile.owner.ToPlayer().HeldItem));
-                Projectile.knockBack = (int)(Projectile.owner.ToPlayer().GetWeaponKnockback(Projectile.owner.ToPlayer().HeldItem));
 
+            Player player = Projectile.owner.ToPlayer();
+
+            if (player.HeldItem.ModItem is HorizonssKey hk)
+            {
+                float weaponDamage;
+
+                if (CrossModSystem.IEoRBalancing)
+                {
+                    if (!hasHit)
+                    {
+                        weaponDamage = Projectile.originalDamage;
+                    }
+                    else
+                    {
+                        weaponDamage = player.GetWeaponDamage(player.HeldItem);
+
+                        var calamity = player.Calamity();
+
+                        if (calamity.rogueStealthMax > 0f)
+                        {
+                            float stealthPercentage = calamity.rogueStealth / calamity.rogueStealthMax;
+
+                            float stealthMultiplier = 1f + (1f + stealthPercentage) * calamity.stealthDamage;
+
+                            weaponDamage /= stealthMultiplier;
+                        }
+                    }
+                }
+                else
+                {
+                    weaponDamage = player.GetWeaponDamage(player.HeldItem);
+                }
+
+                Projectile.damage = (int)(damageMul * weaponDamage);
+
+                if (casket.ToProj().Entropy().IndexOfTwistedTwinShootedThisProj != -1)
+                    Projectile.damage = (int)(Projectile.damage * TwistedTwinMinion.damageMul);
+
+                Projectile.CritChance = (int)player.GetWeaponCrit(player.HeldItem);
+                Projectile.knockBack = player.GetWeaponKnockback(player.HeldItem);
             }
+
             Projectile.ArmorPenetration = HorizonssKey.getArmorPen();
         }
 

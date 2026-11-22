@@ -7,9 +7,13 @@ TlipocasScytheLegend: {
 	}
 
 	Ability: {
-		TScytheA1: Hold Up and attack will push a certain distance towards the mouse direction
-		TScytheA1B: Gain invincible time and deal damage to the targets you come into contact with
-		TScytheA2: Press Left Click to throw the scythe and cause multiple injuries
+		TScytheA1:
+			'''
+			Holding Up and Left Click will dash towards the cursor with a large slash
+			This skill has a 15 second cooldown time
+			'''
+		TScytheA1B: Gain invincibility time and deal damage to targets you come into contact with
+		TScytheA2: Press Right Click to throw the scythe and cause multiple injuries
 		TScytheA2B:
 			'''
 			Press Left Click when throwing to teleport to the mouse and launch a larger slash
@@ -58,157 +62,160 @@ TlipocasScytheLegend: {
 	Dialog: {
 		TScytheDia1:
 			'''
-			The evil big eyes seem to have ill intentions towards we...
-			Let's go kill him!
+			"The evil big eye seems to have ill intentions towards me..."
+			"Kill him!"
 			'''
 		TScytheDia2:
 			'''
-			Strange spirits resembling brains and worms?
-			Can I take it home to make a specimen？
+			"Strange spirits resembling brains and worms?"
+			"Can I take them home as specimen?"
 			'''
 		TScytheDia3:
 			'''
-			Slime God? It looks sticky, dirty, and bubbling...
-			Shall we give it a bath？
+			"Slime God? It looks sticky, dirty, and bubbling..."
+			"Shall we give it a bath?"
 			'''
 		TScytheDia4:
 			'''
-			A flesh and blood creation sealed with the spirit of the gods?
-			It seems that completing this task can bring a lot of souls...
+			"A flesh and blood creation sealed with the spirit of the gods?"
+			"It seems that completing this task will cause plenty chaos..."
 			'''
 		TScytheDia5:
 			'''
-			Many souls are floating in the brimstone crag, howling in sorrow...
-			Continuously talking about a catastrophe from a hundred years ago...
-			Let's end their pain!
+			"Many souls are wallowing in the brimstone crags, howling in sorrow..."
+			"They talk about a catastrophe from a hundred years ago..."
+			"Let's end their pain!"
 			'''
 		TScytheDia6:
 			'''
-			There is a terrifying red monster hovering in the night sky,
-			I can only feel madness from his soul. Or...Is that really a soul?
+			"There is a terrifying magic presence hovering in the night sky"
+			"I can only feel madness from it's soul. Or...Is that really a soul?"
 			'''
 		TScytheDia7:
 			'''
-			There're so much spirits in the dungeon...
-			Hey，there's a sealed spirit with strange scent
-			I can't help but want to communicate with them!
+			"The dungeon is rife as always with imprisoned souls..."
+			"One in particular has quite the strange scent"
+			"I can't help but want to communicate with them!"
 			'''
 		TScytheDia8:
 			'''
-			How many strands of soul are attached to twisted flesh and blood? 
-			Some Disgusting, drive them back to their dreams!
+			"How many strands of soul are bound to that twisted totem of flesh and blood?"
+			"Disgusting, give them the fight they want!"
 			'''
 		TScytheDia9:
 			'''
-			These crazy cultists emit an aura similar to that prophet...
-			What are they worshiping? 
-			It feels like sending them to worship the Grim Reaper is a good idea
+			"These crazy cultists emit an aura similar to that prophet..."
+			"What are they worshiping?" 
+			"Sending them to worship the Grim Reaper would be a better choice!"
 			'''
-		TScytheDia10: A huge, multi eyed octopus? Is this a monster that came out of a dream?
+		TScytheDia10: '''"A huge, multi eyed octopus? Was such a thing born of nightmares!?"'''
 		TScytheDia11:
 			'''
-			The faceless man wearing a purple cloak carried a lantern with a prophetic aura ..
-			I'm a little curious, I want to grab the lantern!
+			"That faceless man wearing a purple cloak carries his lantern with a prophetic aura..."
+			"I'm a little curious, I want that lantern!"
 			'''
 		TScytheDia12:
 			'''
-			In the enchanted dungeon, these souls can never rest in peace
-			It's so pitiful, let's take it away!
+			"Make of ectoplasm or necroplasm, these souls can never rest in peace"
+			"It's so pitiful, let's do them a favor!"
 			'''
 		TScytheDia13:
 			'''
-			There is a purple serpent.
-			It want to devour the soul of we!
-			Don't even try this!
+			"That serpents hungers for our essence?"
+			"Take caution, such desperation will be a challenge to punish!"
 			'''
 		TScytheDia14:
 			'''
-			The strange lantern pointed towards this spatial fissure
-			What will it bring?
+			"The assassin's lantern points towards a spatial fissure"
+			"What fate will such a thing bring?"
 			'''
 		TScytheDia15:
 			'''
-			A witch and a robot came to here，
-			Snatch their souls and my goal might be achieved！
+			"The peaks of technology and magic stand before us"
+			"Fell the souls of both and my goal might be achieved!"
 			'''
 		TScytheDia16:
 			'''
-			The cultist asked us to use the discord wand in the abyss...
-			What will happen?
+			"The cultist points us to the abyss..."
+			"Deep, deep below...I wonder what will happen?"
 			'''
-		TScytheDia17: Finally paid off the debt, the task was perfectly completed!
+		TScytheDia17:
+			'''
+			"A debt paid, and a journey at it's end..."
+			"Your reward? The full extent of my power of course!"
+			'''
 	}
 
 	General.CurLevel: ""
-	TlipocazKilledNPC: Press Middle Mouse to allow you slain friendly target
-	TlipocazKilledNPCNot: Press Middle Mouse again to prevent you from killing friendly target
+	TlipocazKilledNPC: Press Middle Mouse to allow the slaying of friendly NPCs
+	TlipocazKilledNPCNot: Press Middle Mouse again to prevent the slaying of friendly NPCs
 }
 
 DCarverDia0:
 	'''
-	Was it you who awakened me?
-	Indeed, as you can see, I have lost most of my power
-	If you wish to prove yourself worthy of my service, first slay the Evil Eye!
+	"Was it you who awakened me?"
+	"Indeed, as you can see, I have lost most of my power"
+	"If you wish to prove yourself worthy of my service, first slay the Evil Eye!"
 	'''
 DCarverDia1:
 	'''
-	Good, I can sense both you and I growing stronger
-	Slay the spawn of the defiled land, and prove your might to me
+	"Good, I can sense both you and I growing stronger"
+	"Slay the spawn of the defiled land, and prove your might to me"
 	'''
 DCarverDia2:
 	'''
-	You have proven your strength, but there is still a long road ahead
-	I can now awaken my slumbering servants. If you defeat more powerful beings, you can awaken more of my followers
-	Next, defeat the incomplete deity composed of feeble beings!
+	"You have proven your strength, but there is still a long road ahead"
+	"I can now awaken my slumbering servants. If you defeat more powerful beings, you can awaken more of my followers"
+	"Next, defeat the incomplete deity composed of feeble beings!"
 	'''
-DCarverDia3: The time for reckoning has come. Go to the Foundation of the World, slay the twisted creation, and release the long-sealed soul
-DCarverDia4: Slay the defiled primal spirit deep underground and reclaim the power that was stolen from me!
+DCarverDia3: '''"The time for reckoning has come. Go to the Foundation of the World, slay the twisted creation, and release the long-sealed souls"'''
+DCarverDia4: '''"Slay the defiled primal spirit deep underground and reclaim the power that was stolen from me!"'''
 DCarverDia5:
 	'''
-	I have seen that witch before
-	But now, she seems... different
-	In any case, her power is far less than before, or perhaps this is just a failed imitation
+	"I have seen that witch before"
+	"But now, she seems...different"
+	"In any case, her power is far less than before, or perhaps this is just a failed imitation"
 	'''
-DCarverDia6: There is a restless stirring beneath the jungle. If we can eradicate its source, we might find a fragment of myself
+DCarverDia6: '''"There is a restless stirring beneath the jungle. If we can eradicate its source, we might find a fragment of myself"'''
 DCarverDia7:
 	'''
-	I can sense a frenzied construct of flesh approaching
-	It is composed of thousands of entities craving vengeance. Perhaps we can gain something from it
+	"I can sense a frenzied construct of flesh approaching"
+	"It is composed of thousands of entities craving vengeance. Perhaps we can gain something from it"
 	'''
 DCarverDia8:
 	'''
-	It is time to reclaim a sealed part of me from those cultists
-	They once sacrificed me to summon their evil god
+	"It is time to reclaim a sealed part of me from those cultists"
+	"They once sacrificed me to summon their evil god"
 	'''
-DCarverDia9: To protect this land and continue our journey, eradicate those outsiders completely!
+DCarverDia9: '''"To protect this land and continue our journey, eradicate those outsiders completely!"'''
 DCarverDia10:
 	'''
-	Profane flames burn. The fall of the outer god has awakened something unpleasant
-	We must stop her before the situation spirals out of control
+	"Profane flames burn. The fall of the outer god has awakened something unpleasant"
+	"We must stop her before the situation spirals out of control"
 	'''
 DCarverDia11:
 	'''
-	A great number of vengeful spirits remain deep within the dungeon, even amalgamating into a powerful entity
-	It seems we have no choice but to cleanse them
+	"A great number of vengeful spirits remain deep within the dungeon, even amalgamating into a powerful entity"
+	"It seems we have no choice but to cleanse them"
 	'''
-DCarverDia12: That hypocritical worm has come for us. It seems we must act
+DCarverDia12: '''"That hypocritical worm has come for us. It seems we must act"'''
 DCarverDia13:
 	'''
-	I know him
-	He was once under the Seeker of Gods, but he left in the end
-	It seems necessary to settle this with him
+	"I know him"
+	"He was once under the Seeker of Gods, but he left in the end"
+	"It seems necessary to settle this with him"
 	'''
 DCarverDia14:
 	'''
-	Our journey nears its end, and I have regained most of my lost power
-	Now, face the witch and the Destroyer Mech in a final battle!
+	"Our journey nears its end, and I have regained most of my lost power"
+	"Now, face the witch and the mechanical monstrocities in a final battle!"
 	'''
-DCarverDia15: Slay the ancient leviathan in the deepest part of the abyssal ocean, and bring this journey to an end!
-DCarverDia16: Our journey together has reached its conclusion, but many powerful enemies still await. Press on, my master!
+DCarverDia15: '''"Slay the ancient leviathan in the deepest part of the abyssal ocean, and bring this journey to an end!"'''
+DCarverDia16: '''"Our journey together has reached its conclusion, but many powerful enemies still await. Press on, my master!"'''
 
 General: {
 	Locked: "[LOCKED]:"
-	PagesTips: Hold Left Alt to directly read the ability, press Left Click to switch
+	PagesTips: Hold Left Alt to read the list of abilities, press Right Click to switch the active ability
 }
 
 SusiesBracelet: {

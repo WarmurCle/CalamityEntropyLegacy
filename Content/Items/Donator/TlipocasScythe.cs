@@ -3,6 +3,7 @@ using CalamityEntropyLegacy.Content.Buffs;
 using CalamityEntropyLegacy.Content.Cooldowns;
 using CalamityEntropyLegacy.Content.Items.Vanity;
 using CalamityEntropyLegacy.Content.Particles;
+using CalamityEntropyLegacy.Core;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Buffs.StatDebuffs;
@@ -142,16 +143,22 @@ namespace CalamityEntropyLegacy.Content.Items.Donator
             bool shouldDrawHoldShiftTips = isNeither || shouldDrawPages;
             bool any = holdAlt || holdShift;
 
-            if (shouldDrawHoldshift)
+            if (holdShift)
             {
                 HandleHoldShift(tooltips);
             }
+            else
+            {
+                tooltips.QuickAddTooltipDirect(Mod.GetLocalization("PressShiftForMoreInfo").Value, Color.Yellow, LineName: "ShiftMoreInfo");
+            }
+            /*
             if (shouldDrawPages)
-                HandleSwapAbility(tooltips, throwTooltip, teleportTooltip, dashTooltip, statTooltip);
-            if (shouldDrawPagesTips && !any)
+                //HandleSwapAbility(tooltips, throwTooltip, teleportTooltip, dashTooltip, statTooltip);
+            if (!holdShift)
                 tooltips.QuickAddTooltip($"{pathPrefix}General.PagesTips", Color.Yellow, LineName: "PagesMoreInfo");
             if (shouldDrawHoldShiftTips && !any)
                 tooltips.QuickAddTooltipDirect(Mod.GetLocalization("PressShiftForMoreInfo").Value, Color.Yellow, LineName: "ShiftMoreInfo");
+            */
             bool isKilledNPC = Main.LocalPlayer.GetModPlayer<TlipocasSingleHit>().isPressed;
             if (isKilledNPC)
                 tooltips.QuickAddTooltip($"{pathBase}TlipocazKilledNPC", Color.Red, LineName: "CanKilledNPC");
@@ -170,14 +177,14 @@ namespace CalamityEntropyLegacy.Content.Items.Donator
                 Get("TSA1") + (flag ? "" : Get("LOCKED") + " " + Get("TSU1")))
             { OverrideColor = flag ? Color.Yellow : Color.Gray });
 
-            flag = DownedBossSystem.downedSlimeGod;
-            tooltips.Add(new TooltipLine(Mod, "Ability Desc", Get("TSA1B"))
-            { OverrideColor = flag ? Color.Yellow : Color.Gray });
-
             flag = AllowThrow();
             tooltips.Add(new TooltipLine(Mod, "Ability Desc",
                 Get("TSA2") + (flag ? "" : Get("LOCKED") + " " + Get("TSU2")))
             { OverrideColor = (flag ? Color.Yellow : Color.Gray) });
+
+            flag = DownedBossSystem.downedSlimeGod;
+            tooltips.Add(new TooltipLine(Mod, "Ability Desc", Get("TSA1B"))
+            { OverrideColor = flag ? Color.Yellow : Color.Gray });
 
             flag = DownedBossSystem.downedBrimstoneElemental;
             tooltips.Add(new TooltipLine(Mod, "Ability Desc", Get("TSA2B"))
@@ -367,10 +374,10 @@ namespace CalamityEntropyLegacy.Content.Items.Donator
                 int dmg = 10;
                 switch (lv)
                 {
-                    case 0: dmg = 10; break;
-                    case 1: dmg = 18; break;
-                    case 2: dmg = 30; break;
-                    case 3: dmg = 45; break;
+                    case 0: dmg = CrossModSystem.IEoRBalancing ? 30 : 10; break;
+                    case 1: dmg = CrossModSystem.IEoRBalancing ? 34 : 18; break;
+                    case 2: dmg = CrossModSystem.IEoRBalancing ? 36 : 30; break;
+                    case 3: dmg = CrossModSystem.IEoRBalancing ? 40 : 45; break;
                     case 4: dmg = 72; break;
                     case 5: dmg = 130; break;
                     case 6: dmg = 180; break;
@@ -483,11 +490,11 @@ namespace CalamityEntropyLegacy.Content.Items.Donator
             {
                 velocity *= 0.46f;
                 type = throwType;
-                damage = (int)(damage / 2.0f);
+                damage = (int)(CrossModSystem.IEoRBalancing ? damage / 2.5f : damage / 2);
             }
             if (AllowDash() && player.controlUp && !player.HasCooldown(TlipocasScytheSlashCooldown.ID))
             {
-                Projectile.NewProjectile(source, position, velocity, ModContent.ProjectileType<TlipocasScytheHeld>(), DashUpgrade() ? damage : damage / 4, knockback, player.whoAmI, swing == 0 ? 1 : -1, -1);
+                Projectile.NewProjectile(source, position, velocity, ModContent.ProjectileType<TlipocasScytheHeld>(), DashUpgrade() ? damage : CrossModSystem.IEoRBalancing ? damage : damage / 4, knockback, player.whoAmI, swing == 0 ? 1 : -1, -1);
                 player.AddCooldown(TlipocasScytheSlashCooldown.ID, 15 * 60);
                 CalamityEntropyLegacy.FlashEffectStrength = 0.2f;
                 int p = Projectile.NewProjectile(source, position, velocity.normalize() * 1000 * (DashUpgrade() ? 1.33f : 1), ModContent.ProjectileType<TSSlash>(), damage * 2, knockback, player.whoAmI);
@@ -665,7 +672,22 @@ namespace CalamityEntropyLegacy.Content.Items.Donator
                 float dmgMult = Utils.Remap(CEUtils.getDistance(target.Center, Projectile.Center), 160, 300, 1.25f, 1);
                 modifiers.FinalDamage *= dmgMult;
             }
+
+            if (target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeHead>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeBody>() ||
+                target.type == ModContent.NPCType<CalamityMod.NPCs.DesertScourge.DesertScourgeTail>() && CrossModSystem.IEoRBalancing)
+            {
+                modifiers.SourceDamage *= 0.25f;
+            }
+
+            if (target.type == NPCID.EaterofWorldsBody ||
+                target.type == NPCID.EaterofWorldsHead ||
+                target.type == NPCID.EaterofWorldsTail && CrossModSystem.IEoRBalancing)
+            {
+                modifiers.SourceDamage *= 0.5f;
+            }
         }
+
         public override void SetDefaults()
         {
             Projectile.FriendlySetDefaults(CEUtils.RogueDC, false, -1);
